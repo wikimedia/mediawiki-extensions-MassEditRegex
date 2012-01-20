@@ -462,6 +462,7 @@ $messages['de-formal'] = array(
  * @author Michawiki
  */
 $messages['dsb'] = array(
+	'action-masseditregex' => 'masowe wobźěłanje pśewjasć',
 	'masseditregex' => 'Masowe wobźěłanje z pomocu regularnych wurazow',
 	'masseditregex-desc' => 'Regularne wuraze wužywaś, aby se [[Special:MassEditRegex|wjele bokow w jadnej opberaciji wobźěłało]]',
 	'masseditregextext' => 'Zapódaj jaden regularny wuraz abo wěcej regularnych wurazow (jaden na smužku) za pytanje a jaden wuraz abo wěcej wurazow, kótarež maju kuždy wótpowědnik wuměniś.
@@ -496,6 +497,7 @@ Glědaj [http://php.net/manual/de/function.preg-replace.php the PHP function pre
 	'masseditregex-badregex' => 'Njepłaśiwy regularny wuraz:',
 	'masseditregex-editfailed' => 'Wobźěłanje jo se njeraźiło:',
 	'masseditregex-tooltip-execute' => 'Toś te změny na kuždy bok nałožyś',
+	'right-masseditregex' => 'Wopśimjeśe boka z pomocu regularnych wurazow wuměniś',
 );
 
 /** Greek (Ελληνικά)
