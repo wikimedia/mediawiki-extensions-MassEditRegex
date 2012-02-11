@@ -60,8 +60,6 @@ class MassEditRegex extends SpecialPage {
 			return;
 		}
 
-		wfLoadExtensionMessages('MassEditRegex');
-
 		$this->outputHeader();
 
 		$strPageList = $wgRequest->getText( 'wpPageList', 'Sandbox' );
