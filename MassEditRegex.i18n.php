@@ -741,6 +741,7 @@ Bim Text, wu yygsetzt wird, isch d Richtig nit relevant.',
  * @author ערן
  */
 $messages['he'] = array(
+	'action-masseditregex' => 'ביצוע עריכה מרובה',
 	'masseditregex' => 'עריכה המונית באמצעות ביטויים רגולאריים',
 	'masseditregex-desc' => 'שימוש בביטויים רגלואריים כדי [[Special:MassEditRegex|לערוך דפים רבים בבת אחת]]',
 	'masseditregextext' => 'הכניסו ביטוי רגולרי אחד או יותר (אחד בכל שורה) לחיפוש התאמות, וביטוי אחד או יותר שבו יוחלפו המחרוזות המתאימות שתימצאנה.
