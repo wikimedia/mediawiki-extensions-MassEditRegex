@@ -1254,9 +1254,11 @@ $messages['pdc'] = array(
 );
 
 /** Polish (Polski)
+ * @author BeginaFelicysym
  * @author Sp5uhe
  */
 $messages['pl'] = array(
+	'action-masseditregex' => 'wykonaj edycję zbiorczą',
 	'masseditregex' => 'Masowe edytowanie z użyciem wyrażeń regularnych',
 	'masseditregex-desc' => 'Pozwala użyć wyrażeń regularnych do [[Special:MassEditRegex|do wprowadzenia zmian na wielu stronach w jednej operacji]]',
 	'masseditregextext' => 'Wstaw jedno lub więcej wyrażenie regularne (jedno w linii) do wyszukania oraz jedno lub więcej wyrażeń, którym mają być zastąpione.
