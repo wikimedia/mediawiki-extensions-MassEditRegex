@@ -530,11 +530,13 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author Crazymadlover
  * @author Dferg
  * @author Translationista
  */
 $messages['es'] = array(
+	'action-masseditregex' => 'realizar ediciones en bloque',
 	'masseditregex' => 'Edición en masa usando expresiones regulares',
 	'masseditregex-desc' => 'Utilice expresiones regulares para [[Special:MassEditRegex|editar varias páginas en una sola operación]]',
 	'masseditregextext' => 'Introduzca una o más expresiones regulares (una por línea) para lograr coincidencias, y una o más expresiones con las que sustituir cada coincidencia. Si se logra con éxito, la primera expresión de coincidencia se reemplazará con la primera expresión de sustitución, y así sucesivamente. Si deseas conocer más detales, consulta [http://php.net/manual/en/function.preg-replace.php la función PHPpreg_replace()]',
@@ -568,6 +570,7 @@ Los valores de reposición no deben excluirse.',
 	'masseditregex-badregex' => 'Expresión regular inválida:',
 	'masseditregex-editfailed' => 'Edición fallida:',
 	'masseditregex-tooltip-execute' => 'Aplicar estos cambios a cada página',
+	'right-masseditregex' => 'Reemplazar el contenido de las páginas utilizando expresiones regulares',
 );
 
 /** Finnish (Suomi)
