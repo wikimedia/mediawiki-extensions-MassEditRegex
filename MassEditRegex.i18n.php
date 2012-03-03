@@ -1090,7 +1090,7 @@ $messages['mk'] = array(
 	'masseditregex-desc' => 'Користете регуларни изрази за да [[Special:MassEditRegex|уредите многу страници во една операција]]',
 	'masseditregextext' => 'Внесете еден или повеќе регуларни изрази (по еден во секој ред) за наоѓање ан совпаѓања, и еден или повеќе изрази кои би го замениле најденото.
 Првиот совпаднат израз, ако е успешно најден, ќе биде заменет со првиот израз за замена, и тн.
-Погледајте го [http://php.net/manual/en/function.preg-replace.php описот на PHP-функцијата preg_replace()] за повеќе детали.',
+Погледајте го [http://php.net/manual/en/function.preg-replace.php описот на PHP-функцијата preg_replace()] за повеќе подробности.',
 	'masseditregex-pagelisttxt' => 'Страници за уредување (не користете префикс со именски простор):',
 	'masseditregex-matchtxt' => 'Пребарај:',
 	'masseditregex-replacetxt' => 'Замени со:',
