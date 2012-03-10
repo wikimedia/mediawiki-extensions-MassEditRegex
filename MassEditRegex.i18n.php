@@ -1268,7 +1268,7 @@ $messages['pl'] = array(
 Jeśli pierwsze wyrażenie zostanie odnalezione zostanie zastąpione pierwszym wyrażeniem itd.
 Zobacz [http://php.net/manual/pl/function.preg-replace.php opis funkcji preg_replace() napisanej w PHP] jeśli chcesz dowiedzieć się więcej na ten temat.',
 	'masseditregex-pagelisttxt' => 'Strony do edycji (nie dodawaj przedrostka przestrzeni nazw z dwukropkiem)',
-	'masseditregex-matchtxt' => 'Szukaj',
+	'masseditregex-matchtxt' => 'Szukaj:',
 	'masseditregex-replacetxt' => 'Zastąp przez',
 	'masseditregex-executebtn' => 'Wykonaj',
 	'masseditregex-err-nopages' => 'Musisz wskazać co najmniej jedną stronę do wykonania zmian.',
