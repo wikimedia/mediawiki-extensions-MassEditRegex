@@ -1667,20 +1667,37 @@ $messages['vep'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Hydra
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'action-masseditregex' => '执行批量编辑',
+	'masseditregex' => '使用正则表达式进行批量编辑',
+	'masseditregex-desc' => '使用正则表达式来[[Special:MassEditRegex|一次编辑多个页面]]',
+	'masseditregex-pagelisttxt' => '要编辑的页面 （不用使用 命名空间: 前缀）：',
 	'masseditregex-matchtxt' => '查找：',
 	'masseditregex-replacetxt' => '替换为：',
 	'masseditregex-executebtn' => '执行',
+	'masseditregex-err-nopages' => '您必须指定至少一个页面以供更改。',
 	'masseditregex-before' => '前',
 	'masseditregex-after' => '后',
+	'masseditregex-max-preview-diffs' => '预览已被限制为首个 $1 {{PLURAL:$1|匹配}}。',
 	'masseditregex-page-not-exists' => '$1 不存在',
+	'masseditregex-view-full-summary' => '查看完整的编辑摘要',
+	'masseditregex-hint-intro' => '下面是一些提示和完成常见任务的例子：',
+	'masseditregex-hint-headmatch' => '匹配',
 	'masseditregex-hint-headreplace' => '替换',
 	'masseditregex-hint-headeffect' => '影响',
 	'masseditregex-listtype-intro' => '这是一个列表：',
 	'masseditregex-listtype-pagenames' => '页面名称（编辑这些网页）',
 	'masseditregex-listtype-pagename-prefixes' => '网页名称前缀（编辑网页名称的开头有这个文字）',
+	'masseditregex-listtype-categories' => '分类名称（编辑在这些分类里的每个页面；命名空间的选择将被忽略）',
+	'masseditregex-listtype-backlinks' => '反向链接 （编辑链接到这些之一的页面）',
+	'masseditregex-namespace-intro' => '所有这些页面都是在此命名空间：',
+	'masseditregex-exprnomatch' => '表达式“$1”没有匹配的页面。',
+	'masseditregex-badregex' => '无效的正则表达式：',
 	'masseditregex-editfailed' => '编辑失败：',
+	'masseditregex-tooltip-execute' => '将这些更改应用到每个页面',
+	'right-masseditregex' => '使用正则表达式替换页面内容',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
