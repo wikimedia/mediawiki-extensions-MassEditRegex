@@ -1050,6 +1050,7 @@ $messages['ksh'] = array(
 );
 
 /** Luxembourgish (Lëtzebuergesch)
+ * @author Les Meloures
  * @author Robby
  */
 $messages['lb'] = array(
@@ -1069,7 +1070,7 @@ $messages['lb'] = array(
 	'masseditregex-hint-headmatch' => 'Resultat',
 	'masseditregex-hint-headreplace' => 'Ersetzen',
 	'masseditregex-hint-headeffect' => 'Resultat',
-	'masseditregex-hint-toappend' => "Text un d'Ënn vun der Säit bäisetzen - gutt fir Säiten a Kategorien derbäizesetzen",
+	'masseditregex-hint-toappend' => "Text un d'Enn vun der Säit bäisetzen - gutt fir Säiten a Kategorien derbäizesetzen",
 	'masseditregex-hint-remove' => 'Text vun alle Säiten op der Lëscht erofhuelen',
 	'masseditregex-listtype-intro' => 'Dëst ass eng Lëscht vun:',
 	'masseditregex-listtype-pagenames' => 'Numm vun de Säiten (dës Säiten änneren)',
@@ -1254,6 +1255,13 @@ $messages['oc'] = array(
  */
 $messages['pdc'] = array(
 	'masseditregex-matchtxt' => 'Uffgucke nooch:',
+);
+
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'masseditregex-matchtxt' => 'Such noch:',
 );
 
 /** Polish (Polski)
