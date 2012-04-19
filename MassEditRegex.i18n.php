@@ -1010,6 +1010,17 @@ $messages['ja'] = array(
 	'masseditregex-tooltip-execute' => 'これらの変更を各ページに適用する',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'masseditregex-exprnomatch' => '„$1“ გამოხატვას არცერთი გვერდი არ შეესაბამება.',
+	'masseditregex-badregex' => 'არასწორი რეგულარული გამოხატვა:',
+	'masseditregex-editfailed' => 'რედაქტირების შეცდომა:',
+	'masseditregex-tooltip-execute' => 'ამ ცვლილების ყველა გვერდისათვის გამოყენება',
+	'right-masseditregex' => 'გვერდის შინაარსის შეცვლა, რეგულარული გამოხატვის საშუალებით',
+);
+
 /** Colognian (Ripoarisch)
  * @author Als-Holder
  * @author Purodha
