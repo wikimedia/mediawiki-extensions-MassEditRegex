@@ -1014,6 +1014,7 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
+	'masseditregex-namespace-intro' => 'ყველა ეს გვერდი სახელთა სივრცეშია:',
 	'masseditregex-exprnomatch' => '„$1“ გამოხატვას არცერთი გვერდი არ შეესაბამება.',
 	'masseditregex-badregex' => 'არასწორი რეგულარული გამოხატვა:',
 	'masseditregex-editfailed' => 'რედაქტირების შეცდომა:',
