@@ -972,10 +972,12 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Fryed-peach
+ * @author Shirayuki
  * @author Whym
  * @author 青子守歌
  */
 $messages['ja'] = array(
+	'action-masseditregex' => '一括して編集',
 	'masseditregex' => '正規表現を使用した大量編集',
 	'masseditregex-desc' => '正規表現を使って[[Special:MassEditRegex|大量のページを一度の操作で編集する]]',
 	'masseditregextext' => '一致用に1つ以上の正規表現（1行に1つ）と、置換用に1つ以上の正規表現を入力してください。1番目の一致用正規表現が一致に成功すると、1番目の置換用正規表現で置換されます。2番目以降も同様です。詳細は [http://php.net/manual/ja/function.preg-replace.php PHP 関数 preg_replace()] を参照してください。',
@@ -995,19 +997,21 @@ $messages['ja'] = array(
 	'masseditregex-hint-headmatch' => '一致用',
 	'masseditregex-hint-headreplace' => '置換用',
 	'masseditregex-hint-headeffect' => '効果',
-	'masseditregex-hint-toappend' => '記事末尾に文章を追記する。ページにカテゴリーを加えるにの便利です',
+	'masseditregex-hint-toappend' => '記事末尾に文章を追記する。ページをカテゴリに追加するのに便利です',
 	'masseditregex-hint-remove' => '指定したすべてのページからある文章を除去する',
-	'masseditregex-hint-removecat' => '記事からすべてのカテゴリーを除去する (ウィキテキスト中の角括弧のエスケープに注意)。置換する値はエスケープしません。',
+	'masseditregex-hint-removecat' => '記事からすべてのカテゴリを除去する (ウィキテキスト中の角括弧のエスケープに注意)。
+置換する値はエスケープしません。',
 	'masseditregex-listtype-intro' => 'これは次のリストです:',
 	'masseditregex-listtype-pagenames' => 'ページ名 (これらのページを編集する)',
 	'masseditregex-listtype-pagename-prefixes' => 'ページ名の先頭部 (この文字列から始まる名前をもつページを編集する)',
-	'masseditregex-listtype-categories' => 'カテゴリー名 (これらのカテゴリーにあるページすべてを編集する。名前空間の選択は無視されます)',
+	'masseditregex-listtype-categories' => 'カテゴリ名 (これらのカテゴリにあるページすべてを編集する。名前空間の選択は無視されます)',
 	'masseditregex-listtype-backlinks' => 'リンク元 (これらにリンクしているページを編集する)',
 	'masseditregex-namespace-intro' => 'これらのページはすべて、この名前空間に属しています:',
 	'masseditregex-exprnomatch' => '正規表現「$1」に一致したページはありません。',
 	'masseditregex-badregex' => '無効な正規表現:',
 	'masseditregex-editfailed' => '編集失敗:',
 	'masseditregex-tooltip-execute' => 'これらの変更を各ページに適用する',
+	'right-masseditregex' => '正規表現を使用してページの内容を置換',
 );
 
 /** Georgian (ქართული)
