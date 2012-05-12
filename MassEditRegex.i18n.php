@@ -1678,7 +1678,7 @@ $messages['uk'] = array(
 	'masseditregex-hint-headreplace' => 'Заміна',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
