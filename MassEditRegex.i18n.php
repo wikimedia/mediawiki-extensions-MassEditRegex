@@ -700,6 +700,7 @@ $messages['gl'] = array(
  * @author Als-Holder
  */
 $messages['gsw'] = array(
+	'action-masseditregex' => 'e Sammelbearbeitig durefiere',
 	'masseditregex' => 'Greßeri Aazahl vu Syte glychzytig ändere iber reguläri Uusdruck.',
 	'masseditregex-desc' => 'Reguläri Uusdruck bruch go [[Special:MassEditRegex|vili Syte in eim Schritt bearbeite]]',
 	'masseditregextext' => 'Gib ein oder meh reguläri Uusdruck as Suechuusdruck yy (eine pro Zyylete) un ein oder meh Uusdruck as Ersatzuusdruck.
