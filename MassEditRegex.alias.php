@@ -18,12 +18,17 @@ $specialPageAliases['ar'] = array(
 	'MassEditRegex' => array( 'ريجيكس_التعديلات_الكمية' ),
 );
 
-/** Interlingua (Interlingua) */
+/** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'MassEditRegex' => array( 'Modificar_in_massa_con_regex' ),
 );
 
-/** Macedonian (Македонски) */
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'MassEditRegex' => array( '대량편집정규식' ),
+);
+
+/** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'MassEditRegex' => array( 'РегуларенИзразЗаМасовноУредување' ),
 );
