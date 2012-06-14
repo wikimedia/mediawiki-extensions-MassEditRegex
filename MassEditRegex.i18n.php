@@ -225,7 +225,7 @@ $messages['arz'] = array(
 	'masseditregex-tooltip-execute' => 'طبق هذه التغييرات على كل صفحة',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  */
 $messages['az'] = array(
@@ -276,7 +276,7 @@ $messages['be-tarask'] = array(
 	'right-masseditregex' => 'замена зьместу старонак з дапамогай рэгулярных выразаў',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  */
 $messages['bg'] = array(
@@ -312,7 +312,7 @@ $messages['bn'] = array(
 	'masseditregex-tooltip-execute' => 'প্রতিটি পাতায় এই পরিবর্তন প্রয়োগ করো',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
  * @author Y-M D
@@ -355,7 +355,7 @@ N'haller ket lezel er-maez an talvoudennoù erlec'hiañ.",
 	'masseditregex-tooltip-execute' => "Arloañ ar c'hemmoù-se da bep pajenn",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -380,7 +380,7 @@ $messages['bs'] = array(
 	'masseditregex-tooltip-execute' => 'Primijeni ove izmjene na svaku stranicu',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Paucabot
  */
 $messages['ca'] = array(
@@ -394,7 +394,7 @@ $messages['ca'] = array(
 	'masseditregex-listtype-pagenames' => 'Noms de les pàgines (editeu aquestes pàgines)',
 );
 
-/** Czech (Česky) */
+/** Czech (česky) */
 $messages['cs'] = array(
 	'masseditregex-matchtxt' => 'Najít:',
 	'masseditregex-replacetxt' => 'Nahradit za:',
@@ -529,7 +529,7 @@ $messages['eo'] = array(
 	'masseditregex-editfailed' => 'Redakto malsukcesis:',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author Crazymadlover
  * @author Dferg
@@ -573,7 +573,7 @@ Los valores de reposición no deben excluirse.',
 	'right-masseditregex' => 'Reemplazar el contenido de las páginas utilizando expresiones regulares',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Str4nd
  */
@@ -588,7 +588,7 @@ $messages['fi'] = array(
 	'masseditregex-tooltip-execute' => 'Käytä näitä muutoksia joka sivuun',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  * @author IAlex
  * @author Peter17
@@ -634,7 +634,7 @@ $messages['fr'] = array(
 	'right-masseditregex' => 'Remplacer le contenu de la page en utilisant des expressions régulières',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -826,7 +826,7 @@ Hlej [http://php.net/manual/de/function.preg-replace.php the PHP function preg_r
 	'right-masseditregex' => 'Wobsah strony z pomocu regularnych wurazow wuměnić',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dj
  * @author Glanthor Reviol
  */
@@ -870,7 +870,7 @@ A csere értékeket nem kell feloldójellel ellátni.',
 	'right-masseditregex' => 'Lap tartalmának lecserélése reguláris kifejezés segítségével',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -955,7 +955,7 @@ Nilai pengganti tidak boleh diloloskan.',
 	'masseditregex-tooltip-execute' => 'Terapkan perubahan ini ke setiap halaman',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  */
 $messages['it'] = array(
@@ -1099,7 +1099,7 @@ $messages['lb'] = array(
 	'masseditregex-tooltip-execute' => 'Dës Ännerungen op all Säit uwenden',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -1229,7 +1229,7 @@ Voor de te vervangen tekst is escapen niet nodig.',
 	'right-masseditregex' => 'Pagina-inhoud vervangen met behulp van reguliere expressies',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -1281,7 +1281,7 @@ $messages['pfl'] = array(
 	'masseditregex-matchtxt' => 'Such noch:',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  * @author Sp5uhe
  */
@@ -1379,7 +1379,7 @@ $messages['ps'] = array(
 	'masseditregex-listtype-intro' => 'دا يو لړليک دی د:',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  */
 $messages['pt'] = array(
@@ -1420,7 +1420,7 @@ Os valores de troca não devem ter o ''escape''.",
 	'masseditregex-tooltip-execute' => 'Aplicar estas alterações a cada página',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Giro720
  * @author Luckas Blade
  */
@@ -1462,7 +1462,7 @@ Os valores de troca não devem ser o escapados.',
 	'masseditregex-tooltip-execute' => 'Aplicar estas alterações a cada página',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Firilacroco
  * @author Stelistcristi
  */
@@ -1478,7 +1478,7 @@ $messages['ro'] = array(
 	'masseditregex-editfailed' => 'Editare eşuată',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Eleferen
  * @author Rubin
  * @author Александр Сигачёв
@@ -1523,7 +1523,7 @@ $messages['ru'] = array(
 	'right-masseditregex' => 'Заменить содержимое страницы, с помощью регулярных выражений',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
@@ -1551,7 +1551,7 @@ $messages['sr-ec'] = array(
 	'masseditregex-tooltip-execute' => 'Примени ове промене на сваку страну',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Rancher
  */
 $messages['sr-el'] = array(
@@ -1577,7 +1577,7 @@ $messages['sr-el'] = array(
 	'masseditregex-tooltip-execute' => 'Primeni ove promene na svaku stranu',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Dafer45
  * @author Per
  */
@@ -1672,7 +1672,7 @@ $messages['tr'] = array(
 	'masseditregex-tooltip-execute' => 'Bu değişiklikleri tüm sayfalara uygula',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Тест
  */
 $messages['uk'] = array(
@@ -1690,7 +1690,7 @@ $messages['vep'] = array(
 	'masseditregex-hint-headeffect' => 'Effekt',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Hydra
  * @author Yfdyh000
  */
@@ -1725,7 +1725,7 @@ $messages['zh-hans'] = array(
 	'right-masseditregex' => '使用正则表达式替换页面内容',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Mark85296341
  */
 $messages['zh-hant'] = array(
