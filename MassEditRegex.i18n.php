@@ -981,7 +981,9 @@ $messages['ja'] = array(
 	'action-masseditregex' => '一括して編集',
 	'masseditregex' => '正規表現を使用した大量編集',
 	'masseditregex-desc' => '正規表現を使って[[Special:MassEditRegex|大量のページを一度の操作で編集する]]',
-	'masseditregextext' => '一致用に1つ以上の正規表現（1行に1つ）と、置換用に1つ以上の正規表現を入力してください。1番目の一致用正規表現が一致に成功すると、1番目の置換用正規表現で置換されます。2番目以降も同様です。詳細は [http://php.net/manual/ja/function.preg-replace.php PHP 関数 preg_replace()] を参照してください。',
+	'masseditregextext' => '一致用に1つ以上の正規表現（1行に1つ）と、置換用に1つ以上の正規表現を入力してください。
+1番目の一致用正規表現が一致に成功すると、1番目の置換用正規表現で置換されます。2番目以降も同様です。
+詳細は [http://php.net/manual/ja/function.preg-replace.php PHP 関数 preg_replace()] を参照してください。',
 	'masseditregex-pagelisttxt' => '編集するページ (名前空間接頭辞は使わず):',
 	'masseditregex-matchtxt' => '一致用:',
 	'masseditregex-replacetxt' => '置換用:',
