@@ -232,7 +232,7 @@ $messages['az'] = array(
 	'masseditregex-matchtxt' => 'Axtarış üçün:',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -458,7 +458,7 @@ $messages['de-formal'] = array(
 	'masseditregex-err-nopages' => 'Sie müssen mindestens eine Seite festlegen, die geändert werden soll.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -655,7 +655,7 @@ $messages['frp'] = array(
 	'masseditregex-editfailed' => 'Èrror pendent l’èdicion :',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -784,7 +784,7 @@ $messages['he'] = array(
 	'right-masseditregex' => 'החלפת תוכן הדף באמצעות ביטויים רגולריים',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
