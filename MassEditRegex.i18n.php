@@ -1034,6 +1034,7 @@ $messages['ka'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'action-masseditregex' => 'Sigge em Pöngel en einem Rötsch övver <i lang="en">regular expressions</i> ändere',
 	'masseditregex' => 'Donn Sigge em Pöngel ändere, un dat övver <i lang="en">regular expressions</i>.',
 	'masseditregex-desc' => 'Deiht Sigge [[Special:MassEditRegex|em Pöngel en einem Rötsch ändere]], un dat övver <i lang="en">regular expressions</i>.',
 	'masseditregextext' => 'Jif ein <i lang="en">regular expression</i> pro Reih en, esu vill wi nüüdesch. Dohenger en desellve Reih schriif hen, woh jäähje dat jetuusch wääde sull, wat op di <i lang="en">regular expression</i> paß. De [http://de.php.net/manual/de/function.preg-replace.php Funxjuhn <code lang="en">preg_replace()</code> en dä Projammeer_Shprooch <i lang="en">PHP</i>] weed doför jebruch, un doh kam_mer och de Einzelheite janz jenou nohlässe.',
@@ -1066,6 +1067,7 @@ $messages['ksh'] = array(
 	'masseditregex-badregex' => 'Dat es en onjöltejje <i lang="en">regular expression</i>:',
 	'masseditregex-editfailed' => 'Dat Ändere is donevve jejange:',
 	'masseditregex-tooltip-execute' => 'Donn di Änderunge op jede Sigg maache',
+	'right-masseditregex' => 'Sigge övver <i lang="en">regular expressions</i> ändere',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -1622,6 +1624,7 @@ $messages['te'] = array(
  * @author AnakngAraw
  */
 $messages['tl'] = array(
+	'action-masseditregex' => 'magsagawa ng isang buntunang pamamatnugot',
 	'masseditregex' => 'Maramihang pamamatnugot na ginagamitan ng pangkaraniwang mga pagsasaad',
 	'masseditregex-desc' => 'Gamitin ang pangkaraniwang mga pagsasaad sa [[Special:MassEditRegex|pagpapatnugot ng maraming mga pahina sa loob ng isang pagsasagawa]]',
 	'masseditregextext' => 'Magpasok ng isa o mahigit pang pangkaraniwang mga pagsasaad (isa bawat guhit) para sa pagtutugma, at isa o mahigit pang mga pagsasaad upang pampalit. Ang unang pagtutugma ng pagsasaad, kung matagumpay, ay papalitan ng unang pamalit na pagtutugma, at mga kasunod pa. Tingnan ang [http://php.net/manual/tl/function.preg-replace.php the PHP function preg_replace()] para sa mga detalye.',
@@ -1655,6 +1658,7 @@ Hindi dapat matakasan ang kapalit na mga halaga.',
 	'masseditregex-badregex' => 'Hindi tanggap na regex:',
 	'masseditregex-editfailed' => 'Nabigo ang pagpatnugot:',
 	'masseditregex-tooltip-execute' => 'Gamitin ang mga pagbabagong ito sa bawat pahina',
+	'right-masseditregex' => 'Palitan ang mga nilalaman ng pahina na ginagamit ang pangkaraniwang mga pagpapahayag',
 );
 
 /** Turkish (Türkçe)
