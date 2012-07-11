@@ -1146,11 +1146,12 @@ $messages['mk'] = array(
 	'right-masseditregex' => 'Замена на содржини на страници користејќи регуларни изрази',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
+ * @author Event
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
+	'action-masseditregex' => 'utfør en masseredigering',
 	'masseditregex' => 'Masseredigering ved bruk av regulære uttrykk',
 	'masseditregex-desc' => 'Bruk regulære uttrykk for å [[Special:MassEditRegex|redigere mange sider i en handling]]',
 	'masseditregextext' => 'Skriv inn ett eller fler regulære uttrykk (en per linje) for treff, og ett eller flere uttrykk å erstatte hvert treff med.
@@ -1186,6 +1187,7 @@ Erstatningsverdiene bør ikke unnslippes.',
 	'masseditregex-badregex' => 'Ugyldig regulært uttrykk:',
 	'masseditregex-editfailed' => 'Endring feilet:',
 	'masseditregex-tooltip-execute' => 'Utfør disse endringene på hver side',
+	'right-masseditregex' => 'Erstatt sideinnholdet gjennom å bruke regulæruttrykk',
 );
 
 /** Dutch (Nederlands)
@@ -1685,7 +1687,7 @@ $messages['uk'] = array(
 	'masseditregex-hint-headreplace' => 'Заміна',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
