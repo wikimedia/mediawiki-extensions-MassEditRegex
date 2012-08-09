@@ -573,6 +573,21 @@ Los valores de reposición no deben excluirse.',
 	'right-masseditregex' => 'Reemplazar el contenido de las páginas utilizando expresiones regulares',
 );
 
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'masseditregex-matchtxt' => 'جستجو برای:',
+	'masseditregex-replacetxt' => 'جایگزینی با:',
+	'masseditregex-executebtn' => 'اجرا',
+	'masseditregex-num-changes' => '$1: $2 تغییر',
+	'masseditregex-page-not-exists' => '$1 وجود ندارد',
+	'masseditregex-num-articles-changed' => '$1 صفحه ویرایش شده',
+	'masseditregex-view-full-summary' => 'مشاهدهٔ خلاصهٔ ویرایش کامل',
+	'masseditregex-hint-headmatch' => 'مطابقت',
+	'masseditregex-hint-headreplace' => 'جایگزینی',
+);
+
 /** Finnish (suomi)
  * @author Crt
  * @author Str4nd
@@ -957,18 +972,46 @@ Nilai pengganti tidak boleh diloloskan.',
 
 /** Italian (italiano)
  * @author Beta16
+ * @author Darth Kule
  */
 $messages['it'] = array(
+	'action-masseditregex' => 'eseguire una modifica in massa',
+	'masseditregex' => 'Modifiche in massa utilizzando le espressioni regolari',
+	'masseditregex-desc' => 'Utilizza le espressioni regolari per [[Special:MassEditRegex|modificare molte pagina con una sola operazione]]',
+	'masseditregextext' => 'Inserire una o più espressioni regolari (uno per riga) per la corrispondenza e una o più espressioni con cui sostituire ogni corrispondenza.
+La prima espressione di corrispondenza, se avrà successo, sarà sostituito con la prima espressione di sostituzione e così via.
+Per dettagli, vedere [http://php.net/manual/en/function.preg-replace.php il PHP funzione preg_replace()].',
+	'masseditregex-pagelisttxt' => 'Pagine da modificare (non utilizzare il prefisso namespace:):',
 	'masseditregex-matchtxt' => 'Cerca per:',
 	'masseditregex-replacetxt' => 'Sostituisci con:',
 	'masseditregex-executebtn' => 'Esegui',
+	'masseditregex-err-nopages' => 'È necessario specificare almeno una pagina da modificare.',
 	'masseditregex-before' => 'Prima del',
 	'masseditregex-after' => 'Dopo il',
+	'masseditregex-max-preview-diffs' => "L'anteprima è stato limitata {{PLURAL:$1|alla prima corrispondenza|alle prime $1 corrispondenze}}.",
 	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|modifica|modifiche}}',
 	'masseditregex-page-not-exists' => '$1 non esiste',
 	'masseditregex-num-articles-changed' => '$1 {{PLURAL:$1|pagina|pagine}} modificate',
+	'masseditregex-view-full-summary' => "Visualizza il riepilogo dell'intera modifica",
+	'masseditregex-hint-intro' => 'Di seguito sono riportati alcuni suggerimenti ed esempi per svolgimento di operazioni comuni:',
+	'masseditregex-hint-headmatch' => 'Corrispondenza',
 	'masseditregex-hint-headreplace' => 'Sostituisci',
+	'masseditregex-hint-headeffect' => 'Effetto',
+	'masseditregex-hint-toappend' => 'Aggiungere del testo alla fine di una pagina, utile per aggiungere le pagine alle categorie',
+	'masseditregex-hint-remove' => "Rimuovere del testo da tutte le pagine nell'elenco",
+	'masseditregex-hint-removecat' => "Rimuovere tutte le categorie da una pagina (osservare l'escaping delle parentesi quadre nel codice wiki).
+I valori di sostituzione non devono avere l'escaping.",
+	'masseditregex-listtype-intro' => 'Questo è un elenco di:',
+	'masseditregex-listtype-pagenames' => 'Nomi di pagina (modificare queste pagine)',
+	'masseditregex-listtype-pagename-prefixes' => 'Prefissi di nomi delle pagine (modificare le pagine i cui nomi iniziano con questo testo)',
+	'masseditregex-listtype-categories' => 'Nomi di categoria (modificare tutte le pagine in queste categorie; la selezione del namespace è ignorata)',
+	'masseditregex-listtype-backlinks' => 'A ritroso (modificare pagine che puntano a queste)',
+	'masseditregex-namespace-intro' => 'Tutte queste pagine sono in questo namespace:',
+	'masseditregex-exprnomatch' => 'L\'espressione "$1" non ha corrispondenze in alcuna pagina.',
+	'masseditregex-badregex' => 'Regex non valida:',
+	'masseditregex-editfailed' => 'Modifica non riuscita:',
 	'masseditregex-tooltip-execute' => 'Applica queste modifiche ad ogni pagina',
+	'right-masseditregex' => 'Sostituisce il contenuto della pagina usando le espressioni regolari',
 );
 
 /** Japanese (日本語)
@@ -1735,6 +1778,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文（繁體）‬)
  * @author Mark85296341
+ * @author Simon Shek
  */
 $messages['zh-hant'] = array(
 	'masseditregex-matchtxt' => '查找：',
@@ -1743,6 +1787,7 @@ $messages['zh-hant'] = array(
 	'masseditregex-before' => '之前',
 	'masseditregex-after' => '之後',
 	'masseditregex-page-not-exists' => '$1 不存在',
+	'masseditregex-hint-headmatch' => '匹配',
 	'masseditregex-hint-headreplace' => '替換',
 	'masseditregex-hint-headeffect' => '影響',
 	'masseditregex-listtype-intro' => '這是一個列表：',
