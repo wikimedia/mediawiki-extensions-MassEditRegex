@@ -1064,6 +1064,10 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
+	'masseditregex-before' => 'მანამდე',
+	'masseditregex-after' => 'შემდეგ',
+	'masseditregex-page-not-exists' => '$1 არ არსებობს',
+	'masseditregex-hint-headreplace' => 'ჩანაცვლება',
 	'masseditregex-namespace-intro' => 'ყველა ეს გვერდი სახელთა სივრცეშია:',
 	'masseditregex-exprnomatch' => '„$1“ გამოხატვას არცერთი გვერდი არ შეესაბამება.',
 	'masseditregex-badregex' => 'არასწორი რეგულარული გამოხატვა:',
