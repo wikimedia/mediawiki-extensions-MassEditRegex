@@ -1429,6 +1429,7 @@ $messages['ps'] = array(
 	'masseditregex-matchtxt' => 'پلټنه د:',
 	'masseditregex-before' => 'دمخه',
 	'masseditregex-after' => 'وروسته',
+	'masseditregex-hint-headreplace' => 'ځايناستول',
 	'masseditregex-listtype-intro' => 'دا يو لړليک دی د:',
 );
 
@@ -1574,6 +1575,16 @@ $messages['ru'] = array(
 	'masseditregex-editfailed' => 'Ошибка редактирования:',
 	'masseditregex-tooltip-execute' => 'Применить эти изменения для каждой страницы',
 	'right-masseditregex' => 'Заменить содержимое страницы, с помощью регулярных выражений',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'masseditregex-before' => 'පෙර',
+	'masseditregex-after' => 'පසු',
+	'masseditregex-hint-headmatch' => 'ගළපන්න',
+	'masseditregex-hint-headreplace' => 'ප්‍රතිස්ථාපනය',
 );
 
 /** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
