@@ -573,6 +573,15 @@ Los valores de reposición no deben excluirse.',
 	'right-masseditregex' => 'Reemplazar el contenido de las páginas utilizando expresiones regulares',
 );
 
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'masseditregex-before' => 'Enne',
+	'masseditregex-after' => 'Pärast',
+	'masseditregex-namespace-intro' => 'Kõik need lehed on selles nimeruumis:',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  */
