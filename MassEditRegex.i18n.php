@@ -1541,6 +1541,17 @@ $messages['ro'] = array(
 	'masseditregex-editfailed' => 'Editare eşuată',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'masseditregex-hint-headmatch' => 'Combronde',
+	'masseditregex-hint-headreplace' => 'Sostituisce',
+	'masseditregex-hint-headeffect' => 'Effette',
+	'masseditregex-badregex' => 'Regex invalide:',
+	'masseditregex-editfailed' => 'Cangiamende fallite:',
+);
+
 /** Russian (русский)
  * @author Eleferen
  * @author Rubin
