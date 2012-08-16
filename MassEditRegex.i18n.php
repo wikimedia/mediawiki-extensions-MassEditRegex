@@ -582,6 +582,13 @@ $messages['et'] = array(
 	'masseditregex-namespace-intro' => 'Kõik need lehed on selles nimeruumis:',
 );
 
+/** Basque (euskara)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['eu'] = array(
+	'masseditregex-hint-headreplace' => 'Ordezkatu',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  */
@@ -1809,6 +1816,13 @@ $messages['vep'] = array(
 	'masseditregex-before' => 'Edel',
 	'masseditregex-after' => "Jäl'ges",
 	'masseditregex-hint-headeffect' => 'Effekt',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['vi'] = array(
+	'masseditregex-hint-headreplace' => 'Thay thế',
 );
 
 /** Simplified Chinese (‪中文（简体）‬)
