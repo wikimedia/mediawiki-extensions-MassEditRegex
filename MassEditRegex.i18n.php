@@ -605,10 +605,13 @@ $messages['fa'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Beluga
  * @author Crt
  * @author Str4nd
  */
 $messages['fi'] = array(
+	'masseditregex-matchtxt' => 'Etsi seuraavaa:',
+	'masseditregex-replacetxt' => 'Korvaa seuraavalla:',
 	'masseditregex-executebtn' => 'Suorita',
 	'masseditregex-before' => 'Ennen',
 	'masseditregex-after' => 'Jälkeen',
@@ -1805,6 +1808,21 @@ $messages['tr'] = array(
  */
 $messages['uk'] = array(
 	'masseditregex-hint-headreplace' => 'Заміна',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'masseditregex-executebtn' => 'پتھروں سے',
+	'masseditregex-err-nopages' => 'آپ کو تبدیل کرنے کے لئے کم از کم ایک صفحے کی وضاحت کرنا ہوگا.',
+	'masseditregex-before' => 'اس سے پہلے',
+	'masseditregex-after' => 'کے بعد',
+	'masseditregex-hint-headmatch' => 'میچ',
+	'masseditregex-hint-headreplace' => 'کو تبدیل',
+	'masseditregex-editfailed' => 'ترمیم کریں ناکام ہوگئی:',
+	'masseditregex-tooltip-execute' => 'ہر صفحے میں ان تبدیلیوں کا اطلاق',
+	'right-masseditregex' => 'صفحہ کے مشمولات باقاعدہ اظہار کا استعمال کرتے ہوئے تبدیل',
 );
 
 /** Veps (vepsän kel’)
