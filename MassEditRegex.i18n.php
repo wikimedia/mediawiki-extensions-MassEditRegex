@@ -1040,7 +1040,7 @@ I valori di sostituzione non devono avere l'escaping.",
  * @author 青子守歌
  */
 $messages['ja'] = array(
-	'action-masseditregex' => '一括して編集',
+	'action-masseditregex' => '一括編集の実行',
 	'masseditregex' => '正規表現を使用した大量編集',
 	'masseditregex-desc' => '正規表現を使って[[Special:MassEditRegex|大量のページを一度の操作で編集する]]',
 	'masseditregextext' => '一致用に1つ以上の正規表現（1行に1つ）と、置換用に1つ以上の正規表現を入力してください。
