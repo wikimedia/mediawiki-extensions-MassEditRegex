@@ -394,6 +394,13 @@ $messages['ca'] = array(
 	'masseditregex-listtype-pagenames' => 'Noms de les pàgines (editeu aquestes pàgines)',
 );
 
+/** Sorani Kurdish (کوردی)
+ * @author Calak
+ */
+$messages['ckb'] = array(
+	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|گۆڕانکاری|گۆڕانکارییەکان}}',
+);
+
 /** Czech (česky) */
 $messages['cs'] = array(
 	'masseditregex-matchtxt' => 'Najít:',
