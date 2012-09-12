@@ -398,7 +398,7 @@ $messages['ca'] = array(
  * @author Calak
  */
 $messages['ckb'] = array(
-	'masseditregex-num-changes' => '$1: $2 گۆڕانکاریی',
+	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|گۆڕانکاریی|گۆڕانکاریی}}',
 );
 
 /** Czech (česky) */
