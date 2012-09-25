@@ -456,7 +456,7 @@ Die Ersetzungswerte sollten nicht ausgelassen werden.',
 	'right-masseditregex' => 'Textersetzungen mit regulären Ausdrücken durchführen',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Imre
  * @author Kghbln
  * @author LWChris
