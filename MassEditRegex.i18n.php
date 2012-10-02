@@ -232,7 +232,7 @@ $messages['az'] = array(
 	'masseditregex-matchtxt' => 'Axtarış üçün:',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -1220,7 +1220,7 @@ $messages['mk'] = array(
 	'right-masseditregex' => 'Замена на содржини на страници користејќи регуларни изрази',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Event
  * @author Nghtwlkr
  */
@@ -1634,7 +1634,7 @@ $messages['si'] = array(
 	'masseditregex-hint-headreplace' => 'ප්‍රතිස්ථාපනය',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
@@ -1662,7 +1662,7 @@ $messages['sr-ec'] = array(
 	'masseditregex-tooltip-execute' => 'Примени ове промене на сваку страну',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Rancher
  */
 $messages['sr-el'] = array(
@@ -1868,7 +1868,7 @@ $messages['vi'] = array(
 	'right-masseditregex' => 'Thay thế nội dung trang dùng biểu thức chính quy',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  * @author Yfdyh000
  */
