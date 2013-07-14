@@ -11,50 +11,53 @@ if ( ! defined( 'MEDIAWIKI' ) )
  * @link http://www.mediawiki.org/wiki/Extension:MassEditRegex Documentation
  *
  * @author Adam Nielsen <malvineous@shikadi.net>
- * @copyright Copyright © 2009 Adam Nielsen
+ * @copyright Copyright © 2009,2013 Adam Nielsen
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-// Maximum number of pages/diffs to display when previewing the changes
-define('MER_MAX_PREVIEW_DIFFS', 10);
+/// Maximum number of pages/diffs to display when previewing the changes
+define('MER_MAX_PREVIEW_DIFFS', 20);
 
-// Maximum number of pages to edit *for each name in page list*.  No more than
-// 500 (5000 for bots) is allowed according to MW API docs.
+/// Maximum number of pages to edit.
 define('MER_MAX_EXECUTE_PAGES', 1000);
 
 /** Main class that define a new special page*/
 class MassEditRegex extends SpecialPage {
-	private $aPageList;
-	private $strPageListType;
-	private $iNamespace;
-	private $aMatch;
-	private $aReplace;
-	private $strReplace; // keep to avoid having to re-escape again
-	private $strSummary;
-	private $sk;
+	private $aPageList;       ///< Array of string - user-supplied page titles
+	private $strPageListType; ///< Type of titles (categories, backlinks, etc.)
+	private $strMatch;        ///< Match regex from form
+	private $strReplace;      ///< Substitution regex from form
+	private $aMatch;          ///< $strMatch exploded into array
+	private $aReplace;        ///< $strReplace exploded into array
+	private $strSummary;      ///< Edit summary
+	private $sk;              ///< Skin instance
+	private $diff;            ///< Access to diff engine
 
 	function __construct() {
 		parent::__construct( 'MassEditRegex', 'masseditregex' );
 	}
 
+	/// Run the regexes.
 	function execute( $par ) {
-		global $wgUser, $wgRequest, $wgOut;
+		global $wgUser;
+
+		$wgOut = $this->getOutput();
 
 		$this->setHeaders();
 
-		# Check permissions
+		// Check permissions
 		if ( !$wgUser->isAllowed( 'masseditregex' ) ) {
 			$this->displayRestrictionError();
 			return;
 		}
 
-		# Show a message if the database is in read-only mode
+		// Show a message if the database is in read-only mode
 		if ( wfReadOnly() ) {
 			$wgOut->readOnlyPage();
 			return;
 		}
 
-		# If user is blocked, s/he doesn't need to access this page
+		// If user is blocked, s/he doesn't need to access this page
 		if ( $wgUser->isBlocked() ) {
 			$wgOut->blockedPage();
 			return;
@@ -62,16 +65,17 @@ class MassEditRegex extends SpecialPage {
 
 		$this->outputHeader();
 
+		$wgRequest = $this->getRequest();
 		$strPageList = $wgRequest->getText( 'wpPageList', 'Sandbox' );
 		$this->aPageList = explode("\n", trim($strPageList));
 		$this->strPageListType = $wgRequest->getText( 'wpPageListType', 'pagenames' );
 
 		$this->iNamespace = $wgRequest->getInt( 'namespace', NS_MAIN );
 
-		$strMatch = $wgRequest->getText( 'wpMatch', '/hello (.*)\n/' );
-		$this->aMatch = explode("\n", trim($strMatch));
+		$this->strMatch = $wgRequest->getText( 'wpMatch', '/hello (.*)\n/' );
+		$this->aMatch = explode("\n", trim($this->strMatch));
 
-		$this->strReplace = $wgRequest->getText( 'wpReplace', 'goodbye \1' );
+		$this->strReplace = $wgRequest->getText( 'wpReplace', 'goodbye $1' );
 		$this->aReplace = explode("\n", $this->strReplace);
 
 		$this->strSummary = $wgRequest->getText( 'wpSummary', '' );
@@ -93,11 +97,7 @@ class MassEditRegex extends SpecialPage {
 		}
 
 		if ( $wgRequest->wasPosted() ) {
-			if ($wgRequest->getCheck( 'wpPreview' ) ) {
-				$this->showPreview();
-			} elseif ( $wgRequest->getCheck('wpSave') ) {
-				$this->perform();
-			}
+			$this->perform( !$wgRequest->getCheck('wpSave') );
 		} else {
 			$this->showForm();
 			$this->showHints();
@@ -105,12 +105,9 @@ class MassEditRegex extends SpecialPage {
 
 	}
 
-	function showForm( $err = '' ) {
-		global $wgOut;
-
-		if ( $err ) {
-			$wgOut->addHTML('<div class="wikierror">' . htmlspecialchars($err) . '</div>');
-		}
+	/// Display the form requesting the regexes from the user.
+	function showForm() {
+		$wgOut = $this->getOutput();
 
 		$wgOut->addWikiMsg( 'masseditregextext' );
 		$titleObj = SpecialPage::getTitleFor( 'MassEditRegex' );
@@ -128,10 +125,6 @@ class MassEditRegex extends SpecialPage {
 				'wpPageList',
 				join( "\n", $this->aPageList )
 			) .
-			Xml::namespaceSelector(
-				$this->iNamespace, null, 'namespace', wfMsg( 'masseditregex-namespace-intro' )
-			) .
-			Xml::element('br') .
 			Xml::element('span',
 				null, wfMsg( 'masseditregex-listtype-intro' )
 			) .
@@ -173,7 +166,7 @@ class MassEditRegex extends SpecialPage {
 						Xml::element('p', null, wfMsg( 'masseditregex-matchtxt' )) .
 						Xml::textarea(
 							'wpMatch',
-							join( "\n", $this->aMatch )
+							$this->strMatch  // use original value
 						) .
 					Xml::closeElement('td') .
 					Xml::openElement('td') .
@@ -242,6 +235,7 @@ class MassEditRegex extends SpecialPage {
 		$wgOut->addHTML( Xml::closeElement('form') );
 	}
 
+	/// Show a short table of regex examples.
 	function showHints() {
 		global $wgOut;
 
@@ -265,15 +259,20 @@ class MassEditRegex extends SpecialPage {
 					wfMsg( 'masseditregex-hint-toappend' )
 				),
 				array(
-					'{{OldTemplate}}',
+					'/{{OldTemplate}}/',
 					'',
 					wfMsg( 'masseditregex-hint-remove' )
 				),
 				array(
-					'\\[\\[Category:[^]]+\]\]',
+					'/\\[\\[Category:[^]]+\]\]/',
 					'',
 					wfMsg( 'masseditregex-hint-removecat' )
-				)
+				),
+				array(
+					'/(\\[\\[[^]]*\\|[^]]*)AAA(.*\\]\\])/',
+					'$1BBB$2',
+					wfMsg( 'masseditregex-hint-renamelink' )
+				),
 			),
 
 			// Table attributes
@@ -292,197 +291,212 @@ class MassEditRegex extends SpecialPage {
 
 	}
 
-	function showPreview() {
-		$this->perform( false );
-		return;
-	}
+	/// Apply all the regexes to a single page.
+	/**
+	 * @param Title $title
+	 *   Page to alter (or preview.)
+	 *
+	 * @param bool $isPreview
+	 *   true to generate a diff, false to alter the page content.
+	 *
+	 * @param string $htmlDiff
+	 *   On return, contains HTML for the diff, if $isPreview was true.
+	 *
+	 * @return true on success, false if the page could not be found.
+	 *
+	 * @throw UsageException if the regex was invalid.
+	 */
+	function editPage( $title, $isPreview, &$htmlDiff ) {
+		global $wgOut, $wgLang, $wgUser;
 
-	// Run a single request and return the page data
-	function runRequest($aRequestVars)
-	{
-		$req = new FauxRequest( $aRequestVars, false );
-		$processor = new ApiMain( $req, true );
-		$processor->execute();
-		$aPages = $processor->getResultData();
-		if ( empty( $aPages ) ) return null; // no pages match the titles given
-		return $aPages['query']['pages'];
-	}
+		$article = new Article($title);
+		$rev = Revision::newFromTitle($title, 0, Revision::READ_LATEST);
+		if (!$rev) return false;
+		$content = $rev->getContent(Revision::FOR_THIS_USER, $wgUser);
+		if (!$content) return false;
+		$curText = $content->getNativeData();
 
-	// Run a bunch of requests (changing the $strValue parameter to each value
-	// of $aValues in turn) and return the combined page data.
-	function runMultiRequest($aRequestVars, $strVariable, $aValues, &$aErrors)
-	{
-		$aPageData = array();
-		foreach ($aValues as $strValue) {
-			$aRequestVars[$strVariable] = $strValue;
-			$aMoreData = $this->runRequest($aRequestVars);
-			if ($aMoreData)
-				$aPageData = array_merge($aPageData, $aMoreData);
-			else
-				$aErrors[] = htmlspecialchars( wfMsg( 'masseditregex-exprnomatch', $strValue ) );
+		$iCount = 0;
+		$newText = $curText;
+		foreach ( $this->aMatch as $i => $strMatch ) {
+			$this->strNextReplace = $this->aReplace[$i];
+			$result = @preg_replace_callback( $strMatch,
+				function ( $aMatches ) {
+					$strFind = array();
+					$strReplace = array();
+					foreach ($aMatches as $i => $strMatch) {
+						$aFind[] = '$' . $i;
+						$aReplace[] = $strMatch;
+					}
+					return str_replace($aFind, $aReplace, $this->strNextReplace);
+				}, $newText, -1, $iCount );
+			if ($result !== null) {
+				$newText = $result;
+			} else {
+				throw new UsageException( wfMsg( 'masseditregex-badregex' ) . ' <b>'
+					. htmlspecialchars( $strMatch ) . '</b>', 'masseditregex-badregex' );
+			}
 		}
-		return $aPageData;
-	}
 
-	function getPages(&$aErrors, $iMaxPerCriterion) {
-		global $wgContLang; // for mapping namespace numbers to localised name
-		if ( !count( $this->aPageList ) ) return null;
+		if ( $isPreview ) {
+			// In preview mode, display the first few diffs
+			$this->diff->setText( $curText, $newText );
+			$htmlDiff .= $this->diff->getDiff( '<b>'
+				. htmlspecialchars( $title->getPrefixedText() ) . ' - '
+				. wfMsg('masseditregex-before') . '</b>',
+				'<b>' . wfMsg('masseditregex-after') . '</b>' );
+		} else {
+			// Not in preview mode, make the edits
+			$wgOut->addHTML( '<li>' . wfMsg( 'masseditregex-num-changes',
+					htmlspecialchars( $title->getPrefixedText() ), $iCount ) . '</li>' );
 
-		// Default vars for all page list types
-		$aRequestVars = array(
-			'action' => 'query',
-			'prop' => 'info|revisions',
-			'intoken' => 'edit',
-			'rvprop' => 'content',
-			//'rvlimit' => 1  // most recent revision only
-		);
-		switch ($this->strPageListType) {
-			case 'pagenames': // Can do this in one hit
-				$strNamespace = $wgContLang->getNsText($this->iNamespace) . ':';
-				$aRequestVars['titles'] = $strNamespace . join( '|' . $strNamespace,
-					$this->aPageList );
-				return $this->runRequest($aRequestVars);
-
-			case 'pagename-prefixes':
-				$aRequestVars['generator'] = 'allpages';
-				$aRequestVars['gapnamespace'] = $this->iNamespace;
-				$aRequestVars['gaplimit'] = $iMaxPerCriterion;
-				return $this->runMultiRequest($aRequestVars, 'gapprefix',
-					$this->aPageList, $aErrors);
-
-			case 'categories':
-				$aRequestVars['generator'] = 'categorymembers';
-				$aRequestVars['gcmlimit'] = $iMaxPerCriterion;
-
-				// This generator must have "Category:" on the start of each category
-				// name, so append it to all the pages we've been given if it's missing
-				foreach ($this->aPageList as &$p)
-					$p = Title::newFromText($p, NS_CATEGORY);
-
-				$retVar = $this->runMultiRequest($aRequestVars, 'gcmtitle',
-					$this->aPageList, $aErrors);
-
-				// Remove all the 'Category:' prefixes again for consistency
-				foreach ($this->aPageList as &$p) $p = $p->getText();
-				return $retVar;
-
-			case 'backlinks':
-				$aRequestVars['generator'] = 'backlinks';
-				$aRequestVars['gblnamespace'] = $this->iNamespace;
-				$aRequestVars['gbllimit'] = $iMaxPerCriterion;
-				return $this->runMultiRequest($aRequestVars, 'gbltitle',
-					$this->aPageList, $aErrors);
+			if ( strcmp( $curText, $newText ) != 0 ) {
+				$newContent = new WikitextContent( $newText );
+				$article->doEditContent( $newContent, $this->strSummary,
+					EDIT_UPDATE | EDIT_FORCE_BOT | EDIT_DEFER_UPDATES,
+					$rev->getId() );
+			}
 		}
-		return null;
+		return true;
 	}
 
-	public function regexCallback( $aMatches ) {
-		$strFind = array();
-		$strReplace = array();
-		foreach ($aMatches as $i => $strMatch) {
-			$aFind[] = '$' . $i;
-			$aReplace[] = $strMatch;
-		}
-		return str_replace($aFind, $aReplace, $this->strNextReplace);
-	}
-
-	function perform( $bPerformEdits = true ) {
+	/// Perform the regex process.
+	/**
+	 * @param bool $isPreview
+	 *   true to generate diffs, false to perform page edits.
+	 */
+	function perform( $isPreview ) {
 		global $wgRequest, $wgOut, $wgUser, $wgTitle, $wgLang;
 
-		$iMaxPerCriterion = $bPerformEdits ? MER_MAX_EXECUTE_PAGES : MER_MAX_PREVIEW_DIFFS;
-		$aErrors = array();
-		$aPages = $this->getPages($aErrors, $iMaxPerCriterion);
-		if ( $aPages === null ) {
-			$this->showForm( wfMsg( 'masseditregex-err-nopages' ) );
-			return;
+		$pageCountLimit = $isPreview ? MER_MAX_PREVIEW_DIFFS : MER_MAX_EXECUTE_PAGES;
+		$errors = array();
+
+		if ( $isPreview ) {
+			$this->diff = new DifferenceEngine();
+			$this->diff->showDiffStyle(); // send CSS link to the browser for diff colours
+			$htmlDiff = '';
+		} else {
+			$wgOut->addHTML( '<ul>' );
 		}
-
-		// Show the form again ready for further editing if we're just previewing
-		if (!$bPerformEdits) $this->showForm();
-
-		$diff = new DifferenceEngine();
-		$diff->showDiffStyle(); // send CSS link to the browser for diff colours
-
-		$wgOut->addHTML( '<ul>' );
-
-		if (count($aErrors))
-			$wgOut->addHTML( '<li>' . join( '</li><li> ', $aErrors) . '</li>' );
-
-		$htmlDiff = '';
-
-		$editToken = $wgUser->editToken();
 
 		$iArticleCount = 0;
-		foreach ( $aPages as $p ) {
-			$iArticleCount++;
-			if ( !isset( $p['revisions'] ) ) {
-				$wgOut->addHTML( '<li>'
-					. wfMsg( 'masseditregex-page-not-exists', $p['title'] )
-					. '</li>' );
-				continue; // empty page
-			}
-			$curContent = $p['revisions'][0]['*'];
-			$iCount = 0;
-			$newContent = $curContent;
-			foreach ($this->aMatch as $i => $strMatch) {
-				$this->strNextReplace = $this->aReplace[$i];
-				$result = @preg_replace_callback( $strMatch,
-					array($this, 'regexCallback'), $newContent, -1, $iCount );
-				if ($result !== null) $newContent = $result;
-				else {
-					$strErrorMsg = '<li>' . wfMsg( 'masseditregex-badregex' ) . ' <b>'
-						. htmlspecialchars($strMatch) . '</b></li>';
-					$wgOut->addHTML( $strErrorMsg );
-					unset($this->aMatch[$i]);
+		try {
+			foreach ( $this->aPageList as $pageTitle ) {
+				$titleArray = array();
+				switch ($this->strPageListType) {
+					case 'pagenames': // Can do this in one hit
+						$t = Title::newFromText( $pageTitle );
+						if ( !$t || !$this->editPage( $t, $isPreview, $htmlDiff ) ) {
+							$errors[] = wfMsg( 'masseditregex-page-not-exists',
+								htmlspecialchars( $pageTitle ) );
+						}
+						$iArticleCount++;
+						break;
+
+					case 'pagename-prefixes':
+						$titles = PrefixSearch::titleSearch( $pageTitle,
+							$pageCountLimit - $iArticleCount );
+						if ( empty( $titles ) ) {
+							$errors[] = wfMsg( 'masseditregex-exprnomatch',
+								htmlspecialchars( $pageTitle ) );
+							$iArticleCount++;
+							continue;
+						}
+
+						foreach ( $titles as $title ) {
+							$t = Title::newFromText( $title );
+							if ( !$t ) {
+								$errors[] = wfMsg( 'masseditregex-page-not-exists', $title );
+							} else {
+								$titleArray[] = $t;
+							}
+						}
+						break;
+
+					case 'categories':
+						$cat = Category::newFromName($pageTitle);
+						if ( $cat === false ) {
+							$errors[] = wfMsg( 'masseditregex-page-not-exists',
+								htmlspecialchars( $pageTitle ) );
+							break;
+						}
+						$titleArray = $cat->getMembers($pageCountLimit - $iArticleCount);
+						break;
+
+					case 'backlinks':
+						$t = Title::newFromText($pageTitle);
+						if ( !$t ) {
+							if ( $isPreview ) {
+								$errors[] = wfMsg( 'masseditregex-page-not-exists',
+									htmlspecialchars( $pageTitle ) );
+							}
+							continue;
+						}
+						$blc = $t->getBacklinkCache();
+						if ( $t->getNamespace() == NS_TEMPLATE ) {
+							// Backlinks for Template pages are in a different table
+							$table = 'templatelinks';
+						} else {
+							$table = 'pagelinks';
+						}
+						$titleArray = $blc->getLinks($table, false, false,
+							$pageCountLimit - $iArticleCount);
+						break;
 				}
-			}
 
-			if ( $bPerformEdits ) {
-				// Not in preview mode, make the edits
-				$wgOut->addHTML( '<li>' . wfMsg( 'masseditregex-num-changes',
-					$p['title'], $iCount ) . '</li>' );
-
-				$req = new DerivativeRequest( $wgRequest, array(
-					'action' => 'edit',
-					'bot' => true,
-					'title' => $p['title'],
-					'summary' => $this->strSummary,
-					'text' => $newContent,
-					'basetimestamp' => $p['starttimestamp'],
-					'watchlist' => 'nochange',
-					'nocreate' => 1,
-					'token' => $editToken,
-				), true );
-				$processor = new ApiMain( $req, true );
-				try {
-					$processor->execute();
-				} catch ( UsageException $e ) {
-					$wgOut->addHTML('<li><ul><li>' . wfMsg( 'masseditregex-editfailed')
-						. ' ' . $e . '</li></ul></li>'
-					);
+				// If the above switch produced an array of pages, run through them now
+				foreach ( $titleArray as $target ) {
+					if ( !$this->editPage( $target, $isPreview, $htmlDiff ) ) {
+						$errors[] = wfMsg( 'masseditregex-page-not-exists',
+							htmlspecialchars( $target->getPrefixedText() ) );
+					}
+					$iArticleCount++;
+					if ( $iArticleCount >= $pageCountLimit ) {
+						$htmlDiff .= Xml::element('p', null,
+							wfMsg( 'masseditregex-max-preview-diffs',
+								$wgLang->formatNum( $pageCountLimit )
+							)
+						);
+					}
 				}
-			} else {
-				// In preview mode, display the first few diffs
-				$diff->setText( $curContent, $newContent );
-				$htmlDiff .= $diff->getDiff( '<b>' . $p['title'] . ' - '
-					. wfMsg('masseditregex-before') . '</b>',
-					'<b>' . wfMsg('masseditregex-after') . '</b>' );
 
-				if ( $iArticleCount >= MER_MAX_PREVIEW_DIFFS ) {
-					$htmlDiff .= Xml::element('p', null,
-						wfMsg( 'masseditregex-max-preview-diffs',
-							$wgLang->formatNum(MER_MAX_PREVIEW_DIFFS)
-						)
-					);
-					break;
-				}
 			}
+		} catch (UsageException $e) {
+			$errors[] = $e;
 
+			// Force a preview if there was a bad regex
+			if ( !$isPreview ) {
+				$wgOut->addHTML( '</ul>' );
+			}
+			$isPreview = true;
 		}
 
-		$wgOut->addHTML( '</ul>' );
+		if ( !$isPreview ) {
+			$wgOut->addHTML( '</ul>' );
+		}
 
-		if ( $bPerformEdits ) {
+		if ( ( $iArticleCount == 0 ) && empty( $errors ) ) {
+			$errors[] = wfMsg( 'masseditregex-err-nopages' );
+			// Force a preview if there was nothing to do
+			$isPreview = true;
+		}
+
+		if ( !empty($errors ) ) {
+			$wgOut->addHTML( '<div class="errorbox">' );
+			$wgOut->addHTML( wfMsg( 'masseditregex-editfailed' ) );
+
+			$wgOut->addHTML( '<ul><li>' );
+			$wgOut->addHTML( join( '</li><li> ', $errors) );
+			$wgOut->addHTML( '</li></ul></div>' );
+		}
+
+		if ( $isPreview ) {
+			// Show the form again ready for further editing if we're just previewing
+			$this->showForm();
+
+			// Show the diffs now (after any errors)
+			$wgOut->addHTML( $htmlDiff );
+		} else {
 			$wgOut->addWikiMsg( 'masseditregex-num-articles-changed', $iArticleCount );
 			$wgOut->addHTML(
 				$this->sk->makeKnownLinkObj(
@@ -490,10 +504,56 @@ class MassEditRegex extends SpecialPage {
 					wfMsgHtml( 'masseditregex-view-full-summary' )
 				)
 			);
-		} else {
-			// Only previewing, show the diffs now (after any errors)
-			$wgOut->addHTML($htmlDiff);
 		}
 	}
-}
 
+	public static function efSkinTemplateNavigationUniversal( &$sktemplate, &$links )
+	{
+		global $wgTitle;
+		if ( !is_object( $wgTitle ) ) return;
+
+		$ns = $wgTitle->getNamespace();
+		if ( $ns == NS_CATEGORY ) {
+			$url = SpecialPage::getTitleFor( 'MassEditRegex' )->getLocalURL(
+				array(
+					'wpPageList' => $wgTitle->getText(),
+					'wpPageListType' => 'categories',
+				)
+			);
+		} elseif (
+			( $ns == NS_SPECIAL )
+			&& ( $wgTitle->isSpecial( 'Whatlinkshere' ) )
+		) {
+			$titleParts = SpecialPageFactory::resolveAlias($wgTitle->getText());
+
+			$url = SpecialPage::getTitleFor( 'MassEditRegex' )->getLocalURL(
+				array(
+					'wpPageList' => $titleParts[1],
+					'wpPageListType' => 'backlinks',
+				)
+			);
+		} else {
+			// No tab
+			return true;
+		}
+
+		$links['views']['masseditregex'] = array(
+			'class' => false,
+			'text' => wfMessage('masseditregex-editall')->text(),
+			'href' => $url,
+			'context' => 'main',
+		);
+		return true;
+	}
+
+	public static function efBaseTemplateToolbox( &$tpl, &$toolbox ) {
+		global $wgTitle;
+		if ( !$wgTitle->isSpecial( 'MassEditRegex' ) ) return true;
+
+		// Hide the 'printable version' link as the shortcut key conflicts with
+		// the preview button.
+		unset($toolbox['print']);
+		return true;
+	}
+
+}

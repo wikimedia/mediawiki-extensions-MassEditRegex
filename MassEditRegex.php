@@ -11,14 +11,14 @@ if ( ! defined( 'MEDIAWIKI' ) )
  * @link http://www.mediawiki.org/wiki/Extension:MassEditRegex Documentation
  *
  * @author Adam Nielsen <malvineous@shikadi.net>
- * @copyright Copyright © 2009 Adam Nielsen
+ * @copyright Copyright © 2009,2013 Adam Nielsen
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'Mass Edit via Regular Expressions',
-	'version' => 'r4',
+	'version' => 'r6',
 	'author' => 'Adam Nielsen',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MassEditRegex',
 	'descriptionmsg' => 'masseditregex-desc'
@@ -33,3 +33,6 @@ $wgSpecialPageGroups['MassEditRegex'] = 'pagetools';
 
 // Required permission to use Special:MassEditRegex
 $wgAvailableRights[] = 'masseditregex';
+
+$wgHooks['SkinTemplateNavigation::Universal'][] = 'MassEditRegex::efSkinTemplateNavigationUniversal';
+$wgHooks['BaseTemplateToolbox'][] = 'MassEditRegex::efBaseTemplateToolbox';
