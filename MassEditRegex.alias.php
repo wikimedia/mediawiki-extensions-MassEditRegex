@@ -33,7 +33,7 @@ $specialPageAliases['mk'] = array(
 	'MassEditRegex' => array( 'РегуларенИзразЗаМасовноУредување' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'MassEditRegex' => array( 'Bulk_regex_bewarken' ),
 );
