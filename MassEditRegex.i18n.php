@@ -61,14 +61,95 @@ The replacement values should not be escaped.',
  * @author Fryed-peach
  * @author Kghbln
  * @author Purodha
+ * @author Shirayuki
  * @author Siebrand
  */
 $messages['qqq'] = array(
 	'action-masseditregex' => '{{doc-action|masseditregex}}',
-	'masseditregex-desc' => '{{desc}}',
+	'masseditregex' => '{{doc-special|MassEditRegex}}',
+	'masseditregex-desc' => '{{desc|name=Mass Edit Regex|url=http://www.mediawiki.org/wiki/Extension:MassEditRegex}}',
 	'masseditregextext' => 'Replace <code>/en/</code> in the middle in link <code>http://php.net/manual/en/function.preg-replace.php</code> with your language code between slashes, if that page exists. Otherwise leave it as is to link to the English documentation, or choose an appropriate fallback language code.',
-	'masseditregex-hint-headmatch' => "Noun. This is a column header for the 'match' regexes.",
-	'masseditregex-hint-headreplace' => '{{Identical|Replace}}',
+	'masseditregex-pagelisttxt' => 'Used as label for the "Page list" textarea.',
+	'masseditregex-matchtxt' => 'Used as label for the "Match-RegEx" textarea.',
+	'masseditregex-replacetxt' => 'Used as label for the "Replace-RegEx" textarea.',
+	'masseditregex-executebtn' => 'Used as label for the Submit button.
+
+See also:
+* {{msg-mw|Accesskey-save}} - access key
+* {{msg-mw|masseditregex-tooltip-execute}} - tooltip
+{{Identical|Execute}}',
+	'masseditregex-err-nopages' => 'Used as error message.',
+	'masseditregex-before' => '{{Identical|Before}}',
+	'masseditregex-after' => '{{Identical|After}}',
+	'masseditregex-max-preview-diffs' => 'Parameters:
+* $1 - number of matches (page count limit)',
+	'masseditregex-num-changes' => 'Parameters:
+* $1 - page title
+* $2 - number of changes',
+	'masseditregex-page-not-exists' => 'Used as error message. Parameters:
+* $1 - page title',
+	'masseditregex-num-articles-changed' => 'Followed by a link to [[Special:Contributions]]. Its link text is {{msg-mw|Masseditregex-view-full-summary}}.
+
+Parameters:
+* $1 - number of pages',
+	'masseditregex-view-full-summary' => 'Used as link text. The link points to [[Special:Contributions]].
+
+Preceded by the message {{msg-mw|Masseditregex-num-articles-changed}}.',
+	'masseditregex-hint-intro' => 'Used as intro text for the Hints table.',
+	'masseditregex-hint-headmatch' => "Noun. This is a column header for the 'match' regexes.
+
+See also:
+* {{msg-mw|Masseditregex-hint-headreplace}}
+* {{msg-mw|Masseditregex-hint-headeffect}}
+{{Identical|Match}}",
+	'masseditregex-hint-headreplace' => 'Used as table column heading.
+
+See also:
+* {{msg-mw|Masseditregex-hint-headmatch}}
+* {{msg-mw|Masseditregex-hint-headeffect}}
+{{Identical|Replace}}',
+	'masseditregex-hint-headeffect' => 'Used as table column heading.
+
+See also:
+* {{msg-mw|Masseditregex-hint-headmatch}}
+* {{msg-mw|Masseditregex-hint-headreplace}}
+{{Identical|Effect}}',
+	'masseditregex-hint-toappend' => 'Used as a hint in the hints table.
+{{Related|Masseditregex-hint}}',
+	'masseditregex-hint-remove' => 'Used as a hint in the hints table.
+{{Related|Masseditregex-hint}}',
+	'masseditregex-hint-removecat' => 'Used as a hint in the hints table.
+{{Related|Masseditregex-hint}}',
+	'masseditregex-hint-renamelink' => 'Used as a hint in the hints table.
+{{Related|Masseditregex-hint}}',
+	'masseditregex-listtype-intro' => 'Used as label for the radio boxes group.
+
+See also:
+* {{msg-mw|Masseditregex-listtype-pagenames}}
+* {{msg-mw|Masseditregex-listtype-pagename-prefixes}}
+* {{msg-mw|Masseditregex-listtype-categories}}
+* {{msg-mw|Masseditregex-listtype-backlinks}}',
+	'masseditregex-listtype-pagenames' => 'Used as label for the radio box.
+{{Related|Masseditregex-listtype}}',
+	'masseditregex-listtype-pagename-prefixes' => 'Used as label for the radio box.
+{{Related|Masseditregex-listtype}}',
+	'masseditregex-listtype-categories' => 'Used as label for the radio box.
+{{Related|Masseditregex-listtype}}',
+	'masseditregex-listtype-backlinks' => 'Used as label for the radio box.
+{{Related|Masseditregex-listtype}}',
+	'masseditregex-exprnomatch' => 'Used as error message. Parameters:
+* $1 - regular expression',
+	'masseditregex-badregex' => 'Used as error message.
+
+"regex" means "Regular expression".',
+	'masseditregex-editfailed' => 'Used as error message.
+
+Followed by list of the error messages.',
+	'masseditregex-tooltip-execute' => 'Used as tooltip for the Submit button.
+
+See also:
+* {{msg-mw|Masseditregex-executebtn}} - label for button
+* {{msg-mw|Accesskey-save}} - access key',
 	'masseditregex-editall' => 'Tab displayed on category pages - keep it short',
 	'right-masseditregex' => '{{doc-right|masseditregex}}',
 );
@@ -656,6 +737,7 @@ $messages['fr'] = array(
 	'masseditregex-hint-toappend' => "Insère du texte à la fin de l'article - pratique pour ajouter les pages à des catégories",
 	'masseditregex-hint-remove' => 'Retirer du texte de toutes les pages de la liste',
 	'masseditregex-hint-removecat' => "Supprime toutes les catégories de l'article (notez que les crochets dans le wikicode sont échappés.) Les valeurs de remplacement ne doivent pas être échappées.",
+	'masseditregex-hint-renamelink' => 'Remplacer AAA par BBB dans le texte du lien mais pas dans sa destination : [[AAA|AAA]] devient [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'Voici une liste de :',
 	'masseditregex-listtype-pagenames' => 'Nom des pages (éditer ces pages)',
 	'masseditregex-listtype-pagename-prefixes' => 'Préfixe des noms de pages (éditer les pages dont les noms commencent par ce texte)',
@@ -665,6 +747,7 @@ $messages['fr'] = array(
 	'masseditregex-badregex' => 'Regex invalide:',
 	'masseditregex-editfailed' => "Erreur lors de l'édition :",
 	'masseditregex-tooltip-execute' => 'Appliquer ces changements à chaque page',
+	'masseditregex-editall' => 'Modifier tout',
 	'right-masseditregex' => 'Remplacer le contenu de la page en utilisant des expressions régulières',
 );
 
@@ -716,6 +799,7 @@ $messages['gl'] = array(
 	'masseditregex-hint-toappend' => 'Engade algo de texto ao final do artigo; útil para engadir páxinas a categorías',
 	'masseditregex-hint-remove' => 'Elimina algún texto de todas as páxinas da lista',
 	'masseditregex-hint-removecat' => 'Elimina todas as categorías dun artigo (teña en conta o escape dos corchetes no formato wiki). Os valores de substitución non deberían escapar.',
+	'masseditregex-hint-renamelink' => 'Substitúe "AAA" por "BBB" no texto da ligazón, pero non no destino da ligazón: "[[AAA|AAA]]" convértese en "[[AAA|BBB]]"',
 	'masseditregex-listtype-intro' => 'Esta é unha lista de:',
 	'masseditregex-listtype-pagenames' => 'Nomes de páxina (editar estas páxinas)',
 	'masseditregex-listtype-pagename-prefixes' => 'Prefixos de nome de páxina (editar as páxinas con nomes que comecen con este texto)',
@@ -725,6 +809,7 @@ $messages['gl'] = array(
 	'masseditregex-badregex' => 'Expresión regular non válida:',
 	'masseditregex-editfailed' => 'Fallou a edición:',
 	'masseditregex-tooltip-execute' => 'Aplicar estes cambios a cada páxina',
+	'masseditregex-editall' => 'Editar todo',
 	'right-masseditregex' => 'Substituír os contidos das páxinas por expresións regulares',
 );
 
@@ -1032,9 +1117,9 @@ I valori di sostituzione non devono avere l'escaping.",
 $messages['ja'] = array(
 	'action-masseditregex' => '一括編集の実行',
 	'masseditregex' => '正規表現を使用した大量編集',
-	'masseditregex-desc' => '正規表現を使って[[Special:MassEditRegex|大量のページを一度の操作で編集する]]',
-	'masseditregextext' => '一致用に1つ以上の正規表現（1行に1つ）と、置換用に1つ以上の正規表現を入力してください。
-1番目の一致用正規表現が一致に成功すると、1番目の置換用正規表現で置換されます。2番目以降も同様です。
+	'masseditregex-desc' => '正規表現を使用して[[Special:MassEditRegex|大量のページを一度の操作で編集する]]',
+	'masseditregextext' => '一致用に1つ以上の正規表現 (1行に1つ) と、置換用に1つ以上の正規表現を入力してください。
+1番目の一致用正規表現に一致すると、1番目の置換用正規表現で置換されます。2番目以降も同様です。
 詳細は [http://php.net/manual/ja/function.preg-replace.php PHP 関数 preg_replace()] を参照してください。',
 	'masseditregex-pagelisttxt' => '編集するページ:',
 	'masseditregex-matchtxt' => '一致用:',
@@ -1043,28 +1128,30 @@ $messages['ja'] = array(
 	'masseditregex-err-nopages' => '編集するページを少なくとも1つ指定する必要があります。',
 	'masseditregex-before' => '前',
 	'masseditregex-after' => '後',
-	'masseditregex-max-preview-diffs' => 'プレビューは最初の$1件の一致に限定されています。',
-	'masseditregex-num-changes' => '$1： $2件の変更',
+	'masseditregex-max-preview-diffs' => 'プレビューは最初の $1 {{PLURAL:$1|件の一致}}に限定されています。',
+	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|件の変更}}',
 	'masseditregex-page-not-exists' => '$1 は存在しません',
-	'masseditregex-num-articles-changed' => '$1個のページが編集されました',
+	'masseditregex-num-articles-changed' => '$1 {{PLURAL:$1|件のページ}}が編集されました',
 	'masseditregex-view-full-summary' => '完全な編集要約を表示',
 	'masseditregex-hint-intro' => 'よくある課題を達成するためのヒントと使用例を示します:',
 	'masseditregex-hint-headmatch' => '一致用',
 	'masseditregex-hint-headreplace' => '置換用',
 	'masseditregex-hint-headeffect' => '効果',
 	'masseditregex-hint-toappend' => '記事末尾に文章を追記する。ページをカテゴリに追加するのに便利です',
-	'masseditregex-hint-remove' => '指定したすべてのページからある文章を除去する',
+	'masseditregex-hint-remove' => '指定したページすべてから、ある文章を除去する',
 	'masseditregex-hint-removecat' => '記事からすべてのカテゴリを除去する (ウィキテキスト中の角括弧のエスケープに注意)。
 置換する値はエスケープしません。',
-	'masseditregex-listtype-intro' => 'これは次のリストです:',
-	'masseditregex-listtype-pagenames' => 'ページ名 (これらのページを編集する)',
-	'masseditregex-listtype-pagename-prefixes' => 'ページ名の先頭部（名前がこの文字列で始まるページを編集）',
-	'masseditregex-listtype-categories' => 'カテゴリ名 (これらのカテゴリにあるページすべてを編集する)',
-	'masseditregex-listtype-backlinks' => 'リンク元 (これらにリンクしているページを編集する)',
-	'masseditregex-exprnomatch' => '正規表現「$1」に一致したページはありません。',
+	'masseditregex-hint-renamelink' => '(リンク先ではなく) リンク テキストの AAA を BBB に置換します: [[AAA|AAA]] は [[AAA|BBB]] になります',
+	'masseditregex-listtype-intro' => 'これは以下のリストです:',
+	'masseditregex-listtype-pagenames' => 'ページ名 (これらのページを編集)',
+	'masseditregex-listtype-pagename-prefixes' => 'ページ名の先頭部 (名前がこの文字列で始まるページを編集)',
+	'masseditregex-listtype-categories' => 'カテゴリ名 (これらのカテゴリに属するページをそれぞれ編集)',
+	'masseditregex-listtype-backlinks' => 'リンク元 (これらにリンクしているページを編集)',
+	'masseditregex-exprnomatch' => '正規表現「$1」はどのページにも一致しませんでした。',
 	'masseditregex-badregex' => '無効な正規表現:',
 	'masseditregex-editfailed' => '編集失敗:',
 	'masseditregex-tooltip-execute' => 'これらの変更を各ページに適用する',
+	'masseditregex-editall' => 'すべて編集',
 	'right-masseditregex' => '正規表現を使用してページの内容を置換',
 );
 
@@ -1185,6 +1272,7 @@ $messages['mk'] = array(
 	'masseditregex-hint-remove' => 'Отстранување на извесен текст од сите страници на списокот',
 	'masseditregex-hint-removecat' => 'Отстранете ги сите категории од една страница (обратете внимание на исклучувањето на квадратните загради од викикодот.)
 Вредностите за заменување не треба да се исклучуваат.',
+	'masseditregex-hint-renamelink' => 'Заменете го ААА со БББ во текстот на врската, но не и одредницата на самата врска: [[AAA|ААА]] Станува [[AAA|БББ]]',
 	'masseditregex-listtype-intro' => 'Ова е список на:',
 	'masseditregex-listtype-pagenames' => 'Имиња на страниците (уредете ги тие страници)',
 	'masseditregex-listtype-pagename-prefixes' => 'Префикси на имиња на страници (уредете ги страниците чие име започнува со овој текст)',
@@ -1194,6 +1282,7 @@ $messages['mk'] = array(
 	'masseditregex-badregex' => 'Неважечки регуларен израз:',
 	'masseditregex-editfailed' => 'Уредувањето не успеа:',
 	'masseditregex-tooltip-execute' => 'Примени ги истите промени во секоја страница',
+	'masseditregex-editall' => 'Уреди сè',
 	'right-masseditregex' => 'Замена на содржини на страници користејќи регуларни изрази',
 );
 
@@ -1272,15 +1361,17 @@ Ideaal voor het toevoegen van pagina's aan een categorie.",
 	'masseditregex-hint-removecat' => 'Alle categorieën verwijderen van een pagina.
 Let op het escapen van de blokhaken in de wikitekst.
 Voor de te vervangen tekst is escapen niet nodig.',
+	'masseditregex-hint-renamelink' => 'Vervang AAA door BBB in de beschrijving van de koppeling, maar niet in de doelpagina van de koppeling; [[AAA|AAA]] wordt [[AAA|BBB]].',
 	'masseditregex-listtype-intro' => 'Dit is een lijst van:',
 	'masseditregex-listtype-pagenames' => "Paginanamen (deze pagina's bewerken)",
 	'masseditregex-listtype-pagename-prefixes' => "Paginanaamvoorvoegsels (pagina's bewerken die namen hebben die beginnen met deze tekst)",
-	'masseditregex-listtype-categories' => 'Categorienamen (bewerk iedere pagina binnen deze categorieën)',
+	'masseditregex-listtype-categories' => "Categorienamen (alle pagina's binnen deze categorieën bewerken)",
 	'masseditregex-listtype-backlinks' => "Terugverwijzingen (pagina's bewerken die verwijzen naar deze pagina's)",
 	'masseditregex-exprnomatch' => 'De expressie "$1" was op geen enkele pagina van toepassing.',
 	'masseditregex-badregex' => 'Ongeldige reguliere expressie:',
 	'masseditregex-editfailed' => 'Bewerking mislukt:',
 	'masseditregex-tooltip-execute' => 'Deze wijzigingen op iedere pagina toepassen',
+	'masseditregex-editall' => 'Allemaal bewerken',
 	'right-masseditregex' => 'Pagina-inhoud vervangen met behulp van reguliere expressies',
 );
 

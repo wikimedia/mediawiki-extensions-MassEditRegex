@@ -18,6 +18,11 @@ $specialPageAliases['ar'] = array(
 	'MassEditRegex' => array( 'ريجيكس_التعديلات_الكمية' ),
 );
 
+/** German (Deutsch) */
+$specialPageAliases['de'] = array(
+	'MassEditRegex' => array( 'Regex-Massenbearbeitung' ),
+);
+
 /** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'MassEditRegex' => array( 'Modificar_in_massa_con_regex' ),
