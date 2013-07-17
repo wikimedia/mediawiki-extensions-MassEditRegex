@@ -142,6 +142,9 @@ class MassEditRegex extends SpecialPage {
 			// on the page.
 			$wgOut->addHTML(
 				Xml::openElement('li') .
+				// Give grep a chance to find the usages:
+				// masseditregex-listtype-pagenames, masseditregex-listtype-pagename-prefixes,
+				// masseditregex-listtype-categories, masseditregex-listtype-backlinks
 				Xml::radioLabel(
 					wfMsg( 'masseditregex-listtype-' . $strValue ),
 					'wpPageListType',
