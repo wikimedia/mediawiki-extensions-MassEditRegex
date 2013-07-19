@@ -1429,6 +1429,7 @@ $messages['pfl'] = array(
 /** Polish (polski)
  * @author BeginaFelicysym
  * @author Sp5uhe
+ * @author Woytecr
  */
 $messages['pl'] = array(
 	'action-masseditregex' => 'wykonaj edycję zbiorczą',
@@ -1457,6 +1458,7 @@ Zobacz [http://php.net/manual/pl/function.preg-replace.php opis funkcji preg_rep
 	'masseditregex-hint-remove' => 'Usuń tekst ze wszystkich stron z listy',
 	'masseditregex-hint-removecat' => 'Usuń wszystkie kategorie ze strony (uwaga na konieczność escapowania nawiasów kwadratowych w kodzie wiki).
 Tekst wstawiany nie wymaga escapowania.',
+	'masseditregex-hint-renamelink' => 'Zamień AAA na BBB w tytule linku ale nie w elemencie docelowym: [[AAA|AAA]] stanie się [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'Jest to lista',
 	'masseditregex-listtype-pagenames' => 'Nazwy stron (edytuj te strony)',
 	'masseditregex-listtype-pagename-prefixes' => 'Prefiksy nazw stron (edytuj strony, których nazwy rozpoczynają się od tej frazy)',
@@ -1466,6 +1468,7 @@ Tekst wstawiany nie wymaga escapowania.',
 	'masseditregex-badregex' => 'Nieprawidłowe wyrażenie regularne',
 	'masseditregex-editfailed' => 'Edycja nie powiodła się',
 	'masseditregex-tooltip-execute' => 'Zastosuj te zmiany do wszystkich stron',
+	'masseditregex-editall' => 'Edytuj wszystkie',
 	'right-masseditregex' => 'Zamiana treści stron z użyciem wyrażeń regularnych',
 );
 
