@@ -1754,27 +1754,41 @@ $messages['sr-el'] = array(
 
 /** Swedish (svenska)
  * @author Dafer45
+ * @author Jopparn
  * @author Per
  */
 $messages['sv'] = array(
 	'masseditregex' => 'Använd regulära uttryck för att massredigera.',
+	'masseditregex-pagelisttxt' => 'Sidor att redigera:',
 	'masseditregex-matchtxt' => 'Sök efter:',
 	'masseditregex-replacetxt' => 'Ersätt med:',
 	'masseditregex-executebtn' => 'Genomför',
 	'masseditregex-err-nopages' => 'Du måste specificera minst en sida att ändra.',
 	'masseditregex-before' => 'Före',
 	'masseditregex-after' => 'Efter',
+	'masseditregex-max-preview-diffs' => 'Förhandsgranskning har varit begränsad till $1 {{PLURAL:$1|den första träffen|de första träffarna}}.',
 	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|ändring|ändringar}}',
 	'masseditregex-page-not-exists' => '$1 finns inte',
 	'masseditregex-num-articles-changed' => '$1 {{PLURAL:$1|sida|sidor}} redigerade',
 	'masseditregex-view-full-summary' => 'Visa fullständingt redigeringssammandrag',
+	'masseditregex-hint-intro' => 'Här är några tips och exempel för att utföra vanliga uppgifter:',
+	'masseditregex-hint-headmatch' => 'Träff',
 	'masseditregex-hint-headreplace' => 'Ersätt',
 	'masseditregex-hint-headeffect' => 'Effekt',
+	'masseditregex-hint-toappend' => 'Lägg till lite text i slutet på sidan - bra för att lägga till sidorna i kategorier',
+	'masseditregex-hint-remove' => 'Ta bort en del text från alla sidorna i listan',
+	'masseditregex-hint-removecat' => 'Tar bort alla kategorier från en sida (observera att hakparenteser i wikikoden försvinner.)
+Ersättningsvärdet bör inte undgås.',
+	'masseditregex-hint-renamelink' => 'Ersätt AAA med BBB i länktexten men inte länkens mål: [[AAA|AAA]] blir [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'Detta är en lista över:',
 	'masseditregex-listtype-pagenames' => 'Sidnamn (redigera dessa sidor)',
+	'masseditregex-listtype-pagename-prefixes' => 'Sidnamnsprefix (redigera sidor med namn som börjar med denna text)',
+	'masseditregex-listtype-categories' => 'Kategorinamn (redigera varje sida i dessa kategorier)',
+	'masseditregex-listtype-backlinks' => 'Bakåtlänkar (redigera sidor som länkar till dessa)',
 	'masseditregex-exprnomatch' => 'Uttrycket "$1" matchade inga sidor.',
 	'masseditregex-editfailed' => 'Redigera misslyckades:',
 	'masseditregex-tooltip-execute' => 'Tillämpa dessa förändringar på varje sida',
+	'masseditregex-editall' => 'Redigera alla',
 );
 
 /** Tamil (தமிழ்)
@@ -1933,6 +1947,7 @@ $messages['vi'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Hydra
+ * @author Qiyue2001
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
@@ -1953,6 +1968,7 @@ $messages['zh-hans'] = array(
 	'masseditregex-hint-headmatch' => '匹配',
 	'masseditregex-hint-headreplace' => '替换',
 	'masseditregex-hint-headeffect' => '影响',
+	'masseditregex-hint-remove' => '移除列表中所有页面的文本',
 	'masseditregex-listtype-intro' => '这是一个列表：',
 	'masseditregex-listtype-pagenames' => '页面名称（编辑这些网页）',
 	'masseditregex-listtype-pagename-prefixes' => '网页名称前缀（编辑网页名称的开头有这个文字）',
@@ -1962,6 +1978,7 @@ $messages['zh-hans'] = array(
 	'masseditregex-badregex' => '无效的正则表达式：',
 	'masseditregex-editfailed' => '编辑失败：',
 	'masseditregex-tooltip-execute' => '将这些更改应用到每个页面',
+	'masseditregex-editall' => '编辑全部',
 	'right-masseditregex' => '使用正则表达式替换页面内容',
 );
 
