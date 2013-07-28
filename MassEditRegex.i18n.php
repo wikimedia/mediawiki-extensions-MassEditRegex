@@ -1170,6 +1170,32 @@ $messages['ka'] = array(
 	'right-masseditregex' => 'გვერდის შინაარსის შეცვლა, რეგულარული გამოხატვის საშუალებით',
 );
 
+/** Korean (한국어)
+ * @author Kwj2772
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'action-masseditregex' => '대량 편집을 수행할',
+	'masseditregex' => '정규 표현식으로 대량 편집',
+	'masseditregex-desc' => '[[Special:MassEditRegex|한 번에 많은 문서를 편집]]하기 위해 정규 표현식을 사용합니다',
+	'masseditregextext' => '문서에서 문자열을 찾기 위한 정규 표현식 하나 혹은 그 이상(한 줄에 하나씩) 입력하고, 각각에 대해 바꿀 표현을 입력하십시오.
+처음에 입력된 찾을 표현식은 처음 입력된 바꿀 표현으로 치환될 것이며, 다음 표현식에 대해서도 마찬가지로 동작합니다.
+자세한 내용은 [http://php.net/manual/en/function.preg-replace.php PHP 함수 preg_replace() 설명]을 참고하십시오.',
+	'masseditregex-pagelisttxt' => '편집할 문서:',
+	'masseditregex-matchtxt' => '찾기:',
+	'masseditregex-replacetxt' => '바꾸기:',
+	'masseditregex-executebtn' => '실행',
+	'masseditregex-err-nopages' => '내용을 바꿀 문서 최소 하나는 입력해야 합니다.',
+	'masseditregex-before' => '이전',
+	'masseditregex-after' => '이후',
+	'masseditregex-max-preview-diffs' => '미리 보기는 처음 {{PLURAL:$1|일치}}한 $1개로 제한되어 있습니다.',
+	'masseditregex-num-changes' => '$1: $2개 {{PLURAL:$2|바뀜}}',
+	'masseditregex-page-not-exists' => '$1 문서가 존재하지 않습니다',
+	'masseditregex-num-articles-changed' => '문서 {{PLURAL:$1|$1}}개를 편집했습니다.',
+	'masseditregex-view-full-summary' => '전체 편집 요약 보기',
+	'masseditregex-editall' => '모두 편집',
+);
+
 /** Colognian (Ripoarisch)
  * @author Als-Holder
  * @author Purodha
