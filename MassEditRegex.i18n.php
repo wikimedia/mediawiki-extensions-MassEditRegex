@@ -1255,6 +1255,13 @@ $messages['ksh'] = array(
 	'right-masseditregex' => 'Sigge övver <i lang="en">regular expressions</i> ändere',
 );
 
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'masseditregex-matchtxt' => 'Lê bigere ji bo:',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
