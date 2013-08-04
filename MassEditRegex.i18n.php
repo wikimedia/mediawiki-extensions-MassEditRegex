@@ -393,6 +393,7 @@ $messages['bn'] = array(
  * @author Y-M D
  */
 $messages['br'] = array(
+	'action-masseditregex' => "ober ur c'hemm a-vras",
 	'masseditregex' => 'Kemmoù a-vras gant sikour eztaoladennoù poellel',
 	'masseditregex-desc' => 'Implijout an eztaoladennoù poellel evit [[Special:MassEditRegex|kemmañ un toullad pajennoù en un taol]]',
 	'masseditregextext' => "Merkañ ur jedad poellek pe meur a hini (unan dre linenn) da glask hag ur jedad pe meur a hini da erlec'hiañ disoc'hoù pep hini gantañ.
@@ -418,6 +419,7 @@ Gwelet [http://php.net/manual/en/function.preg-replace.php the PHP function preg
 	'masseditregex-hint-remove' => 'Tennañ kuit un tamm destenn eus holl bajennoù ar roll',
 	'masseditregex-hint-removecat' => "Lemel kuit an holl rummadoù zo en ur pennad (notit e vez lezet ar c'hrochedoù er-maez er chod wiki).
 N'haller ket lezel er-maez an talvoudennoù erlec'hiañ.",
+	'masseditregex-hint-renamelink' => "Erlec'hiañ AAA gant BBB e testenn al liamm met pas el liamm : [[AAA|AAA]] a zeu da vezañ [[AAA|BBB]]",
 	'masseditregex-listtype-intro' => 'Setu ur roll :',
 	'masseditregex-listtype-pagenames' => 'Anv ar bajennoù (kemmañ ar bajennoù-se)',
 	'masseditregex-listtype-pagename-prefixes' => 'Rakger anvioù pajennoù (aozañ ar pajennoù a grog o anv gant an destenn-se)',
@@ -427,6 +429,7 @@ N'haller ket lezel er-maez an talvoudennoù erlec'hiañ.",
 	'masseditregex-badregex' => "N'eo ket mat ar regex :",
 	'masseditregex-editfailed' => "C'hwitet an aozañ :",
 	'masseditregex-tooltip-execute' => "Arloañ ar c'hemmoù-se da bep pajenn",
+	'masseditregex-editall' => 'Kemmañ holl',
 );
 
 /** Bosnian (bosanski)
