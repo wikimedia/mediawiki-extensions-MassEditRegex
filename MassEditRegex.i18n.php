@@ -1944,10 +1944,48 @@ $messages['tr'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Andriykopanytsia
  * @author Тест
  */
 $messages['uk'] = array(
+	'action-masseditregex' => 'виконати масове редагування',
+	'masseditregex' => 'Масове редагування з допомогою регулярних виразів',
+	'masseditregex-desc' => 'Використання регулярних виразів для [[Special:MassEditRegex|виправлення багатьох сторінок за одну дію]]',
+	'masseditregextext' => 'Введіть один або декілька регулярних виразів (по одному на рядок) для пошуку відповідностей, а також один або кілька виразів для заміни відповідностей.
+Збіги для першого виразу, якщо такі знайдуться, будуть замінені на перший вираз для заміни і т. д.
+Детальніше див. [http://php.net/manual/en/function.preg-replace.php опис PHP-функції preg_replace()].',
+	'masseditregex-pagelisttxt' => 'Сторінки для редагування:',
+	'masseditregex-matchtxt' => 'Шукати:',
+	'masseditregex-replacetxt' => 'Замінити на:',
+	'masseditregex-executebtn' => 'Виконати',
+	'masseditregex-err-nopages' => 'Слід указати принаймні одну сторінку для зміни.',
+	'masseditregex-before' => 'Перед',
+	'masseditregex-after' => 'Після',
+	'masseditregex-max-preview-diffs' => 'Попередній перегляд було обмежено {{PLURAL:$1|першим $1  збігом|першими $1 збігами}}.',
+	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|зміна|зміни|змін}}',
+	'masseditregex-page-not-exists' => '$1 не існує',
+	'masseditregex-num-articles-changed' => '$1 {{PLURAL:$1|сторінка|сторінки|сторінок}} відредаговано',
+	'masseditregex-view-full-summary' => 'Переглянути повний опис змін',
+	'masseditregex-hint-intro' => 'Ось деякі поради та приклади для виконання типових завдань:',
+	'masseditregex-hint-headmatch' => 'Збіг',
 	'masseditregex-hint-headreplace' => 'Заміна',
+	'masseditregex-hint-headeffect' => 'Ефект',
+	'masseditregex-hint-toappend' => 'Додавання тексту в кінець сторінки - чудово підходить для додавання сторінки в категорії',
+	'masseditregex-hint-remove' => 'Видалити деякий текст з усіх сторінок у списку',
+	'masseditregex-hint-removecat' => 'Вилучення всіх категорій з сторінки (зауважте появу на екрані квадратних дужок у на вікі-розмітці.)
+Значення для заміни не повинні появитися на екрані.',
+	'masseditregex-hint-renamelink' => 'Замінити AAA на BBB в тексті посилання, але не у цілі посилання: [[AAA|AAA]] стає [[AAA|BBB]]',
+	'masseditregex-listtype-intro' => 'Це список:',
+	'masseditregex-listtype-pagenames' => 'Назви сторінок (редагувати ці сторінки)',
+	'masseditregex-listtype-pagename-prefixes' => 'Префікси назв сторінок (редагувати сторінки, назви яких починаються цим текстом)',
+	'masseditregex-listtype-categories' => 'Назви категорій (редагувати всі сторінки в цих категоріях)',
+	'masseditregex-listtype-backlinks' => 'Зворотні посилання (редагувати сторінки, які посилаються на дані сторінки)',
+	'masseditregex-exprnomatch' => 'Виразу "$1" не відповідає жодна сторінка.',
+	'masseditregex-badregex' => 'Невірний регулярний вираз:',
+	'masseditregex-editfailed' => 'Невдале редагування:',
+	'masseditregex-tooltip-execute' => 'Застосувати ці зміни на кожній сторінці',
+	'masseditregex-editall' => 'Редагувати все',
+	'right-masseditregex' => 'Замінити вміст сторінки за допомогою регулярних виразів',
 );
 
 /** Urdu (اردو)
