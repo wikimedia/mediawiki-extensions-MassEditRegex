@@ -1434,6 +1434,7 @@ Voor de te vervangen tekst is escapen niet nodig.',
  * @author Cedric31
  */
 $messages['oc'] = array(
+	'action-masseditregex' => 'efectuar una modificacion en massa',
 	'masseditregex' => "Modificacion en massa amb l'ajuda de las expressions racionalas",
 	'masseditregex-desc' => 'Utilizar las expressions racionalas per [[Special:MassEditRegex|modificar de paginas nombrosas en una operacion]]',
 	'masseditregextext' => 'Entrar una o mantuna expression racionala (una per linha) de recercar, e una o mantuna expression per las qualas remplaçar los resultats. La primièra expression trobada serà remplaçada per la primièra expression de remplaçament, e atal encara. Veire la descripcion de la [http://php.net/manual/en/function.preg-replace.php foncion PHP preg_replace()] per mai de detalhs.',
@@ -1456,6 +1457,7 @@ $messages['oc'] = array(
 	'masseditregex-hint-toappend' => "Inserís de tèxte a la fin de l'article - practic per apondre las paginas a de categorias",
 	'masseditregex-hint-remove' => 'Levar de tèxte de totas las paginas de la lista',
 	'masseditregex-hint-removecat' => "Suprimís totas las categorias de l'article (notatz que los croquets dins lo wikicòde son escapats.) Las valors de remplaçament devon pas èsser escapadas.",
+	'masseditregex-hint-renamelink' => 'Remplaçar AAA per BBB dins lo tèxte del ligam mas pas dins sa destinacion : [[AAA|AAA]] ven [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'Vaquí una lista de :',
 	'masseditregex-listtype-pagenames' => 'Nom de las paginas (editar aquestas paginas)',
 	'masseditregex-listtype-pagename-prefixes' => 'Prefix dels noms de paginas (editar las paginas que los noms començan per aqueste tèxte)',
@@ -1465,6 +1467,8 @@ $messages['oc'] = array(
 	'masseditregex-badregex' => 'Regex invalid :',
 	'masseditregex-editfailed' => "Error al moment de l'edicion :",
 	'masseditregex-tooltip-execute' => 'Aplicar aquestes cambiaments a cada pagina',
+	'masseditregex-editall' => 'Modificar tot',
+	'right-masseditregex' => "Remplaçar lo contengut de la pagina en utilizant d'expressions regularas",
 );
 
 /** Deitsch (Deitsch)
