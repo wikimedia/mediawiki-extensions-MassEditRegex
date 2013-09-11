@@ -1626,6 +1626,7 @@ Os valores de troca não devem ter o ''escape''.",
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Giro720
  * @author Luckas
  * @author Luckas Blade
@@ -1659,12 +1660,13 @@ Os valores de troca não devem ser o escapados.',
 	'masseditregex-listtype-intro' => 'Esta é uma lista de:',
 	'masseditregex-listtype-pagenames' => 'Nomes de página (editar estas páginas)',
 	'masseditregex-listtype-pagename-prefixes' => 'Inícios dos nomes de página (editar páginas cujos nomes começam por estes caracteres)',
-	'masseditregex-listtype-categories' => 'Nomes de categoria (editar cada página nestas categorias)', # Fuzzy
+	'masseditregex-listtype-categories' => 'Nomes de categoria (editar cada página nestas categorias)',
 	'masseditregex-listtype-backlinks' => 'Afluentes (editar páginas que contêm links para estas)',
 	'masseditregex-exprnomatch' => 'A expressão "$1" não ocorre em nenhuma página.',
 	'masseditregex-badregex' => 'Regex inválida:',
 	'masseditregex-editfailed' => 'Edição falhou:',
 	'masseditregex-tooltip-execute' => 'Aplicar estas alterações a cada página',
+	'right-masseditregex' => 'Substituir o conteúdo de páginas utilizando expressões regulares',
 );
 
 /** Romanian (română)
