@@ -1632,6 +1632,7 @@ Os valores de troca não devem ter o ''escape''.",
  * @author Luckas Blade
  */
 $messages['pt-br'] = array(
+	'action-masseditregex' => 'realiza edições em massa',
 	'masseditregex' => 'Edições em massa usando expressões regulares',
 	'masseditregex-desc' => '[[Special:MassEditRegex|Página especial]] para editar múltiplas páginas numa só operação, usando expressões regulares',
 	'masseditregextext' => "Introduza uma ou várias (uma por linha) expressões regulares de busca e uma ou várias expressões de troca correspondentes.
@@ -1657,6 +1658,7 @@ Consulte [http://php.net/manual/en/function.preg-replace.php a função PHP ''pr
 	'masseditregex-hint-remove' => 'Remover um texto de todas as páginas na lista',
 	'masseditregex-hint-removecat' => 'Remover todas as categorias de uma página (note o escape dos parênteses retos no código wiki.)
 Os valores de troca não devem ser o escapados.',
+	'masseditregex-hint-renamelink' => 'Substitui AAA por BBB no texto do link mas não na sua destinação: [[AAA|AAA]] se torna [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'Esta é uma lista de:',
 	'masseditregex-listtype-pagenames' => 'Nomes de página (editar estas páginas)',
 	'masseditregex-listtype-pagename-prefixes' => 'Inícios dos nomes de página (editar páginas cujos nomes começam por estes caracteres)',
@@ -1666,6 +1668,7 @@ Os valores de troca não devem ser o escapados.',
 	'masseditregex-badregex' => 'Regex inválida:',
 	'masseditregex-editfailed' => 'Edição falhou:',
 	'masseditregex-tooltip-execute' => 'Aplicar estas alterações a cada página',
+	'masseditregex-editall' => 'Editar tudo',
 	'right-masseditregex' => 'Substituir o conteúdo de páginas utilizando expressões regulares',
 );
 
