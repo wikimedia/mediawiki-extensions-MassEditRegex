@@ -1710,6 +1710,7 @@ $messages['roa-tara'] = array(
 
 /** Russian (русский)
  * @author Eleferen
+ * @author Okras
  * @author Rubin
  * @author Александр Сигачёв
  */
@@ -1720,7 +1721,7 @@ $messages['ru'] = array(
 	'masseditregextext' => 'Введите одно или несколько регулярных выражений (по одному на строке) для поиска соответствий, а также одно или несколько выражений для замены соответствий.
 Соответствия для первого выражения, если такие найдутся, будут заменены на первое выражение для замены и т. д.
 Подробнее см. [http://php.net/manual/en/function.preg-replace.php описание PHP-функции preg_replace()].',
-	'masseditregex-pagelisttxt' => 'Страницы для редактирования:', # Fuzzy
+	'masseditregex-pagelisttxt' => 'Страницы для редактирования:',
 	'masseditregex-matchtxt' => 'Искать:',
 	'masseditregex-replacetxt' => 'Заменить на:',
 	'masseditregex-executebtn' => 'Запустить',
@@ -1740,6 +1741,7 @@ $messages['ru'] = array(
 	'masseditregex-hint-remove' => 'Удаление текста со всех страниц в списке',
 	'masseditregex-hint-removecat' => 'Удаление всех категорий со страницы (обратите внимание на экранирование квадратных скобок в вики-разметке).
 Значение для замены не должно экранироваться.',
+	'masseditregex-hint-renamelink' => 'Заменяет AAA на BBB в тексте ссылки, но не саму ссылку: [[AAA|AAA]] становится [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'Это список:',
 	'masseditregex-listtype-pagenames' => 'Названия страниц (редактировать эти страницы)',
 	'masseditregex-listtype-pagename-prefixes' => 'Префиксы названий страниц (редактировать страницы, названия которых начинаются этим текстом)',
@@ -1749,6 +1751,7 @@ $messages['ru'] = array(
 	'masseditregex-badregex' => 'Ошибочное регулярное выражение:',
 	'masseditregex-editfailed' => 'Ошибка редактирования:',
 	'masseditregex-tooltip-execute' => 'Применить эти изменения для каждой страницы',
+	'masseditregex-editall' => 'Редактировать всё',
 	'right-masseditregex' => 'Заменить содержимое страницы, с помощью регулярных выражений',
 );
 
