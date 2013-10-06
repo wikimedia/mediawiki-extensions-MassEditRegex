@@ -460,6 +460,7 @@ class MassEditRegex extends SpecialPage {
 								$wgLang->formatNum( $pageCountLimit )
 							)
 						);
+						break;
 					}
 				}
 
