@@ -620,6 +620,7 @@ $messages['eo'] = array(
  * @author Crazymadlover
  * @author Dferg
  * @author MarcoAurelio
+ * @author Ovruni
  * @author Translationista
  */
 $messages['es'] = array(
@@ -656,6 +657,7 @@ Los valores de reposición no deben excluirse.',
 	'masseditregex-badregex' => 'Expresión regular inválida:',
 	'masseditregex-editfailed' => 'Edición fallida:',
 	'masseditregex-tooltip-execute' => 'Aplicar estos cambios a cada página',
+	'masseditregex-editall' => 'Editar todo',
 	'right-masseditregex' => 'Reemplazar el contenido de las páginas utilizando expresiones regulares',
 );
 
