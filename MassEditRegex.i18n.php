@@ -159,7 +159,7 @@ See also:
  */
 $messages['af'] = array(
 	'masseditregex' => 'Wysig baie bladsye met behulp van gereelde uitdrukkings',
-	'masseditregex-pagelisttxt' => 'Bladsye om te wysig:',
+	'masseditregex-pagelisttxt' => 'Bladsye om te wysig:', # Fuzzy
 	'masseditregex-matchtxt' => 'Soek vir:',
 	'masseditregex-replacetxt' => 'Vervang met:',
 	'masseditregex-executebtn' => 'Uitvoer',
@@ -225,6 +225,7 @@ $messages['ar'] = array(
 	'masseditregextext' => 'أدخل تعبيرا نتظما واحدا أو أكثر (واحد لكل سطر) للمطابقة, وتعبير واحد أو أكثر لاستبدال كل مطابقة به.
 أول مطابقة تعبير، لو كان ناجحا، سيتم استبداله بأول تعبير استبدال، وهكذا.
 انظر [http://php.net/manual/en/function.preg-replace.php وظيفة PHP preg_replace()] للتفاصيل.',
+	'masseditregex-pagelisttxt' => 'الصفحات للتعديل (لا تستخدم بادئة نطاق:):', # Fuzzy
 	'masseditregex-matchtxt' => 'ابحث عن:',
 	'masseditregex-replacetxt' => 'استبدل بـ:',
 	'masseditregex-executebtn' => 'شغّل',
@@ -247,6 +248,7 @@ $messages['ar'] = array(
 	'masseditregex-listtype-intro' => 'هذه قائمة بـ:',
 	'masseditregex-listtype-pagenames' => 'أسماء الصفحات (عدل هذه الصفحات)',
 	'masseditregex-listtype-pagename-prefixes' => 'بادئات أسماء الصفحات (عدل الصفحات بأسماء تبدأ بهذا النص)',
+	'masseditregex-listtype-categories' => 'أسماء التصنيفات (عدل كل صفحة في هذه التصنيفات؛ اختيار النطاق يتم تجاهله)', # Fuzzy
 	'masseditregex-listtype-backlinks' => 'الوصلات الراجعة (عدل الصفحات التي تصل إلى هذه الصفحات)',
 	'masseditregex-exprnomatch' => 'التعبير "$1" لم يطابق أي صفحة.',
 	'masseditregex-badregex' => 'عبارة منطقية غير صالحة:',
@@ -272,6 +274,7 @@ $messages['arz'] = array(
 	'masseditregextext' => 'أدخل تعبيرا نتظما واحدا أو أكثر (واحد لكل سطر) للمطابقة, وتعبير واحد أو أكثر لاستبدال كل مطابقه به.
 أول مطابقه تعبير، لو كان ناجحا، سيتم استبداله بأول تعبير استبدال، وهكذا.
 انظر [http://php.net/manual/en/function.preg-replace.php وظيفه PHP preg_replace()] للتفاصيل.',
+	'masseditregex-pagelisttxt' => 'الصفحات للتعديل (لا تستخدم بادئه نطاق:):', # Fuzzy
 	'masseditregex-matchtxt' => 'ابحث عن:',
 	'masseditregex-replacetxt' => 'استبدل بـ:',
 	'masseditregex-executebtn' => 'شغّل',
@@ -294,6 +297,7 @@ $messages['arz'] = array(
 	'masseditregex-listtype-intro' => 'هذه قائمه بـ:',
 	'masseditregex-listtype-pagenames' => 'أسماء الصفحات (عدل هذه الصفحات)',
 	'masseditregex-listtype-pagename-prefixes' => 'بادئات أسماء الصفحات (عدل الصفحات بأسماء تبدأ بهذا النص)',
+	'masseditregex-listtype-categories' => 'أسماء التصنيفات (عدل كل صفحه فى هذه التصنيفات؛ اختيار النطاق يتم تجاهله)', # Fuzzy
 	'masseditregex-listtype-backlinks' => 'الوصلات الراجعه (عدل الصفحات التى تصل إلى هذه الصفحات)',
 	'masseditregex-exprnomatch' => 'التعبير "$1" لم يطابق أى صفحه.',
 	'masseditregex-badregex' => 'عباره منطقيه غير صالحة:',
@@ -471,6 +475,13 @@ $messages['ca'] = array(
 	'masseditregex-listtype-pagenames' => 'Noms de les pàgines (editeu aquestes pàgines)',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'masseditregex-replacetxt' => 'Хийца оцуьнца:',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Calak
  */
@@ -478,7 +489,8 @@ $messages['ckb'] = array(
 	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|گۆڕانکاریی|گۆڕانکاریی}}', # Fuzzy
 );
 
-/** Czech (česky) */
+/** Czech (česky)
+ */
 $messages['cs'] = array(
 	'masseditregex-matchtxt' => 'Najít:',
 	'masseditregex-replacetxt' => 'Nahradit za:',
@@ -873,6 +885,7 @@ $messages['he'] = array(
 	'masseditregextext' => 'הכניסו ביטוי רגולרי אחד או יותר (אחד בכל שורה) לחיפוש התאמות, וביטוי אחד או יותר שבו יוחלפו המחרוזות המתאימות שתימצאנה.
 ,ביטוי החיפוש הראשון, אם יימצא, יוחלף בביטוי ההחלפה הראשון וכולי.
 ר\' [http://php.net/manual/en/function.preg-replace.php את תיעוד הפונקציה <span dir="ltr">preg_replace()</span> של PHP] למידע נוסף.',
+	'masseditregex-pagelisttxt' => 'דפים לעריכה (אין להשתמש בקידומת שם המרחב:):', # Fuzzy
 	'masseditregex-matchtxt' => 'חיפוש אחר:',
 	'masseditregex-replacetxt' => 'החלפה ב־:',
 	'masseditregex-executebtn' => 'הפעלה',
@@ -895,6 +908,7 @@ $messages['he'] = array(
 	'masseditregex-listtype-intro' => 'זוהי רשימה של:',
 	'masseditregex-listtype-pagenames' => 'שמות הדפים (עריכת דפים אלה)',
 	'masseditregex-listtype-pagename-prefixes' => 'קידומות שמות הדפים (עריכת דפים ששמם מתחיל בטקסט זה)',
+	'masseditregex-listtype-categories' => 'שמות קטגוריות (עריכת כל הדפים בקטגוריות האלו; אין חשיבות לבחירה לפי מרחב שמות)', # Fuzzy
 	'masseditregex-listtype-backlinks' => 'דפים המקשרים אל הדף (עריכת דפים שמקשרים לדפים האלה)',
 	'masseditregex-exprnomatch' => 'הביטוי "$1" אינו תואם לאף דף.',
 	'masseditregex-badregex' => 'ביטוי רגולארי שגוי:',
