@@ -557,6 +557,14 @@ $messages['de-formal'] = array(
 	'masseditregex-err-nopages' => 'Sie müssen mindestens eine Seite festlegen, die geändert werden soll.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Gorizon
+ */
+$messages['diq'] = array(
+	'masseditregex-before' => 'Veri',
+	'masseditregex-after' => 'Bahdo',
+);
+
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
