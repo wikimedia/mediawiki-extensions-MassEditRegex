@@ -480,6 +480,7 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'masseditregex-replacetxt' => 'Хийца оцуьнца:',
+	'masseditregex-hint-headeffect' => 'Хилам',
 );
 
 /** Sorani Kurdish (کوردی)
