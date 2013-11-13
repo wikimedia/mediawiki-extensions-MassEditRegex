@@ -1124,6 +1124,7 @@ Per dettagli, vedere [http://php.net/manual/en/function.preg-replace.php il PHP 
 	'masseditregex-hint-remove' => "Rimuovere del testo da tutte le pagine nell'elenco",
 	'masseditregex-hint-removecat' => "Rimuovere tutte le categorie da una pagina (osservare l'escaping delle parentesi quadre nel codice wiki).
 I valori di sostituzione non devono avere l'escaping.",
+	'masseditregex-hint-renamelink' => 'Sostituisci AAA con BBB nel testo del collegamento, ma non nella destinazione del collegamento: [[AAA|AAA]] diventa [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'Questo è un elenco di:',
 	'masseditregex-listtype-pagenames' => 'Nomi di pagina (modificare queste pagine)',
 	'masseditregex-listtype-pagename-prefixes' => 'Prefissi di nomi delle pagine (modificare le pagine i cui nomi iniziano con questo testo)',
@@ -1133,6 +1134,7 @@ I valori di sostituzione non devono avere l'escaping.",
 	'masseditregex-badregex' => 'Regex non valida:',
 	'masseditregex-editfailed' => 'Modifica non riuscita:',
 	'masseditregex-tooltip-execute' => 'Applica queste modifiche ad ogni pagina',
+	'masseditregex-editall' => 'Modifica tutto',
 	'right-masseditregex' => 'Sostituisce il contenuto della pagina usando le espressioni regolari',
 );
 
