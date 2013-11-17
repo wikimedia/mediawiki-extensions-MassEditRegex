@@ -1040,6 +1040,7 @@ Vide [http://php.net/manual/en/function.preg-replace.php le function PHP preg_re
 	'masseditregex-hint-remove' => 'Remover alcun texto de tote le paginas in le lista',
 	'masseditregex-hint-removecat' => 'Remover tote le categorias de un pagina (nota le escappamento del parentheses quadrate in le wikicodice).
 Le valores de reimplaciamento non debe esser escappate.',
+	'masseditregex-hint-renamelink' => 'Reimplaciar AAA per BBB in le texto del ligamine ma non in su destination: [[AAA|AAA]] deveni [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'Isto es un lista de:',
 	'masseditregex-listtype-pagenames' => 'Nomines de paginas (modificar iste paginas)',
 	'masseditregex-listtype-pagename-prefixes' => 'Prefixos de nomines de paginas (modificar paginas con nomines comenciante per iste texto)',
@@ -1049,6 +1050,7 @@ Le valores de reimplaciamento non debe esser escappate.',
 	'masseditregex-badregex' => 'Regex invalide:',
 	'masseditregex-editfailed' => 'Modification falleva:',
 	'masseditregex-tooltip-execute' => 'Applicar iste modificationes a cata pagina',
+	'masseditregex-editall' => 'Modificar toto',
 	'right-masseditregex' => 'Reimplaciar le contento de paginas usante expressiones regular',
 );
 
