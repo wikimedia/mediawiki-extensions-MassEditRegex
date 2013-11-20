@@ -305,6 +305,15 @@ $messages['arz'] = array(
 	'masseditregex-tooltip-execute' => 'طبق هذه التغييرات على كل صفحة',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'action-masseditregex' => 'facer una edición en masa',
+	'masseditregex' => 'Edición en masa usando espresiones regulares',
+	'masseditregex-desc' => 'Usar espresiones regulares pa [[Special:MassEditRegex|editar munches páxines con una operación]]',
+);
+
 /** Azerbaijani (azərbaycanca)
  * @author Cekli829
  */
