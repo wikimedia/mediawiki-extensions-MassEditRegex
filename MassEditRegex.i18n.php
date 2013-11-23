@@ -1223,7 +1223,7 @@ $messages['ko'] = array(
 처음에 입력된 찾을 표현식은 처음 입력된 바꿀 표현으로 바꿀 것이며, 다음 표현식에 대해서도 마찬가지로 동작합니다.
 자세한 내용은 [http://php.net/manual/en/function.preg-replace.php PHP 함수 preg_replace() 설명]을 참고하십시오.',
 	'masseditregex-pagelisttxt' => '편집할 문서:',
-	'masseditregex-matchtxt' => '찾기:',
+	'masseditregex-matchtxt' => '검색 대상:',
 	'masseditregex-replacetxt' => '바꾸기:',
 	'masseditregex-executebtn' => '실행',
 	'masseditregex-err-nopages' => '내용을 바꿀 문서 최소 하나는 지정해야 합니다.',
