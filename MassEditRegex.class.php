@@ -319,16 +319,16 @@ class MassEditRegex extends SpecialPage {
 		$iCount = 0;
 		$newText = $curText;
 		foreach ( $this->aMatch as $i => $strMatch ) {
-			$this->strNextReplace = $this->aReplace[$i];
+			$strNextReplace = $this->aReplace[$i];
 			$result = @preg_replace_callback( $strMatch,
-				function ( $aMatches ) {
+				function ( $aMatches ) use($strNextReplace){
 					$strFind = array();
 					$strReplace = array();
 					foreach ($aMatches as $i => $strMatch) {
 						$aFind[] = '$' . $i;
 						$aReplace[] = $strMatch;
 					}
-					return str_replace($aFind, $aReplace, $this->strNextReplace);
+					return str_replace($aFind, $aReplace, $strNextReplace);
 				}, $newText, -1, $iCount );
 			if ($result !== null) {
 				$newText = $result;
