@@ -11,6 +11,7 @@
  * This shim maintains compatibility back to MediaWiki 1.17.
  */
 $messages = array();
+
 if ( !function_exists( 'wfJsonI18nShime651553115efb814' ) ) {
 	function wfJsonI18nShime651553115efb814( $cache, $code, &$cachedData ) {
 		$codeSequence = array_merge( array( $code ), $cachedData['fallbackSequence'] );

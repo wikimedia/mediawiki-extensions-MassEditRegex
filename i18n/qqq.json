@@ -45,4 +45,18 @@
 	"masseditregex-tooltip-execute": "Used as tooltip for the Submit button.\n\nSee also:\n* {{msg-mw|Masseditregex-executebtn}} - label for button\n* {{msg-mw|Accesskey-save}} - access key",
 	"masseditregex-editall": "Tab displayed on category pages - keep it short",
 	"right-masseditregex": "{{doc-right|masseditregex}}"
+
+	"masseditregex-noaccess": "Error message displayed when user does not have access to a given page",
+	"masseditregex-norevisions": "Error message displayed when no revisions could be found for a given title",
+	"masseditregex-blocked": "Error message displayed when a user account is blocked",
+	"masseditregex-readonlydb": "Error message displayed when database is set to read only",
+	"masseditregex-js-clientside": "Tickbox that when ticked will perform the page iteration in the browser, sending a request to the server for each page.",
+	"masseditregex-js-execution": "Tooltip (HTML title) for masseditregex-js-clientside tickbox.  Provides more space to explain what 'client side/in browser' means.",
+	"masseditregex-js-jobdone": "Client-side heading text when job is complete\nSee also:\n* {{msg-mw|Masseditregex-js-working}}",
+	"masseditregex-js-editpage": "text displayed for each page where replacement has been done:\nParameters:\n* $1 number of occurences\n* $2 page title\n* $3 how many pages remaining.",
+	"masseditregex-js-working": "text displayed in heading when job is in progress\nSee also:\n* {{msg-mw|Masseditregex-js-jobdone}}",
+	"masseditregex-js-pagenotexist": "text displayed when page title does not exist\nParameters:\n* $1 page title",
+	"masseditregex-js-mwapi-api-error": "error message displayed when mediawiki api call fails\nParameters:\n* $1 response error code\n* $2 response error info",
+	"masseditregex-js-mwapi-general-error": "error message displayed when general error occurred on mediawiki api",
+	"masseditregex-js-mwapi-unknown-error": "error message displayed when an unknown error occurred during a mediawiki api request",
 }
