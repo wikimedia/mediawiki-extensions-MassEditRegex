@@ -499,7 +499,7 @@ $messages['ckb'] = array(
 	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|گۆڕانکاریی|گۆڕانکاریی}}', # Fuzzy
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  */
 $messages['cs'] = array(
 	'masseditregex-matchtxt' => 'Najít:',
