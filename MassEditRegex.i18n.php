@@ -489,6 +489,7 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'masseditregex-replacetxt' => 'Хийца оцуьнца:',
+	'masseditregex-hint-headmatch' => 'ЦхьаьнадогӀуш',
 	'masseditregex-hint-headeffect' => 'Хилам',
 );
 
