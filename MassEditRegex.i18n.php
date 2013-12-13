@@ -312,6 +312,24 @@ $messages['ast'] = array(
 	'action-masseditregex' => 'facer una edición en masa',
 	'masseditregex' => 'Edición en masa usando espresiones regulares',
 	'masseditregex-desc' => 'Usar espresiones regulares pa [[Special:MassEditRegex|editar munches páxines con una operación]]',
+	'masseditregextext' => 'Escriba una o más espresiones regulares (una por llinia) pa les coincidencies, y una o más espresiones coles que trocar cada coincidencia.
+Si casa la primera espresión de coincidencia, trocaráse pola primera espresión de sustitución, y asina socesivamente. Vea la [http://php.net/manual/en/function.preg-replace.php función PHP preg_replace()] pa más detalles.',
+	'masseditregex-pagelisttxt' => 'Páxines a editar:',
+	'masseditregex-matchtxt' => 'Buscar:',
+	'masseditregex-replacetxt' => 'Sustituir por:',
+	'masseditregex-executebtn' => 'Executar',
+	'masseditregex-err-nopages' => "Tien d'especificar polo menos una páxina a cambiar.",
+	'masseditregex-before' => 'Antes',
+	'masseditregex-after' => 'Después',
+	'masseditregex-max-preview-diffs' => 'La vista previa llendóse a {{PLURAL:$1|la primera coincidencia|les $1 primeres coincidencies}}.',
+	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|cambiu|cambios}}',
+	'masseditregex-page-not-exists' => '$1 nun esiste',
+	'masseditregex-num-articles-changed' => '$1 {{PLURAL:$1|páxina editada|páxines editaes}}',
+	'masseditregex-view-full-summary' => "Ver el resume d'edición completu",
+	'masseditregex-hint-intro' => 'Equí hai algunos conseyos y exemplos pa facer xeres comúnes:',
+	'masseditregex-hint-headmatch' => 'Coincidencia',
+	'masseditregex-hint-headreplace' => 'Sustituir',
+	'masseditregex-hint-headeffect' => 'Efectu',
 );
 
 /** Azerbaijani (azərbaycanca)
