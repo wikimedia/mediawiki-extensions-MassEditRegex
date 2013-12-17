@@ -53,3 +53,8 @@ $specialPageAliases['nds-nl'] = array(
 $specialPageAliases['nl'] = array(
 	'MassEditRegex' => array( 'BulkRegexBewerken' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'MassEditRegex' => array( '批量正则编辑' ),
+);
