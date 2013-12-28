@@ -623,6 +623,7 @@ Glědaj [http://php.net/manual/de/function.preg-replace.php the PHP function pre
 	'masseditregex-hint-toappend' => 'Tekst ku kóńcoju boka pśipowjesyś - dobre za pśidawanje bokow kategorijam',
 	'masseditregex-hint-remove' => 'Tekst ze wšyknych w lisćinje wótpóraś',
 	'masseditregex-hint-removecat' => 'Wšykne kategorije z boka wótpóraś (źiwaj na maskěrowanje rožkatych spinkow we wikikoźe.) Wuměnjeńske gódnoty njeby se měli maskěrowaś.',
+	'masseditregex-hint-renamelink' => 'Wuměnja AAA pśez BBB we wótkazowem teksće, ale nic we wótkazowem celu: [[AAA|AAA]] buźo [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'To jo lisćina wót:',
 	'masseditregex-listtype-pagenames' => 'Mjenja bokow (toś te boki wobźěłaś)',
 	'masseditregex-listtype-pagename-prefixes' => 'Prefikse mjenjow bokow (boki wobźěłaś, kótarychž mjenja zachopiju se toś tym tekstom)',
@@ -632,6 +633,7 @@ Glědaj [http://php.net/manual/de/function.preg-replace.php the PHP function pre
 	'masseditregex-badregex' => 'Njepłaśiwy regularny wuraz:',
 	'masseditregex-editfailed' => 'Wobźěłanje jo se njeraźiło:',
 	'masseditregex-tooltip-execute' => 'Toś te změny na kuždy bok nałožyś',
+	'masseditregex-editall' => 'Wšykne wobźěłaś',
 	'right-masseditregex' => 'Wopśimjeśe boka z pomocu regularnych wurazow wuměniś',
 );
 
@@ -983,6 +985,7 @@ Hlej [http://php.net/manual/de/function.preg-replace.php the PHP function preg_r
 	'masseditregex-hint-toappend' => 'Tekst ke kóncej nastawka připowěsnyć - jara dobre za přidawanje stronow kategorijam',
 	'masseditregex-hint-remove' => 'Tekst ze wšěch stronow w lisćinje wotstronić',
 	'masseditregex-hint-removecat' => 'Wšě kategorije ze strony wotstronić (dźiwaj na maskěrowanje róžkatych spinkow we wikikodźe.) Narunanske hódnoty njeměli so maskěrować.',
+	'masseditregex-hint-renamelink' => 'Wuměnja AAA přez BBB we wotkazowym teksće, ale nic we wotkazowym cilu: [[AAA|AAA]] budźe [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'To je lisćina wot:',
 	'masseditregex-listtype-pagenames' => 'Mjena stronow (tute strony wobdźěłać)',
 	'masseditregex-listtype-pagename-prefixes' => 'Prefiksy mjenow stronow (strony wobdźěłać, kotrychž mjena so z tutym tekstom započinaja)',
@@ -992,6 +995,7 @@ Hlej [http://php.net/manual/de/function.preg-replace.php the PHP function preg_r
 	'masseditregex-badregex' => 'Njepłaćiwy regularny wuraz:',
 	'masseditregex-editfailed' => 'Wobdźěłanje je so njeporadźiło:',
 	'masseditregex-tooltip-execute' => 'Tute změny na kóždu stronu nałožić',
+	'masseditregex-editall' => 'Wšě wobdźěłać',
 	'right-masseditregex' => 'Wobsah strony z pomocu regularnych wurazow wuměnić',
 );
 
