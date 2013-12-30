@@ -729,11 +729,14 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author Reza1615
  */
 $messages['fa'] = array(
 	'masseditregex-matchtxt' => 'جستجو برای:',
 	'masseditregex-replacetxt' => 'جایگزینی با:',
 	'masseditregex-executebtn' => 'اجرا',
+	'masseditregex-before' => 'قبل از',
+	'masseditregex-after' => 'پس از',
 	'masseditregex-num-changes' => '$1: $2 تغییر',
 	'masseditregex-page-not-exists' => '$1 وجود ندارد',
 	'masseditregex-num-articles-changed' => '$1 صفحه ویرایش شده',
