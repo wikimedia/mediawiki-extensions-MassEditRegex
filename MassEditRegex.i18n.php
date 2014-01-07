@@ -330,6 +330,22 @@ Si casa la primera espresión de coincidencia, trocaráse pola primera espresió
 	'masseditregex-hint-headmatch' => 'Coincidencia',
 	'masseditregex-hint-headreplace' => 'Sustituir',
 	'masseditregex-hint-headeffect' => 'Efectu',
+	'masseditregex-hint-toappend' => "Amiesta dalgún testu al final de la páxina; afayadizo p'amestar páxines a categoríes",
+	'masseditregex-hint-remove' => 'Desaniciar dalgún testu de toles páxines de la llista',
+	'masseditregex-hint-removecat' => "Desaniciar toles categoríes d'una páxina (vea l'escape de los corchetes nel códigu wiki.) 
+Los valores de sustitución nun tienen d'escapase.",
+	'masseditregex-hint-renamelink' => "Sustituir AAA por BBB nel testu del enllaz, pero non nel destín del enllaz: [[AAA|AAA]] conviértese'n [[AAA|BBB]]",
+	'masseditregex-listtype-intro' => 'Esta ye una llista de:',
+	'masseditregex-listtype-pagenames' => 'Nomes de páxina (editar eses páxines)',
+	'masseditregex-listtype-pagename-prefixes' => 'Prefixos de nome de páxina (editar les páxines que tengan nomes que principien con esti testu)',
+	'masseditregex-listtype-categories' => "Nomes de categoría (editar cada páxina que tea n'estes categoríes)",
+	'masseditregex-listtype-backlinks' => "Enllaces de retornu (editar les páxines qu'enllacen con eses)",
+	'masseditregex-exprnomatch' => 'La espresión "$1" nun casa con denguna páxina.',
+	'masseditregex-badregex' => 'Espresión regular inválida:',
+	'masseditregex-editfailed' => 'Falló la edición:',
+	'masseditregex-tooltip-execute' => 'Aplicar estos cambios a cada páxina',
+	'masseditregex-editall' => 'Editar too',
+	'right-masseditregex' => 'Sustituir el conteníu de páxines usando espresiones regulares',
 );
 
 /** Azerbaijani (azərbaycanca)
@@ -595,6 +611,7 @@ $messages['diq'] = array(
 );
 
 /** Lower Sorbian (dolnoserbski)
+ * @author Derbeth
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -631,7 +648,7 @@ Glědaj [http://php.net/manual/de/function.preg-replace.php the PHP function pre
 	'masseditregex-listtype-backlinks' => 'Slědkwótkaze (boki wobźěłaś, kótarež na tos te wótkazuju)',
 	'masseditregex-exprnomatch' => 'Wuraz "$1" njegóźi se na žedne boki.',
 	'masseditregex-badregex' => 'Njepłaśiwy regularny wuraz:',
-	'masseditregex-editfailed' => 'Wobźěłanje jo se njeraźiło:',
+	'masseditregex-editfailed' => 'Wobźěłanje njejo se raźiło:',
 	'masseditregex-tooltip-execute' => 'Toś te změny na kuždy bok nałožyś',
 	'masseditregex-editall' => 'Wšykne wobźěłaś',
 	'right-masseditregex' => 'Wopśimjeśe boka z pomocu regularnych wurazow wuměniś',
