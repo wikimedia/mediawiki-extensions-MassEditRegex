@@ -1792,8 +1792,10 @@ $messages['roa-tara'] = array(
 
 /** Russian (русский)
  * @author Eleferen
+ * @author Kaganer
  * @author Okras
  * @author Rubin
+ * @author Rubin16
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -1810,10 +1812,10 @@ $messages['ru'] = array(
 	'masseditregex-err-nopages' => 'Вы должны указать как минимум одну страницу для запуска редактирования.',
 	'masseditregex-before' => 'До',
 	'masseditregex-after' => 'После',
-	'masseditregex-max-preview-diffs' => 'Предпросмотр ограничен {{PLURAL:$1|первым $1 соответствием|первыми $1 соответствиями|первыми $1 соответствиями}}.', # Fuzzy
-	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|изменение|изменений|изменения}}', # Fuzzy
+	'masseditregex-max-preview-diffs' => 'Предпросмотр ограничен {{PLURAL:$1|первым $1 соответствием|первыми $1 соответствиями|1=первым соответствием}}.',
+	'masseditregex-num-changes' => '$1: $2 {{PLURAL:$2|изменение|изменений|изменения}}',
 	'masseditregex-page-not-exists' => '$1 не существует',
-	'masseditregex-num-articles-changed' => '{{PLURAL:$1|Отредактирована $1 страница|Отредактировано $1 страниц|Отредактировано $1 страницы}}', # Fuzzy
+	'masseditregex-num-articles-changed' => '{{PLURAL:$1|Отредактирована $1 страница|Отредактировано $1 страниц|Отредактировано $1 страницы}}',
 	'masseditregex-view-full-summary' => 'Просмотреть полное описание изменения',
 	'masseditregex-hint-intro' => 'Несколько советов и примеров по выполнению типовых задач:',
 	'masseditregex-hint-headmatch' => 'Соответствие',
