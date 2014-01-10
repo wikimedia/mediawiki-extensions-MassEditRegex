@@ -745,10 +745,12 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Mjbmr
  * @author Reza1615
  */
 $messages['fa'] = array(
+	'masseditregex-pagelisttxt' => 'صفحات برای ویرایش:',
 	'masseditregex-matchtxt' => 'جستجو برای:',
 	'masseditregex-replacetxt' => 'جایگزینی با:',
 	'masseditregex-executebtn' => 'اجرا',
@@ -760,6 +762,8 @@ $messages['fa'] = array(
 	'masseditregex-view-full-summary' => 'مشاهدهٔ خلاصهٔ ویرایش کامل',
 	'masseditregex-hint-headmatch' => 'مطابقت',
 	'masseditregex-hint-headreplace' => 'جایگزینی',
+	'masseditregex-hint-headeffect' => 'تأثیر',
+	'masseditregex-editall' => 'ویرایش همه',
 );
 
 /** Finnish (suomi)
