@@ -750,6 +750,7 @@ $messages['eu'] = array(
  * @author Reza1615
  */
 $messages['fa'] = array(
+	'action-masseditregex' => 'انجام دادن ویرایش انبوه',
 	'masseditregex-pagelisttxt' => 'صفحات برای ویرایش:',
 	'masseditregex-matchtxt' => 'جستجو برای:',
 	'masseditregex-replacetxt' => 'جایگزینی با:',
@@ -763,6 +764,11 @@ $messages['fa'] = array(
 	'masseditregex-hint-headmatch' => 'مطابقت',
 	'masseditregex-hint-headreplace' => 'جایگزینی',
 	'masseditregex-hint-headeffect' => 'تأثیر',
+	'masseditregex-listtype-intro' => 'این هست یک فهرست:',
+	'masseditregex-listtype-pagenames' => 'نام صفحه (ویرایش این صفحات)',
+	'masseditregex-badregex' => 'ریجکس نامعتبر:',
+	'masseditregex-editfailed' => 'ویرایش نشد:',
+	'masseditregex-tooltip-execute' => 'اعمال این تغییرات بر هر صفحه',
 	'masseditregex-editall' => 'ویرایش همه',
 );
 
