@@ -30,7 +30,6 @@ class MassEditRegex extends SpecialPage {
 	private $aMatch;          ///< $strMatch exploded into array
 	private $aReplace;        ///< $strReplace exploded into array
 	private $strSummary;      ///< Edit summary
-	private $sk;              ///< Skin instance
 	private $diff;            ///< Access to diff engine
 
 	function __construct() {
@@ -79,8 +78,6 @@ class MassEditRegex extends SpecialPage {
 		$this->aReplace = explode("\n", $this->strReplace);
 
 		$this->strSummary = $wgRequest->getText( 'wpSummary', '' );
-
-		$this->sk = $wgUser->getSkin();
 
 		// Replace \n in the match with an actual newline (since a newline can't
 		// be typed in, it'll act as the splitter for the next regex)
@@ -209,7 +206,7 @@ class MassEditRegex extends SpecialPage {
 			Xml::tags( 'div',
 				array( 'class' => 'mw-summary-preview' ),
 				wfMsgExt( 'summary-preview', 'parseinline' ) .
-					$this->sk->commentBlock( $this->strSummary )
+					Linker::commentBlock( $this->strSummary )
 			) .
 			Xml::closeElement( 'div' ) . // class=editOptions
 
@@ -503,7 +500,7 @@ class MassEditRegex extends SpecialPage {
 		} else {
 			$wgOut->addWikiMsg( 'masseditregex-num-articles-changed', $iArticleCount );
 			$wgOut->addHTML(
-				$this->sk->makeKnownLinkObj(
+				Linker::makeKnownLinkObj(
 					SpecialPage::getSafeTitleFor( 'Contributions', $wgUser->getName() ),
 					wfMsgHtml( 'masseditregex-view-full-summary' )
 				)
