@@ -950,6 +950,7 @@ Bim Text, wu yygsetzt wird, isch d Richtig nit relevant.',
 /** Hebrew (עברית)
  * @author Amire80
  * @author YaronSh
+ * @author Yona b
  * @author ערן
  */
 $messages['he'] = array(
@@ -982,7 +983,7 @@ $messages['he'] = array(
 	'masseditregex-listtype-intro' => 'זוהי רשימה של:',
 	'masseditregex-listtype-pagenames' => 'שמות הדפים (עריכת דפים אלה)',
 	'masseditregex-listtype-pagename-prefixes' => 'קידומות שמות הדפים (עריכת דפים ששמם מתחיל בטקסט זה)',
-	'masseditregex-listtype-categories' => 'שמות קטגוריות (עריכת כל הדפים בקטגוריות האלו; אין חשיבות לבחירה לפי מרחב שמות)', # Fuzzy
+	'masseditregex-listtype-categories' => 'שמות קטגוריות (עריכת כל הדפים בקטגוריות האלו)',
 	'masseditregex-listtype-backlinks' => 'דפים המקשרים אל הדף (עריכת דפים שמקשרים לדפים האלה)',
 	'masseditregex-exprnomatch' => 'הביטוי "$1" אינו תואם לאף דף.',
 	'masseditregex-badregex' => 'ביטוי רגולארי שגוי:',
