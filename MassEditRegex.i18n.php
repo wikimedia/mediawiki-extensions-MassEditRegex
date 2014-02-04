@@ -751,6 +751,8 @@ $messages['eu'] = array(
  */
 $messages['fa'] = array(
 	'action-masseditregex' => 'انجام دادن ویرایش انبوه',
+	'masseditregex' => 'ویرایش توده با استفاده از عبارات منظم',
+	'masseditregex-desc' => 'استفاده از عبارات منظم برای [[Special:MassEditRegex|ویرایش بسیاری از صفحات در یک عملیات]]',
 	'masseditregex-pagelisttxt' => 'صفحات برای ویرایش:',
 	'masseditregex-matchtxt' => 'جستجو برای:',
 	'masseditregex-replacetxt' => 'جایگزینی با:',
@@ -758,6 +760,7 @@ $messages['fa'] = array(
 	'masseditregex-err-nopages' => 'شما حداقل باید یک صفحه را برای تغییر، تعیین کنید.',
 	'masseditregex-before' => 'قبل از',
 	'masseditregex-after' => 'پس از',
+	'masseditregex-max-preview-diffs' => 'پیش‌نمایش به اولین $1 {{PLURAL:$1|تطبیق|تطبیق‌ها}} محدود شده‌است.',
 	'masseditregex-num-changes' => '$1: $2 تغییر',
 	'masseditregex-page-not-exists' => '$1 وجود ندارد',
 	'masseditregex-num-articles-changed' => '$1 صفحه ویرایش شده',
@@ -775,6 +778,7 @@ $messages['fa'] = array(
 	'masseditregex-editfailed' => 'ویرایش نشد:',
 	'masseditregex-tooltip-execute' => 'اعمال این تغییرات بر هر صفحه',
 	'masseditregex-editall' => 'ویرایش همه',
+	'right-masseditregex' => 'جایگزین محتوای صفحه با استفاده از عبارات منظم',
 );
 
 /** Finnish (suomi)
