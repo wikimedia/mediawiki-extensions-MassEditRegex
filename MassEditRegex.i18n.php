@@ -769,10 +769,13 @@ $messages['fa'] = array(
 	'masseditregex-hint-headreplace' => 'جایگزینی',
 	'masseditregex-hint-headeffect' => 'تأثیر',
 	'masseditregex-hint-remove' => 'حذف بعضی متون از همهٔ صفحات در فهرست',
+	'masseditregex-hint-renamelink' => 'جایگزینی AAA با BBB در متن لینک اما نه مقصد لینک:
+[[AAA|AAA]] می‌شود [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'این هست یک فهرست:',
 	'masseditregex-listtype-pagenames' => 'نام صفحه (ویرایش این صفحات)',
 	'masseditregex-listtype-pagename-prefixes' => 'پیشوند‌های نام صفحه (ویرایش صفحات دارای نام‌هایی که با این متن شروع می‌شوند)',
 	'masseditregex-listtype-categories' => 'نام‌های دسته (ویرایش هر صفحه درون این دسته‌بندی‌ها)',
+	'masseditregex-listtype-backlinks' => 'لینک‌های گذشته (ویرایش صفحاتی که که به اینها لینک می‌شوند)',
 	'masseditregex-exprnomatch' => 'عبارت "$1" با هیچ صفحه‌ای مطابقت ندارد.',
 	'masseditregex-badregex' => 'ریجکس نامعتبر:',
 	'masseditregex-editfailed' => 'ویرایش نشد:',
