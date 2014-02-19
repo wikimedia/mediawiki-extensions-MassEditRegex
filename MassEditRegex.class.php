@@ -366,7 +366,7 @@ class MassEditRegex extends SpecialPage {
 	 *   true to generate diffs, false to perform page edits.
 	 */
 	function perform( $isPreview ) {
-		global $wgRequest, $wgOut, $wgUser, $wgTitle, $wgLang;
+		global $wgRequest, $wgOut, $wgUser, $wgLang;
 
 		$pageCountLimit = $isPreview ? MER_MAX_PREVIEW_DIFFS : MER_MAX_EXECUTE_PAGES;
 		$errors = array();
@@ -510,22 +510,20 @@ class MassEditRegex extends SpecialPage {
 
 	public static function efSkinTemplateNavigationUniversal( &$sktemplate, &$links )
 	{
-		global $wgTitle;
-		if ( !is_object( $wgTitle ) ) return;
-
-		$ns = $wgTitle->getNamespace();
+		$title = $sktemplate->getTitle();
+		$ns = $title->getNamespace();
 		if ( $ns == NS_CATEGORY ) {
 			$url = SpecialPage::getTitleFor( 'MassEditRegex' )->getLocalURL(
 				array(
-					'wpPageList' => $wgTitle->getText(),
+					'wpPageList' => $title->getText(),
 					'wpPageListType' => 'categories',
 				)
 			);
 		} elseif (
 			( $ns == NS_SPECIAL )
-			&& ( $wgTitle->isSpecial( 'Whatlinkshere' ) )
+			&& ( $title->isSpecial( 'Whatlinkshere' ) )
 		) {
-			$titleParts = SpecialPageFactory::resolveAlias($wgTitle->getText());
+			$titleParts = SpecialPageFactory::resolveAlias($title->getText());
 
 			$url = SpecialPage::getTitleFor( 'MassEditRegex' )->getLocalURL(
 				array(
@@ -548,8 +546,7 @@ class MassEditRegex extends SpecialPage {
 	}
 
 	public static function efBaseTemplateToolbox( &$tpl, &$toolbox ) {
-		global $wgTitle;
-		if ( !$wgTitle->isSpecial( 'MassEditRegex' ) ) return true;
+		if ( !$tpl->getTitle()->isSpecial( 'MassEditRegex' ) ) return true;
 
 		// Hide the 'printable version' link as the shortcut key conflicts with
 		// the preview button.
