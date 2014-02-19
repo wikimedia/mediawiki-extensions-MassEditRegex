@@ -19,9 +19,19 @@ $specialPageAliases['ar'] = array(
 	'MassEditRegex' => array( 'ريجيكس_التعديلات_الكمية' ),
 );
 
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'MassEditRegex' => array( 'ريجيكس_التعديلات_الكتيره' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'MassEditRegex' => array( 'Regex-Massenbearbeitung' ),
+);
+
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'MassEditRegex' => array( 'ویرایش_عبارت_منظم_انبوه' ),
 );
 
 /** Interlingua (interlingua) */
@@ -57,4 +67,9 @@ $specialPageAliases['nl'] = array(
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'MassEditRegex' => array( '批量正则编辑' ),
+);
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'MassEditRegex' => array( '大量正則編輯' ),
 );
