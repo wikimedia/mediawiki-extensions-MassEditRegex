@@ -753,6 +753,9 @@ $messages['fa'] = array(
 	'action-masseditregex' => 'انجام دادن ویرایش انبوه',
 	'masseditregex' => 'ویرایش توده با استفاده از عبارات منظم',
 	'masseditregex-desc' => 'استفاده از عبارات منظم برای [[Special:MassEditRegex|ویرایش بسیاری از صفحات در یک عملیات]]',
+	'masseditregextext' => 'یک یا چند عبارت منظم (یکی در هر خط) برای تطبیق، و یک یا چند عبارت به جای هر تطبیق وارد کنید.
+اولین عبارت-تطبیق، اگر موفق باشد، با اولین عبارت-جایگزین، و غیره، جایگزین خواهد شد.
+برای جزئیات [http://php.net/manual/en/function.preg-replace.php the PHP function preg_replace()] را مشاهده کنید.',
 	'masseditregex-pagelisttxt' => 'صفحات برای ویرایش:',
 	'masseditregex-matchtxt' => 'جستجو برای:',
 	'masseditregex-replacetxt' => 'جایگزینی با:',
@@ -765,10 +768,14 @@ $messages['fa'] = array(
 	'masseditregex-page-not-exists' => '$1 وجود ندارد',
 	'masseditregex-num-articles-changed' => '$1 صفحه ویرایش شده',
 	'masseditregex-view-full-summary' => 'مشاهدهٔ خلاصهٔ ویرایش کامل',
+	'masseditregex-hint-intro' => 'اینجا برخی از اشاره‌ها و مثال‌ها برای انجام وظائف معمولی وجود دارند:',
 	'masseditregex-hint-headmatch' => 'مطابقت',
 	'masseditregex-hint-headreplace' => 'جایگزینی',
 	'masseditregex-hint-headeffect' => 'تأثیر',
+	'masseditregex-hint-toappend' => 'الحاق چند متن برای پایان صفحه-عالی برای افزودن صفحات به دسته‌ها',
 	'masseditregex-hint-remove' => 'حذف بعضی متون از همهٔ صفحات در فهرست',
+	'masseditregex-hint-removecat' => 'حذف همهٔ دسته‌ها از یک صفحه (ذکر رهایی براکت‌های مربع در ویکی‌کد.)
+ارزش‌های جایگزینی نباید رها شوند.',
 	'masseditregex-hint-renamelink' => 'جایگزینی AAA با BBB در متن لینک اما نه مقصد لینک:
 [[AAA|AAA]] می‌شود [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'این هست یک فهرست:',
