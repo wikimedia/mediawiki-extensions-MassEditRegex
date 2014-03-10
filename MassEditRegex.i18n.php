@@ -963,6 +963,7 @@ Bim Text, wu yygsetzt wird, isch d Richtig nit relevant.',
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author Inkbug
  * @author YaronSh
  * @author Yona b
  * @author ערן
@@ -974,7 +975,7 @@ $messages['he'] = array(
 	'masseditregextext' => 'הכניסו ביטוי רגולרי אחד או יותר (אחד בכל שורה) לחיפוש התאמות, וביטוי אחד או יותר שבו יוחלפו המחרוזות המתאימות שתימצאנה.
 ,ביטוי החיפוש הראשון, אם יימצא, יוחלף בביטוי ההחלפה הראשון וכולי.
 ר\' [http://php.net/manual/en/function.preg-replace.php את תיעוד הפונקציה <span dir="ltr">preg_replace()</span> של PHP] למידע נוסף.',
-	'masseditregex-pagelisttxt' => 'דפים לעריכה (אין להשתמש בקידומת שם המרחב:):', # Fuzzy
+	'masseditregex-pagelisttxt' => 'דפים לעריכה:',
 	'masseditregex-matchtxt' => 'חיפוש אחר:',
 	'masseditregex-replacetxt' => 'החלפה ב־:',
 	'masseditregex-executebtn' => 'הפעלה',
