@@ -746,6 +746,7 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Armin1392
+ * @author Ebraminio
  * @author Mjbmr
  * @author Reza1615
  */
@@ -776,13 +777,13 @@ $messages['fa'] = array(
 	'masseditregex-hint-remove' => 'حذف بعضی متون از همهٔ صفحات در فهرست',
 	'masseditregex-hint-removecat' => 'حذف همهٔ دسته‌ها از یک صفحه (ذکر رهایی براکت‌های مربع در ویکی‌کد.)
 ارزش‌های جایگزینی نباید رها شوند.',
-	'masseditregex-hint-renamelink' => 'جایگزینی AAA با BBB در متن لینک اما نه مقصد لینک:
+	'masseditregex-hint-renamelink' => 'جایگزینی AAA با BBB در متن پیوند اما نه مقصد پیوند:
 [[AAA|AAA]] می‌شود [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'این هست یک فهرست:',
 	'masseditregex-listtype-pagenames' => 'نام صفحه (ویرایش این صفحات)',
 	'masseditregex-listtype-pagename-prefixes' => 'پیشوند‌های نام صفحه (ویرایش صفحات دارای نام‌هایی که با این متن شروع می‌شوند)',
 	'masseditregex-listtype-categories' => 'نام‌های دسته (ویرایش هر صفحه درون این دسته‌بندی‌ها)',
-	'masseditregex-listtype-backlinks' => 'لینک‌های گذشته (ویرایش صفحاتی که که به اینها لینک می‌شوند)',
+	'masseditregex-listtype-backlinks' => 'پیوندهای گذشته (ویرایش صفحاتی که که به اینها پیوند می‌شوند)',
 	'masseditregex-exprnomatch' => 'عبارت "$1" با هیچ صفحه‌ای مطابقت ندارد.',
 	'masseditregex-badregex' => 'ریجکس نامعتبر:',
 	'masseditregex-editfailed' => 'ویرایش نشد:',
@@ -995,6 +996,7 @@ $messages['he'] = array(
 	'masseditregex-hint-remove' => 'הסרת טקסט כלשהו מכל הדפים שברשימה',
 	'masseditregex-hint-removecat' => 'להסיר את כל הקטגוריות מהדף (שימו לב לחילוף הסוגריים המרובעים בקוד ויקי).
 אין להוסיף תווי חילוף לערכים להחלפה.',
+	'masseditregex-hint-renamelink' => 'החלף AAA ב־BBB בטקסט  הקישור אך לא ביעד הקישור: [[AAA|AAA]] הופך ל [[AAA|BBB]]',
 	'masseditregex-listtype-intro' => 'זוהי רשימה של:',
 	'masseditregex-listtype-pagenames' => 'שמות הדפים (עריכת דפים אלה)',
 	'masseditregex-listtype-pagename-prefixes' => 'קידומות שמות הדפים (עריכת דפים ששמם מתחיל בטקסט זה)',
@@ -1004,6 +1006,7 @@ $messages['he'] = array(
 	'masseditregex-badregex' => 'ביטוי רגולארי שגוי:',
 	'masseditregex-editfailed' => 'העריכה נכשלה:',
 	'masseditregex-tooltip-execute' => 'החלת שינויים אלה לכל דף',
+	'masseditregex-editall' => 'שנה הכל',
 	'right-masseditregex' => 'החלפת תוכן הדף באמצעות ביטויים רגולריים',
 );
 
