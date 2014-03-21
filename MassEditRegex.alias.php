@@ -29,6 +29,11 @@ $specialPageAliases['de'] = array(
 	'MassEditRegex' => array( 'Regex-Massenbearbeitung' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'MassEditRegex' => array( 'HolaHerunerBıvırne' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'MassEditRegex' => array( 'ویرایش_عبارت_منظم_انبوه' ),
