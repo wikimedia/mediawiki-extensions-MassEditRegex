@@ -2171,6 +2171,7 @@ $messages['vi'] = array(
 /** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  * @author Qiyue2001
+ * @author Xiaomingyan
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
@@ -2207,7 +2208,7 @@ $messages['zh-hans'] = array(
 	'masseditregex-badregex' => '无效的正则表达式：',
 	'masseditregex-editfailed' => '编辑失败：',
 	'masseditregex-tooltip-execute' => '将这些更改应用到每个页面',
-	'masseditregex-editall' => '编辑全部',
+	'masseditregex-editall' => '编辑所有',
 	'right-masseditregex' => '使用正则表达式替换页面内容',
 );
 
