@@ -1411,6 +1411,7 @@ $messages['lb'] = array(
 	'masseditregex-exprnomatch' => 'Den Ausdrock "$1" huet keng Resultater erginn.',
 	'masseditregex-editfailed' => 'Feeler beim änneren:',
 	'masseditregex-tooltip-execute' => 'Dës Ännerungen op all Säit uwenden',
+	'masseditregex-editall' => 'All änneren',
 );
 
 /** Macedonian (македонски)
