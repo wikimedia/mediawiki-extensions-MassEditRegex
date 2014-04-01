@@ -1,0 +1,35 @@
+{
+    "@metadata": {
+        "authors": [
+            "Mark85296341",
+            "Simon Shek"
+        ]
+    },
+    "action-masseditregex": "執行批量編輯",
+    "masseditregex": "使用正則表達式進行批量編輯",
+    "masseditregex-desc": "使用正則表達式來[[Special:MassEditRegex|一次編輯多個頁面]]",
+    "masseditregex-pagelisttxt": "要編輯的頁面：",
+    "masseditregex-matchtxt": "查找：",
+    "masseditregex-replacetxt": "替換為：",
+    "masseditregex-executebtn": "執行",
+    "masseditregex-err-nopages": "您必須指定至少一個頁面以供更改。",
+    "masseditregex-before": "之前",
+    "masseditregex-after": "之後",
+    "masseditregex-max-preview-diffs": "預覽已被限制為首個 $1 {{PLURAL:$1|匹配}}。",
+    "masseditregex-page-not-exists": "$1 不存在",
+    "masseditregex-view-full-summary": "查看完整的編輯摘要",
+    "masseditregex-hint-intro": "下面是一些提示和完成常見任務的例子：",
+    "masseditregex-hint-headmatch": "匹配",
+    "masseditregex-hint-headreplace": "替換",
+    "masseditregex-hint-headeffect": "影響",
+    "masseditregex-listtype-intro": "這是一個列表：",
+    "masseditregex-listtype-pagenames": "頁面名稱（編輯這些網頁）",
+    "masseditregex-listtype-pagename-prefixes": "網頁名稱前綴（編輯網頁名稱的開頭有這個文字）",
+    "masseditregex-listtype-categories": "分類名稱（編輯在這些分類里的每個頁面）",
+    "masseditregex-listtype-backlinks": "反向鏈接 （編輯鏈接到這些之一的頁面）",
+    "masseditregex-exprnomatch": "表達式“$1”沒有匹配的頁面。",
+    "masseditregex-badregex": "無效的正則表達式：",
+    "masseditregex-editfailed": "編輯失敗：",
+    "masseditregex-tooltip-execute": "將這些更改應用到每個頁面",
+    "right-masseditregex": "使用正則表達式替換頁面內容"
+}
