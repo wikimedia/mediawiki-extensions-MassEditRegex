@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ahmed-Najib-Biabani-Ibrahimkhel"
-        ]
-    },
-    "masseditregex-matchtxt": "پلټنه د:",
-    "masseditregex-before": "دمخه",
-    "masseditregex-after": "وروسته",
-    "masseditregex-hint-headreplace": "ځايناستول",
-    "masseditregex-listtype-intro": "دا يو لړليک دی د:"
+	"@metadata": {
+		"authors": [
+			"Ahmed-Najib-Biabani-Ibrahimkhel"
+		]
+	},
+	"masseditregex-matchtxt": "پلټنه د:",
+	"masseditregex-before": "دمخه",
+	"masseditregex-after": "وروسته",
+	"masseditregex-hint-headreplace": "ځايناستول",
+	"masseditregex-listtype-intro": "دا يو لړليک دی د:"
 }

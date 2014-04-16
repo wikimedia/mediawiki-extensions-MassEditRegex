@@ -1,10 +1,8 @@
 {
-    "@metadata": {
-        "authors": []
-    },
-    "masseditregex-matchtxt": "Najít:",
-    "masseditregex-replacetxt": "Nahradit za:",
-    "masseditregex-before": "Před",
-    "masseditregex-after": "Po",
-    "masseditregex-hint-headreplace": "Nahradit"
+	"@metadata": [],
+	"masseditregex-matchtxt": "Najít:",
+	"masseditregex-replacetxt": "Nahradit za:",
+	"masseditregex-before": "Před",
+	"masseditregex-after": "Po",
+	"masseditregex-hint-headreplace": "Nahradit"
 }

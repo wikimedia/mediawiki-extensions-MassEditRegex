@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Paucabot"
-        ]
-    },
-    "masseditregex": "Edició massiva utilitzant expressions regulars",
-    "masseditregex-matchtxt": "Cerca:",
-    "masseditregex-replacetxt": "Reemplaça per:",
-    "masseditregex-before": "Abans",
-    "masseditregex-after": "Després",
-    "masseditregex-hint-headreplace": "Reemplaça",
-    "masseditregex-listtype-intro": "Això és una llista de:",
-    "masseditregex-listtype-pagenames": "Noms de les pàgines (editeu aquestes pàgines)"
+	"@metadata": {
+		"authors": [
+			"Paucabot"
+		]
+	},
+	"masseditregex": "Edició massiva utilitzant expressions regulars",
+	"masseditregex-matchtxt": "Cerca:",
+	"masseditregex-replacetxt": "Reemplaça per:",
+	"masseditregex-before": "Abans",
+	"masseditregex-after": "Després",
+	"masseditregex-hint-headreplace": "Reemplaça",
+	"masseditregex-listtype-intro": "Això és una llista de:",
+	"masseditregex-listtype-pagenames": "Noms de les pàgines (editeu aquestes pàgines)"
 }

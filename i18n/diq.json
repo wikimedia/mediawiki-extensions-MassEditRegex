@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Gorizon"
-        ]
-    },
-    "masseditregex-before": "Veri",
-    "masseditregex-after": "Bahdo"
+	"@metadata": {
+		"authors": [
+			"Gorizon"
+		]
+	},
+	"masseditregex-before": "Veri",
+	"masseditregex-after": "Bahdo"
 }

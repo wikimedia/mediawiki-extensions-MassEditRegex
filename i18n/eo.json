@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Yekrats"
-        ]
-    },
-    "masseditregex-matchtxt": "Serĉi",
-    "masseditregex-replacetxt": "Anstataŭigi kun:",
-    "masseditregex-editfailed": "Redakto malsukcesis:"
+	"@metadata": {
+		"authors": [
+			"Yekrats"
+		]
+	},
+	"masseditregex-matchtxt": "Serĉi",
+	"masseditregex-replacetxt": "Anstataŭigi kun:",
+	"masseditregex-editfailed": "Redakto malsukcesis:"
 }

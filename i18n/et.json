@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Avjoska"
-        ]
-    },
-    "masseditregex-before": "Enne",
-    "masseditregex-after": "Pärast"
+	"@metadata": {
+		"authors": [
+			"Avjoska"
+		]
+	},
+	"masseditregex-before": "Enne",
+	"masseditregex-after": "Pärast"
 }
