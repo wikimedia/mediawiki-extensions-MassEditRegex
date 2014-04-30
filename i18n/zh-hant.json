@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Mark85296341",
-			"Simon Shek"
+			"Simon Shek",
+			"Cwlin0416"
 		]
 	},
 	"action-masseditregex": "執行批量編輯",
@@ -31,5 +32,6 @@
 	"masseditregex-badregex": "無效的正則表達式：",
 	"masseditregex-editfailed": "編輯失敗：",
 	"masseditregex-tooltip-execute": "將這些更改應用到每個頁面",
+	"masseditregex-editall": "編輯全部",
 	"right-masseditregex": "使用正則表達式替換頁面內容"
 }
