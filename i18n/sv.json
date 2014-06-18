@@ -3,10 +3,14 @@
 		"authors": [
 			"Dafer45",
 			"Jopparn",
-			"Per"
+			"Per",
+			"Lokal Profil"
 		]
 	},
+	"action-masseditregex": "utför en massredigering",
 	"masseditregex": "Använd regulära uttryck för att massredigera.",
+	"masseditregex-desc": "Använda reguljära uttryck för att [[Special:MassEditRegex|redigerar många sidor i en åtgärd]]",
+	"masseditregextext": "Ange en eller flera reguljära uttryck (en per rad) för att matcha, och en eller flera uttryck att ersätta varje matchning med.\nFörsta match-uttrycket, om det lyckas, kommer att ersättas med det första ersättnings-uttrycket, och så vidare.\nSe [http://php.net/manual/en/function.preg-replace.php PHP-funktionen preg_replace()] för detaljer.",
 	"masseditregex-pagelisttxt": "Sidor att redigera:",
 	"masseditregex-matchtxt": "Sök efter:",
 	"masseditregex-replacetxt": "Ersätt med:",
@@ -33,7 +37,9 @@
 	"masseditregex-listtype-categories": "Kategorinamn (redigera varje sida i dessa kategorier)",
 	"masseditregex-listtype-backlinks": "Bakåtlänkar (redigera sidor som länkar till dessa)",
 	"masseditregex-exprnomatch": "Uttrycket \"$1\" matchade inga sidor.",
-	"masseditregex-editfailed": "Redigera misslyckades:",
+	"masseditregex-badregex": "Ogiltiga reguljära uttryck:",
+	"masseditregex-editfailed": "Redigering misslyckades:",
 	"masseditregex-tooltip-execute": "Tillämpa dessa förändringar på varje sida",
-	"masseditregex-editall": "Redigera alla"
+	"masseditregex-editall": "Redigera alla",
+	"right-masseditregex": "Ersätt sidinnehåll med hjälp av reguljära uttryck"
 }
