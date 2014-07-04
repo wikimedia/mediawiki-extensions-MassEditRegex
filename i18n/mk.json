@@ -30,7 +30,7 @@
 	"masseditregex-hint-renamelink": "Заменете го ААА со БББ во текстот на врската, но не и одредницата на самата врска: [[AAA|ААА]] Станува [[AAA|БББ]]",
 	"masseditregex-listtype-intro": "Ова е список на:",
 	"masseditregex-listtype-pagenames": "Имиња на страниците (уредете ги тие страници)",
-	"masseditregex-listtype-pagename-prefixes": "Префикси на имиња на страници (уредете ги страниците чие име започнува со овој текст)",
+	"masseditregex-listtype-pagename-prefixes": "Претставки на имиња на страници (уредете ги страниците чие име започнува со овој текст)",
 	"masseditregex-listtype-categories": "Имиња на категориите (уредете ја секоја страница во тие категории)",
 	"masseditregex-listtype-backlinks": "Обратни врски (уредете страници кои водат до овие)",
 	"masseditregex-exprnomatch": "На изразот „$1“ не му соодветствува ниту една страница.",
