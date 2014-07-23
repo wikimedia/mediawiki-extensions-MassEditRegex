@@ -3,7 +3,8 @@
 		"authors": [
 			"Mark85296341",
 			"Simon Shek",
-			"Cwlin0416"
+			"Cwlin0416",
+			"LNDDYL"
 		]
 	},
 	"action-masseditregex": "執行批量編輯",
@@ -27,7 +28,7 @@
 	"masseditregex-listtype-pagenames": "頁面名稱（編輯這些網頁）",
 	"masseditregex-listtype-pagename-prefixes": "網頁名稱前綴（編輯網頁名稱的開頭有這個文字）",
 	"masseditregex-listtype-categories": "分類名稱（編輯在這些分類里的每個頁面）",
-	"masseditregex-listtype-backlinks": "反向鏈接 （編輯鏈接到這些之一的頁面）",
+	"masseditregex-listtype-backlinks": "反向連結 （編輯連結到這些之一的頁面）",
 	"masseditregex-exprnomatch": "表達式“$1”沒有匹配的頁面。",
 	"masseditregex-badregex": "無效的正則表達式：",
 	"masseditregex-editfailed": "編輯失敗：",
