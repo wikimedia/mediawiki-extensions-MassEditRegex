@@ -19,7 +19,7 @@
 	"masseditregex-after": "之後",
 	"masseditregex-max-preview-diffs": "預覽已被限制為首個 $1 {{PLURAL:$1|匹配}}。",
 	"masseditregex-page-not-exists": "$1 不存在",
-	"masseditregex-view-full-summary": "查看完整的編輯摘要",
+	"masseditregex-view-full-summary": "檢視完整的編輯摘要",
 	"masseditregex-hint-intro": "下面是一些提示和完成常見任務的例子：",
 	"masseditregex-hint-headmatch": "匹配",
 	"masseditregex-hint-headreplace": "替換",
