@@ -76,5 +76,5 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'MassEditRegex' => array( '大量正則編輯' ),
+	'MassEditRegex' => array( '大量編輯Regex' ),
 );
