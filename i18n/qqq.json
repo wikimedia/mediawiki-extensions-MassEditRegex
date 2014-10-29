@@ -6,7 +6,8 @@
 			"Kghbln",
 			"Purodha",
 			"Shirayuki",
-			"Siebrand"
+			"Siebrand",
+			"Liuxinyu970226"
 		]
 	},
 	"action-masseditregex": "{{doc-action|masseditregex}}",
@@ -14,7 +15,7 @@
 	"masseditregex-desc": "{{desc|name=Mass Edit Regex|url=http://www.mediawiki.org/wiki/Extension:MassEditRegex}}",
 	"masseditregextext": "Replace <code>/en/</code> in the middle in link <code>http://php.net/manual/en/function.preg-replace.php</code> with your language code between slashes, if that page exists. Otherwise leave it as is to link to the English documentation, or choose an appropriate fallback language code.",
 	"masseditregex-pagelisttxt": "Used as label for the \"Page list\" textarea.",
-	"masseditregex-matchtxt": "Used as label for the \"Match-RegEx\" textarea.",
+	"masseditregex-matchtxt": "Used as label for the \"Match-RegEx\" textarea.\n{{Identical|Search}}",
 	"masseditregex-replacetxt": "Used as label for the \"Replace-RegEx\" textarea.",
 	"masseditregex-executebtn": "Used as label for the Submit button.\n\nSee also:\n* {{msg-mw|Accesskey-save}} - access key\n* {{msg-mw|masseditregex-tooltip-execute}} - tooltip\n{{Identical|Execute}}",
 	"masseditregex-err-nopages": "Used as error message.",
