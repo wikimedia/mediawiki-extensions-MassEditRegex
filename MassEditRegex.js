@@ -227,8 +227,8 @@ function executeMassEdit() {
 				if ( page.error || response.error ) {
 					li.text(page.title + ': ' + page.error ? page.error : response.error);
 				} else {
-					li.text( mw.message( 'masseditregex-js-editpage', response.changes,
-						page.title, remaining ).text() );
+					li.text( mw.message( 'masseditregex-num-changes', page.title,
+						response.changes, remaining ).text() );
 				}
 
 				list.prepend(li);
