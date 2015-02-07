@@ -22,7 +22,7 @@
 	"masseditregex-before": "Vorher",
 	"masseditregex-after": "Nachher",
 	"masseditregex-max-preview-diffs": "Die Vorschau wurde auf {{PLURAL:$1|den|die}} ersten $1 Treffer begrenzt.",
-	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|Änderung|Änderungen}}",
+	"masseditregex-num-changes": "$1: {{PLURAL:$2|Eine Änderung|$2 Änderungen}} ($3 verbleibend)",
 	"masseditregex-page-not-exists": "$1 existiert nicht",
 	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|Seite|Seiten}} bearbeitet",
 	"masseditregex-view-full-summary": "Vollständigen Bearbeitungskommentar anzeigen",
@@ -44,5 +44,17 @@
 	"masseditregex-editfailed": "Bearbeitung fehlgeschlagen:",
 	"masseditregex-tooltip-execute": "Diese Änderungen an jeder Seite durchführen",
 	"masseditregex-editall": "Alle bearbeiten",
-	"right-masseditregex": "Textersetzungen mit regulären Ausdrücken durchführen"
+	"right-masseditregex": "Textersetzungen mit regulären Ausdrücken durchführen",
+	"masseditregex-noaccess": "Du hast keinen Zugriff auf MassEditRegex",
+	"masseditregex-norevisions": "Es wurden keine zu bearbeitenden Versionen gefunden",
+	"masseditregex-blocked": "Dein Benutzerkonto ist gesperrt",
+	"masseditregex-readonlydb": "Die Datenbank ist schreibgeschützt",
+	"masseditregex-js-clientside": "Im Browser ausführen",
+	"masseditregex-js-execution": "Markiere dies, um den Seitendurchlauf auf der Clientseite im Browser auszuführen. Dies ermöglicht größere Änderungen, die normalerweise durch die maximale Ausführungszeit von PHP beschränkt ist.",
+	"masseditregex-js-jobdone": "Abgeschlossen",
+	"masseditregex-js-working": "Verarbeite …",
+	"masseditregex-js-pagenotexist": "$1 ist nicht vorhanden.",
+	"masseditregex-js-mwapi-api-error": "Fehler: Die MediaWiki-API hat den Fehlercode $1 zurückgegeben: $2",
+	"masseditregex-js-mwapi-general-error": "Fehler: Unbekanntes Ergebnis von der MediaWiki-API.",
+	"masseditregex-js-mwapi-unknown-error": "Fehler: Unbekannter Fehler bei der Anfrage an die MediaWiki-API."
 }
