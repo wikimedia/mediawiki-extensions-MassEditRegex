@@ -46,6 +46,7 @@ $wgResourceModules['MassEditRegex'] = array(
 		'MassEditRegex.js'
 	),
 	'dependencies' => array(
+		'mediawiki.jqueryMsg',
 		'jquery.ui.dialog'
 	),
 	'group' => 'MassEditRegex',
@@ -54,7 +55,7 @@ $wgResourceModules['MassEditRegex'] = array(
 	'messages' => array (
 		'masseditregex-js-execution',
 		'masseditregex-js-jobdone',
-		'masseditregex-js-editpage',
+		'masseditregex-num-changes',
 		'masseditregex-js-working',
 		'masseditregex-js-pagenotexist',
 		'masseditregex-js-mwapi-api-error',

@@ -210,7 +210,7 @@ function executeMassEdit() {
 		var content = $( '<div></div>' );
 		var heading = $( '<h1></h1>' );
 		content.append( heading );
-		heading.text( mw.message( 'masseditregex-js-working' ).text() );
+		heading.text( mw.message( 'masseditregex-js-working', '?' ).text() );
 		var list = $( '<ul></ul>' );
 		content.append( list );
 
@@ -228,7 +228,8 @@ function executeMassEdit() {
 					li.text(page.title + ': ' + page.error ? page.error : response.error);
 				} else {
 					li.text( mw.message( 'masseditregex-num-changes', page.title,
-						response.changes, remaining ).text() );
+						response.changes ).text() );
+					heading.text( mw.message( 'masseditregex-js-working', remaining ).text() );
 				}
 
 				list.prepend(li);
