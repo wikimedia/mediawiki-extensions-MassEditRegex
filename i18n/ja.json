@@ -4,7 +4,8 @@
 			"Fryed-peach",
 			"Shirayuki",
 			"Whym",
-			"青子守歌"
+			"青子守歌",
+			"Los688"
 		]
 	},
 	"action-masseditregex": "一括編集の実行",
@@ -41,5 +42,6 @@
 	"masseditregex-editfailed": "編集失敗:",
 	"masseditregex-tooltip-execute": "これらの変更を各ページに適用する",
 	"masseditregex-editall": "すべて編集",
-	"right-masseditregex": "正規表現を使用してページの内容を置換"
+	"right-masseditregex": "正規表現を使用してページの内容を置換",
+	"masseditregex-js-jobdone": "完了"
 }

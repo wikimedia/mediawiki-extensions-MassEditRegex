@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Vitorvicentevalente"
 		]
 	},
 	"masseditregex": "Edições em massa usando expressões regulares",
@@ -15,7 +16,7 @@
 	"masseditregex-before": "Antes",
 	"masseditregex-after": "Depois",
 	"masseditregex-max-preview-diffs": "A antevisão foi limitada {{PLURAL:$1|à primeira ocorrência|às primeiras $1 ocorrências}}.",
-	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|alteração|alterações}}",
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|alteração|alterações}} ({{PLURAL:$2|falta|faltam}} $3)",
 	"masseditregex-page-not-exists": "$1 não existe",
 	"masseditregex-num-articles-changed": "{{PLURAL:$1|Uma página editada|$1 páginas editadas}}",
 	"masseditregex-view-full-summary": "Ver resumo de edição completo",
@@ -34,5 +35,14 @@
 	"masseditregex-exprnomatch": "A expressão \"$1\" não ocorre em nenhuma página.",
 	"masseditregex-badregex": "Regex inválida:",
 	"masseditregex-editfailed": "Edição falhou:",
-	"masseditregex-tooltip-execute": "Aplicar estas alterações a cada página"
+	"masseditregex-tooltip-execute": "Aplicar estas alterações a cada página",
+	"masseditregex-noaccess": "Não possui acesso ao MassEditRegex",
+	"masseditregex-blocked": "A sua conta de utilizador está bloqueada",
+	"masseditregex-readonlydb": "A base de dados é apenas de leitura",
+	"masseditregex-js-clientside": "Executar no navegador",
+	"masseditregex-js-working": "A processar...",
+	"masseditregex-js-pagenotexist": "$1 não existe.",
+	"masseditregex-js-mwapi-api-error": "Erro: O API do MediaWiki devolveu o código de erro $1: $2",
+	"masseditregex-js-mwapi-general-error": "Erro: Resultado desconhecido do API do MediaWiki.",
+	"masseditregex-js-mwapi-unknown-error": "Erro: Erro desconhecido durante a solicitação ao API do MediaWiki."
 }

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"David1010"
+			"David1010",
+			"MIKHEIL"
 		]
 	},
 	"masseditregex-before": "მანამდე",
@@ -12,5 +13,8 @@
 	"masseditregex-badregex": "არასწორი რეგულარული გამოხატვა:",
 	"masseditregex-editfailed": "რედაქტირების შეცდომა:",
 	"masseditregex-tooltip-execute": "ამ ცვლილების ყველა გვერდისათვის გამოყენება",
-	"right-masseditregex": "გვერდის შინაარსის შეცვლა, რეგულარული გამოხატვის საშუალებით"
+	"right-masseditregex": "გვერდის შინაარსის შეცვლა, რეგულარული გამოხატვის საშუალებით",
+	"masseditregex-blocked": "თქვენი ანგარიში დაბლოკილია",
+	"masseditregex-js-clientside": "ბრაუზერში შესრულება",
+	"masseditregex-js-jobdone": "დასრულებულია"
 }

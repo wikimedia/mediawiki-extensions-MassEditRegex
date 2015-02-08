@@ -6,7 +6,8 @@
 			"Dferg",
 			"MarcoAurelio",
 			"Ovruni",
-			"Translationista"
+			"Translationista",
+			"JasterTDC"
 		]
 	},
 	"action-masseditregex": "realizar ediciones en bloque",
@@ -42,5 +43,12 @@
 	"masseditregex-editfailed": "Edición fallida:",
 	"masseditregex-tooltip-execute": "Aplicar estos cambios a cada página",
 	"masseditregex-editall": "Editar todo",
-	"right-masseditregex": "Reemplazar el contenido de las páginas utilizando expresiones regulares"
+	"right-masseditregex": "Reemplazar el contenido de las páginas utilizando expresiones regulares",
+	"masseditregex-norevisions": "No se encuentran revisiones para editar",
+	"masseditregex-blocked": "Tu cuenta está bloqueada",
+	"masseditregex-readonlydb": "La base de datos es de sólo lectura",
+	"masseditregex-js-jobdone": "Completado",
+	"masseditregex-js-working": "Procesando...($1)",
+	"masseditregex-js-pagenotexist": "<<$1>> no existe.",
+	"masseditregex-js-mwapi-api-error": "Error: MediaWiki API devolvió el siguiente código de error $1: $2"
 }
