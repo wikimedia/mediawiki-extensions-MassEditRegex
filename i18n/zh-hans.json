@@ -21,7 +21,7 @@
 	"masseditregex-before": "前",
 	"masseditregex-after": "后",
 	"masseditregex-max-preview-diffs": "预览已经限制为{{PLURAL:$1|首个匹配|前$1个匹配}}。",
-	"masseditregex-num-changes": "$1：$2个更改",
+	"masseditregex-num-changes": "$1：$2个{{PLURAL:$2|更改}}",
 	"masseditregex-page-not-exists": "$1 不存在",
 	"masseditregex-num-articles-changed": "已编辑$1个页面",
 	"masseditregex-view-full-summary": "查看完整的编辑摘要",
@@ -43,5 +43,10 @@
 	"masseditregex-editfailed": "编辑失败：",
 	"masseditregex-tooltip-execute": "将这些更改应用到每个页面",
 	"masseditregex-editall": "编辑所有",
-	"right-masseditregex": "使用正则表达式替换页面内容"
+	"right-masseditregex": "使用正则表达式替换页面内容",
+	"masseditregex-js-clientside": "在浏览器中执行",
+	"masseditregex-js-jobdone": "完成",
+	"masseditregex-js-working": "处理中……（省略$1个）",
+	"masseditregex-js-pagenotexist": "$1不存在。",
+	"masseditregex-js-mwapi-api-error": "错误：MediaWiki API 返回了错误代码$1：$2"
 }

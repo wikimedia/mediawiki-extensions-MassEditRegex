@@ -3,7 +3,8 @@
 		"authors": [
 			"BeginaFelicysym",
 			"Sp5uhe",
-			"Woytecr"
+			"Woytecr",
+			"Chrumps"
 		]
 	},
 	"action-masseditregex": "wykonaj edycję zbiorczą",
@@ -40,5 +41,13 @@
 	"masseditregex-editfailed": "Edycja nie powiodła się",
 	"masseditregex-tooltip-execute": "Zastosuj te zmiany do wszystkich stron",
 	"masseditregex-editall": "Edytuj wszystkie",
-	"right-masseditregex": "Zamiana treści stron z użyciem wyrażeń regularnych"
+	"right-masseditregex": "Zamiana treści stron z użyciem wyrażeń regularnych",
+	"masseditregex-noaccess": "Nie masz dostępu do MassEditRegex",
+	"masseditregex-blocked": "Twoje konto jest zablokowane",
+	"masseditregex-readonlydb": "Baza danych jest tylko do odczytu",
+	"masseditregex-js-clientside": "Uruchom w przeglądarce",
+	"masseditregex-js-working": "Przetwarzanie... (pozostało $1)",
+	"masseditregex-js-pagenotexist": "$1 nie istnieje.",
+	"masseditregex-js-mwapi-api-error": "Błąd: API MediaWiki zwrócił kod błędu $1: $2",
+	"masseditregex-js-mwapi-general-error": "Błąd: Nieznany wynik z API MediaWiki."
 }

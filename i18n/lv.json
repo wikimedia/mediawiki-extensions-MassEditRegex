@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Papuass"
+		]
+	},
+	"masseditregex-js-clientside": "Izpildīt pārlūkā",
+	"masseditregex-js-working": "Apstrādā... (atlicis $1)",
+	"masseditregex-js-pagenotexist": "$1 nepastāv."
+}

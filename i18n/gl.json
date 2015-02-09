@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toliño"
+			"Toliño",
+			"Fisterraeomar"
 		]
 	},
 	"action-masseditregex": "realizar edicións en masa",
@@ -38,5 +39,13 @@
 	"masseditregex-editfailed": "Fallou a edición:",
 	"masseditregex-tooltip-execute": "Aplicar estes cambios a cada páxina",
 	"masseditregex-editall": "Editar todo",
-	"right-masseditregex": "Substituír os contidos das páxinas por expresións regulares"
+	"right-masseditregex": "Substituír os contidos das páxinas por expresións regulares",
+	"masseditregex-noaccess": "Non ten vostede acceso ao MassEditRegex",
+	"masseditregex-norevisions": "Non se atoparon revisións que editar",
+	"masseditregex-blocked": "A súa conta de usuario foi bloqueada",
+	"masseditregex-readonlydb": "A base de datos é de só lectura",
+	"masseditregex-js-clientside": "Executar no navegador",
+	"masseditregex-js-jobdone": "Completado",
+	"masseditregex-js-working": "Procesando... (falta $1)",
+	"masseditregex-js-pagenotexist": "$1 non existe."
 }

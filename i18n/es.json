@@ -7,7 +7,9 @@
 			"MarcoAurelio",
 			"Ovruni",
 			"Translationista",
-			"JasterTDC"
+			"JasterTDC",
+			"Fitoschido",
+			"Macofe"
 		]
 	},
 	"action-masseditregex": "realizar ediciones en bloque",
@@ -44,11 +46,15 @@
 	"masseditregex-tooltip-execute": "Aplicar estos cambios a cada página",
 	"masseditregex-editall": "Editar todo",
 	"right-masseditregex": "Reemplazar el contenido de las páginas utilizando expresiones regulares",
+	"masseditregex-noaccess": "No tienes acceso a MassEditRegex",
 	"masseditregex-norevisions": "No se encuentran revisiones para editar",
 	"masseditregex-blocked": "Tu cuenta está bloqueada",
-	"masseditregex-readonlydb": "La base de datos es de sólo lectura",
+	"masseditregex-readonlydb": "La base de datos es de solo lectura",
+	"masseditregex-js-clientside": "Ejecutar en el navegador",
 	"masseditregex-js-jobdone": "Completado",
-	"masseditregex-js-working": "Procesando...($1)",
-	"masseditregex-js-pagenotexist": "<<$1>> no existe.",
-	"masseditregex-js-mwapi-api-error": "Error: MediaWiki API devolvió el siguiente código de error $1: $2"
+	"masseditregex-js-working": "Procesando... (falta $1)",
+	"masseditregex-js-pagenotexist": "$1 no existe.",
+	"masseditregex-js-mwapi-api-error": "Error: la API de MediaWiki devolvió el código de error $1: $2",
+	"masseditregex-js-mwapi-general-error": "Error: el resultado de la API de MediaWiki es desconocido.",
+	"masseditregex-js-mwapi-unknown-error": "Ocurrió un error desconocido al realizar la solicitud a la API de MediaWiki."
 }
