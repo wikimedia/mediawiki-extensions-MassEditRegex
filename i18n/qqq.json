@@ -1,13 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"EugeneZelenko",
-			"Fryed-peach",
 			"Kghbln",
+			"Liuxinyu970226",
 			"Purodha",
-			"Shirayuki",
-			"Siebrand",
-			"Liuxinyu970226"
+			"Shirayuki"
 		]
 	},
 	"action-masseditregex": "{{doc-action|masseditregex}}",
@@ -22,7 +19,7 @@
 	"masseditregex-before": "{{Identical|Before}}",
 	"masseditregex-after": "{{Identical|After}}",
 	"masseditregex-max-preview-diffs": "Parameters:\n* $1 - number of matches (page count limit)",
-	"masseditregex-num-changes": "Parameters:\n* $1 - page title\n* $2 - number of changes",
+	"masseditregex-num-changes": "Parameters:\n* $1 - page title\n* $2 - number of changes\n{{Identical|Change}}",
 	"masseditregex-page-not-exists": "Used as error message. Parameters:\n* $1 - page title",
 	"masseditregex-num-articles-changed": "Followed by a link to [[Special:Contributions]]. Its link text is {{msg-mw|Masseditregex-view-full-summary}}.\n\nParameters:\n* $1 - number of pages",
 	"masseditregex-view-full-summary": "Used as link text. The link points to [[Special:Contributions]].\n\nPreceded by the message {{msg-mw|Masseditregex-num-articles-changed}}.",
@@ -44,17 +41,6 @@
 	"masseditregex-editfailed": "Used as error message.\n\nFollowed by list of the error messages.",
 	"masseditregex-tooltip-execute": "Used as tooltip for the Submit button.\n\nSee also:\n* {{msg-mw|Masseditregex-executebtn}} - label for button\n* {{msg-mw|Accesskey-save}} - access key",
 	"masseditregex-editall": "Tab displayed on category pages - keep it short",
-	"right-masseditregex": "{{doc-right|masseditregex}}"
-	"masseditregex-noaccess": "Error message displayed when user does not have access to a given page",
-	"masseditregex-norevisions": "Error message displayed when no revisions could be found for a given title",
-	"masseditregex-blocked": "Error message displayed when a user account is blocked",
-	"masseditregex-readonlydb": "Error message displayed when database is set to read only",
-	"masseditregex-js-clientside": "Tickbox that when ticked will perform the page iteration in the browser, sending a request to the server for each page.",
-	"masseditregex-js-execution": "Tooltip (HTML title) for masseditregex-js-clientside tickbox.  Provides more space to explain what 'client side/in browser' means.",
-	"masseditregex-js-jobdone": "Client-side heading text when job is complete\nSee also:\n* {{msg-mw|Masseditregex-js-working}}",
-	"masseditregex-js-working": "Client-side heading text when job is in progress\nParameters:\n* $1 - number of pages left to be edited (counts down towards zero very quickly)\n\nSee also:\n* {{msg-mw|Masseditregex-js-jobdone}}",
-	"masseditregex-js-pagenotexist": "Text displayed when page title does not exist\nParameters:\n* $1 - page title",
-	"masseditregex-js-mwapi-api-error": "Error message displayed when mediawiki api call fails\nParameters:\n* $1 - response error code\n* $2 - response error info",
-	"masseditregex-js-mwapi-general-error": "Error message displayed when general error occurred on mediawiki api",
-	"masseditregex-js-mwapi-unknown-error": "Error message displayed when an unknown error occurred during a mediawiki api request",
+	"right-masseditregex": "{{doc-right|masseditregex}}",
+	"masseditregex-js-jobdone": "{{Identical|Complete}}"
 }

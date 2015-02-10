@@ -4,7 +4,8 @@
 			"Cainamarques",
 			"Giro720",
 			"Luckas",
-			"Luckas Blade"
+			"Luckas Blade",
+			"Fasouzafreitas"
 		]
 	},
 	"action-masseditregex": "realiza edições em massa",
@@ -41,5 +42,7 @@
 	"masseditregex-editfailed": "Edição falhou:",
 	"masseditregex-tooltip-execute": "Aplicar estas alterações a cada página",
 	"masseditregex-editall": "Editar tudo",
-	"right-masseditregex": "Substituir o conteúdo de páginas utilizando expressões regulares"
+	"right-masseditregex": "Substituir o conteúdo de páginas utilizando expressões regulares",
+	"masseditregex-js-jobdone": "Completo",
+	"masseditregex-js-pagenotexist": "não existe."
 }

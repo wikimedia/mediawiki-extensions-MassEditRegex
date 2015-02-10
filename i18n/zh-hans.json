@@ -44,9 +44,16 @@
 	"masseditregex-tooltip-execute": "将这些更改应用到每个页面",
 	"masseditregex-editall": "编辑所有",
 	"right-masseditregex": "使用正则表达式替换页面内容",
+	"masseditregex-noaccess": "您没有对MassEditRegex的访问权",
+	"masseditregex-norevisions": "找不到要编辑的修订",
+	"masseditregex-blocked": "您的用户账户被封禁",
+	"masseditregex-readonlydb": "数据库是只读的",
 	"masseditregex-js-clientside": "在浏览器中执行",
+	"masseditregex-js-execution": "勾选此处以反复在浏览器中的客户端上执行页面。这允许更长的更改，一般由PHP最长执行时间限制。",
 	"masseditregex-js-jobdone": "完成",
 	"masseditregex-js-working": "处理中……（省略$1个）",
 	"masseditregex-js-pagenotexist": "$1不存在。",
-	"masseditregex-js-mwapi-api-error": "错误：MediaWiki API 返回了错误代码$1：$2"
+	"masseditregex-js-mwapi-api-error": "错误：MediaWiki API 返回了错误代码$1：$2",
+	"masseditregex-js-mwapi-general-error": "错误：来自MediaWiki API 的未知结果。",
+	"masseditregex-js-mwapi-unknown-error": "错误：在向MediaWiki API 请求时发生未知错误。"
 }
