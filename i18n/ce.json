@@ -6,5 +6,7 @@
 	},
 	"masseditregex-replacetxt": "Хийца оцуьнца:",
 	"masseditregex-hint-headmatch": "ЦхьаьнадогӀуш",
-	"masseditregex-hint-headeffect": "Хилам"
+	"masseditregex-hint-headeffect": "Хилам",
+	"masseditregex-js-jobdone": "Юьззина",
+	"masseditregex-js-pagenotexist": "«$1» яц"
 }
