@@ -4,7 +4,8 @@
 			"Dafer45",
 			"Jopparn",
 			"Per",
-			"Lokal Profil"
+			"Lokal Profil",
+			"Jenniesarina"
 		]
 	},
 	"action-masseditregex": "utför en massredigering",
@@ -41,5 +42,16 @@
 	"masseditregex-editfailed": "Redigering misslyckades:",
 	"masseditregex-tooltip-execute": "Tillämpa dessa förändringar på varje sida",
 	"masseditregex-editall": "Redigera alla",
-	"right-masseditregex": "Ersätt sidinnehåll med hjälp av reguljära uttryck"
+	"right-masseditregex": "Ersätt sidinnehåll med hjälp av reguljära uttryck",
+	"masseditregex-noaccess": "Du har inte tillgång till MassEditRegex",
+	"masseditregex-norevisions": "Inga revideringar återfanns för redigering",
+	"masseditregex-blocked": "Ditt användarkonto är blockerat",
+	"masseditregex-readonlydb": "Databasen är skrivskyddad",
+	"masseditregex-js-clientside": "Kör i webbläsaren",
+	"masseditregex-js-jobdone": "Färdig",
+	"masseditregex-js-working": "Behandlas... ($1 kvar)",
+	"masseditregex-js-pagenotexist": "$1 finns inte",
+	"masseditregex-js-mwapi-api-error": "Fel: MediaWiki API gav felkoden $1: $2",
+	"masseditregex-js-mwapi-general-error": "Fel: Okänt resultat från MediaWiki API.",
+	"masseditregex-js-mwapi-unknown-error": "Fel: Okänt fel under begäran till MediaWiki API."
 }

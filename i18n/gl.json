@@ -45,7 +45,10 @@
 	"masseditregex-blocked": "A súa conta de usuario foi bloqueada",
 	"masseditregex-readonlydb": "A base de datos é de só lectura",
 	"masseditregex-js-clientside": "Executar no navegador",
+	"masseditregex-js-execution": "Marque esta opción para executar a iteración de páxina no navegador cliente. Isto permite cambios de maior envergadura que normalmente estarían limitados polo tempo máximo de execución da PHP.",
 	"masseditregex-js-jobdone": "Completado",
 	"masseditregex-js-working": "Procesando... (falta $1)",
-	"masseditregex-js-pagenotexist": "$1 non existe."
+	"masseditregex-js-pagenotexist": "$1 non existe.",
+	"masseditregex-js-mwapi-general-error": "Erro: Resultado descoñecido da API de MediaWiki.",
+	"masseditregex-js-mwapi-unknown-error": "Erro: Erro descoñecido na solicitude á API de MediaWiki."
 }

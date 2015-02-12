@@ -9,7 +9,8 @@
 			"Translationista",
 			"JasterTDC",
 			"Fitoschido",
-			"Macofe"
+			"Macofe",
+			"Awesomecat5"
 		]
 	},
 	"action-masseditregex": "realizar ediciones en bloque",
@@ -51,6 +52,7 @@
 	"masseditregex-blocked": "Tu cuenta está bloqueada",
 	"masseditregex-readonlydb": "La base de datos es de solo lectura",
 	"masseditregex-js-clientside": "Ejecutar en el navegador",
+	"masseditregex-js-execution": "Marque esta página para realizar la iteración en el lado del cliente en el navegador. Esto permite que los cambios más grandes normalmente limitados por el tiempo máximo de ejecución de PHP.",
 	"masseditregex-js-jobdone": "Completado",
 	"masseditregex-js-working": "Procesando... (falta $1)",
 	"masseditregex-js-pagenotexist": "$1 no existe.",

@@ -5,7 +5,8 @@
 			"Giro720",
 			"Luckas",
 			"Luckas Blade",
-			"Fasouzafreitas"
+			"Fasouzafreitas",
+			"Macofe"
 		]
 	},
 	"action-masseditregex": "realiza edições em massa",
@@ -44,5 +45,5 @@
 	"masseditregex-editall": "Editar tudo",
 	"right-masseditregex": "Substituir o conteúdo de páginas utilizando expressões regulares",
 	"masseditregex-js-jobdone": "Completo",
-	"masseditregex-js-pagenotexist": "não existe."
+	"masseditregex-js-pagenotexist": "$1 não existe."
 }
