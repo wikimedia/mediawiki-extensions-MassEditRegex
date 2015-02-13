@@ -7,7 +7,8 @@
 			"PieRRoMaN",
 			"Quentinv57",
 			"Urhixidur",
-			"Zetud"
+			"Zetud",
+			"Element303"
 		]
 	},
 	"action-masseditregex": "effectuer une modification en masse",
@@ -44,5 +45,17 @@
 	"masseditregex-editfailed": "Erreur lors de l'édition :",
 	"masseditregex-tooltip-execute": "Appliquer ces changements à chaque page",
 	"masseditregex-editall": "Modifier tout",
-	"right-masseditregex": "Remplacer le contenu de la page en utilisant des expressions régulières"
+	"right-masseditregex": "Remplacer le contenu de la page en utilisant des expressions régulières",
+	"masseditregex-noaccess": "Vous n'avez pas accès à MassEditRegex",
+	"masseditregex-norevisions": "Aucune révision trouvée pour modification",
+	"masseditregex-blocked": "Votre compte utilisateur est verrouillé",
+	"masseditregex-readonlydb": "La base de données est en lecture seule",
+	"masseditregex-js-clientside": "Exécuter dans le navigateur",
+	"masseditregex-js-execution": "Cochez ici pour exécuter la page côté client dans le navigateur. Ceci autorise des changements plus importants normalement limités par le temps d'exécution maximum de PHP.",
+	"masseditregex-js-jobdone": "Terminé",
+	"masseditregex-js-working": "Traitement... ($1 restant)",
+	"masseditregex-js-pagenotexist": "$1 n’existe pas.",
+	"masseditregex-js-mwapi-api-error": "Erreur : l'API MediaWiki a retourné le code d'erreur $1 : $2",
+	"masseditregex-js-mwapi-general-error": "Erreur : résultat inconnu de MediaWiki API.",
+	"masseditregex-js-mwapi-unknown-error": "Erreur : erreur inconnue lors de la requête à l'API MediaWiki."
 }
