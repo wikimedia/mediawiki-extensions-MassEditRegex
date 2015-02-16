@@ -37,5 +37,15 @@
 	"masseditregex-badregex": "Ugyldig regulært uttrykk:",
 	"masseditregex-editfailed": "Endring feilet:",
 	"masseditregex-tooltip-execute": "Utfør disse endringene på hver side",
-	"right-masseditregex": "Erstatt sideinnholdet gjennom å bruke regulæruttrykk"
+	"right-masseditregex": "Erstatt sideinnholdet gjennom å bruke regulæruttrykk",
+	"masseditregex-noaccess": "Du har ikke tilgang til MassEditRegex",
+	"masseditregex-blocked": "Brukerkontoen din er blokkert",
+	"masseditregex-readonlydb": "Databasen er skrivebeskyttet",
+	"masseditregex-js-clientside": "Kjør i nettleseren",
+	"masseditregex-js-jobdone": "Ferdig",
+	"masseditregex-js-working": "Prosesserer... ($1 igjen)",
+	"masseditregex-js-pagenotexist": "$1 eksisterer ikke.",
+	"masseditregex-js-mwapi-api-error": "Feil: MediaWikis API returnerte feilkoden $1: $2",
+	"masseditregex-js-mwapi-general-error": "Feil: Ukjent resultat fra MediaWikis API.",
+	"masseditregex-js-mwapi-unknown-error": "Feil: Ukjent feil under forespørselen til MediaWikis API."
 }
