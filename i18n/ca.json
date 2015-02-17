@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Paucabot"
+			"Paucabot",
+			"Macofe"
 		]
 	},
 	"masseditregex": "Edició massiva utilitzant expressions regulars",
@@ -11,5 +12,7 @@
 	"masseditregex-after": "Després",
 	"masseditregex-hint-headreplace": "Reemplaça",
 	"masseditregex-listtype-intro": "Això és una llista de:",
-	"masseditregex-listtype-pagenames": "Noms de les pàgines (editeu aquestes pàgines)"
+	"masseditregex-listtype-pagenames": "Noms de les pàgines (editeu aquestes pàgines)",
+	"masseditregex-js-jobdone": "Complet",
+	"masseditregex-js-pagenotexist": "$1 no existeix."
 }
