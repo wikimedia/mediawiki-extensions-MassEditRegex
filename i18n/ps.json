@@ -7,6 +7,9 @@
 	"masseditregex-matchtxt": "پلټنه د:",
 	"masseditregex-before": "دمخه",
 	"masseditregex-after": "وروسته",
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|بدلون|بدلونونه}}",
 	"masseditregex-hint-headreplace": "ځايناستول",
-	"masseditregex-listtype-intro": "دا يو لړليک دی د:"
+	"masseditregex-listtype-intro": "دا يو لړليک دی د:",
+	"masseditregex-js-jobdone": "بشپړ",
+	"masseditregex-js-pagenotexist": "$1 نشته."
 }
