@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Toliño",
-			"Fisterraeomar"
+			"Fisterraeomar",
+			"Banjo"
 		]
 	},
 	"action-masseditregex": "realizar edicións en masa",
@@ -49,6 +50,7 @@
 	"masseditregex-js-jobdone": "Completado",
 	"masseditregex-js-working": "Procesando... (falta $1)",
 	"masseditregex-js-pagenotexist": "$1 non existe.",
+	"masseditregex-js-mwapi-api-error": "Erro: a API de MediaWiki retornou o código de erro $1: $2",
 	"masseditregex-js-mwapi-general-error": "Erro: Resultado descoñecido da API de MediaWiki.",
 	"masseditregex-js-mwapi-unknown-error": "Erro: Erro descoñecido na solicitude á API de MediaWiki."
 }
