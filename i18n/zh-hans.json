@@ -6,7 +6,8 @@
 			"Xiaomingyan",
 			"Yfdyh000",
 			"Liuxinyu970226",
-			"Duolaimi"
+			"Duolaimi",
+			"Hudafu"
 		]
 	},
 	"action-masseditregex": "执行批量编辑",
@@ -37,7 +38,7 @@
 	"masseditregex-listtype-pagenames": "页面名称（编辑这些网页）",
 	"masseditregex-listtype-pagename-prefixes": "网页名称前缀（编辑网页名称的开头有这个文字）",
 	"masseditregex-listtype-categories": "分类名称（编辑在这些分类里的每个页面）",
-	"masseditregex-listtype-backlinks": "反向链接 （编辑链接到这些之一的页面）",
+	"masseditregex-listtype-backlinks": "反向链接（编辑链接至这些页面的页面）",
 	"masseditregex-exprnomatch": "表达式“$1”没有匹配的页面。",
 	"masseditregex-badregex": "无效的正则表达式：",
 	"masseditregex-editfailed": "编辑失败：",
