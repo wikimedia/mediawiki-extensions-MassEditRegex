@@ -16,7 +16,7 @@
 	"masseditregex-before": "Abans",
 	"masseditregex-after": "Aprèp",
 	"masseditregex-max-preview-diffs": "La previsualizacion es estada limitada {{PLURAL:$1|al primièr resultat|als $1 primièrs resultats}}.",
-	"masseditregex-num-changes": "$1 : $2 {{PLURAL:$2|modificacion|modificacions}}",
+	"masseditregex-num-changes": "$1 : $2 {{PLURAL:$2|cambiament|cambiaments}}",
 	"masseditregex-page-not-exists": "$1 existís pas",
 	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|article modificat|articles modificats}}",
 	"masseditregex-view-full-summary": "Veire lo resumit complet de las modificacions",
