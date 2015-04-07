@@ -24,6 +24,11 @@ $specialPageAliases['arz'] = array(
 	'MassEditRegex' => array( 'ريجيكس_التعديلات_الكتيره' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'MassEditRegex' => array( 'بَزین_مونه_زَمین_ئیبارت_ئی_دستکاری' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'MassEditRegex' => array( 'Regex-Massenbearbeitung' ),
