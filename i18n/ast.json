@@ -38,5 +38,17 @@
 	"masseditregex-editfailed": "Falló la edición:",
 	"masseditregex-tooltip-execute": "Aplicar estos cambios a cada páxina",
 	"masseditregex-editall": "Editar too",
-	"right-masseditregex": "Sustituir el conteníu de páxines usando espresiones regulares"
+	"right-masseditregex": "Sustituir el conteníu de páxines usando espresiones regulares",
+	"masseditregex-noaccess": "Nun tienes accesu a MassEditRegex",
+	"masseditregex-norevisions": "Nun s'alcontraron revisiones qu'editar",
+	"masseditregex-blocked": "La to cuenta d'usuariu ta bloquiada",
+	"masseditregex-readonlydb": "La base de datos ye de sólo llectura",
+	"masseditregex-js-clientside": "Executar nel restolador",
+	"masseditregex-js-execution": "Marca esto para executar la iteración de páxina nel llau del veceru del restolador. Esto permite cambios mayores que normalmente tan torgaos pol tiempu máximu d'execución de PHP.",
+	"masseditregex-js-jobdone": "Completáu",
+	"masseditregex-js-working": "Procesando... (falta $1)",
+	"masseditregex-js-pagenotexist": "$1 nun esiste.",
+	"masseditregex-js-mwapi-api-error": "Error: la API de MediaWiki devolvió'l códigu d'error $1: $2",
+	"masseditregex-js-mwapi-general-error": "Error: Resultáu desconocíu de la API de MediaWiki.",
+	"masseditregex-js-mwapi-unknown-error": "Error: Error desconocíu demientres la solicitú a la API de MediaWiki."
 }
