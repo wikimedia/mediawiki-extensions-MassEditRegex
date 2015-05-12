@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'MassEditRegex' => array( 'ريجيكس_التعديلات_الكمية' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'MassEditRegex' => array( 'ريجيكس_التعديلات_الكتيره' ),
 );
