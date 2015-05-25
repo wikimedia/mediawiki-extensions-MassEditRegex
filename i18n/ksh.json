@@ -37,6 +37,6 @@
 	"masseditregex-exprnomatch": "De <i lang=\"en\">regular expression</i> „$1“ hät keine Träfer, op keine vun dä Sigge.",
 	"masseditregex-badregex": "Dat es en onjöltejje <i lang=\"en\">regular expression</i>:",
 	"masseditregex-editfailed": "Dat Ändere is donevve jejange:",
-	"masseditregex-tooltip-execute": "Donn di Änderunge op jede Sigg maache",
+	"masseditregex-tooltip-execute": "Donn di Änderonge op jede Sigg maache",
 	"right-masseditregex": "Sigge övver <i lang=\"en\">regular expressions</i> ändere"
 }
