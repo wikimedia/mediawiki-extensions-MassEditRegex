@@ -32,7 +32,7 @@
 	"masseditregex-listtype-intro": "Dat es en Leß vun:",
 	"masseditregex-listtype-pagenames": "Name vun Sigge för zem Ändere",
 	"masseditregex-listtype-pagename-prefixes": "Aanfäng vun Siggetittelle (Alsu donn di Sigge ändere, dänne ier Tittelle met däm Täx heh aanfange)",
-	"masseditregex-listtype-categories": "Saachjruppe-Name (Dunn all de Sigge en dä Saachjroppe ändere.)",
+	"masseditregex-listtype-categories": "Saachjroppe_Nahme (Dunn all de Sigge en dä Saachjroppe ändere.)",
 	"masseditregex-listtype-backlinks": "Lengks retuur (Alsu dunn Sigge ändere, di ene Lengk op heh di Sigg han)",
 	"masseditregex-exprnomatch": "De <i lang=\"en\">regular expression</i> „$1“ hät keine Träfer, op keine vun dä Sigge.",
 	"masseditregex-badregex": "Dat es en onjöltejje <i lang=\"en\">regular expression</i>:",
