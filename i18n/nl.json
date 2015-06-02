@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"Esketti",
+			"Sjoerddebruin"
 		]
 	},
 	"action-masseditregex": "meerdere pagina's tegelijkertijd te bewerken",
@@ -38,5 +40,17 @@
 	"masseditregex-editfailed": "Bewerking mislukt:",
 	"masseditregex-tooltip-execute": "Deze wijzigingen op iedere pagina toepassen",
 	"masseditregex-editall": "Allemaal bewerken",
-	"right-masseditregex": "Pagina-inhoud vervangen met behulp van reguliere expressies"
+	"right-masseditregex": "Pagina-inhoud vervangen met behulp van reguliere expressies",
+	"masseditregex-noaccess": "U hebt geen toegang tot MassEditRegex",
+	"masseditregex-norevisions": "Geen herzieningen vinden bewerken",
+	"masseditregex-blocked": "Uw account is geblokkeerd",
+	"masseditregex-readonlydb": "De Database is alleen-lezen",
+	"masseditregex-js-clientside": "Uitgevoerd in de browser",
+	"masseditregex-js-execution": "Vink deze uit te voeren van de pagina iteratie op de client-side in de browser. Op deze manier kunnen grotere veranderingen doorgaans beperkt door de PHP maximale uitvoeringstijd.",
+	"masseditregex-js-jobdone": "Afgerond",
+	"masseditregex-js-working": "De verwerking van... ($1 links)",
+	"masseditregex-js-pagenotexist": "$1 bestaat niet.",
+	"masseditregex-js-mwapi-api-error": "Fout: MediaWiki API heeft foutcode $1: $2 teruggestuurd",
+	"masseditregex-js-mwapi-general-error": "Fout: Onbekend resultaat van MediaWiki API",
+	"masseditregex-js-mwapi-unknown-error": "Fout: Onbekende fout tijdens verzoek om MediaWiki API."
 }
