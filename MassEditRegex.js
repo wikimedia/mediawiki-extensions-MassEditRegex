@@ -71,7 +71,8 @@ function executeMassEdit() {
 				action: 'query',
 				list: 'categorymembers',
 				cmtitle: 'Category:' + page,
-				cmlimit: 100
+				cmlimit: 100,
+				rawcontinue: 1
 			}
 		};
 		makeAPICall( data, callback );
@@ -87,7 +88,8 @@ function executeMassEdit() {
 				action: 'query',
 				list: 'backlinks',
 				bltitle: page,
-				bllimit: 100
+				bllimit: 100,
+				rawcontinue: 1
 			}
 		};
 		makeAPICall( data, callback );
@@ -134,7 +136,8 @@ function executeMassEdit() {
 							list: 'allpages',
 							apnamespace: nsId,
 							apprefix: page,
-							aplimit: 100
+							aplimit: 100,
+							rawcontinue: 1
 						}
 					};
 
@@ -158,7 +161,8 @@ function executeMassEdit() {
 			params: {
 				format: 'json',
 				action: 'query',
-				titles: pages.join( '|' )
+				titles: pages.join( '|' ),
+				rawcontinue: 1
 			}
 		};
 		makeAPICall( data, function ( data ) {
@@ -190,7 +194,7 @@ function executeMassEdit() {
 						data: {
 							action: 'ajax',
 							rs: 'MassEditRegexAPI::edit',
-							rsargs: [pageId, search, replace, summary]
+							rsargs: [pageId, search, replace, summary],
 						},
 						dataType: 'json',
 						type: 'POST'
