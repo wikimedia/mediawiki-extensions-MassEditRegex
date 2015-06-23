@@ -33,7 +33,6 @@ $wgAutoloadClasses['MassEditRegex'] = $dir . 'MassEditRegex.class.php';
 $wgAutoloadClasses['MassEditRegexSpecialPage'] = $dir . 'MassEditRegex.special.php';
 $wgAutoloadClasses['MassEditRegexAPI'] = $dir . 'MassEditRegex.api.php';
 $wgSpecialPages['MassEditRegex'] = 'MassEditRegexSpecialPage';
-$wgSpecialPageGroups['MassEditRegex'] = 'pagetools';
 
 // Required permission to use Special:MassEditRegex
 $wgAvailableRights[] = 'masseditregex';
