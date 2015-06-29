@@ -43,7 +43,7 @@
 	"masseditregex-listtype-backlinks": "Vínculos de retorno (edita páginas de se vinculen a éstas)",
 	"masseditregex-exprnomatch": "La expresión $1 no coincidió con ninguna página.",
 	"masseditregex-badregex": "Expresión regular inválida:",
-	"masseditregex-editfailed": "Edición fallida:",
+	"masseditregex-editfailed": "Falló la edición:",
 	"masseditregex-tooltip-execute": "Aplicar estos cambios a cada página",
 	"masseditregex-editall": "Editar todo",
 	"right-masseditregex": "Reemplazar el contenido de las páginas utilizando expresiones regulares",
