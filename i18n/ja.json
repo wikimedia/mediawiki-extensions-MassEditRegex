@@ -5,7 +5,8 @@
 			"Shirayuki",
 			"Whym",
 			"青子守歌",
-			"Los688"
+			"Los688",
+			"Sujiniku"
 		]
 	},
 	"action-masseditregex": "一括編集の実行",
@@ -20,7 +21,7 @@
 	"masseditregex-before": "前",
 	"masseditregex-after": "後",
 	"masseditregex-max-preview-diffs": "プレビューは最初の $1 {{PLURAL:$1|件の一致}}に限定されています。",
-	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|件の変更}}",
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|件の変更|件の変更}}",
 	"masseditregex-page-not-exists": "$1 は存在しません",
 	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|件のページ}}が編集されました",
 	"masseditregex-view-full-summary": "完全な編集要約を表示",
