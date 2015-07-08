@@ -7,5 +7,7 @@
 		]
 	},
 	"masseditregextext": "Geben Sie einen oder mehrere reguläre Ausdrücke (eine pro Zeile) für die Suche an, und einen oder mehrere Ausdrücke um einen jeweiligen Treffer zu ersetzen. Der erste Such-Ausdruck wird bei Übereinstimmung durch den ersten Ersatz-Ausdruck ersetzt, und so weiter. Siehe die Dokumentation der [http://php.net/manual/de/function.preg-replace.php PHP-Funktion <code>preg_replace ()</code>] für Einzelheiten.",
-	"masseditregex-err-nopages": "Sie müssen mindestens eine Seite festlegen, die geändert werden soll."
+	"masseditregex-err-nopages": "Sie müssen mindestens eine Seite angeben, die geändert werden soll.",
+	"masseditregex-noaccess": "Sie sind nicht berechtigt die Erweiterung MassEditRegex zu nutzen.",
+	"masseditregex-blocked": "Ihr Benutzerkonto ist gesperrt."
 }
