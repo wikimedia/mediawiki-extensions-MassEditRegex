@@ -16,7 +16,7 @@
 	"action-masseditregex": "realizar ediciones en bloque",
 	"masseditregex": "Edición en masa usando expresiones regulares",
 	"masseditregex-desc": "Utilice expresiones regulares para [[Special:MassEditRegex|editar varias páginas en una sola operación]]",
-	"masseditregextext": "Introduzca una o más expresiones regulares (una por línea) para lograr coincidencias, y una o más expresiones con las que sustituir cada coincidencia. Si se logra con éxito, la primera expresión de coincidencia se reemplazará con la primera expresión de sustitución, y así sucesivamente. Si deseas conocer más detales, consulta [http://php.net/manual/en/function.preg-replace.php la función PHPpreg_replace()]",
+	"masseditregextext": "Escribe una o más expresiones regulares (una por línea) para lograr coincidencias, y una o más expresiones con las que sustituir cada coincidencia.\nSi se logra con éxito, la primera expresión de coincidencia se reemplazará con la primera expresión de sustitución, y así sucesivamente.\nPara más detalles, consulta [http://php.net/manual/es/function.preg-replace.php la función PHPpreg_replace()]",
 	"masseditregex-pagelisttxt": "Páginas a editar:",
 	"masseditregex-matchtxt": "Buscar:",
 	"masseditregex-replacetxt": "Reemplazar con:",
