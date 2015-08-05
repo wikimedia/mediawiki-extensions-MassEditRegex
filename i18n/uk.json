@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
-			"Тест"
+			"Тест",
+			"Ата"
 		]
 	},
 	"action-masseditregex": "виконати масове редагування",
@@ -39,5 +40,17 @@
 	"masseditregex-editfailed": "Невдале редагування:",
 	"masseditregex-tooltip-execute": "Застосувати ці зміни на кожній сторінці",
 	"masseditregex-editall": "Редагувати все",
-	"right-masseditregex": "Замінити вміст сторінки за допомогою регулярних виразів"
+	"right-masseditregex": "Замінити вміст сторінки за допомогою регулярних виразів",
+	"masseditregex-noaccess": "У Вас немає доступу до MassEditRegex",
+	"masseditregex-norevisions": "Не знайдено версій для редагування",
+	"masseditregex-blocked": "Ваш обліковий запис користувача заблоковано",
+	"masseditregex-readonlydb": "База даних доступна тільки для читання",
+	"masseditregex-js-clientside": "Виконати в браузері",
+	"masseditregex-js-execution": "Увімкніть цю опцію для виконання ітерації сторінки на стороні клієнта в браузері. Це дозволяє більш великі зміни, зазвичай обмежені максимальним часом виконання PHP.",
+	"masseditregex-js-jobdone": "Завершити",
+	"masseditregex-js-working": "Обробка… (залишилось $1)",
+	"masseditregex-js-pagenotexist": "$1 не існує.",
+	"masseditregex-js-mwapi-api-error": "Помилка: MediaWiki API видав код помилки $1: $2",
+	"masseditregex-js-mwapi-general-error": "Помилка: Невідомий результат від MediaWiki API.",
+	"masseditregex-js-mwapi-unknown-error": "Помилка: Невідома помилка під час запиту до MediaWiki API."
 }
