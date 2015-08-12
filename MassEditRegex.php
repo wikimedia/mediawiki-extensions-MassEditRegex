@@ -18,11 +18,16 @@ if ( ! defined( 'MEDIAWIKI' ) )
 
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
-	'name' => 'Mass Edit via Regular Expressions',
-	'version' => '8.0.0',
-	'author' => 'Adam Nielsen',
+	'name' => 'MassEditRegex',
+	'namemsg' => 'masseditregex-name',
+	'version' => '8.0.1',
+	'author' => array(
+		'Adam Nielsen',
+		'...'
+		),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MassEditRegex',
-	'descriptionmsg' => 'masseditregex-desc'
+	'descriptionmsg' => 'masseditregex-desc',
+	'license-name' => 'GPL-2.0+'
 );
 
 $dir = dirname(__FILE__) . '/';

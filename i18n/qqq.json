@@ -11,6 +11,7 @@
 	"action-masseditregex": "{{doc-action|masseditregex}}",
 	"masseditregex": "{{doc-special|MassEditRegex}}",
 	"masseditregex-desc": "{{desc|name=Mass Edit Regex|url=https://www.mediawiki.org/wiki/Extension:MassEditRegex}}",
+	"masseditregex-name": "{{optional}} Name of the extension on [[Special:Version]].",
 	"masseditregextext": "Replace <code>/en/</code> in the middle in link <code>http://php.net/manual/en/function.preg-replace.php</code> with your language code between slashes, if that page exists. Otherwise leave it as is to link to the English documentation, or choose an appropriate fallback language code.",
 	"masseditregex-pagelisttxt": "Used as label for the \"Page list\" textarea.",
 	"masseditregex-matchtxt": "Used as label for the \"Match-RegEx\" textarea.\n{{Identical|Search}}",
