@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wikitanvir"
+			"Wikitanvir",
+			"Aftabuzzaman"
 		]
 	},
 	"masseditregex": "রেগুলার এক্সপ্রেশন ব্যবহার করে গণ সম্পাদনা",
+	"masseditregex-name": "রেগুলার এক্সপ্রেশনের সাহায্যে গণ সম্পাদনা",
 	"masseditregex-matchtxt": "অনুসন্ধান:",
 	"masseditregex-replacetxt": "যা দিয়ে প্রতিস্থাপিত হবে:",
 	"masseditregex-executebtn": "এক্সকিউট",
