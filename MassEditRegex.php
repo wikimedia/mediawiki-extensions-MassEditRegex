@@ -8,19 +8,19 @@ if ( ! defined( 'MEDIAWIKI' ) )
  * @file
  * @ingroup Extensions
  *
- * @link http://www.mediawiki.org/wiki/Extension:MassEditRegex Documentation
+ * @link https://www.mediawiki.org/wiki/Extension:MassEditRegex Documentation
  *
  * @author Adam Nielsen <malvineous@shikadi.net>
  * @author Kim Eik <kim@heldig.org>
  * @copyright Copyright © 2009-2015 Adam Nielsen
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license https://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'MassEditRegex',
 	'namemsg' => 'masseditregex-name',
-	'version' => '8.0.1',
+	'version' => '8.0.2',
 	'author' => array(
 		'Adam Nielsen',
 		'...'
@@ -30,13 +30,12 @@ $wgExtensionCredits['specialpage'][] = array(
 	'license-name' => 'GPL-2.0+'
 );
 
-$dir = dirname(__FILE__) . '/';
 $wgMessagesDirs['MassEditRegex'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['MassEditRegex'] = $dir . 'MassEditRegex.i18n.php';
-$wgExtensionMessagesFiles['MassEditRegexAlias'] = $dir . 'MassEditRegex.alias.php';
-$wgAutoloadClasses['MassEditRegex'] = $dir . 'MassEditRegex.class.php';
-$wgAutoloadClasses['MassEditRegexSpecialPage'] = $dir . 'MassEditRegex.special.php';
-$wgAutoloadClasses['MassEditRegexAPI'] = $dir . 'MassEditRegex.api.php';
+$wgExtensionMessagesFiles['MassEditRegex'] = __DIR__ . '/MassEditRegex.i18n.php';
+$wgExtensionMessagesFiles['MassEditRegexAlias'] = __DIR__ . '/MassEditRegex.alias.php';
+$wgAutoloadClasses['MassEditRegex'] = __DIR__ . '/MassEditRegex.class.php';
+$wgAutoloadClasses['MassEditRegexSpecialPage'] = __DIR__ . '/MassEditRegex.special.php';
+$wgAutoloadClasses['MassEditRegexAPI'] = __DIR__ . '/MassEditRegex.api.php';
 $wgSpecialPages['MassEditRegex'] = 'MassEditRegexSpecialPage';
 
 // Required permission to use Special:MassEditRegex
@@ -54,7 +53,7 @@ $wgResourceModules['MassEditRegex'] = array(
 		'jquery.ui.dialog'
 	),
 	'group' => 'MassEditRegex',
-	'localBasePath' => dirname(__FILE__),
+	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'MassEditRegex',
 	'messages' => array (
 		'masseditregex-js-execution',
