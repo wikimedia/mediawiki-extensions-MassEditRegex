@@ -7,7 +7,7 @@
 		]
 	},
 	"masseditregex": "Ännerung vun enger grousser Zuel vu Säite mat Hëllef vu regulären Ausdréck",
-	"masseditregex-desc": "Regulär Ausdréck benotze fir [[Special:MassEditRegex|vill Säiten an enger Operatioun z'änneren]]",
+	"masseditregex-desc": "Ëmmer regulär Ausdréck benotze fir [[Special:MassEditRegex|vill Säiten an enger Operatioun z'änneren]]",
 	"masseditregex-pagelisttxt": "Säite fir z'änneren:",
 	"masseditregex-matchtxt": "Sichen no:",
 	"masseditregex-replacetxt": "Ersetzen duerch:",
