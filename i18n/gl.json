@@ -9,7 +9,7 @@
 	},
 	"action-masseditregex": "realizar edicións en masa",
 	"masseditregex": "Edición en masa usando expresións regulares",
-	"masseditregex-desc": "Usa expresións regulares para [[Special:MassEditRegex|editar moitas páxinas nunha única operación]]",
+	"masseditregex-desc": "Permite usar expresións regulares para [[Special:MassEditRegex|editar varias páxinas nunha única operación]]",
 	"masseditregextext": "Insira unha ou máis expresións regulares (un por liña) para facer coincidir, e unha ou máis expresións para substituír cada coincidencia. Se a primeira expresión coincidente é correcta, substituirase pola primeira expresión substituta, e así sucesivamente. Olle a [http://php.net/manual/en/function.preg-replace.php función PHP preg_replace()] para obter máis información.",
 	"masseditregex-name": "Edición en masa usando expresións regulares",
 	"masseditregex-pagelisttxt": "Páxinas a editar:",
