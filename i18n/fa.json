@@ -41,5 +41,7 @@
 	"masseditregex-editfailed": "ویرایش نشد:",
 	"masseditregex-tooltip-execute": "اعمال این تغییرات بر هر صفحه",
 	"masseditregex-editall": "ویرایش همه",
-	"right-masseditregex": "جایگزین محتوای صفحه با استفاده از عبارات منظم"
+	"right-masseditregex": "جایگزین محتوای صفحه با استفاده از عبارات منظم",
+	"masseditregex-js-jobdone": "کامل",
+	"masseditregex-js-pagenotexist": "$1 وجود ندارد."
 }
