@@ -19,7 +19,7 @@ if ( ! defined( 'MEDIAWIKI' ) )
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'MassEditRegex',
-	'namemsg' => 'masseditregex-name',
+	'namemsg' => 'masseditregex-extensionname',
 	'version' => '8.0.2',
 	'author' => array(
 		'Adam Nielsen',

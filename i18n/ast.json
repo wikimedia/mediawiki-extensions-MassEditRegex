@@ -8,7 +8,7 @@
 	"masseditregex": "Edición en masa usando espresiones regulares",
 	"masseditregex-desc": "Permite usar espresiones regulares pa [[Special:MassEditRegex|editar munches páxines con una operación]]",
 	"masseditregextext": "Escriba una o más espresiones regulares (una por llinia) pa les coincidencies, y una o más espresiones coles que trocar cada coincidencia.\nSi casa la primera espresión de coincidencia, trocaráse pola primera espresión de sustitución, y asina socesivamente. Vea la [http://php.net/manual/en/function.preg-replace.php función PHP preg_replace()] pa más detalles.",
-	"masseditregex-name": "Edición en masa usando espresiones regulares",
+	"masseditregex-extensionname": "Edición en masa usando espresiones regulares",
 	"masseditregex-pagelisttxt": "Páxines a editar:",
 	"masseditregex-matchtxt": "Buscar:",
 	"masseditregex-replacetxt": "Sustituir por:",
