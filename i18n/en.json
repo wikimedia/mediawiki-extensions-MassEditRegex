@@ -46,7 +46,7 @@
 	"masseditregex-blocked": "Your user account is blocked",
 	"masseditregex-readonlydb": "Database is read-only",
 	"masseditregex-js-clientside": "Execute in browser",
-	"masseditregex-js-execution": "Tick this to perform the page iteration on the client-side in the browser.  This allows larger changes normally limited by the PHP maximum execution time.",
+	"masseditregex-js-execution": "Tick this to perform the page iteration on the client-side in the browser. This allows larger changes normally limited by the PHP maximum execution time.",
 	"masseditregex-js-jobdone": "Complete",
 	"masseditregex-js-working": "Processing... ($1 left)",
 	"masseditregex-js-pagenotexist": "$1 does not exist.",
