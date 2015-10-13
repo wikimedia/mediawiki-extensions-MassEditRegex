@@ -4,7 +4,8 @@
 			"BeginaFelicysym",
 			"Sp5uhe",
 			"Woytecr",
-			"Chrumps"
+			"Chrumps",
+			"Saper"
 		]
 	},
 	"action-masseditregex": "wykonaj edycję zbiorczą",
@@ -46,6 +47,7 @@
 	"masseditregex-blocked": "Twoje konto jest zablokowane",
 	"masseditregex-readonlydb": "Baza danych jest tylko do odczytu",
 	"masseditregex-js-clientside": "Uruchom w przeglądarce",
+	"masseditregex-js-execution": "Zaznaczenie tego pola powoduje przetworzenie strony po stronie przeglądarki, co pozwala na ominięcie problemów wynikających z ograniczonego czasu na wykonanie się skryptów PHP po stronie serwera.",
 	"masseditregex-js-working": "Przetwarzanie... (pozostało $1)",
 	"masseditregex-js-pagenotexist": "$1 nie istnieje.",
 	"masseditregex-js-mwapi-api-error": "Błąd: API MediaWiki zwrócił kod błędu $1: $2",
