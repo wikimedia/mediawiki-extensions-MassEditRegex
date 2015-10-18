@@ -44,5 +44,16 @@
 	"masseditregex-tooltip-execute": "Used as tooltip for the Submit button.\n\nSee also:\n* {{msg-mw|Masseditregex-executebtn}} - label for button\n* {{msg-mw|Accesskey-save}} - access key",
 	"masseditregex-editall": "Tab displayed on category pages - keep it short",
 	"right-masseditregex": "{{doc-right|masseditregex}}",
-	"masseditregex-js-jobdone": "{{Identical|Complete}}"
+	"masseditregex-noaccess": "Used as error message when using the MassEditRegex api without permissions",
+	"masseditregex-norevisions": "Used as error message when no revision was found",
+	"masseditregex-blocked": "Used as error message when using the MassEditRegex api as blocked user",
+	"masseditregex-readonlydb": "Used as error message when database is in read only mode",
+	"masseditregex-js-clientside": "Used as label for a checkbox on [[Special:MassEditRegex]]",
+	"masseditregex-js-execution": "Used as tooltip of a checkbox on [[Special:MassEditRegex]]",
+	"masseditregex-js-jobdone": "{{Identical|Complete}}",
+	"masseditregex-js-working": "Used on javascript client as processing bar",
+	"masseditregex-js-pagenotexist": "Error message used on the javascript client when the page does not exist",
+	"masseditregex-js-mwapi-api-error": "Error message used on the javascript client when api returns an error",
+	"masseditregex-js-mwapi-general-error": "Error message used on the javascript client when api returns an unknown error",
+	"masseditregex-js-mwapi-unknown-error": "Error message used by javascript client while getting an error on the api request"
 }
