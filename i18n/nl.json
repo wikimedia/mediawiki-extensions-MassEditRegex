@@ -46,7 +46,7 @@
 	"masseditregex-blocked": "Uw account is geblokkeerd",
 	"masseditregex-readonlydb": "De Database is alleen-lezen",
 	"masseditregex-js-clientside": "Uitgevoerd in de browser",
-	"masseditregex-js-execution": "Vink deze uit te voeren van de pagina iteratie op de client-side in de browser. Op deze manier kunnen grotere veranderingen doorgaans beperkt door de PHP maximale uitvoeringstijd.",
+	"masseditregex-js-execution": "Selecteer dit om de pagina-iteratie aan de clientkant in de browser uit te voeren. Dit maakt grotere wijzigingen mogelijk die normaliter worden beperkt door de maximale verwerkingstijd van PHP.",
 	"masseditregex-js-jobdone": "Afgerond",
 	"masseditregex-js-working": "De verwerking van... ($1 links)",
 	"masseditregex-js-pagenotexist": "$1 bestaat niet.",
