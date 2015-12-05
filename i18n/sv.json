@@ -5,12 +5,13 @@
 			"Jopparn",
 			"Per",
 			"Lokal Profil",
-			"Jenniesarina"
+			"Jenniesarina",
+			"WikiPhoenix"
 		]
 	},
 	"action-masseditregex": "utför en massredigering",
 	"masseditregex": "Använd regulära uttryck för att massredigera.",
-	"masseditregex-desc": "Använda reguljära uttryck för att [[Special:MassEditRegex|redigerar många sidor i en åtgärd]]",
+	"masseditregex-desc": "Tillåter användning av reguljära uttryck för att [[Special:MassEditRegex|redigera många sidor i en åtgärd]]",
 	"masseditregextext": "Ange en eller flera reguljära uttryck (en per rad) för att matcha, och en eller flera uttryck att ersätta varje matchning med.\nFörsta match-uttrycket, om det lyckas, kommer att ersättas med det första ersättnings-uttrycket, och så vidare.\nSe [http://php.net/manual/en/function.preg-replace.php PHP-funktionen preg_replace()] för detaljer.",
 	"masseditregex-pagelisttxt": "Sidor att redigera:",
 	"masseditregex-matchtxt": "Sök efter:",
