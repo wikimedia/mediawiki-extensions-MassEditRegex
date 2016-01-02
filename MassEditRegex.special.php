@@ -179,9 +179,12 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		} else {
 			$wgOut->addWikiMsg( 'masseditregex-num-articles-changed', $iArticleCount );
 			$wgOut->addHTML(
-				$this->sk->makeKnownLinkObj(
+				Linker::link(
 					SpecialPage::getSafeTitleFor( 'Contributions', $wgUser->getName() ),
-					wfMsgHtml( 'masseditregex-view-full-summary' )
+					wfMsgHtml( 'masseditregex-view-full-summary' ),
+					array(),
+					array(),
+					array( 'known' )
 				)
 			);
 		}
