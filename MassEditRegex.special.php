@@ -221,7 +221,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		$this->aPageList = explode( "\n", trim( $strPageList ) );
 		$this->strPageListType = $wgRequest->getText( 'wpPageListType', 'pagenames' );
 
-		$this->sk = $wgUser->getSkin();
+		$this->sk = $this->getSkin();
 
 		$this->strMatch = $wgRequest->getText( 'wpMatch', '/hello (.*)\n/' );
 
