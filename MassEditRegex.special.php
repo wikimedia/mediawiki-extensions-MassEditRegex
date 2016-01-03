@@ -181,7 +181,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			$wgOut->addHTML(
 				Linker::link(
 					SpecialPage::getSafeTitleFor( 'Contributions', $wgUser->getName() ),
-					wfMsgHtml( 'masseditregex-view-full-summary' ),
+					$this->msg( 'masseditregex-view-full-summary' )->escaped(),
 					array(),
 					array(),
 					array( 'known' )
@@ -354,7 +354,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 			Xml::tags( 'div',
 				array( 'class' => 'mw-summary-preview' ),
-				wfMsgExt( 'summary-preview', 'parseinline' ) .
+				$this->msg( 'summary-preview' )->parse() .
 					$this->sk->commentBlock( $this->massEditRegex->getSummary() )
 			) .
 			Xml::closeElement( 'div' ) . // class=editOptions
