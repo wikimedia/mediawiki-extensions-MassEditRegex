@@ -65,8 +65,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 					case 'pagenames': // Can do this in one hit
 						$t = Title::newFromText( $pageTitle );
 						if ( !$t || !$this->editPage( $t, $isPreview, $htmlDiff ) ) {
-							$errors[] = wfMsg( 'masseditregex-page-not-exists',
-								htmlspecialchars( $pageTitle ) );
+							$errors[] = $this->msg( 'masseditregex-page-not-exists',
+								$pageTitle )->escaped();
 						}
 						$iArticleCount++;
 						break;
@@ -75,8 +75,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 						$titles = PrefixSearch::titleSearch( $pageTitle,
 							$pageCountLimit - $iArticleCount );
 						if ( empty( $titles ) ) {
-							$errors[] = wfMsg( 'masseditregex-exprnomatch',
-								htmlspecialchars( $pageTitle ) );
+							$errors[] = $this->msg( 'masseditregex-exprnomatch',
+								$pageTitle )->escaped();
 							$iArticleCount++;
 							continue;
 						}
@@ -94,8 +94,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 					case 'categories':
 						$cat = Category::newFromName($pageTitle);
 						if ( $cat === false ) {
-							$errors[] = wfMsg( 'masseditregex-page-not-exists',
-								htmlspecialchars( $pageTitle ) );
+							$errors[] = $this->msg( 'masseditregex-page-not-exists',
+								$pageTitle )->escaped();
 							break;
 						}
 						$titleArray = $cat->getMembers($pageCountLimit - $iArticleCount);
@@ -105,8 +105,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 						$t = Title::newFromText($pageTitle);
 						if ( !$t ) {
 							if ( $isPreview ) {
-								$errors[] = wfMsg( 'masseditregex-page-not-exists',
-									htmlspecialchars( $pageTitle ) );
+								$errors[] = $this->msg( 'masseditregex-page-not-exists',
+									$pageTitle )->escaped();
 							}
 							continue;
 						}
@@ -125,15 +125,15 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				// If the above switch produced an array of pages, run through them now
 				foreach ( $titleArray as $target ) {
 					if ( !$this->editPage( $target, $isPreview, $htmlDiff ) ) {
-						$errors[] = wfMsg( 'masseditregex-page-not-exists',
-							htmlspecialchars( $target->getPrefixedText() ) );
+						$errors[] = $this->msg( 'masseditregex-page-not-exists',
+							$target->getPrefixedText() )->escaped();
 					}
 					$iArticleCount++;
 					if ( $iArticleCount >= $pageCountLimit ) {
 						$htmlDiff .= Xml::element('p', null,
-							wfMsg( 'masseditregex-max-preview-diffs',
-								$wgLang->formatNum( $pageCountLimit )
-							)
+							$this->msg( 'masseditregex-max-preview-diffs' )
+								->numParams( $pageCountLimit )
+								->text()
 						);
 						break;
 					}
