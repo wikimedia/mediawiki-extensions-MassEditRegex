@@ -39,6 +39,10 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		parent::__construct( 'MassEditRegex', 'masseditregex' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	/// Perform the regex process.
 	/**
 	 * @param bool $isPreview
