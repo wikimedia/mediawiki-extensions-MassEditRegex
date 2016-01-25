@@ -15,7 +15,7 @@
 	"masseditregex-matchtxt": "搜尋：",
 	"masseditregex-replacetxt": "取代為：",
 	"masseditregex-executebtn": "執行",
-	"masseditregex-err-nopages": "您必須指定至少一個頁面以供更改。",
+	"masseditregex-err-nopages": "您必須指定至少一個頁面以供變更。",
 	"masseditregex-before": "之前",
 	"masseditregex-after": "之後",
 	"masseditregex-max-preview-diffs": "預覽已限制只顯示前 $1 筆{{PLURAL:$1|符合}}的結果。",
