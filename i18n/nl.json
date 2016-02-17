@@ -14,7 +14,7 @@
 	"masseditregex-matchtxt": "Zoeken naar:",
 	"masseditregex-replacetxt": "Vervangen door:",
 	"masseditregex-executebtn": "Uitvoeren",
-	"masseditregex-err-nopages": "Geef tenminste één te wijzigen pagina op.",
+	"masseditregex-err-nopages": "Geef ten minste één te wijzigen pagina op.",
 	"masseditregex-before": "Voor",
 	"masseditregex-after": "Na",
 	"masseditregex-max-preview-diffs": "Alleen de eerste {{PLURAL:$1|te maken wijziging|$1 te maken wijzigingen}} worden weergegeven.",
