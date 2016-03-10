@@ -1,6 +1,4 @@
 <?php
-if ( ! defined( 'MEDIAWIKI' ) )
-	die();
 /**
  * Allow users in the Bot group to edit many articles in one go by applying
  * regular expressions to a list of pages.
@@ -16,11 +14,17 @@ if ( ! defined( 'MEDIAWIKI' ) )
  * @license https://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
+// Ensure that the script cannot be executed outside of MediaWiki
+if ( !defined( 'MEDIAWIKI' ) ) {
+   die( 'This is an extension to MediaWiki and cannot be run standalone.' );
+}
+
+// Register extension with MediaWiki
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'MassEditRegex',
 	'namemsg' => 'masseditregex-extensionname',
-	'version' => '8.0.2',
+	'version' => '8.0.3',
 	'author' => array(
 		'Adam Nielsen',
 		'...'
