@@ -53,7 +53,7 @@
 	"masseditregex-js-clientside": "Im Browser ausführen",
 	"masseditregex-js-execution": "Ankreuzen, um den Seitendurchlauf clientseitig im Browser auszuführen. Dies ermöglicht eine höhere Anzahl von Änderungen, da normalerweise die maximale Ausführungszeit von PHP serverseitig beschränkt ist.",
 	"masseditregex-js-jobdone": "Sammelbearbeitung wurde durchgeführt",
-	"masseditregex-js-working": "Verarbeite … ($1 übrig)",
+	"masseditregex-js-working": "Verarbeite … (noch $1 Seiten)",
 	"masseditregex-js-pagenotexist": "$1 ist nicht vorhanden.",
 	"masseditregex-js-mwapi-api-error": "Fehler: Die MediaWiki-API hat den Fehlercode $1 zurückgegeben: $2",
 	"masseditregex-js-mwapi-general-error": "Fehler: Unbekanntes Ergebnis von der MediaWiki-API.",
