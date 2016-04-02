@@ -80,7 +80,7 @@ class MassEditRegex {
 		$curText = $content->getNativeData();
 		list( $newText ) = $this->replaceText( $curText );
 
-		$this->diffEngine->setText( $curText, $newText );
+		$this->diffEngine->setContent( $content, ContentHandler::makeContent( $newText, $title ) );
 
 		return $this->diffEngine->getDiff( '<b>'
 			. htmlspecialchars( $title->getPrefixedText() ) . ' - '
