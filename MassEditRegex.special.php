@@ -463,6 +463,10 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		$title = $sktemplate->getTitle();
 		$ns = $title->getNamespace();
 
+		if ( !$sktemplate->getUser()->isAllowed('masseditregex') ) {
+			return true;
+		}
+
 		if ( $ns == NS_CATEGORY ) {
 			$url = SpecialPage::getTitleFor( 'MassEditRegex' )->getLocalURL(
 				array(
