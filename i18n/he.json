@@ -5,10 +5,11 @@
 			"Inkbug",
 			"YaronSh",
 			"Yona b",
-			"ערן"
+			"ערן",
+			"Guycn2"
 		]
 	},
-	"action-masseditregex": "ביצוע עריכה מרובה",
+	"action-masseditregex": "לבצע עריכות מרובות",
 	"masseditregex": "עריכה המונית באמצעות ביטויים רגולאריים",
 	"masseditregex-desc": "שימוש בביטויים רגלואריים כדי [[Special:MassEditRegex|לערוך דפים רבים בבת אחת]]",
 	"masseditregextext": "הכניסו ביטוי רגולרי אחד או יותר (אחד בכל שורה) לחיפוש התאמות, וביטוי אחד או יותר שבו יוחלפו המחרוזות המתאימות שתימצאנה.\n,ביטוי החיפוש הראשון, אם יימצא, יוחלף בביטוי ההחלפה הראשון וכולי.\nר' [http://php.net/manual/en/function.preg-replace.php את תיעוד הפונקציה <span dir=\"ltr\">preg_replace()</span> של PHP] למידע נוסף.",
