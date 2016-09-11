@@ -54,9 +54,10 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		$pageCountLimit = $isPreview ? MER_MAX_PREVIEW_DIFFS : MER_MAX_EXECUTE_PAGES;
 		$errors = array();
 
+		$htmlDiff = '';
+
 		if ( $isPreview ) {
 			$this->massEditRegex->getDiffEngine()->showDiffStyle();
-			$htmlDiff = '';
 		} else {
 			$wgOut->addHTML( '<ul>' );
 		}
