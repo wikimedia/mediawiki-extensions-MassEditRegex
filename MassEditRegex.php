@@ -28,7 +28,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'MassEditRegex',
 	'namemsg' => 'masseditregex-extensionname',
-	'version' => '8.1.0',
+	'version' => '8.1.1',
 	'author' => array(
 		'Adam Nielsen',
 		'...'

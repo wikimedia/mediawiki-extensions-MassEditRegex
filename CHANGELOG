@@ -6,6 +6,14 @@ editing mulitple pages at once.
 This file documents the development changes.
 
 
+### Versiom 8.1.1
+
+Released on 2016-10-17
+
+- Fix for undefined $htmlDiff
+- Provide translations done by the community of translatewiki.net
+
+
 ### Version 8.1.0
 
 Released on 2016-06-14
