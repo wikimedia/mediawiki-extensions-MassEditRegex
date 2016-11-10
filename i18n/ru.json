@@ -6,7 +6,8 @@
 			"Okras",
 			"Rubin",
 			"Rubin16",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Facenapalm"
 		]
 	},
 	"action-masseditregex": "выполнить массовое изменение",
@@ -43,5 +44,17 @@
 	"masseditregex-editfailed": "Ошибка редактирования:",
 	"masseditregex-tooltip-execute": "Применить эти изменения для каждой страницы",
 	"masseditregex-editall": "Редактировать всё",
-	"right-masseditregex": "Заменить содержимое страницы, с помощью регулярных выражений"
+	"right-masseditregex": "Заменить содержимое страницы, с помощью регулярных выражений",
+	"masseditregex-noaccess": "У вас нет доступа к MassEditRegex",
+	"masseditregex-norevisions": "Не найдено изменений для редактирования",
+	"masseditregex-blocked": "Ваша учётная запись заблокирована",
+	"masseditregex-readonlydb": "База данных находится в режиме только для чтения",
+	"masseditregex-js-clientside": "Выполнить в браузере",
+	"masseditregex-js-execution": "Отметьте это, чтобы выполнить обработку страниц на стороне клиента в браузере. Это позволит делать большие изменения, которые обычно ограничиваются максимальным временем выполнения PHP.",
+	"masseditregex-js-jobdone": "Готово",
+	"masseditregex-js-working": "Обработка… (осталось: $1)",
+	"masseditregex-js-pagenotexist": "$1 не существует.",
+	"masseditregex-js-mwapi-api-error": "Ошибка: MediaWiki API вернул код ошибки $1: $2",
+	"masseditregex-js-mwapi-general-error": "Ошибка: Неизвестный результат MediaWiki API",
+	"masseditregex-js-mwapi-unknown-error": "Ошибка: Неизвестная ошибка во время запроса к MediaWiki API."
 }
