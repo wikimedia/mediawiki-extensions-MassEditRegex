@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Event",
-			"Nghtwlkr"
+			"Nghtwlkr",
+			"Jon Harald Søby"
 		]
 	},
 	"action-masseditregex": "utfør en masseredigering",
 	"masseditregex": "Masseredigering ved bruk av regulære uttrykk",
-	"masseditregex-desc": "Bruk regulære uttrykk for å [[Special:MassEditRegex|redigere mange sider i en handling]]",
+	"masseditregex-desc": "Gjør det mulig å bruke regulære uttrykk til å [[Special:MassEditRegex|redigere mange sider på én gang]]",
 	"masseditregextext": "Skriv inn ett eller fler regulære uttrykk (en per linje) for treff, og ett eller flere uttrykk å erstatte hvert treff med.\nDet første treff-uttrykket, om vellykket, vil bli erstattet med det første erstatt-uttrykket, og så videre.\nSe [http://php.net/manual/en/function.preg-replace.php PHP-funksjonen preg_replace()] for detaljer.",
 	"masseditregex-pagelisttxt": "Sider å redigere:",
 	"masseditregex-matchtxt": "Søk etter:",
@@ -28,6 +29,7 @@
 	"masseditregex-hint-toappend": "Legg til noe tekst på slutten av siden - flott for å legge sider til i kategorier",
 	"masseditregex-hint-remove": "Fjern noe tekst fra alle sidene i listen",
 	"masseditregex-hint-removecat": "Fjern alle kategorier fra en side (merk at hakeparantesene i wikikoden unnslipper.)\nErstatningsverdiene bør ikke unnslippes.",
+	"masseditregex-hint-renamelink": "Erstatt AAA med BBB i lenketekst, men ikke i lenkemål: [[[AAA|AAA]] blir [[AAA|BBB]]",
 	"masseditregex-listtype-intro": "Dette er en liste over:",
 	"masseditregex-listtype-pagenames": "Sidenavn (endre disse sidene)",
 	"masseditregex-listtype-pagename-prefixes": "Sidenavnprefiks (endre sider som har navn som begynner med denne teksten)",
@@ -37,11 +39,14 @@
 	"masseditregex-badregex": "Ugyldig regulært uttrykk:",
 	"masseditregex-editfailed": "Endring feilet:",
 	"masseditregex-tooltip-execute": "Utfør disse endringene på hver side",
+	"masseditregex-editall": "Rediger alle",
 	"right-masseditregex": "Erstatt sideinnholdet gjennom å bruke regulæruttrykk",
 	"masseditregex-noaccess": "Du har ikke tilgang til MassEditRegex",
+	"masseditregex-norevisions": "Ingen revisjoner å redigere funnet",
 	"masseditregex-blocked": "Brukerkontoen din er blokkert",
 	"masseditregex-readonlydb": "Databasen er skrivebeskyttet",
 	"masseditregex-js-clientside": "Kjør i nettleseren",
+	"masseditregex-js-execution": "Merk av denne for å gjøre sideitereringen på klientsiden i nettleseren. Dette gjør det mulig å gjøre større endringer som normalt begrenses av PHPs maksimale utføringstid.",
 	"masseditregex-js-jobdone": "Ferdig",
 	"masseditregex-js-working": "Prosesserer... ($1 igjen)",
 	"masseditregex-js-pagenotexist": "$1 eksisterer ikke.",
