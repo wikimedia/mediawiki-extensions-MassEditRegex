@@ -360,7 +360,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			Xml::tags( 'div',
 				array( 'class' => 'mw-summary-preview' ),
 				$this->msg( 'summary-preview' )->parse() .
-					$this->sk->commentBlock( $this->massEditRegex->getSummary() )
+					Linker::commentBlock( $this->massEditRegex->getSummary() )
 			) .
 			Xml::closeElement( 'div' ) . // class=editOptions
 
