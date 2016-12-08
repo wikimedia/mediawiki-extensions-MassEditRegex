@@ -6,11 +6,23 @@ editing mulitple pages at once.
 This file documents the development changes.
 
 
+### Version 8.2.0
+
+Released on 2016-12-08
+
+Compatible with MediaWiki 1.17 and later
+
+- Replace deprecated skin's commentBlock function with Linker::commentBlock
+- Provide translations done by the community of translatewiki.net
+
+
 ### Versiom 8.1.1
 
 Released on 2016-10-17
 
-- Fix for undefined $htmlDiff
+Compatible with MediaWiki 1.17 to MediaWiki 1.27
+
+- Fix undefined $htmlDiff
 - Provide translations done by the community of translatewiki.net
 
 
@@ -64,6 +76,8 @@ Released on 2015-08-12
 ### Version 8.0.0
 
 Released on 2015-02-08
+
+Compatible with MediaWiki 1.17 and later as well as PHP 5.3 and later
 
 - Add support for execution to be done on client side
 - Internal code cleanup
