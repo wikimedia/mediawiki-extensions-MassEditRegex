@@ -29,7 +29,7 @@
 	"masseditregex-hint-toappend": "Legg til noe tekst på slutten av siden - flott for å legge sider til i kategorier",
 	"masseditregex-hint-remove": "Fjern noe tekst fra alle sidene i listen",
 	"masseditregex-hint-removecat": "Fjern alle kategorier fra en side (merk at hakeparantesene i wikikoden unnslipper.)\nErstatningsverdiene bør ikke unnslippes.",
-	"masseditregex-hint-renamelink": "Erstatt AAA med BBB i lenketekst, men ikke i lenkemål: [[[AAA|AAA]] blir [[AAA|BBB]]",
+	"masseditregex-hint-renamelink": "Erstatt AAA med BBB i lenketekst, men ikke i lenkemål: [[AAA|AAA]] blir [[AAA|BBB]]",
 	"masseditregex-listtype-intro": "Dette er en liste over:",
 	"masseditregex-listtype-pagenames": "Sidenavn (endre disse sidene)",
 	"masseditregex-listtype-pagename-prefixes": "Sidenavnprefiks (endre sider som har navn som begynner med denne teksten)",
