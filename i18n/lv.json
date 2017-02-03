@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Papuass"
+			"Papuass",
+			"Silraks"
 		]
 	},
+	"masseditregex-editall": "Labot visas",
 	"masseditregex-noaccess": "Jums nav piekļuves tiesības MassEditRegex",
 	"masseditregex-js-clientside": "Izpildīt pārlūkā",
 	"masseditregex-js-jobdone": "Pabeigts",
