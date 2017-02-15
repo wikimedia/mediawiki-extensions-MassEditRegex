@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"DCLXVI"
+			"DCLXVI",
+			"StanProg"
 		]
 	},
 	"masseditregex-matchtxt": "Търсене за:",
@@ -11,5 +12,6 @@
 	"masseditregex-after": "След",
 	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|промяна|промени}}",
 	"masseditregex-page-not-exists": "$1 не съществува",
-	"masseditregex-hint-headreplace": "Заместване"
+	"masseditregex-hint-headreplace": "Заместване",
+	"masseditregex-listtype-intro": "Това е списък на:"
 }
