@@ -24,7 +24,7 @@
 	"masseditregex-hint-intro": "Еве некои совети и примери за извршување на најчестите задачи:",
 	"masseditregex-hint-headmatch": "Совпаѓање",
 	"masseditregex-hint-headreplace": "Замена",
-	"masseditregex-hint-headeffect": "Резултат",
+	"masseditregex-hint-headeffect": "Исход",
 	"masseditregex-hint-toappend": "Приложете некој текст на крајот на страницата - одлично за додавање страници во категории",
 	"masseditregex-hint-remove": "Отстранување на извесен текст од сите страници на списокот",
 	"masseditregex-hint-removecat": "Отстранете ги сите категории од една страница (обратете внимание на исклучувањето на квадратните загради од викикодот.)\nВредностите за заменување не треба да се исклучуваат.",
@@ -50,6 +50,6 @@
 	"masseditregex-js-working": "Обработувам... (уште $1)",
 	"masseditregex-js-pagenotexist": "$1 не постои.",
 	"masseditregex-js-mwapi-api-error": "Грешка: Извршникот на МедијаВики ја даде грешката со код $1: $2",
-	"masseditregex-js-mwapi-general-error": "Грешка: Добив непознат резултат од извршникот на МедијаВики.",
+	"masseditregex-js-mwapi-general-error": "Грешка: Добив непознат исход од извршникот на МедијаВики.",
 	"masseditregex-js-mwapi-unknown-error": "Грешка: Добив непозната грешка при барањето до извршникот на МедијаВики."
 }
