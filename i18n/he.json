@@ -6,7 +6,8 @@
 			"YaronSh",
 			"Yona b",
 			"ערן",
-			"Guycn2"
+			"Guycn2",
+			"שמזן"
 		]
 	},
 	"action-masseditregex": "לבצע עריכות מרובות",
@@ -43,5 +44,6 @@
 	"masseditregex-editfailed": "העריכה נכשלה:",
 	"masseditregex-tooltip-execute": "החלת שינויים אלה לכל דף",
 	"masseditregex-editall": "שנה הכל",
-	"right-masseditregex": "החלפת תוכן הדף באמצעות ביטויים רגולריים"
+	"right-masseditregex": "החלפת תוכן הדף באמצעות ביטויים רגולריים",
+	"masseditregex-readonlydb": "מסד הנתונים במצב קריאה בלבד"
 }
