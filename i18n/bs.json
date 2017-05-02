@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"Srdjan m"
 		]
 	},
-	"masseditregex-desc": "Korištenje regularnih izraza za [[Special:MassEditRegex|uređivanje više stranica u jednoj operaciji]]",
+	"masseditregex-desc": "Omogućava korištenje regularnih izraza za [[Special:MassEditRegex|uređivanje mnogo stranica odjednom]]",
 	"masseditregex-pagelisttxt": "Stranice za uređivanje:",
 	"masseditregex-matchtxt": "Traži:",
 	"masseditregex-replacetxt": "Zamijeni sa:",
