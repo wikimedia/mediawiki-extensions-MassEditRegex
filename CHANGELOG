@@ -6,6 +6,16 @@ editing mulitple pages at once.
 This file documents the development changes.
 
 
+### Version 8.3.0
+
+Released on 2017-07-19
+
+Compatible with MediaWiki 1.23 and later
+
+- Removed I18n php shim
+- Provide translations done by the community of translatewiki.net
+
+
 ### Version 8.2.0
 
 Released on 2016-12-08

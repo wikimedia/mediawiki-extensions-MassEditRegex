@@ -28,7 +28,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'MassEditRegex',
 	'namemsg' => 'masseditregex-extensionname',
-	'version' => '8.2.0',
+	'version' => '8.3.0',
 	'author' => array(
 		'Adam Nielsen',
 		'...'
@@ -40,7 +40,6 @@ $wgExtensionCredits['specialpage'][] = array(
 
 // Register extension messages and other localisation
 $wgMessagesDirs['MassEditRegex'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['MassEditRegex'] = __DIR__ . '/MassEditRegex.i18n.php';
 $wgExtensionMessagesFiles['MassEditRegexAlias'] = __DIR__ . '/MassEditRegex.alias.php';
 
 // Register extension classes
