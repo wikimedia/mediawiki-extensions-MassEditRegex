@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
-			"OsamaK"
+			"OsamaK",
+			"ديفيد"
 		]
 	},
 	"masseditregex": "تعديل كمي باستخدام التعبيرات المنتظمة",
-	"masseditregex-desc": "استخدم التعبيرات القياسية [[Special:MassEditRegex|لتعديل صفحات كثيرة في عملية واحدة]]",
+	"masseditregex-desc": "تسمح باستخدام التعبيرات القياسية [[Special:MassEditRegex|لتعديل صفحات كثيرة في عملية واحدة]]",
 	"masseditregextext": "أدخل تعبيرا نتظما واحدا أو أكثر (واحد لكل سطر) للمطابقة, وتعبير واحد أو أكثر لاستبدال كل مطابقة به.\nأول مطابقة تعبير، لو كان ناجحا، سيتم استبداله بأول تعبير استبدال، وهكذا.\nانظر [http://php.net/manual/en/function.preg-replace.php وظيفة PHP preg_replace()] للتفاصيل.",
-	"masseditregex-pagelisttxt": "الصفحات للتعديل (لا تستخدم بادئة نطاق:):",
+	"masseditregex-pagelisttxt": "صفحات للتعديل:",
 	"masseditregex-matchtxt": "ابحث عن:",
 	"masseditregex-replacetxt": "استبدل بـ:",
 	"masseditregex-executebtn": "شغّل",
@@ -30,7 +31,7 @@
 	"masseditregex-listtype-intro": "هذه قائمة بـ:",
 	"masseditregex-listtype-pagenames": "أسماء الصفحات (عدل هذه الصفحات)",
 	"masseditregex-listtype-pagename-prefixes": "بادئات أسماء الصفحات (عدل الصفحات بأسماء تبدأ بهذا النص)",
-	"masseditregex-listtype-categories": "أسماء التصنيفات (عدل كل صفحة في هذه التصنيفات؛ اختيار النطاق يتم تجاهله)",
+	"masseditregex-listtype-categories": "أسماء التصنيفات (عدل كل صفحة في هذه التصنيفات)",
 	"masseditregex-listtype-backlinks": "الوصلات الراجعة (عدل الصفحات التي تصل إلى هذه الصفحات)",
 	"masseditregex-exprnomatch": "التعبير \"$1\" لم يطابق أي صفحة.",
 	"masseditregex-badregex": "عبارة منطقية غير صالحة:",
