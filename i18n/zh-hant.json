@@ -4,7 +4,8 @@
 			"Mark85296341",
 			"Simon Shek",
 			"Cwlin0416",
-			"LNDDYL"
+			"LNDDYL",
+			"Wwycheuk"
 		]
 	},
 	"action-masseditregex": "執行批次編輯",
@@ -41,5 +42,6 @@
 	"masseditregex-editfailed": "編輯失敗：",
 	"masseditregex-tooltip-execute": "套用這些變更至每一頁",
 	"masseditregex-editall": "編輯全部",
-	"right-masseditregex": "使用正規表示法取代頁面內容"
+	"right-masseditregex": "使用正規表示法取代頁面內容",
+	"masseditregex-readonlydb": "資料庫為唯讀"
 }
