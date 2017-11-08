@@ -40,7 +40,7 @@
 	"masseditregex-tooltip-execute": "Aplicar estas alterações a cada página",
 	"masseditregex-editall": "Editar todas",
 	"right-masseditregex": "Substituir conteúdos das páginas utilizando expressões regulares",
-	"masseditregex-noaccess": "Não possui acesso ao MassEditRegex",
+	"masseditregex-noaccess": "Não tem acesso ao MassEditRegex",
 	"masseditregex-norevisions": "Não foram encontradas revisões para editar",
 	"masseditregex-blocked": "A sua conta de utilizador está bloqueada",
 	"masseditregex-readonlydb": "A base de dados está em modo exclusivo de leitura",
