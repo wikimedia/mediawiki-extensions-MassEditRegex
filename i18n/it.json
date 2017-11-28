@@ -19,7 +19,7 @@
 	"masseditregex-max-preview-diffs": "L'anteprima è stato limitata {{PLURAL:$1|alla prima corrispondenza|alle prime $1 corrispondenze}}.",
 	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|modifica|modifiche}}",
 	"masseditregex-page-not-exists": "$1 non esiste",
-	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|pagina|pagine}} modificate",
+	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|pagina modificata|pagine modificate}}",
 	"masseditregex-view-full-summary": "Visualizza il riepilogo dell'intera modifica",
 	"masseditregex-hint-intro": "Di seguito sono riportati alcuni suggerimenti ed esempi per svolgimento di operazioni comuni:",
 	"masseditregex-hint-headmatch": "Corrispondenza",
