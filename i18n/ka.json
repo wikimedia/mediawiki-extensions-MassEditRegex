@@ -7,6 +7,7 @@
 	},
 	"masseditregex-before": "მანამდე",
 	"masseditregex-after": "შემდეგ",
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|ცვლილება|ცვლილება}}",
 	"masseditregex-page-not-exists": "$1 არ არსებობს",
 	"masseditregex-hint-headreplace": "ჩანაცვლება",
 	"masseditregex-exprnomatch": "„$1“ გამოხატვას არცერთი გვერდი არ შეესაბამება.",
