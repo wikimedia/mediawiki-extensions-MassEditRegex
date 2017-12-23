@@ -28,7 +28,7 @@
 	"masseditregex-hint-toappend": "Adiciona algum texto ao fim da página - útil para adicionar páginas a categorias",
 	"masseditregex-hint-remove": "Remover um texto de todas as páginas na lista",
 	"masseditregex-hint-removecat": "Remover todas as categorias de uma página (note o ''escape'' dos parênteses rectos no código wiki.)\nOs valores de troca não devem ter o ''escape''.",
-	"masseditregex-hint-renamelink": "Substituir AAA por BBB no texto do link mas não no seu destino: [[AAA|AAA]] é transformado em [[AAA|BBB]]",
+	"masseditregex-hint-renamelink": "Substituir AAA por BBB no texto da hiperligação mas não no seu destino: [[AAA|AAA]] é transformado em [[AAA|BBB]]",
 	"masseditregex-listtype-intro": "Esta é uma lista de:",
 	"masseditregex-listtype-pagenames": "Nomes de página (editar estas páginas)",
 	"masseditregex-listtype-pagename-prefixes": "Inícios dos nomes de página (editar páginas cujos nomes começam por estes caracteres)",
