@@ -33,7 +33,7 @@
 	"masseditregex-listtype-pagenames": "Nomes de página (editar estas páginas)",
 	"masseditregex-listtype-pagename-prefixes": "Inícios dos nomes de página (editar páginas cujos nomes começam por estes caracteres)",
 	"masseditregex-listtype-categories": "Nomes de categoria (editar cada página nestas categorias)",
-	"masseditregex-listtype-backlinks": "Afluentes (editar páginas que contêm links para estas)",
+	"masseditregex-listtype-backlinks": "Afluentes (editar páginas que contêm hiperligações para estas)",
 	"masseditregex-exprnomatch": "A expressão \"$1\" não ocorre em nenhuma página.",
 	"masseditregex-badregex": "Regex inválida:",
 	"masseditregex-editfailed": "Edição falhou:",
