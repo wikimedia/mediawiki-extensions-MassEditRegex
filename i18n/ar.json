@@ -10,7 +10,7 @@
 	"action-masseditregex": "أجر تعديلا كميًّا",
 	"masseditregex": "تعديل كمي باستخدام العبارات الاعتيادية",
 	"masseditregex-desc": "تتيح استخدام العبارات الاعتيادية [[Special:MassEditRegex|لتعديل صفحات كثيرة في عملية واحدة]]",
-	"masseditregextext": "أدخل عبارة اعتيادية أو أكثر (واحدة في السطر) لمطابقتها، و عبارة أو أكثر لاستبدال كل مطابَقة بها.\nأول عبارةُ مطابقةٍ، لو تطابقت، سيتم استبدالها بأول عبارةِ استبدالٍ، وهكذا.\nانظر [http://php.net/manual/en/function.preg-replace.php وظيفة PHP preg_replace()] للتفاصيل.",
+	"masseditregextext": "أدخل عبارة اعتيادية أو أكثر (واحدة في السطر) لمطابقتها، و&nbsp;عبارة أو أكثر لاستبدال كل مطابَقة بها.\nأول عبارةُ مطابَقةٍ، إن تطابقت، سيتم استبدالها بأول عبارةِ استبدالٍ، و&nbsp;هكذا.\nانظر [http://php.net/manual/en/function.preg-replace.php دالّةPHP preg_replace()] للتفاصيل.",
 	"masseditregex-pagelisttxt": "صفحات للتعديل:",
 	"masseditregex-matchtxt": "ابحث عن:",
 	"masseditregex-replacetxt": "استبدل بالتالي:",
