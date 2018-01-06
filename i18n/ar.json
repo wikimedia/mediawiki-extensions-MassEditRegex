@@ -23,7 +23,7 @@
 	"masseditregex-page-not-exists": "$1 غير موجود",
 	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|صفحة|صفحات}} تم تعديلها",
 	"masseditregex-view-full-summary": "استعرض الملخص الكامل التعديل",
-	"masseditregex-hint-intro": "هذه نصائح و&nbsp;أمثلة لتنفيذ المهام الشائعة:",
+	"masseditregex-hint-intro": "هنا بعض النصائح والأمثلة لتنفيذ المهام الشائعة:",
 	"masseditregex-hint-headmatch": "مطابقة",
 	"masseditregex-hint-headreplace": "استبدل",
 	"masseditregex-hint-headeffect": "الأثر",
