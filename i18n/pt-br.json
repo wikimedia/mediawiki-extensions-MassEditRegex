@@ -45,6 +45,16 @@
 	"masseditregex-tooltip-execute": "Aplicar estas alterações a cada página",
 	"masseditregex-editall": "Editar tudo",
 	"right-masseditregex": "Substituir o conteúdo de páginas utilizando expressões regulares",
+	"masseditregex-noaccess": "Não tem acesso ao MassEditRegex",
+	"masseditregex-norevisions": "Não foram encontradas revisões para editar",
+	"masseditregex-blocked": "Sua conta de usuário está bloqueada",
+	"masseditregex-readonlydb": "A base de dados está em modo exclusivo de leitura",
+	"masseditregex-js-clientside": "Executar no navegador",
+	"masseditregex-js-execution": "Marcar esta opção para realizar a iteração de páginas do lado do cliente, no browser. Isto permite alterações maiores, normalmente limitadas pelo tempo máximo de execução de PHP.",
 	"masseditregex-js-jobdone": "Completo",
-	"masseditregex-js-pagenotexist": "$1 não existe."
+	"masseditregex-js-working": "Processando... (falta $1)",
+	"masseditregex-js-pagenotexist": "$1 não existe.",
+	"masseditregex-js-mwapi-api-error": "Erro: O API do MediaWiki devolveu o código de erro $1: $2",
+	"masseditregex-js-mwapi-general-error": "Erro: Resultado desconhecido do API do MediaWiki.",
+	"masseditregex-js-mwapi-unknown-error": "Erro: Erro desconhecido durante a solicitação ao API do MediaWiki."
 }
