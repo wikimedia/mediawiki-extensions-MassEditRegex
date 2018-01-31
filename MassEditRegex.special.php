@@ -212,8 +212,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 		// Show a message if the database is in read-only mode
 		if ( wfReadOnly() ) {
-			$wgOut->readOnlyPage();
-			return;
+			throw new ReadOnlyError;
 		}
 
 		// If user is blocked, s/he doesn't need to access this page
