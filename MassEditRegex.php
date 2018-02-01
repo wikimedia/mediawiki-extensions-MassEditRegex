@@ -35,7 +35,7 @@ $wgExtensionCredits['specialpage'][] = array(
 		),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MassEditRegex',
 	'descriptionmsg' => 'masseditregex-desc',
-	'license-name' => 'GPL-2.0+'
+	'license-name' => 'GPL-2.0-or-later'
 );
 
 // Register extension messages and other localisation
