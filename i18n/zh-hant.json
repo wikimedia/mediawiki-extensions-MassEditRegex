@@ -5,12 +5,13 @@
 			"Simon Shek",
 			"Cwlin0416",
 			"LNDDYL",
-			"Wwycheuk"
+			"Wwycheuk",
+			"Kly"
 		]
 	},
 	"action-masseditregex": "執行批次編輯",
 	"masseditregex": "使用正規表示法進行批次編輯",
-	"masseditregex-desc": "使用正規表示法來[[Special:MassEditRegex|一次編輯多個頁面]]",
+	"masseditregex-desc": "允許使用正規表示法來[[Special:MassEditRegex|一次編輯多個頁面]]",
 	"masseditregextext": "輸入一個或多個正規表示法 (一筆一行) 用來進行比對，並輸入一筆或多筆表示法用來取代符合的資料。\n若符合第一個比對的表示法，將會使用第一個取代表示法取代，並以此類推。\n請參考 [http://php.net/manual/en/function.preg-replace.php the PHP function preg_replace()] 取得詳細資料。",
 	"masseditregex-pagelisttxt": "要編輯的頁面：",
 	"masseditregex-matchtxt": "搜尋：",
@@ -20,7 +21,7 @@
 	"masseditregex-before": "之前",
 	"masseditregex-after": "之後",
 	"masseditregex-max-preview-diffs": "預覽已限制只顯示前 $1 筆{{PLURAL:$1|符合}}的結果。",
-	"masseditregex-num-changes": "$1：$2 {{PLURAL:$2|變更|變更}}",
+	"masseditregex-num-changes": "$1：$2 個{{PLURAL:$2|變更|變更}}",
 	"masseditregex-page-not-exists": "$1 不存在",
 	"masseditregex-num-articles-changed": "已編輯 $1 個{{PLURAL:$1|頁面|頁面}}",
 	"masseditregex-view-full-summary": "檢視完整的編輯摘要",
@@ -43,5 +44,16 @@
 	"masseditregex-tooltip-execute": "套用這些變更至每一頁",
 	"masseditregex-editall": "編輯全部",
 	"right-masseditregex": "使用正規表示法取代頁面內容",
-	"masseditregex-readonlydb": "資料庫為唯讀"
+	"masseditregex-noaccess": "您不可存取 MassEditRegex",
+	"masseditregex-norevisions": "查無要編輯的修訂版本",
+	"masseditregex-blocked": "您的使用者帳號已被封鎖",
+	"masseditregex-readonlydb": "資料庫為唯讀",
+	"masseditregex-js-clientside": "在瀏覽器執行",
+	"masseditregex-js-execution": "在瀏覽器中的客戶端點選此來重複執行頁面。這通常是透過 PHP 的最大執行時間，來允許較長的更改。",
+	"masseditregex-js-jobdone": "完成",
+	"masseditregex-js-working": "處理中...（剩餘 $1）",
+	"masseditregex-js-pagenotexist": "$1 不存在。",
+	"masseditregex-js-mwapi-api-error": "錯誤：MediaWiki API 返回錯誤代碼 $1：$2",
+	"masseditregex-js-mwapi-general-error": "錯誤：來自於 MediaWiki API 的不明結果。",
+	"masseditregex-js-mwapi-unknown-error": "錯誤：向 MediaWiki API 請求時出現不明錯誤。"
 }
