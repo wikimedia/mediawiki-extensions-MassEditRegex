@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Rancher"
+			"Rancher",
+			"Obsuser"
 		]
 	},
 	"masseditregex-pagelisttxt": "Strane za izmenu:",
-	"masseditregex-matchtxt": "Traži:",
+	"masseditregex-matchtxt": "Pretraži:",
 	"masseditregex-replacetxt": "Zameni sa:",
 	"masseditregex-executebtn": "Izvrši",
 	"masseditregex-err-nopages": "Morate navesti najmanje jednu stranu za izmenu.",

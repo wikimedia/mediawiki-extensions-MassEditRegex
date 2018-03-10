@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"CERminator",
-			"Srdjan m"
+			"Srdjan m",
+			"Obsuser"
 		]
 	},
 	"masseditregex-desc": "Omogućava korištenje regularnih izraza za [[Special:MassEditRegex|uređivanje mnogo stranica odjednom]]",
 	"masseditregex-pagelisttxt": "Stranice za uređivanje:",
-	"masseditregex-matchtxt": "Traži:",
+	"masseditregex-matchtxt": "Pretraži:",
 	"masseditregex-replacetxt": "Zamijeni sa:",
 	"masseditregex-executebtn": "Izvrši",
 	"masseditregex-err-nopages": "Morate navesti barem jednu stranicu koja se treba mijenjati.",

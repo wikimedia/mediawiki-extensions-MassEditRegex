@@ -3,11 +3,12 @@
 		"authors": [
 			"Rancher",
 			"Жељко Тодоровић",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Obsuser"
 		]
 	},
 	"masseditregex-pagelisttxt": "Стране за измену:",
-	"masseditregex-matchtxt": "Тражи:",
+	"masseditregex-matchtxt": "Претражи:",
 	"masseditregex-replacetxt": "Замени са:",
 	"masseditregex-executebtn": "Изврши",
 	"masseditregex-err-nopages": "Морате навести најмање једну страну за измену.",
