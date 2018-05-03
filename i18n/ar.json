@@ -30,7 +30,7 @@
 	"masseditregex-hint-toappend": "أضف بعض النصوص إلى نهاية الصفحة - رائع لإضافة الصفحات إلى التصنيفات",
 	"masseditregex-hint-remove": "أزل بعض النصوص من كل الصفحات في القائمة",
 	"masseditregex-hint-removecat": "أزل كل التصنيفات من صفحة (لاحظ تهريب الأقواس المربعة في كود الويكي.)\nقيم الاستبدال ينبغي ألا تُهَرَّب.",
-	"masseditregex-hint-renamelink": "ضع أبجد مكان هوز في نص الرابط لكن ليس في العنوان، مثلا: [[هوز|هوز]] تصبح [[هوز|أبجد]]",
+	"masseditregex-hint-renamelink": "ضع AAA مكان BBB في نص الرابط لكن ليس في العنوان، مثلا: [[AAA|AAA]] تصبح [[AAA|BBB]]",
 	"masseditregex-listtype-intro": "هذه قائمة تسرد:",
 	"masseditregex-listtype-pagenames": "أسماء الصفحات (عدِّل هذه الصفحات)",
 	"masseditregex-listtype-pagename-prefixes": "بادئات أسماء الصفحات (عدل الصفحات البادئة أسماؤها بهذا النص)",
