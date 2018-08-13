@@ -25,7 +25,7 @@
 	"masseditregex-listtype-intro": "Ово је списак од:",
 	"masseditregex-listtype-pagenames": "Називи страница (уредите ове странице)",
 	"masseditregex-exprnomatch": "Израз \"$1\" се не налази ни на једној страни.",
-	"masseditregex-badregex": "Неисправан regex:",
+	"masseditregex-badregex": "Неважећи regex:",
 	"masseditregex-editfailed": "Измена није снимљена:",
 	"masseditregex-tooltip-execute": "Примени ове промене на сваку страну"
 }
