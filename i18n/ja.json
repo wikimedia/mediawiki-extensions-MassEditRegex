@@ -6,7 +6,8 @@
 			"Whym",
 			"青子守歌",
 			"Los688",
-			"Sujiniku"
+			"Sujiniku",
+			"Suyama"
 		]
 	},
 	"action-masseditregex": "一括編集の実行",
@@ -44,5 +45,6 @@
 	"masseditregex-tooltip-execute": "これらの変更を各ページに適用する",
 	"masseditregex-editall": "すべて編集",
 	"right-masseditregex": "正規表現を使用してページの内容を置換",
+	"masseditregex-readonlydb": "データベースは読取専用です",
 	"masseditregex-js-jobdone": "完了"
 }
