@@ -83,7 +83,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 							$errors[] = $this->msg( 'masseditregex-exprnomatch',
 								$pageTitle )->escaped();
 							$iArticleCount++;
-							continue;
+							break;
 						}
 
 						foreach ( $titles as $title ) {
@@ -113,7 +113,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 								$errors[] = $this->msg( 'masseditregex-page-not-exists',
 									$pageTitle )->escaped();
 							}
-							continue;
+							break;
 						}
 						$blc = $t->getBacklinkCache();
 						if ( $t->getNamespace() == NS_TEMPLATE ) {
