@@ -49,8 +49,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 	 *   true to generate diffs, false to perform page edits.
 	 */
 	public function perform( $isPreview ) {
-		global $wgOut, $wgUser, $wgLang;
-
+		$out= $this->getOutput();
+		$getuser= $this->getUser();
 		$pageCountLimit = $isPreview ? MER_MAX_PREVIEW_DIFFS : MER_MAX_EXECUTE_PAGES;
 		$errors = array();
 
@@ -59,7 +59,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		if ( $isPreview ) {
 			$this->massEditRegex->getDiffEngine()->showDiffStyle();
 		} else {
-			$wgOut->addHTML( '<ul>' );
+			$out->addHTML( '<ul>' );
 		}
 
 		$iArticleCount = 0;
@@ -150,13 +150,13 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 			// Force a preview if there was a bad regex
 			if ( !$isPreview ) {
-				$wgOut->addHTML( '</ul>' );
+				$out->addHTML( '</ul>' );
 			}
 			$isPreview = true;
 		}
 
 		if ( !$isPreview ) {
-			$wgOut->addHTML( '</ul>' );
+			$out->addHTML( '</ul>' );
 		}
 
 		if ( ( $iArticleCount == 0 ) && empty( $errors ) ) {
@@ -166,12 +166,12 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		}
 
 		if ( !empty($errors ) ) {
-			$wgOut->addHTML( '<div class="errorbox">' );
-			$wgOut->addHTML( wfMessage(  'masseditregex-editfailed'  )->text() );
+			$out->addHTML( '<div class="errorbox">' );
+			$out->addHTML( wfMessage(  'masseditregex-editfailed'  )->text() );
 
-			$wgOut->addHTML( '<ul><li>' );
-			$wgOut->addHTML( join( '</li><li> ', $errors) );
-			$wgOut->addHTML( '</li></ul></div>' );
+			$out->addHTML( '<ul><li>' );
+			$out->addHTML( join( '</li><li> ', $errors) );
+			$out->addHTML( '</li></ul></div>' );
 		}
 
 		if ( $isPreview ) {
@@ -179,13 +179,13 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			$this->showForm();
 
 			// Show the diffs now (after any errors)
-			$wgOut->addHTML( '<hr style="margin: 1em;"/>' );
-			$wgOut->addHTML( $htmlDiff );
+			$out->addHTML( '<hr style="margin: 1em;"/>' );
+			$out->addHTML( $htmlDiff );
 		} else {
-			$wgOut->addWikiMsg( 'masseditregex-num-articles-changed', $iArticleCount );
-			$wgOut->addHTML(
+			$out->addWikiMsg( 'masseditregex-num-articles-changed', $iArticleCount );
+			$out->addHTML(
 				Linker::link(
-					SpecialPage::getSafeTitleFor( 'Contributions', $wgUser->getName() ),
+					SpecialPage::getSafeTitleFor( 'Contributions', $getuser->getName() ),
 					$this->msg( 'masseditregex-view-full-summary' )->escaped(),
 					array(),
 					array(),
@@ -197,15 +197,14 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 	/// Display the special page, and run the regexes if a form is being submitted
 	public function execute( $par ) {
-		global $wgUser;
-
-		$wgOut = $this->getOutput();
-		$wgOut->addModules('MassEditRegex');
+		$out= $this->getOutput();
+		$getuser= $this->getUser();
+		$out->addModules('MassEditRegex');
 
 		$this->setHeaders();
 
 		// Check permissions
-		if ( !$wgUser->isAllowed( 'masseditregex' ) ) {
+		if ( !$getuser->isAllowed( 'masseditregex' ) ) {
 			$this->displayRestrictionError();
 			return;
 		}
@@ -216,8 +215,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		}
 
 		// If user is blocked, s/he doesn't need to access this page
-		if ( $wgUser->isBlocked() ) {
-			throw new UserBlockedError( $wgUser->getBlock() );
+		if ( $getuser->isBlocked() ) {
+			throw new UserBlockedError( $getuser->getBlock() );
 		}
 
 		$this->outputHeader();
@@ -237,7 +236,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		$this->isClientSide = $wgRequest->getVal( 'wpClientSide', false ) == 1;
 
 		$this->massEditRegex = new MassEditRegex(
-			$this->strMatch, $this->strReplace, $summary, $wgUser
+			$this->strMatch, $this->strReplace, $summary, $getuser
 		);
 
 		if ( $wgRequest->wasPosted() ) {
@@ -251,12 +250,13 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 	/// Display the form requesting the regexes from the user.
 	function showForm() {
-		$wgOut = $this->getOutput();
+		$out= $this->getOutput();
+		$getuser= $this->getUser();
 
-		$wgOut->addWikiMsg( 'masseditregextext' );
+		$out->addWikiMsg( 'masseditregextext' );
 		$titleObj = SpecialPage::getTitleFor( 'MassEditRegex' );
 
-		$wgOut->addHTML(
+		$out->addHTML(
 			Xml::openElement('form', array(
 				'id' => 'masseditregex',
 				'method' => 'post',
@@ -285,7 +285,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			// Have to use openElement because putting an Xml::xxx return value
 			// inside an Xml::element causes the HTML code to be escaped and appear
 			// on the page.
-			$wgOut->addHTML(
+			$out->addHTML(
 				Xml::openElement('li') .
 				// Give grep a chance to find the usages:
 				// masseditregex-listtype-pagenames, masseditregex-listtype-pagename-prefixes,
@@ -300,7 +300,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				Xml::closeElement('li')
 			);
 		}
-		$wgOut->addHTML(
+		$out->addHTML(
 			Xml::closeElement('ul') .
 
 			// Display the textareas for the regex and replacement to go into
@@ -398,18 +398,19 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			)
 		);
 
-		$wgOut->addHTML( Xml::closeElement('form') );
-		$wgOut->addModules('MassEditRegex');
+		$out->addHTML( Xml::closeElement('form') );
+		$out->addModules('MassEditRegex');
 	}
 
 	/// Show a short table of regex examples.
 	function showHints() {
-		global $wgOut;
+		$out= $this->getOutput();
+		$getuser= $this->getUser();
 
-		$wgOut->addHTML(
+		$out->addHTML(
 			Xml::element( 'p', null, wfMessage(  'masseditregex-hint-intro'  )->text() )
 		);
-		$wgOut->addHTML(Xml::buildTable(
+		$out->addHTML(Xml::buildTable(
 
 			// Table rows (the hints)
 			array(
@@ -520,13 +521,14 @@ class MassEditRegexSpecialPage extends SpecialPage {
 	 * @return bool
 	 */
 	private function editPage( $title, $isPreview, &$htmlDiff ) {
-		global $wgOut;
+		$out= $this->getOutput();
+		$getuser= $this->getUser();
 		try {
 			if ( $isPreview ) {
 				$htmlDiff .= $this->massEditRegex->previewPage( $title );
 			} else {
 				$changeCount = $this->massEditRegex->editPage( $title );
-				$wgOut->addHTML( '<li>' . $this->msg( 'masseditregex-num-changes',
+				$out->addHTML( '<li>' . $this->msg( 'masseditregex-num-changes',
 					$title->getPrefixedText(), $changeCount )->escaped() . '</li>' );
 			}
 			return true;
