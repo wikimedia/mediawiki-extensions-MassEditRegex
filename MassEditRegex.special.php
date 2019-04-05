@@ -50,8 +50,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 	 *   true to generate diffs, false to perform page edits.
 	 */
 	public function perform( $isPreview ) {
-		$out= $this->getOutput();
-		$getuser= $this->getUser();
+		$out = $this->getOutput();
+		$getuser = $this->getUser();
 		$pageCountLimit = $isPreview ? MER_MAX_PREVIEW_DIFFS : MER_MAX_EXECUTE_PAGES;
 		$errors = [];
 
@@ -198,8 +198,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 	/// Display the special page, and run the regexes if a form is being submitted
 	public function execute( $par ) {
-		$out= $this->getOutput();
-		$getuser= $this->getUser();
+		$out = $this->getOutput();
+		$getuser = $this->getUser();
 		$out->addModules( 'MassEditRegex' );
 
 		$this->setHeaders();
@@ -251,8 +251,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 	/// Display the form requesting the regexes from the user.
 	function showForm() {
-		$out= $this->getOutput();
-		$getuser= $this->getUser();
+		$out = $this->getOutput();
+		$getuser = $this->getUser();
 
 		$out->addWikiMsg( 'masseditregextext' );
 		$titleObj = SpecialPage::getTitleFor( 'MassEditRegex' );
@@ -404,8 +404,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 	/// Show a short table of regex examples.
 	function showHints() {
-		$out= $this->getOutput();
-		$getuser= $this->getUser();
+		$out = $this->getOutput();
+		$getuser = $this->getUser();
 
 		$out->addHTML(
 			Xml::element( 'p', null, wfMessage( 'masseditregex-hint-intro' )->text() )
@@ -522,8 +522,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 	 * @return bool
 	 */
 	private function editPage( $title, $isPreview, &$htmlDiff ) {
-		$out= $this->getOutput();
-		$getuser= $this->getUser();
+		$out = $this->getOutput();
+		$getuser = $this->getUser();
 		try {
 			if ( $isPreview ) {
 				$htmlDiff .= $this->massEditRegex->previewPage( $title );

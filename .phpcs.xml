@@ -20,7 +20,6 @@
 		<exclude name="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose" />
 		<exclude name="Squiz.Scope.MethodScope.Missing" />
 		<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound" />
-		<exclude name="Squiz.WhiteSpace.OperatorSpacing.NoSpaceBefore" />
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php,php5,inc"/>
