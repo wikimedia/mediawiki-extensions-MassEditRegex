@@ -1,6 +1,7 @@
 <?php
-if ( ! defined( 'MEDIAWIKI' ) )
+if ( ! defined( 'MEDIAWIKI' ) ) {
 	die();
+}
 /**
  * Allow users in the Bot group to edit many articles in one go by applying
  * regular expressions to a list of pages.
@@ -502,7 +503,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 	public static function efBaseTemplateToolbox( &$tpl, &$toolbox ) {
 		global $wgTitle;
-		if ( !$wgTitle->isSpecial( 'MassEditRegex' ) ) return true;
+		if ( !$wgTitle->isSpecial( 'MassEditRegex' ) ) { return true;
+		}
 
 		// Hide the 'printable version' link as the shortcut key conflicts with
 		// the preview button.
