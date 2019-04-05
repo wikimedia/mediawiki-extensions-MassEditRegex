@@ -246,7 +246,6 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			$this->showForm();
 			$this->showHints();
 		}
-
 	}
 
 	/// Display the form requesting the regexes from the user.
@@ -456,7 +455,6 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			]
 
 		) ); // Xml::buildTable
-
 	}
 
 	public static function efSkinTemplateNavigationUniversal( &$sktemplate, &$links )

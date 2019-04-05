@@ -16,8 +16,6 @@
 		<exclude name="MediaWiki.Usage.DeprecatedGlobalVariables.Deprecated$wgTitle" />
 		<exclude name="MediaWiki.Usage.ForbiddenFunctions.join" />
 		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.NewLineComment" />
-		<exclude name="PSR2.Files.EndFileNewline.NoneFound" />
-		<exclude name="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose" />
 		<exclude name="Squiz.Scope.MethodScope.Missing" />
 		<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound" />
 	</rule>
