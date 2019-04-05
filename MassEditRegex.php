@@ -24,19 +24,19 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 // Register extension with MediaWiki
-$wgExtensionCredits['specialpage'][] = array(
+$wgExtensionCredits['specialpage'][] = [
 	'path' => __FILE__,
 	'name' => 'MassEditRegex',
 	'namemsg' => 'masseditregex-extensionname',
 	'version' => '8.3.0',
-	'author' => array(
+	'author' => [
 		'Adam Nielsen',
 		'...'
-		),
+		],
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MassEditRegex',
 	'descriptionmsg' => 'masseditregex-desc',
 	'license-name' => 'GPL-2.0-or-later'
-);
+];
 
 // Register extension messages and other localisation
 $wgMessagesDirs['MassEditRegex'] = __DIR__ . '/i18n';
@@ -58,19 +58,19 @@ $wgHooks['SkinTemplateNavigation::Universal'][] = 'MassEditRegexSpecialPage::efS
 $wgHooks['BaseTemplateToolbox'][] = 'MassEditRegexSpecialPage::efBaseTemplateToolbox';
 
 // Register ResourcesLoaderModules
-$wgResourceModules['MassEditRegex'] = array(
+$wgResourceModules['MassEditRegex'] = [
 	'position' => 'top',
-	'scripts' => array(
+	'scripts' => [
 		'MassEditRegex.js'
-	),
-	'dependencies' => array(
+	],
+	'dependencies' => [
 		'mediawiki.jqueryMsg',
 		'jquery.ui.dialog'
-	),
+	],
 	'group' => 'MassEditRegex',
 	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'MassEditRegex',
-	'messages' => array (
+	'messages' => [
 		'masseditregex-js-execution',
 		'masseditregex-js-jobdone',
 		'masseditregex-num-changes',
@@ -79,8 +79,8 @@ $wgResourceModules['MassEditRegex'] = array(
 		'masseditregex-js-mwapi-api-error',
 		'masseditregex-js-mwapi-general-error',
 		'masseditregex-js-mwapi-unknown-error',
-	)
-);
+	]
+];
 
 // AJAX
 $wgAjaxExportList[] = 'MassEditRegexAPI::edit';

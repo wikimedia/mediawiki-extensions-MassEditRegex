@@ -116,7 +116,7 @@ class MassEditRegex {
 					'masseditregex-badregex' );
 			}
 		}
-		return array( $input, $changes );
+		return [ $input, $changes ];
 	}
 
 	/**
@@ -207,13 +207,13 @@ class MassEditRegex {
 		foreach ( $replace as &$str ) {
 			// Convert \n into a newline, \\n into \n, \\\n into \<newline>, etc.
 			$str = preg_replace(
-				array(
+				[
 					'/(^|[^\\\\])((\\\\)*)(\2)\\\\n/',
 					'/(^|[^\\\\])((\\\\)*)(\2)n/'
-				), array(
+				], [
 				"\\1\\2\n",
 				"\\1\\2n"
-			), $str);
+			], $str);
 		}
 
 		$this->replace = $replace;
