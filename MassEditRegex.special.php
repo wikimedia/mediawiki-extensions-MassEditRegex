@@ -1,5 +1,5 @@
 <?php
-if ( ! defined( 'MEDIAWIKI' ) ) {
+if ( !defined( 'MEDIAWIKI' ) ) {
 	die();
 }
 /**
@@ -171,7 +171,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			$out->addHTML( wfMessage( 'masseditregex-editfailed' )->text() );
 
 			$out->addHTML( '<ul><li>' );
-			$out->addHTML( join( '</li><li> ', $errors ) );
+			$out->addHTML( implode( '</li><li> ', $errors ) );
 			$out->addHTML( '</li></ul></div>' );
 		}
 
@@ -267,7 +267,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			) .
 			Xml::textarea(
 				'wpPageList',
-				join( "\n", $this->aPageList )
+				implode( "\n", $this->aPageList )
 			) .
 			Xml::element( 'span',
 				null, wfMessage( 'masseditregex-listtype-intro' )->text()
@@ -369,7 +369,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				'type'      => 'submit',
 				'value'     => wfMessage( 'masseditregex-executebtn' )->text(),
 				'accesskey' => wfMessage( 'accesskey-save' )->text(),
-				'title'     => wfMessage( 'masseditregex-tooltip-execute' )->text().' ['.wfMessage( 'accesskey-save' )->text().']',
+				'title'     => wfMessage( 'masseditregex-tooltip-execute' )->text() . ' [' . wfMessage( 'accesskey-save' )->text() . ']',
 			] ) .
 
 			Xml::element( 'input', [
@@ -378,7 +378,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				'type'      => 'submit',
 				'value'     => wfMessage( 'showpreview' )->text(),
 				'accesskey' => wfMessage( 'accesskey-preview' )->text(),
-				'title'     => wfMessage( 'tooltip-preview' )->text().' ['.wfMessage( 'accesskey-preview' )->text().']',
+				'title'     => wfMessage( 'tooltip-preview' )->text() . ' [' . wfMessage( 'accesskey-preview' )->text() . ']',
 			] ) .
 
 			Xml::tags( 'span',
@@ -457,8 +457,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		) ); // Xml::buildTable
 	}
 
-	public static function efSkinTemplateNavigationUniversal( &$sktemplate, &$links )
-	{
+	public static function efSkinTemplateNavigationUniversal( &$sktemplate, &$links ) {
 		$title = $sktemplate->getTitle();
 		$ns = $title->getNamespace();
 
