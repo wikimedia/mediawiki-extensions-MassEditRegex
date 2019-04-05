@@ -99,7 +99,7 @@ class MassEditRegex {
 		$changes = $iCount = 0;
 		foreach ( $this->search as $i => $strMatch ) {
 			$strNextReplace = $this->replace[ $i ];
-			$result = @preg_replace_callback($strMatch,
+			$result = @preg_replace_callback( $strMatch,
 				function ( $aMatches ) use ( $strNextReplace ) {
 					foreach ( $aMatches as $i => $strMatch ) {
 						$aFind[ ] = '$' . $i;
@@ -127,7 +127,7 @@ class MassEditRegex {
 	private function getRevision( \Title $title ) {
 		$rev = Revision::newFromTitle( $title, 0, Revision::READ_LATEST );
 		if ( !$rev ) {
-			throw new \BadTitleError( wfMessage('masseditregex-norevisions') );
+			throw new \BadTitleError( wfMessage( 'masseditregex-norevisions' ) );
 		}
 		return $rev;
 	}
@@ -141,7 +141,7 @@ class MassEditRegex {
 	private function getContent( $rev ) {
 		$content = $rev->getContent( Revision::FOR_THIS_USER, $this->user );
 		if ( !$content ) {
-			throw new \PermissionsError( wfMessage('masseditregex-noaccess' )->text());
+			throw new \PermissionsError( wfMessage( 'masseditregex-noaccess' )->text() );
 		}
 		return $content;
 	}
@@ -192,7 +192,7 @@ class MassEditRegex {
 	 * @param \User $user
 	 */
 	public function setUser( $user = null ) {
-		if ( is_null( $user ) ){
+		if ( is_null( $user ) ) {
 			$user = User::newFromSession();
 		}
 		$this->user = $user;
@@ -213,7 +213,7 @@ class MassEditRegex {
 				], [
 				"\\1\\2\n",
 				"\\1\\2n"
-			], $str);
+			], $str );
 		}
 
 		$this->replace = $replace;
