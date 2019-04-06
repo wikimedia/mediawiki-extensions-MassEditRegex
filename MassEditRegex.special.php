@@ -90,7 +90,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 						foreach ( $titles as $title ) {
 							$t = Title::newFromText( $title );
 							if ( !$t ) {
-								$errors[] = wfMessage( 'masseditregex-page-not-exists', $title )->text();
+								$errors[] = wfMessage( 'masseditregex-page-not-exists', $title )->escaped();
 							} else {
 								$titleArray[] = $t;
 							}
@@ -147,7 +147,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 			}
 		} catch ( UsageException $e ) {
-			$errors[] = $e;
+			$errors[] = htmlspecialchars( $e );
 
 			// Force a preview if there was a bad regex
 			if ( !$isPreview ) {
@@ -161,14 +161,14 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		}
 
 		if ( ( $iArticleCount == 0 ) && empty( $errors ) ) {
-			$errors[] = wfMessage( 'masseditregex-err-nopages' )->text();
+			$errors[] = wfMessage( 'masseditregex-err-nopages' )->escaped();
 			// Force a preview if there was nothing to do
 			$isPreview = true;
 		}
 
 		if ( !empty( $errors ) ) {
 			$out->addHTML( '<div class="errorbox">' );
-			$out->addHTML( wfMessage( 'masseditregex-editfailed' )->text() );
+			$out->addHTML( wfMessage( 'masseditregex-editfailed' )->escaped() );
 
 			$out->addHTML( '<ul><li>' );
 			$out->addHTML( implode( '</li><li> ', $errors ) );
@@ -342,7 +342,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				],
 				Xml::tags( 'label', [
 					'for' => 'wpSummary'
-				], wfMessage( 'summary' )->text() )
+				], wfMessage( 'summary' )->escaped() )
 			) . ' ' .
 
 			Xml::input( 'wpSummary',
@@ -386,7 +386,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 					'style' => 'margin-left: 1em;'
 				],
 				Xml::checkLabel(
-					wfMessage( 'masseditregex-js-clientside' ),
+					wfMessage( 'masseditregex-js-clientside' )->text(),
 					'wpClientSide',
 					'wpClientSide',
 					$this->isClientSide,
