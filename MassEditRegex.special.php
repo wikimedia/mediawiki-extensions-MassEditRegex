@@ -500,7 +500,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 	public static function efBaseTemplateToolbox( &$tpl, &$toolbox ) {
 		global $wgTitle;
-		if ( !$wgTitle->isSpecial( 'MassEditRegex' ) ) { return true;
+		if ( !$wgTitle->isSpecial( 'MassEditRegex' ) ) {
+			return true;
 		}
 
 		// Hide the 'printable version' link as the shortcut key conflicts with
