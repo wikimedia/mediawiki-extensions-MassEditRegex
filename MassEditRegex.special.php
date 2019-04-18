@@ -9,7 +9,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * @file
  * @ingroup SpecialPage
  *
- * @link http://www.mediawiki.org/wiki/Extension:MassEditRegex Documentation
+ * @link https://www.mediawiki.org/wiki/Extension:MassEditRegex Documentation
  *
  * @author Adam Nielsen <malvineous@shikadi.net>
  * @copyright Copyright © 2009,2013 Adam Nielsen
