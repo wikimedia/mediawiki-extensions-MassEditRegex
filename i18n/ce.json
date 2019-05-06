@@ -7,6 +7,7 @@
 	"masseditregex-replacetxt": "Хийца оцуьнца:",
 	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|хийцам}}",
 	"masseditregex-hint-headmatch": "ЦхьаьнадогӀуш",
+	"masseditregex-hint-headreplace": "Хийцар",
 	"masseditregex-hint-headeffect": "Хилам",
 	"masseditregex-js-jobdone": "Юьззина",
 	"masseditregex-js-working": "Кечяр... ($1 left)",
