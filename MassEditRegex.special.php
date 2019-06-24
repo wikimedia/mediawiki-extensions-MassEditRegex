@@ -78,7 +78,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 						break;
 
 					case 'pagename-prefixes':
-						$titles = PrefixSearch::titleSearch( $pageTitle,
+						$prefixSearch = new StringPrefixSearch;
+						$titles = $prefixSearch->search( $pageTitle,
 							$pageCountLimit - $iArticleCount );
 						if ( empty( $titles ) ) {
 							$errors[] = $this->msg( 'masseditregex-exprnomatch',
