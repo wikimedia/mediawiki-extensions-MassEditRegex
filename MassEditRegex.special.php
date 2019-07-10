@@ -392,7 +392,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 					'wpClientSide',
 					$this->isClientSide,
 					[
-						'title' => wfMessage( 'masseditregex-js-execution' ),
+						'title' => wfMessage( 'masseditregex-js-execution' )->text(),
 					]
 				)
 			)
