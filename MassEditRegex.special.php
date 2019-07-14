@@ -13,7 +13,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  *
  * @author Adam Nielsen <malvineous@shikadi.net>
  * @copyright Copyright © 2009,2013 Adam Nielsen
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  */
 
 /// Maximum number of pages/diffs to display when previewing the changes
@@ -45,6 +45,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 	}
 
 	/// Perform the regex process.
+
 	/**
 	 * @param bool $isPreview
 	 *   true to generate diffs, false to perform page edits.

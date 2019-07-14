@@ -30,7 +30,7 @@ class MassEditRegex {
 	 * @param $search string newline delimited string of search regexes
 	 * @param $replace string newline delimited string of replacements
 	 * @param $summary string
-	 * @param User $user
+	 * @param User|null $user
 	 */
 	function __construct( $search, $replace, $summary, \User $user = null ) {
 		$this->setReplace( $replace );
@@ -189,7 +189,7 @@ class MassEditRegex {
 	}
 
 	/**
-	 * @param \User $user
+	 * @param \User|null $user
 	 */
 	public function setUser( $user = null ) {
 		if ( is_null( $user ) ) {
