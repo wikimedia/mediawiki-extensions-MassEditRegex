@@ -4,7 +4,8 @@
 			"Toliño",
 			"Fisterraeomar",
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Navhy"
 		]
 	},
 	"action-masseditregex": "realizar edicións en masa",
@@ -25,7 +26,7 @@
 	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|artigo editado|artigos editados}}",
 	"masseditregex-view-full-summary": "Ollar o resumo de edición ao completo",
 	"masseditregex-hint-intro": "Aquí hai algúns consellos e exemplos para a realización de tarefas comúns:",
-	"masseditregex-hint-headmatch": "Buscar as coincidencias",
+	"masseditregex-hint-headmatch": "Procurar as coincidencias",
 	"masseditregex-hint-headreplace": "Substituír",
 	"masseditregex-hint-headeffect": "Levar a cabo",
 	"masseditregex-hint-toappend": "Engade algo de texto ao final do artigo; útil para engadir páxinas a categorías",
