@@ -1,7 +1,5 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die();
-}
+
 /**
  * Allow users in the Bot group to edit many articles in one go by applying
  * regular expressions to a list of pages.
