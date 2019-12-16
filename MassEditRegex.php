@@ -65,7 +65,7 @@ $wgResourceModules['MassEditRegex'] = [
 	],
 	'dependencies' => [
 		'mediawiki.jqueryMsg',
-		'jquery.ui.dialog'
+		'jquery.ui'
 	],
 	'group' => 'MassEditRegex',
 	'localBasePath' => __DIR__,
