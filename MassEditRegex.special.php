@@ -20,7 +20,7 @@ define( 'MER_MAX_PREVIEW_DIFFS', 20 );
 /// Maximum number of pages to edit.
 define( 'MER_MAX_EXECUTE_PAGES', 1000 );
 
-/** Main class that define a new special page*/
+/** Main class that define a new special page */
 class MassEditRegexSpecialPage extends SpecialPage {
 	private $aPageList;       ///< Array of string - user-supplied page titles
 	private $strPageListType; ///< Type of titles (categories, backlinks, etc.)

@@ -192,7 +192,7 @@ class MassEditRegex {
 	 * @param \User|null $user
 	 */
 	public function setUser( $user = null ) {
-		if ( is_null( $user ) ) {
+		if ( $user === null ) {
 			$user = User::newFromSession();
 		}
 		$this->user = $user;
