@@ -146,7 +146,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				}
 
 			}
-		} catch ( UsageException $e ) {
+		} catch ( MWException $e ) {
 			$errors[] = htmlspecialchars( $e );
 
 			// Force a preview if there was a bad regex
