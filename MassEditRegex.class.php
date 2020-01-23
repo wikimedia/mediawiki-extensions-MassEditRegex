@@ -93,7 +93,7 @@ class MassEditRegex {
 	 *
 	 * @param $input
 	 * @return mixed
-	 * @throws UsageException
+	 * @throws MWException
 	 */
 	private function replaceText( $input ) {
 		$changes = $iCount = 0;
@@ -111,7 +111,7 @@ class MassEditRegex {
 			if ( $result !== null ) {
 				$input = $result;
 			} else {
-				throw new UsageException( wfMessage( 'masseditregex-badregex' )->text()
+				throw new MWException( wfMessage( 'masseditregex-badregex' )->text()
 					. ' <b>' . htmlspecialchars( $strMatch ) . '</b>',
 					'masseditregex-badregex' );
 			}
