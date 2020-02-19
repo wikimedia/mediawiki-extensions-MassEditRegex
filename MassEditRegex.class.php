@@ -50,7 +50,6 @@ class MassEditRegex {
 	 * @return number of changes performed on given title
 	 */
 	public function editPage( \Title $title ) {
-		$article = new Article( $title );
 		$rev = $this->getRevision( $title );
 		$content = $this->getContent( $rev );
 		$curText = $content->getNativeData();
@@ -58,9 +57,12 @@ class MassEditRegex {
 
 		if ( strcmp( $curText, $newText ) != 0 ) {
 			$newContent = new WikitextContent( $newText );
-			$article->doEditContent( $newContent, $this->summary,
+			WikiPage::factory( $title )->doEditContent(
+				$newContent,
+				$this->summary,
 				EDIT_UPDATE | EDIT_FORCE_BOT | EDIT_DEFER_UPDATES,
-				$rev->getId() );
+				$rev->getId()
+			);
 		}
 
 		return $changes;
