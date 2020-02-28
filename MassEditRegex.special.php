@@ -476,7 +476,14 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			( $ns == NS_SPECIAL )
 			&& ( $title->isSpecial( 'Whatlinkshere' ) )
 		) {
-			$titleParts = SpecialPageFactory::resolveAlias( $title->getText() );
+			if ( class_exists( 'MediaWiki\Special\SpecialPageFactory' ) ) {
+				// MW 1.32+
+				$titleParts = MediaWikiServices::getInstance()
+					->getSpecialPageFactory()
+					->resolveAlias( $title->getText() );
+			} else {
+				$titleParts = SpecialPageFactory::resolveAlias( $title->getText() );
+			}
 
 			$url = SpecialPage::getTitleFor( 'MassEditRegex' )->getLocalURL(
 				[
