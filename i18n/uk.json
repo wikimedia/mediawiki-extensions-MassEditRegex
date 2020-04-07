@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
-			"Тест",
-			"Ата",
 			"Dars",
-			"Piramidion"
+			"Piramidion",
+			"Ата",
+			"Тест"
 		]
 	},
 	"action-masseditregex": "виконання масових редагувань",

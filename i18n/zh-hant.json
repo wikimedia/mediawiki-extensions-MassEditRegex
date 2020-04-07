@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cwlin0416",
+			"Kly",
+			"LNDDYL",
 			"Mark85296341",
 			"Simon Shek",
-			"Cwlin0416",
-			"LNDDYL",
-			"Wwycheuk",
-			"Kly"
+			"Wwycheuk"
 		]
 	},
 	"action-masseditregex": "執行批次編輯",

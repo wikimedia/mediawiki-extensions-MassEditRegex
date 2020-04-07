@@ -1,14 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Element303",
 			"Gomoko",
 			"IAlex",
 			"Peter17",
 			"PieRRoMaN",
 			"Quentinv57",
 			"Urhixidur",
-			"Zetud",
-			"Element303"
+			"Zetud"
 		]
 	},
 	"action-masseditregex": "effectuer une modification en masse",

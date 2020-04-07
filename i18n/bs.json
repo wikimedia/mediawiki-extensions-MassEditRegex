@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"CERminator",
-			"Srdjan m",
-			"Obsuser"
+			"Obsuser",
+			"Srdjan m"
 		]
 	},
 	"masseditregex-desc": "Omogućava korištenje regularnih izraza za [[Special:MassEditRegex|uređivanje mnogo stranica odjednom]]",

@@ -2,12 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Fryed-peach",
-			"Shirayuki",
-			"Whym",
-			"青子守歌",
 			"Los688",
+			"Shirayuki",
 			"Sujiniku",
-			"Suyama"
+			"Suyama",
+			"Whym",
+			"青子守歌"
 		]
 	},
 	"action-masseditregex": "一括編集の実行",

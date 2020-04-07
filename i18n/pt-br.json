@@ -2,12 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Cainamarques",
+			"Eduardo Addad de Oliveira",
+			"Fasouzafreitas",
 			"Giro720",
 			"Luckas",
 			"Luckas Blade",
-			"Fasouzafreitas",
-			"Macofe",
-			"Eduardo Addad de Oliveira"
+			"Macofe"
 		]
 	},
 	"action-masseditregex": "realiza edições em massa",
