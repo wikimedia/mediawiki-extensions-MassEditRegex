@@ -114,8 +114,7 @@ class MassEditRegex {
 				$input = $result;
 			} else {
 				throw new MWException( wfMessage( 'masseditregex-badregex' )->text()
-					. ' <b>' . htmlspecialchars( $strMatch ) . '</b>',
-					'masseditregex-badregex' );
+					. ' <b>' . htmlspecialchars( $strMatch ) . '</b>' );
 			}
 		}
 		return [ $input, $changes ];
