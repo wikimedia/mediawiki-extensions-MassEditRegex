@@ -8,7 +8,7 @@
 	"action-masseditregex": "toplu düzenleme yapma",
 	"masseditregex": "Normal ifadeler kullanarak toplu düzenleme",
 	"masseditregex-desc": "[[Special:MassEditRegex|Tek bir işlemde birçok sayfayı düzenleme]] için düzenli ifadeler kullanılmasına izin verir",
-	"masseditregextext": "Eşleme için bir veya daha fazla normal ifade (her satıra bir tane) ve her eşleşmenin yerini alacak bir veya daha fazla ifade girin.\nİlk eşleme ifadesi başarılı olursa ilk değiştirme ifadesiyle değiştirilir ve bu böyle devam eder.\nAyrıntılar için [https://php.net/manual/tr/function.preg-replace.php PHP işlevi preg_replace()]'ye bakın.",
+	"masseditregextext": "Eşleme için bir veya daha fazla normal ifade (her satıra bir tane) ve her eşleşmenin yerini alacak bir veya daha fazla ifade girin.\nİlk eşleme ifadesi başarılı olursa ilk değiştirme ifadesiyle değiştirilir ve bu böyle devam eder.\nAyrıntılar için [https://php.net/manual/tr/function.preg-replace.php PHP işlevi preg_replace()] sayfasına bakın.",
 	"masseditregex-pagelisttxt": "Düzenlenecek sayfalar:",
 	"masseditregex-matchtxt": "Şunu ara:",
 	"masseditregex-replacetxt": "Şununla değiştir:",
