@@ -193,7 +193,10 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		}
 	}
 
-	/// Display the special page, and run the regexes if a form is being submitted
+	/**
+	 * Display the special page, and run the regexes if a form is being submitted
+	 * @param string|null $par
+	 */
 	public function execute( $par ) {
 		$out = $this->getOutput();
 		$getuser = $this->getUser();
@@ -243,7 +246,9 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		}
 	}
 
-	/// Display the form requesting the regexes from the user.
+	/**
+	 * Display the form requesting the regexes from the user.
+	 */
 	function showForm() {
 		$out = $this->getOutput();
 		$getuser = $this->getUser();
@@ -396,7 +401,9 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		$out->addModules( 'MassEditRegex' );
 	}
 
-	/// Show a short table of regex examples.
+	/**
+	 * Show a short table of regex examples.
+	 */
 	function showHints() {
 		$out = $this->getOutput();
 		$getuser = $this->getUser();
