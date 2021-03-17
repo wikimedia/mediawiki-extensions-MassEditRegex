@@ -40,5 +40,5 @@
 	"masseditregex-js-pagenotexist": "$1 gëtt et net",
 	"masseditregex-js-mwapi-api-error": "Feeler: MediaWiki API huet de Feelercode $1 zréckginn: $2",
 	"masseditregex-js-mwapi-general-error": "Feeler: Onbe kannt Resultat vu MediaWiki API",
-	"masseditregex-js-mwapi-unknown-error": "Feeler: Onbekannte Feeler während enger Ufro un de MediaWiki-API"
+	"masseditregex-js-mwapi-unknown-error": "Feeler: Onbekannte Feeler wärend enger Ufro un der MediaWiki-API"
 }
