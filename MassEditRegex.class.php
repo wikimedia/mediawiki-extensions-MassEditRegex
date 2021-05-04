@@ -102,7 +102,7 @@ class MassEditRegex {
 		foreach ( $this->search as $i => $strMatch ) {
 			$strNextReplace = $this->replace[ $i ];
 			$result = @preg_replace_callback( $strMatch,
-				function ( $aMatches ) use ( $strNextReplace ) {
+				static function ( $aMatches ) use ( $strNextReplace ) {
 					foreach ( $aMatches as $i => $strMatch ) {
 						$aFind[ ] = '$' . $i;
 						$aReplace[ ] = $strMatch;
