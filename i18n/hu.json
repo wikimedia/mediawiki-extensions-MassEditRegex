@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Dj",
-			"Glanthor Reviol"
+			"Glanthor Reviol",
+			"Tacsipacsi"
 		]
 	},
 	"action-masseditregex": "tömeges szerkesztés végrehajtása",
 	"masseditregex": "Tömeges szerkesztés reguláris kifejezések használatával",
-	"masseditregex-desc": "Reguláris kifejezések használata [[Special:MassEditRegex|sok lap szerkesztéséhez egy művelettel]]",
-	"masseditregextext": "Adj meg egy vagy több reguláris kifejezést a kereséshez (soronként egyet), és egy vagy több kifejezést amire a találatokat ki szeretnéd cserélni.\nAz első találati-kifejezés (ha van találat) ki lesz cserélve az első csere-kifejezéssel, és így tovább.\nLásd [http://php.net/manual/en/function.preg-replace.php a PHP preg_replace() függvényét] további információkért.",
+	"masseditregex-desc": "Lehetővé teszi reguláris kifejezések használatát [[Special:MassEditRegex|sok lap szerkesztéséhez egy művelettel]]",
+	"masseditregextext": "Adj meg egy vagy több reguláris kifejezést a kereséshez (soronként egyet), és egy vagy több kifejezést, amire a találatokat ki szeretnéd cserélni.\nAz első találati kifejezés (ha van találat) ki lesz cserélve az első cserekifejezéssel, és így tovább.\nLásd [https://php.net/function.preg-replace a PHP preg_replace() függvényét] további információkért.",
 	"masseditregex-pagelisttxt": "Szerkesztendő lapok:",
 	"masseditregex-matchtxt": "Keresendő szöveg:",
 	"masseditregex-replacetxt": "Csere erre:",
