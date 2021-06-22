@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Sarvaturi"
 		]
 	},
-	"masseditregex-matchtxt": "Arricerca pi:"
+	"masseditregex-matchtxt": "Arricerca pi:",
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|cancia|canciamenti}}"
 }
