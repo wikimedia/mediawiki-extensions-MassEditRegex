@@ -52,7 +52,7 @@
 	"masseditregex-js-jobdone": "Afronden",
 	"masseditregex-js-working": "Verwerken… (nog $1 over)",
 	"masseditregex-js-pagenotexist": "$1 bestaat niet.",
-	"masseditregex-js-mwapi-api-error": "Fout: MediaWiki API heeft foutcode $1: $2 teruggestuurd",
-	"masseditregex-js-mwapi-general-error": "Fout: Onbekend resultaat van MediaWiki API",
-	"masseditregex-js-mwapi-unknown-error": "Fout: Onbekende fout tijdens verzoek om MediaWiki API."
+	"masseditregex-js-mwapi-api-error": "Fout: de API van MediaWiki heeft foutcode $1 teruggestuurd: $2",
+	"masseditregex-js-mwapi-general-error": "Fout: onbekend resultaat van de API van MediaWiki.",
+	"masseditregex-js-mwapi-unknown-error": "Fout: onbekende fout tijdens een verzoek aan de API van MediaWiki."
 }
