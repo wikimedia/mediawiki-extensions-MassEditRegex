@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
+			"DDPAT",
 			"Dars",
 			"Piramidion",
 			"Ата",
@@ -31,7 +32,7 @@
 	"masseditregex-hint-headeffect": "Ефект",
 	"masseditregex-hint-toappend": "Додавання тексту в кінець сторінки - чудово підходить для додавання сторінки в категорії",
 	"masseditregex-hint-remove": "Видалити деякий текст з усіх сторінок у списку",
-	"masseditregex-hint-removecat": "Вилучення всіх категорій з сторінки (зауважте появу на екрані квадратних дужок у на вікі-розмітці.)\nЗначення для заміни не повинні появитися на екрані.",
+	"masseditregex-hint-removecat": "Вилучення всіх категорій з сторінки (зауважте появу на екрані квадратних дужок у на вікі-розмітці).\nЗначення для заміни не повинні появитися на екрані.",
 	"masseditregex-hint-renamelink": "Замінити AAA на BBB в тексті посилання, але не у цілі посилання: [[AAA|AAA]] стає [[AAA|BBB]]",
 	"masseditregex-listtype-intro": "Це список:",
 	"masseditregex-listtype-pagenames": "Назви сторінок (редагувати ці сторінки)",
@@ -49,7 +50,7 @@
 	"masseditregex-blocked": "Ваш обліковий запис користувача заблоковано",
 	"masseditregex-readonlydb": "База даних доступна тільки для читання",
 	"masseditregex-js-clientside": "Виконати в браузері",
-	"masseditregex-js-execution": "Увімкніть цю опцію для виконання ітерації сторінки на стороні клієнта в браузері. Це дозволяє більш великі зміни, зазвичай обмежені максимальним часом виконання PHP.",
+	"masseditregex-js-execution": "Поставте галочку, щоб виконати ітерацію сторінки на стороні клієнта у веб-переглядачі. Це дозволяє більші зміни, які зазвичай обмежуються максимальним часом виконання PHP",
 	"masseditregex-js-jobdone": "Завершити",
 	"masseditregex-js-working": "Обробка… (залишилось $1)",
 	"masseditregex-js-pagenotexist": "$1 не існує.",
