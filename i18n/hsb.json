@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"J budissin",
 			"Michawiki"
 		]
 	},
@@ -31,7 +32,7 @@
 	"masseditregex-listtype-intro": "To je lisćina wot:",
 	"masseditregex-listtype-pagenames": "Mjena stronow (tute strony wobdźěłać)",
 	"masseditregex-listtype-pagename-prefixes": "Prefiksy mjenow stronow (strony wobdźěłać, kotrychž mjena so z tutym tekstom započinaja)",
-	"masseditregex-listtype-categories": "Kategorijowe mjena (kóždu stronu znutřka tutych kategorijow wobdźěłać)",
+	"masseditregex-listtype-categories": "Kategorijowe mjena (strony w zapodatych kategorijach wobdźěłać)",
 	"masseditregex-listtype-backlinks": "Wróćowotkazy (strony wobdźěłać, kotrež na tute wotkazuja)",
 	"masseditregex-exprnomatch": "Wuraz \"$1\" njehodźi so na žane strony.",
 	"masseditregex-badregex": "Njepłaćiwy regularny wuraz:",
