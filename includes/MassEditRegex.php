@@ -61,6 +61,7 @@ class MassEditRegex {
 				$newContent,
 				$this->summary,
 				EDIT_UPDATE | EDIT_FORCE_BOT | EDIT_DEFER_UPDATES,
+				// @phan-suppress-next-line PhanUndeclaredClassMethod Revision class is gone
 				$rev->getId()
 			);
 		}
@@ -103,6 +104,8 @@ class MassEditRegex {
 			$strNextReplace = $this->replace[ $i ];
 			$result = @preg_replace_callback( $strMatch,
 				static function ( $aMatches ) use ( $strNextReplace ) {
+					$aFind = [];
+					$aReplace = [];
 					foreach ( $aMatches as $i => $strMatch ) {
 						$aFind[ ] = '$' . $i;
 						$aReplace[ ] = $strMatch;
@@ -124,8 +127,10 @@ class MassEditRegex {
 	 * @param Title $title
 	 * @return Revision
 	 * @throws BadTitleError
+	 * @suppress PhanUndeclaredTypeReturnType Revision class is gone
 	 */
 	private function getRevision( \Title $title ) {
+		// @phan-suppress-next-line PhanUndeclaredClassConstant,PhanUndeclaredClassMethod Revision class is gone
 		$rev = Revision::newFromTitle( $title, 0, Revision::READ_LATEST );
 		if ( !$rev ) {
 			throw new \BadTitleError( wfMessage( 'masseditregex-norevisions' ) );
@@ -137,8 +142,10 @@ class MassEditRegex {
 	 * @param Revision $rev
 	 * @return Content
 	 * @throws PermissionsError
+	 * @suppress PhanUndeclaredTypeParameter Revision class is gone
 	 */
 	private function getContent( $rev ) {
+		// @phan-suppress-next-line PhanUndeclaredClassConstant,PhanUndeclaredClassMethod Revision class is gone
 		$content = $rev->getContent( Revision::FOR_THIS_USER, $this->user );
 		if ( !$content ) {
 			throw new \PermissionsError( wfMessage( 'masseditregex-noaccess' )->text() );

@@ -232,7 +232,6 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		// Check permissions
 		if ( !$getuser->isAllowed( 'masseditregex' ) ) {
 			$this->displayRestrictionError();
-			return;
 		}
 
 		// Show a message if the database is in read-only mode
@@ -240,6 +239,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 		// If user is blocked, s/he doesn't need to access this page
 		if ( $getuser->isBlocked() ) {
+			// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
 			throw new UserBlockedError( $getuser->getBlock() );
 		}
 
@@ -257,7 +257,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		$this->strReplace = $request->getText( 'wpReplace', 'goodbye $1' );
 
 		$summary = $request->getText( 'wpSummary', '' );
-		$this->isClientSide = $request->getVal( 'wpClientSide', false ) == 1;
+		$this->isClientSide = $request->getVal( 'wpClientSide', '0' ) === '1';
 
 		$this->massEditRegex = new MassEditRegex(
 			$this->strMatch, $this->strReplace, $summary, $getuser
@@ -517,6 +517,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 					->getSpecialPageFactory()
 					->resolveAlias( $title->getText() );
 			} else {
+				// @phan-suppress-next-line PhanUndeclaredClassMethod
 				$titleParts = SpecialPageFactory::resolveAlias( $title->getText() );
 			}
 

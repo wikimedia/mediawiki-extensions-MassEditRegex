@@ -28,9 +28,9 @@
 		"MassEditRegexAlias": "MassEditRegex.alias.php"
 	},
 	"AutoloadClasses": {
-		"MassEditRegex": "MassEditRegex.class.php",
-		"MassEditRegexSpecialPage": "MassEditRegex.special.php",
-		"MassEditRegexAPI": "MassEditRegex.api.php"
+		"MassEditRegex": "includes/MassEditRegex.php",
+		"MassEditRegexSpecialPage": "includes/MassEditRegexSpecialPage.php",
+		"MassEditRegexAPI": "includes/MassEditRegexAPI.php"
 	},
 	"ResourceModules": {
 		"MassEditRegex": {
