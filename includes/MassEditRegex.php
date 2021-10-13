@@ -1,5 +1,9 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\RevisionRecord;
+use MediaWiki\Storage\SlotRecord;
+
 class MassEditRegex {
 	/**
 	 * @var array
@@ -50,7 +54,7 @@ class MassEditRegex {
 	 * @return int number of changes performed on given title
 	 */
 	public function editPage( \Title $title ) {
-		$rev = $this->getRevision( $title );
+		$rev = $this->getRevisionRecord( $title );
 		$content = $this->getContent( $rev );
 		$curText = $content->getNativeData();
 		list( $newText, $changes ) = $this->replaceText( $curText );
@@ -61,7 +65,6 @@ class MassEditRegex {
 				$newContent,
 				$this->summary,
 				EDIT_UPDATE | EDIT_FORCE_BOT | EDIT_DEFER_UPDATES,
-				// @phan-suppress-next-line PhanUndeclaredClassMethod Revision class is gone
 				$rev->getId()
 			);
 		}
@@ -78,7 +81,7 @@ class MassEditRegex {
 	 * @return string html diff
 	 */
 	public function previewPage( \Title $title ) {
-		$rev = $this->getRevision( $title );
+		$rev = $this->getRevisionRecord( $title );
 		$content = $this->getContent( $rev );
 		$curText = $content->getNativeData();
 		list( $newText ) = $this->replaceText( $curText );
@@ -125,28 +128,26 @@ class MassEditRegex {
 
 	/**
 	 * @param Title $title
-	 * @return Revision
+	 * @return RevisionRecord
 	 * @throws BadTitleError
-	 * @suppress PhanUndeclaredTypeReturnType Revision class is gone
 	 */
-	private function getRevision( \Title $title ) {
-		// @phan-suppress-next-line PhanUndeclaredClassConstant,PhanUndeclaredClassMethod Revision class is gone
-		$rev = Revision::newFromTitle( $title, 0, Revision::READ_LATEST );
-		if ( !$rev ) {
+	private function getRevisionRecord( \Title $title ) {
+		$revisionRecord = MediaWikiServices::getInstance()
+			->getRevisionLookup()
+			->getRevisionByTitle( $title, 0, IDBAccessObject::READ_LATEST );
+		if ( !$revisionRecord ) {
 			throw new \BadTitleError( wfMessage( 'masseditregex-norevisions' ) );
 		}
-		return $rev;
+		return $revisionRecord;
 	}
 
 	/**
-	 * @param Revision $rev
+	 * @param RevisionRecord $rev
 	 * @return Content
 	 * @throws PermissionsError
-	 * @suppress PhanUndeclaredTypeParameter Revision class is gone
 	 */
 	private function getContent( $rev ) {
-		// @phan-suppress-next-line PhanUndeclaredClassConstant,PhanUndeclaredClassMethod Revision class is gone
-		$content = $rev->getContent( Revision::FOR_THIS_USER, $this->user );
+		$content = $rev->getContent( SlotRecord::MAIN, RevisionRecord::FOR_THIS_USER, $this->user );
 		if ( !$content ) {
 			throw new \PermissionsError( wfMessage( 'masseditregex-noaccess' )->text() );
 		}
