@@ -264,7 +264,11 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		);
 
 		if ( $request->wasPosted() ) {
-			$this->perform( !$request->getCheck( 'wpSave' ) );
+			if ( $getuser->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
+				$this->perform( !$request->getCheck( 'wpSave' ) );
+			} else {
+				$out->addWikiMsg( 'sessionfailure' );
+			}
 		} else {
 			$this->showForm();
 			$this->showHints();
@@ -406,6 +410,13 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				'accesskey' => $this->msg( 'accesskey-preview' )->text(),
 				'title' => $this->msg( 'tooltip-preview' )->text() .
 					' [' . $this->msg( 'accesskey-preview' )->text() . ']',
+			] ) .
+
+			Xml::element( 'input', [
+				'id' => 'wpEditToken',
+				'name' => 'wpEditToken',
+				'type' => 'hidden',
+				'value' => $getuser->getEditToken(),
 			] ) .
 
 			Xml::tags( 'span',
