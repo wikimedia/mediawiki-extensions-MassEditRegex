@@ -238,7 +238,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		$this->checkReadOnly();
 
 		// If user is blocked, s/he doesn't need to access this page
-		if ( $getuser->isBlocked() ) {
+		if ( $getuser->getBlock() ) {
 			// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
 			throw new UserBlockedError( $getuser->getBlock() );
 		}

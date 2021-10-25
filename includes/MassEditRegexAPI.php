@@ -29,7 +29,7 @@ class MassEditRegexAPI {
 		}
 
 		// If user is blocked, s/he doesn't need to access this page
-		if ( $user->isBlocked() ) {
+		if ( $user->getBlock() ) {
 			return json_encode( [
 				'error' => wfMessage( 'masseditregex-blocked' )->text()
 			] );
