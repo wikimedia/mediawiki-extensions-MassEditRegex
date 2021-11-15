@@ -5,6 +5,13 @@
 			"Sarvaturi"
 		]
 	},
+	"masseditregex-pagelisttxt": "Pàggini da canciari:",
 	"masseditregex-matchtxt": "Arricerca pi:",
-	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|cancia|canciamenti}}"
+	"masseditregex-replacetxt": "Sustituisci cu:",
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|cancia|canciamenti}}",
+	"masseditregex-page-not-exists": "$1 nun esisti",
+	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|pàggina canciata|pàggini canciati}}",
+	"masseditregex-listtype-pagenames": "Nomi di pàggina (cancia sti pàggini)",
+	"masseditregex-editall": "Cancia tuttu",
+	"masseditregex-js-pagenotexist": "$1 nun esisti."
 }
