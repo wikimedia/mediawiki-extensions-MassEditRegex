@@ -3,7 +3,8 @@
 		"authors": [
 			"Beluga",
 			"Crt",
-			"Str4nd"
+			"Str4nd",
+			"Yupik"
 		]
 	},
 	"masseditregex-matchtxt": "Etsi seuraavaa:",
@@ -11,6 +12,7 @@
 	"masseditregex-executebtn": "Suorita",
 	"masseditregex-before": "Ennen",
 	"masseditregex-after": "Jälkeen",
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|muutos|muutosta}}",
 	"masseditregex-view-full-summary": "Näytä koko muokkausyhteenveto",
 	"masseditregex-hint-headmatch": "Osuma",
 	"masseditregex-hint-headreplace": "Korvaa",
