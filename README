@@ -25,7 +25,7 @@ See also the "CHANGELOG" file provided with the code.
 
 (3) Add the following code at the bottom of your "LocalSettings.php" file:
 ```
-require_once "$IP/extensions/MassEditRegex/MassEditRegex.php";
+wfLoadExtension( 'MassEditRegex' );
 ```
 (4) Define which user groups may use this extension by configuring it as outlined in the "Configuration" section
 of this file.
