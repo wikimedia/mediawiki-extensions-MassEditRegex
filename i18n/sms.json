@@ -4,5 +4,6 @@
 			"Yupik"
 		]
 	},
-	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|muuttâs|muttâz|muttsed}}"
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|muuttâs|muttâz|muttsed}}",
+	"masseditregex-editfailed": "Muuttâs ij oʹnnstam:"
 }
