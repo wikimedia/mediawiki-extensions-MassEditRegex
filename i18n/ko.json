@@ -42,5 +42,13 @@
 	"masseditregex-tooltip-execute": "각 문서에 이러한 바뀐 내용을 적용합니다",
 	"masseditregex-editall": "모두 편집",
 	"right-masseditregex": "정규 표현식을 사용해 문서 내용을 바꾸기",
-	"masseditregex-blocked": "당신의 사용자 계정은 차단되었습니다"
+	"masseditregex-blocked": "당신의 사용자 계정은 차단되었습니다",
+	"masseditregex-readonlydb": "데이터베이스가 읽기 전용입니다",
+	"masseditregex-js-clientside": "브라우저에서 실행",
+	"masseditregex-js-jobdone": "완료",
+	"masseditregex-js-working": "처리 중... ($1 남음)",
+	"masseditregex-js-pagenotexist": "$1 문서가 존재하지 않습니다.",
+	"masseditregex-js-mwapi-api-error": "오류: 미디어위키 API가 오류 코드 $1를 반환했습니다: $2",
+	"masseditregex-js-mwapi-general-error": "오류: 미디어위키 API로부터 알 수 없는 결과가 있습니다.",
+	"masseditregex-js-mwapi-unknown-error": "오류: 미디어위키 API 요청 중 알 수 없는 오류가 발생했습니다."
 }
