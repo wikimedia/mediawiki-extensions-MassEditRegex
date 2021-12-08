@@ -13,5 +13,6 @@
 	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|pàggina canciata|pàggini canciati}}",
 	"masseditregex-listtype-pagenames": "Nomi di pàggina (cancia sti pàggini)",
 	"masseditregex-editall": "Cancia tuttu",
+	"masseditregex-js-jobdone": "Cumpritatu",
 	"masseditregex-js-pagenotexist": "$1 nun esisti."
 }
