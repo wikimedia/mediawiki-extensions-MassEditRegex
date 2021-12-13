@@ -8,7 +8,7 @@
 	"action-masseditregex": "efetuar uma edição em massa",
 	"masseditregex": "Edições em massa usando expressões regulares",
 	"masseditregex-desc": "Permite o uso de expressões regulares para [[Special:MassEditRegex|editar várias páginas numa única operação]]",
-	"masseditregextext": "Introduza uma ou várias (uma por linha) expressões regulares de busca e uma ou várias expressões de troca correspondentes.\nCada ocorrência da primeira expressão-de-busca será substituída pela primeira expressão-de-troca e assim por diante.\nConsulte [http://php.net/manual/en/function.preg-replace.php a função PHP ''preg_replace()''] para mais detalhes.",
+	"masseditregextext": "Introduzir uma ou mais expressões regulares de busca (uma por linha) e uma ou mais expressões de troca correspondentes.\nCada ocorrência da primeira expressão-de-busca será substituída pela primeira expressão-de-troca e assim por diante.\nConsulte [https://php.net/function.preg-replace a função PHP ''preg_replace()''] para mais detalhes.",
 	"masseditregex-pagelisttxt": "Páginas a editar:",
 	"masseditregex-matchtxt": "Expressão-de-busca:",
 	"masseditregex-replacetxt": "Expressão-de-troca:",

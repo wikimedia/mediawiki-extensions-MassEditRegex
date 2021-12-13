@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"MaGa"
+		]
+	},
+	"masseditregex-matchtxt": "Traži:",
+	"masseditregex-replacetxt": "Zamijeni s:",
+	"masseditregex-hint-headreplace": "Zamijeni"
+}

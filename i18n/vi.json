@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Minh Nguyen",
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Ioe2015"
 		]
 	},
 	"action-masseditregex": "thực hiện sửa đổi hàng loạt",
 	"masseditregex": "Sửa đổi hàng loạt dùng biểu thức chính quy",
+	"masseditregex-desc": "Cho phép sử dụng biểu thức chính quy để [[Special:MassEditRegex|sửa đổi nhiều trang trong một quá trình]]",
 	"masseditregex-matchtxt": "Tìm:",
 	"masseditregex-replacetxt": "Thay thế bằng:",
 	"masseditregex-before": "Trước",

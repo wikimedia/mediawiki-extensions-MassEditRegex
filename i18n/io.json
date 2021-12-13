@@ -4,5 +4,6 @@
 			"Joao Xavier"
 		]
 	},
-	"masseditregex-matchtxt": "Serchez por:"
+	"masseditregex-matchtxt": "Serchez por:",
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|modifikuro|modifikuri}}"
 }

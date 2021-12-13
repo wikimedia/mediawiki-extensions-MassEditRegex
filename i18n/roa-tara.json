@@ -7,7 +7,7 @@
 	"action-masseditregex": "esegue 'nu cangiamende de masse",
 	"masseditregex": "Cangiamende de masse ausanne le espressiune regolare",
 	"masseditregex-desc": "Conzende de ausà le espressiune regolare pe [[Special:MassEditRegex|cangià 'nu sacche de pàggene cu 'na sole operazione]]",
-	"masseditregextext": "'Nserì une o cchiù espressiune regolare (une pe righe) pa corrispondenze e una o cchiù espressiune pe sostituì ogne corrispondenze.\n'A prima espressione de corrispondenze, c ave successe, avène sostituite cu 'a prime espressione de sostituizione e accussì condinuanne..\nPe dettaglie, 'ndruche [http://php.net/manual/en/function.preg-replace.php 'u PHP funzione preg_replace()].",
+	"masseditregextext": "'Nserì une o cchiù espressiune regolare (une pe righe) pa corrispondenze e una o cchiù espressiune pe sostituì ogne corrispondenze.\n'A prima espressione de corrispondenze, c ave successe, avène sostituite cu 'a prime espressione de sostituizione e accussì condinuanne..\nPe dettaglie, 'ndruche [https://php.net/function.preg-replace.php 'u PHP funzione preg_replace()].",
 	"masseditregex-pagelisttxt": "Paggène da cangià:",
 	"masseditregex-matchtxt": "Cirche pe:",
 	"masseditregex-replacetxt": "Sostituisce cu:",
