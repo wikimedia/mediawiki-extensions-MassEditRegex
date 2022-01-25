@@ -9,6 +9,7 @@
 			"Tranve",
 			"Xiaomingyan",
 			"Yfdyh000",
+			"星海",
 			"沈澄心"
 		]
 	},
@@ -36,7 +37,7 @@
 	"masseditregex-hint-toappend": "追加一些文本到页面底端 - 例如为页面添加分类",
 	"masseditregex-hint-remove": "移除列表中所有页面的文本",
 	"masseditregex-hint-removecat": "从页面移除所有分类（注意wiki代码中方括号的转义。）重置值不应转义。",
-	"masseditregex-hint-renamelink": "在链接文本但不是连接目标中替代AAA带BBB：[[AAA|AAA]]变成[[AAA|BBB]]",
+	"masseditregex-hint-renamelink": "在链接文本但不是链接目标中替换AAA为BBB：[[AAA|AAA]]变成[[AAA|BBB]]",
 	"masseditregex-listtype-intro": "这是一个列表：",
 	"masseditregex-listtype-pagenames": "页面名称（编辑这些网页）",
 	"masseditregex-listtype-pagename-prefixes": "网页名称前缀（编辑网页名称的开头有这个文字）",
