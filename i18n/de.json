@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
 			"Imre",
 			"Kghbln",
 			"LWChris",
@@ -31,9 +32,9 @@
 	"masseditregex-hint-headmatch": "Treffer",
 	"masseditregex-hint-headreplace": "Ersetzung",
 	"masseditregex-hint-headeffect": "Auswirkung",
-	"masseditregex-hint-toappend": "Text an das Ende der Seite anfügen. Ideal um Seiten Kategorien hinzuzufügen.",
+	"masseditregex-hint-toappend": "Text an das Ende der Seite anfügen. Ideal, um Seiten Kategorien hinzuzufügen.",
 	"masseditregex-hint-remove": "Text von allen Seiten entfernen",
-	"masseditregex-hint-removecat": "Alle Kategorien von einer Seite entfernen, wobei die Escape-Sequenz im Wikitext beachtet werden muß. Die zu ersetzenden Werte enthalten indes keine Escape-Sequenz.",
+	"masseditregex-hint-removecat": "Alle Kategorien von einer Seite entfernen, wobei die Escape-Sequenz im Wikitext beachtet werden muss. Die zu ersetzenden Werte enthalten indes keine Escape-Sequenz.",
 	"masseditregex-hint-renamelink": "Ersetzt AAA durch BBB im Linktext, aber nicht im Linkziel: Aus [[AAA|AAA]] wird [[AAA|BBB]]",
 	"masseditregex-listtype-intro": "Dies ist eine Liste von:",
 	"masseditregex-listtype-pagenames": "Seitennamen (die Seiten bearbeiten, die angegeben wurden)",
