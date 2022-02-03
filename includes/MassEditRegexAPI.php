@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class MassEditRegexAPI {
 	/**
 	 * @param int $pageid
@@ -22,7 +24,7 @@ class MassEditRegexAPI {
 		}
 
 		// Show a message if the database is in read-only mode
-		if ( wfReadOnly() ) {
+		if ( MediaWikiServices::getInstance()->getReadOnlyMode()->isReadOnly() ) {
 			return json_encode( [
 				'error' => wfMessage( 'masseditregex-readonlydb' )->text()
 			] );
