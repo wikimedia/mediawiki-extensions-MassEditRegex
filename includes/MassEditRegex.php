@@ -2,7 +2,7 @@
 
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
-use MediaWiki\Storage\SlotRecord;
+use MediaWiki\Revision\SlotRecord;
 
 class MassEditRegex {
 	/**
