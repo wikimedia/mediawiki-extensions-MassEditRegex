@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Armin1392",
+			"Beginneruser",
 			"Ebraminio",
 			"Mjbmr",
 			"Reza1615"
@@ -11,7 +12,7 @@
 	"masseditregex": "ویرایش توده با استفاده از عبارات منظم",
 	"masseditregex-desc": "استفاده از عبارات منظم برای [[Special:MassEditRegex|ویرایش بسیاری از صفحات در یک عملیات]]",
 	"masseditregextext": "یک یا چند عبارت منظم (یکی در هر خط) برای تطبیق، و یک یا چند عبارت به جای هر تطبیق وارد کنید.\nاولین عبارت-تطبیق، اگر موفق باشد، با اولین عبارت-جایگزین، و غیره، جایگزین خواهد شد.\nبرای جزئیات [http://php.net/manual/en/function.preg-replace.php the PHP function preg_replace()] را مشاهده کنید.",
-	"masseditregex-pagelisttxt": "صفحات برای ویرایش:",
+	"masseditregex-pagelisttxt": "صفحه‌هایی برای ویرایش:",
 	"masseditregex-matchtxt": "جستجو برای:",
 	"masseditregex-replacetxt": "جایگزینی با:",
 	"masseditregex-executebtn": "اجرا",
