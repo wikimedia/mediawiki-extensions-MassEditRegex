@@ -36,7 +36,7 @@
 	"masseditregex-hint-renamelink": "החלף AAA ב־BBB בטקסט  הקישור אך לא ביעד הקישור: [[AAA|AAA]] הופך ל [[AAA|BBB]]",
 	"masseditregex-listtype-intro": "זוהי רשימה של:",
 	"masseditregex-listtype-pagenames": "שמות הדפים (עריכת דפים אלה)",
-	"masseditregex-listtype-pagename-prefixes": "קידומות שמות הדפים (עריכת דפים ששמם מתחיל בטקסט זה)",
+	"masseditregex-listtype-pagename-prefixes": "תחיליות שמות דפים (עריכת דפים ששמם מתחיל בטקסט הזה)",
 	"masseditregex-listtype-categories": "שמות קטגוריות (עריכת כל הדפים בקטגוריות האלו)",
 	"masseditregex-listtype-backlinks": "דפים המקשרים אל הדף (עריכת דפים שמקשרים לדפים האלה)",
 	"masseditregex-exprnomatch": "הביטוי \"$1\" אינו תואם לאף דף.",
