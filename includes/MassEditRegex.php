@@ -61,7 +61,7 @@ class MassEditRegex {
 
 		if ( strcmp( $curText, $newText ) != 0 ) {
 			$newContent = new WikitextContent( $newText );
-			WikiPage::factory( $title )->doUserEditContent(
+			MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title )->doUserEditContent(
 				$newContent,
 				$this->user,
 				$this->summary,
