@@ -5,5 +5,7 @@
 		]
 	},
 	"masseditregex-matchtxt": "Serchez por:",
+	"masseditregex-before": "Ante",
+	"masseditregex-after": "Pose",
 	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|modifikuro|modifikuri}}"
 }
