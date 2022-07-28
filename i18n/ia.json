@@ -47,5 +47,8 @@
 	"masseditregex-js-execution": "Marca isto pro executar le iteration del pagina al latere del cliente in le navigator. Isto permitte cambiamentos plus grande, le quales normalmente es limitate per le tempore maxime de execution de PHP.",
 	"masseditregex-js-jobdone": "Terminate",
 	"masseditregex-js-working": "Tractamento… ($1 left)",
-	"masseditregex-js-pagenotexist": "$1 non existe."
+	"masseditregex-js-pagenotexist": "$1 non existe.",
+	"masseditregex-js-mwapi-api-error": "Error: Le API de MediaWiki ha restituite le codice de error $1: $2",
+	"masseditregex-js-mwapi-general-error": "Error: Resultato incognite del API de MediaWiki.",
+	"masseditregex-js-mwapi-unknown-error": "Error: Un error incognite ha occurrite durante le requesta al API de MediaWiki."
 }
