@@ -49,7 +49,7 @@
 	"masseditregex-readonlydb": "Database is alleen-lezen",
 	"masseditregex-js-clientside": "Uitvoeren in browser",
 	"masseditregex-js-execution": "Selecteer dit om de pagina-iteratie aan de clientkant in de browser uit te voeren. Dit maakt grotere wijzigingen mogelijk die normaliter worden beperkt door de maximale verwerkingstijd van PHP.",
-	"masseditregex-js-jobdone": "Afronden",
+	"masseditregex-js-jobdone": "Voltooid",
 	"masseditregex-js-working": "Verwerken… (nog $1 over)",
 	"masseditregex-js-pagenotexist": "$1 bestaat niet.",
 	"masseditregex-js-mwapi-api-error": "Fout: de API van MediaWiki heeft foutcode $1 teruggestuurd: $2",
