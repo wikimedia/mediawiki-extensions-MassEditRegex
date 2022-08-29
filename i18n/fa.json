@@ -5,7 +5,8 @@
 			"Ebraminio",
 			"Mjbmr",
 			"Reza1615",
-			"Beginneruser"
+			"Beginneruser",
+			"Jeeputer"
 		]
 	},
 	"action-masseditregex": "انجام دادن ویرایش انبوه",
@@ -43,6 +44,11 @@
 	"masseditregex-tooltip-execute": "اعمال این تغییرات بر هر صفحه",
 	"masseditregex-editall": "ویرایش همه",
 	"right-masseditregex": "جایگزین محتوای صفحه با استفاده از عبارات منظم",
+	"masseditregex-norevisions": "نسخه‌ای برای ویرایش یافت نشد",
+	"masseditregex-blocked": "دسترسی حساب کاربری شما بسته شده‌است",
+	"masseditregex-readonlydb": "پایگاه داده تنها قابل خواندن است",
+	"masseditregex-js-clientside": "اجرا در مرورگر",
 	"masseditregex-js-jobdone": "کامل",
+	"masseditregex-js-working": "در حال پردازش... ($1 مورد مانده)",
 	"masseditregex-js-pagenotexist": "$1 وجود ندارد."
 }
