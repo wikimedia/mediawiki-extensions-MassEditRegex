@@ -4,7 +4,8 @@
 			"Beluga",
 			"Crt",
 			"Str4nd",
-			"Yupik"
+			"Yupik",
+			"Nike"
 		]
 	},
 	"masseditregex-matchtxt": "Etsi seuraavaa:",
@@ -17,5 +18,6 @@
 	"masseditregex-hint-headmatch": "Osuma",
 	"masseditregex-hint-headreplace": "Korvaa",
 	"masseditregex-editfailed": "Muokkaus epäonnistui:",
-	"masseditregex-tooltip-execute": "Käytä näitä muutoksia joka sivuun"
+	"masseditregex-tooltip-execute": "Käytä näitä muutoksia joka sivuun",
+	"masseditregex-blocked": "Käyttäjätilisi on estetty"
 }
