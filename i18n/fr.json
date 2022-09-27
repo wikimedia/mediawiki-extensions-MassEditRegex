@@ -44,7 +44,7 @@
 	"masseditregex-listtype-categories": "Nom des catégories (éditer chaque page présente dans ces catégories)",
 	"masseditregex-listtype-backlinks": "Pages liées (éditer les pages qui contiennent un lien vers celles-ci)",
 	"masseditregex-exprnomatch": "L’expression « $1 » n’a été trouvée dans aucune page.",
-	"masseditregex-badregex": "Expression rationnelle invalide :",
+	"masseditregex-badregex": "Expression rationnelle non valide :",
 	"masseditregex-editfailed": "Erreur lors de l'édition :",
 	"masseditregex-tooltip-execute": "Appliquer ces changements à chaque page",
 	"masseditregex-editall": "Modifier tout",
