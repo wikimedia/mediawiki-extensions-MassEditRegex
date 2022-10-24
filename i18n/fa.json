@@ -21,7 +21,7 @@
 	"masseditregex-before": "قبل از",
 	"masseditregex-after": "پس از",
 	"masseditregex-max-preview-diffs": "پیش‌نمایش به اولین $1 {{PLURAL:$1|تطبیق|تطبیق‌ها}} محدود شده‌است.",
-	"masseditregex-num-changes": "$1: $2 تغییر",
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|تغییر}}",
 	"masseditregex-page-not-exists": "$1 وجود ندارد",
 	"masseditregex-num-articles-changed": "$1 صفحه ویرایش شده",
 	"masseditregex-view-full-summary": "مشاهدهٔ خلاصهٔ ویرایش کامل",
