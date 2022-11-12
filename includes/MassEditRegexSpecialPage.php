@@ -141,15 +141,19 @@ class MassEditRegexSpecialPage extends SpecialPage {
 							}
 							break;
 						}
-						$blc = $t->getBacklinkCache();
+						$blc = MediaWikiServices::getInstance()->getBacklinkCacheFactory()
+							->getBacklinkCache( $t );
 						if ( $t->getNamespace() == NS_TEMPLATE ) {
 							// Backlinks for Template pages are in a different table
 							$table = 'templatelinks';
 						} else {
 							$table = 'pagelinks';
 						}
-						$titleArray = $blc->getLinks( $table, false, false,
+						$pageIdentityArray = $blc->getLinkPages( $table, false, false,
 							$pageCountLimit - $iArticleCount );
+						foreach ( $pageIdentityArray as $pageIdentity ) {
+							$titleArray[] = Title::castFromPageIdentity( $pageIdentity );
+						}
 						break;
 				}
 
