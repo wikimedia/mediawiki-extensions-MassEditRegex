@@ -4,5 +4,7 @@
 			"Eleassar"
 		]
 	},
-	"masseditregex-matchtxt": "Išči:"
+	"masseditregex-matchtxt": "Išči:",
+	"masseditregex-hint-headreplace": "Zamenjaj",
+	"masseditregex-js-jobdone": "Končano"
 }
