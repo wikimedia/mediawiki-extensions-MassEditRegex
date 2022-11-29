@@ -26,7 +26,7 @@
 	"masseditregex-before": "Avant",
 	"masseditregex-after": "Après",
 	"masseditregex-max-preview-diffs": "La prévisualisation a été limitée {{PLURAL:$1|au premier résultat|aux $1 premiers résultats}}.",
-	"masseditregex-num-changes": "$1 : $2 {{PLURAL:$2|modification|modifications}}",
+	"masseditregex-num-changes": "$1 : $2 modification{{PLURAL:$2||s}}",
 	"masseditregex-page-not-exists": "$1 n'existe pas",
 	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|article modifié|articles modifiés}}",
 	"masseditregex-view-full-summary": "Voir le résumé complet des modifications",
