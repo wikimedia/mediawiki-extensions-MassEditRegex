@@ -391,7 +391,8 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			Xml::tags( 'div',
 				[ 'class' => 'mw-summary-preview' ],
 				$this->msg( 'summary-preview' )->parse() .
-					Linker::commentBlock( $this->massEditRegex->getSummary() )
+					MediaWikiServices::getInstance()->getCommentFormatter()
+						->formatBlock( $this->massEditRegex->getSummary() )
 			) .
 			Xml::closeElement( 'div' ) . // class=editOptions
 
