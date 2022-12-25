@@ -60,9 +60,8 @@ class MassEditRegex {
 		list( $newText, $changes ) = $this->replaceText( $curText );
 
 		if ( strcmp( $curText, $newText ) != 0 ) {
-			$newContent = new WikitextContent( $newText );
 			MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title )->doUserEditContent(
-				$newContent,
+				ContentHandler::makeContent( $newText, $title ),
 				$this->user,
 				$this->summary,
 				EDIT_UPDATE | EDIT_FORCE_BOT | EDIT_DEFER_UPDATES,
