@@ -15,14 +15,14 @@
 	"masseditregex-num-changes": "$1: $2 {{PLURAL:$1|izmena|izmene|izmena}}",
 	"masseditregex-page-not-exists": "$1 ne postoji",
 	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|strana|strane|strana}} izmenjeno",
-	"masseditregex-view-full-summary": "Vidi potpun opis izmene",
+	"masseditregex-view-full-summary": "Pogledaj ceo opis izmene",
 	"masseditregex-hint-headmatch": "Poklapanje",
 	"masseditregex-hint-headreplace": "Zameni",
 	"masseditregex-hint-headeffect": "Efekat",
 	"masseditregex-listtype-intro": "Ovo je spisak od:",
-	"masseditregex-listtype-pagenames": "Imena strana (izmeni ove strane)",
+	"masseditregex-listtype-pagenames": "Nazivi stranica (uredite ove stranice)",
 	"masseditregex-exprnomatch": "Izraz \"$1\" se ne nalazi ni na jednoj strani.",
-	"masseditregex-badregex": "Neispravan regex:",
+	"masseditregex-badregex": "Nevažeći regex:",
 	"masseditregex-editfailed": "Izmena nije snimljena:",
 	"masseditregex-tooltip-execute": "Primeni ove promene na svaku stranu"
 }
