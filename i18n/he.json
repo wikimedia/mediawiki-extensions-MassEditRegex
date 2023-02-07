@@ -45,5 +45,16 @@
 	"masseditregex-tooltip-execute": "החלת שינויים אלה לכל דף",
 	"masseditregex-editall": "לערוך הכול",
 	"right-masseditregex": "החלפת תוכן הדף באמצעות ביטויים רגולריים",
-	"masseditregex-readonlydb": "מסד הנתונים במצב קריאה בלבד"
+	"masseditregex-noaccess": "אין לך גישה ל־MassEditRegex",
+	"masseditregex-norevisions": "לא נמצאו גרסאות לעריכה",
+	"masseditregex-blocked": "חשבון המשתמש שלך נחסם",
+	"masseditregex-readonlydb": "מסד הנתונים במצב קריאה בלבד",
+	"masseditregex-js-clientside": "הפעלה בדפדפן",
+	"masseditregex-js-execution": "יש לסמן את זה כדי לבצע את הלולאות על הדף בצד הלקוח בדפדפן. זה מאפשר שינויים גדולים יותר, שמוגבלים בדרך־כלל על־ידי זמן הביצוע המרבי של PHP.",
+	"masseditregex-js-jobdone": "הושלם",
+	"masseditregex-js-working": "עיבוד... (נותרו $1)",
+	"masseditregex-js-pagenotexist": "הדף $1 אינו קיים.",
+	"masseditregex-js-mwapi-api-error": "שגיאה: API של מדיה־ויקי החזיר את קוד השגיאה $1: $2",
+	"masseditregex-js-mwapi-general-error": "שגיאה: תוצאה לא ידועה מ־API של מדיה־ויקי.",
+	"masseditregex-js-mwapi-unknown-error": "שגיאה: שגיאה לא ידועה במהלך בקשה ל־API של מדיה־ויקי."
 }
