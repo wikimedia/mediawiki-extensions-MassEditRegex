@@ -3,7 +3,8 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Vito Genovese",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"Rapsar"
 		]
 	},
 	"action-masseditregex": "toplu düzenleme yap",
@@ -39,7 +40,7 @@
 	"masseditregex-badregex": "Geçersiz normal ifade:",
 	"masseditregex-editfailed": "Değişiklik başarısız oldu:",
 	"masseditregex-tooltip-execute": "Bu değişiklikleri tüm sayfalara uygula",
-	"masseditregex-editall": "Tümünü düzenle",
+	"masseditregex-editall": "Tümünü değiştir",
 	"right-masseditregex": "Sayfa içeriklerini normal ifadeler kullanarak değiştir",
 	"masseditregex-noaccess": "MassEditRegex erişiminiz yok",
 	"masseditregex-norevisions": "Düzenlenecek revizyon bulunamadı",
