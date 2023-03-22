@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Event",
 			"Jon Harald Søby",
 			"Nghtwlkr"
@@ -49,7 +50,7 @@
 	"masseditregex-js-clientside": "Kjør i nettleseren",
 	"masseditregex-js-execution": "Merk av denne for å gjøre sideitereringen på klientsiden i nettleseren. Dette gjør det mulig å gjøre større endringer som normalt begrenses av PHPs maksimale utføringstid.",
 	"masseditregex-js-jobdone": "Ferdig",
-	"masseditregex-js-working": "Prosesserer... ($1 igjen)",
+	"masseditregex-js-working": "Prosesserer ... ($1 igjen)",
 	"masseditregex-js-pagenotexist": "$1 eksisterer ikke.",
 	"masseditregex-js-mwapi-api-error": "Feil: MediaWikis API returnerte feilkoden $1: $2",
 	"masseditregex-js-mwapi-general-error": "Feil: Ukjent resultat fra MediaWikis API.",
