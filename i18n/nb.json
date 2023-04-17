@@ -44,7 +44,7 @@
 	"masseditregex-editall": "Rediger alle",
 	"right-masseditregex": "Erstatt sideinnholdet gjennom å bruke regulæruttrykk",
 	"masseditregex-noaccess": "Du har ikke tilgang til MassEditRegex",
-	"masseditregex-norevisions": "Ingen revisjoner å redigere funnet",
+	"masseditregex-norevisions": "Ingen sideversjoner å redigere funnet",
 	"masseditregex-blocked": "Brukerkontoen din er blokkert",
 	"masseditregex-readonlydb": "Databasen er skrivebeskyttet",
 	"masseditregex-js-clientside": "Kjør i nettleseren",
