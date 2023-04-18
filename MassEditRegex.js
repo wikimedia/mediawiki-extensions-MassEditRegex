@@ -49,14 +49,14 @@
 						callback( result );
 					}
 				} else if ( response && response.error ) {
-					alert( mw.message( 'masseditregex-js-mwapi-api-error',
-						response.error.code, response.error.info ).text() );
+					alert( mw.msg( 'masseditregex-js-mwapi-api-error',
+						response.error.code, response.error.info ) );
 				} else {
-					alert( mw.message( 'masseditregex-js-mwapi-general-error' ).text() );
+					alert( mw.msg( 'masseditregex-js-mwapi-general-error' ) );
 				}
 			},
 			error: function () {
-				alert( mw.message( 'masseditregex-js-mwapi-unknown-error' ).text() );
+				alert( mw.msg( 'masseditregex-js-mwapi-unknown-error' ) );
 			}
 		} );
 	}
@@ -187,7 +187,7 @@
 				var pageId = page.pageid;
 
 				if ( pageId === undefined ) {
-					cb( { error: mw.message( 'masseditregex-js-pagenotexist', page.title ).text() } );
+					cb( { error: mw.msg( 'masseditregex-js-pagenotexist', page.title ) } );
 				} else {
 					$.ajax( {
 						url: mw.util.wikiScript(),
@@ -214,7 +214,7 @@
 		var $content = $( '<div>' );
 		var $heading = $( '<h1>' );
 		$content.append( $heading );
-		$heading.text( mw.message( 'masseditregex-js-working', '?' ).text() );
+		$heading.text( mw.msg( 'masseditregex-js-working', '?' ) );
 		var $list = $( '<ul>' );
 		$content.append( $list );
 
@@ -231,18 +231,18 @@
 				if ( page.error || response.error ) {
 					$li.text( page.title + ': ' + page.error ? page.error : response.error );
 				} else {
-					$li.text( mw.message( 'masseditregex-num-changes', page.title,
-						response.changes ).text() );
-					$heading.text( mw.message( 'masseditregex-js-working', remaining ).text() );
+					$li.text( mw.msg( 'masseditregex-num-changes', page.title,
+						response.changes ) );
+					$heading.text( mw.msg( 'masseditregex-js-working', remaining ) );
 				}
 
 				$list.prepend( $li );
 
 				if ( remaining === 0 ) {
 					$li = $( '<li>' );
-					$li.text( mw.message( 'masseditregex-js-jobdone' ).text() );
+					$li.text( mw.msg( 'masseditregex-js-jobdone' ) );
 					$list.prepend( $li );
-					$heading.text( mw.message( 'masseditregex-js-jobdone' ).text() );
+					$heading.text( mw.msg( 'masseditregex-js-jobdone' ) );
 				}
 			}
 		);
