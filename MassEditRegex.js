@@ -1,16 +1,16 @@
-function executeMassEdit() {
+( function () {
 
-	function getDataFromPath( data, path  ) {
+	function getDataFromPath( data, path ) {
 		path = path.split( '.' );
 		for ( var x = 0; x < path.length; x++ ) {
 			var dataKeys = [];
 			for ( var k in data ) {
 				dataKeys.push( k );
 			}
-			if ( $.inArray( path[x], dataKeys ) == -1 ) {
+			if ( dataKeys.indexOf( path[ x ] ) === -1 ) {
 				return false;
 			}
-			data = data[path[x]];
+			data = data[ path[ x ] ];
 		}
 		return data;
 	}
@@ -19,7 +19,7 @@ function executeMassEdit() {
 		var waitForCallback = false;
 
 		if ( c !== undefined ) {
-			data.params[data.continueKey] = c;
+			data.params[ data.continueKey ] = c;
 		}
 
 		$.ajax( {
@@ -27,19 +27,19 @@ function executeMassEdit() {
 			data: data.params,
 			dataType: 'json',
 			type: 'POST',
-			success: function( response ) {
+			success: function ( response ) {
 				var result = getDataFromPath( response, data.resultPath );
 				if ( result ) {
 					if ( data.continuePath ) {
 						var continueData = getDataFromPath( response, data.continuePath );
 						if ( continueData ) {
 							waitForCallback = true;
-							makeAPICall( data, function( r ) {
+							makeAPICall( data, function ( r ) {
 								waitForCallback = false;
 								result = result.concat( r );
 							}, continueData );
 						}
-						var timerId = setInterval( function() {
+						var timerId = setInterval( function () {
 							if ( !waitForCallback ) {
 								callback( result );
 								clearInterval( timerId );
@@ -55,7 +55,7 @@ function executeMassEdit() {
 					alert( mw.message( 'masseditregex-js-mwapi-general-error' ).text() );
 				}
 			},
-			error: function( xhr ) {
+			error: function () {
 				alert( mw.message( 'masseditregex-js-mwapi-unknown-error' ).text() );
 			}
 		} );
@@ -66,7 +66,7 @@ function executeMassEdit() {
 			resultPath: 'query.categorymembers',
 			continuePath: 'query-continue.categorymembers.cmcontinue',
 			continueKey: 'cmcontinue',
-			params:{
+			params: {
 				format: 'json',
 				action: 'query',
 				list: 'categorymembers',
@@ -83,7 +83,7 @@ function executeMassEdit() {
 			resultPath: 'query.backlinks',
 			continuePath: 'query-continue.backlinks.blcontinue',
 			continueKey: 'cmcontinue',
-			params:{
+			params: {
 				format: 'json',
 				action: 'query',
 				list: 'backlinks',
@@ -98,14 +98,14 @@ function executeMassEdit() {
 	function getAllPrefixPages( page, callback ) {
 		var data = {
 			resultPath: 'query.namespaces',
-			params:{
+			params: {
 				format: 'json',
 				action: 'query',
 				meta: 'siteinfo',
 				siprop: 'namespaces'
 			}
 		};
-		makeAPICall( data, function( namespaces ) {
+		makeAPICall( data, function ( namespaces ) {
 			var data;
 			var nsId;
 			var result = {
@@ -117,20 +117,20 @@ function executeMassEdit() {
 
 			// Count number of elements
 			for ( key in namespaces ) {
-				if ( namespaces[key].id > 0 ) {
+				if ( namespaces[ key ].id > 0 ) {
 					size++;
 				}
 			}
 
 			// Iterate through the namespaces
 			for ( key in namespaces ) {
-				nsId = namespaces[key].id;
+				nsId = namespaces[ key ].id;
 				if ( nsId >= 0 ) {
 					data = {
 						resultPath: 'query.allpages',
 						continuePath: 'query-continue.allpages.apcontinue',
 						continueKey: 'apcontinue',
-						params:{
+						params: {
 							format: 'json',
 							action: 'query',
 							list: 'allpages',
@@ -142,12 +142,12 @@ function executeMassEdit() {
 					};
 
 					( function ( data, result, callback ) {
-						makeAPICall(data, function (pages) {
+						makeAPICall( data, function ( pages ) {
 							result.pages = result.pages.concat( pages );
 							if ( callback !== null ) {
 								callback( result.pages );
 							}
-						});
+						} );
 					}( data, result, count++ === size ? callback : null ) );
 
 				}
@@ -169,7 +169,7 @@ function executeMassEdit() {
 			// Convert from object to array
 			pages = [];
 			for ( var key in data ) {
-				pages.push( data[key] );
+				pages.push( data[ key ] );
 			}
 			callback( pages );
 		} );
@@ -189,21 +189,21 @@ function executeMassEdit() {
 				if ( pageId === undefined ) {
 					cb( { error: mw.message( 'masseditregex-js-pagenotexist', page.title ).text() } );
 				} else {
-					$.ajax({
+					$.ajax( {
 						url: mw.util.wikiScript(),
 						data: {
 							action: 'ajax',
 							rs: 'MassEditRegexAPI::edit',
-							rsargs: [pageId, search, replace, summary],
+							rsargs: [ pageId, search, replace, summary ]
 						},
 						dataType: 'json',
 						type: 'POST'
-					}).done( function ( response ) {
-							rObj.remaining--;
-							cb( page, response, rObj.remaining );
-					});
+					} ).done( function ( response ) {
+						rObj.remaining--;
+						cb( page, response, rObj.remaining );
+					} );
 				}
-			}( pages[x], search, replace, cb, rObj ) );
+			}( pages[ x ], search, replace, cb, rObj ) );
 		}
 	}
 
@@ -211,75 +211,78 @@ function executeMassEdit() {
 		var search = $( '#wpMatch' ).val();
 		var replace = $( '#wpReplace' ).val();
 		var summary = $( '#wpSummary' ).val();
-		var content = $( '<div></div>' );
-		var heading = $( '<h1></h1>' );
-		content.append( heading );
-		heading.text( mw.message( 'masseditregex-js-working', '?' ).text() );
-		var list = $( '<ul></ul>' );
-		content.append( list );
+		var $content = $( '<div>' );
+		var $heading = $( '<h1>' );
+		$content.append( $heading );
+		$heading.text( mw.message( 'masseditregex-js-working', '?' ).text() );
+		var $list = $( '<ul>' );
+		$content.append( $list );
 
-		content.dialog( {
-			height: $(window).height() * 0.8,
-			width: $(window).width() * 0.8,
+		$content.dialog( {
+			height: $( window ).height() * 0.8,
+			width: $( window ).width() * 0.8,
 			modal: true
 		} );
 
 		editPages( pages, search, replace, summary,
-			function( page, response, remaining ) {
-				var li = $('<li></li>');
+			function ( page, response, remaining ) {
+				var $li = $( '<li>' );
 
 				if ( page.error || response.error ) {
-					li.text(page.title + ': ' + page.error ? page.error : response.error);
+					$li.text( page.title + ': ' + page.error ? page.error : response.error );
 				} else {
-					li.text( mw.message( 'masseditregex-num-changes', page.title,
+					$li.text( mw.message( 'masseditregex-num-changes', page.title,
 						response.changes ).text() );
-					heading.text( mw.message( 'masseditregex-js-working', remaining ).text() );
+					$heading.text( mw.message( 'masseditregex-js-working', remaining ).text() );
 				}
 
-				list.prepend(li);
+				$list.prepend( $li );
 
 				if ( remaining === 0 ) {
-					li = $('<li></li>');
-					li.text( mw.message( 'masseditregex-js-jobdone' ).text() );
-					list.prepend(li);
-					heading.text( mw.message( 'masseditregex-js-jobdone' ).text() );
+					$li = $( '<li>' );
+					$li.text( mw.message( 'masseditregex-js-jobdone' ).text() );
+					$list.prepend( $li );
+					$heading.text( mw.message( 'masseditregex-js-jobdone' ).text() );
 				}
 			}
 		);
 	}
 
-	var pages = $( '#wpPageList' ).val().split( '\n' );
-	var type = $( 'input[name="wpPageListType"]:checked' ).val();
+	function executeMassEdit() {
+		var pages = $( '#wpPageList' ).val().split( '\n' );
+		var type = $( 'input[name="wpPageListType"]:checked' ).val();
 
-	var x;
-	switch ( type ) {
-		case 'pagenames':
-			getPages( pages, doEdit );
-			break;
-		case 'pagename-prefixes':
-			for ( x = 0; x < pages.length; x++ ) {
-				getAllPrefixPages( pages[x], doEdit );
-			}
-			break;
-		case 'backlinks':
-			for ( x = 0; x < pages.length; x++ ) {
-				getBackLinkPages( pages[x], doEdit );
-			}
-			break;
-		case 'categories':
-			for ( x = 0; x < pages.length; x++ ) {
-				getCategoryPages( pages[x], doEdit );
-			}
-			break;
-	}
-}
-
-$( function () {
-	$( '#wpSave' ).click( function () {
-		if ( $( '#wpClientSide' ).is( ':checked' ) ) {
-			executeMassEdit();
-			return false;
+		var x;
+		switch ( type ) {
+			case 'pagenames':
+				getPages( pages, doEdit );
+				break;
+			case 'pagename-prefixes':
+				for ( x = 0; x < pages.length; x++ ) {
+					getAllPrefixPages( pages[ x ], doEdit );
+				}
+				break;
+			case 'backlinks':
+				for ( x = 0; x < pages.length; x++ ) {
+					getBackLinkPages( pages[ x ], doEdit );
+				}
+				break;
+			case 'categories':
+				for ( x = 0; x < pages.length; x++ ) {
+					getCategoryPages( pages[ x ], doEdit );
+				}
+				break;
 		}
-		return true;
+	}
+
+	$( function () {
+		$( '#wpSave' ).on( 'click', function () {
+			if ( $( '#wpClientSide' ).is( ':checked' ) ) {
+				executeMassEdit();
+				return false;
+			}
+			return true;
+		} );
 	} );
-} );
+
+}() );
