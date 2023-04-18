@@ -274,7 +274,7 @@ function executeMassEdit() {
 	}
 }
 
-$( document ).ready( function () {
+$( function () {
 	$( '#wpSave' ).click( function () {
 		if ( $( '#wpClientSide' ).is( ':checked' ) ) {
 			executeMassEdit();
