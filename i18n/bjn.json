@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ezagren"
+		]
+	},
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|paubahan}}"
+}
