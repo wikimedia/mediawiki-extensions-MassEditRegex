@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"action-masseditregex": "atlikti masinį keitimą",
+	"masseditregex-pagelisttxt": "Puslapiai redagavimui:",
+	"masseditregex-matchtxt": "Ieškoti:",
+	"masseditregex-replacetxt": "Pakeisti į:",
+	"masseditregex-executebtn": "Vykdyti",
+	"masseditregex-err-nopages": "Turite nurodyti bent vieną puslapį pakeitimui.",
+	"masseditregex-before": "Prieš",
+	"masseditregex-after": "Po",
+	"masseditregex-max-preview-diffs": "Peržiūra apriboti iki $1 {{PLURAL:$1|pirmo atitikimo|pirmų atitikimų}}.",
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|keitimas|keitimai}}",
+	"masseditregex-page-not-exists": "$1 neegzistuoja",
+	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|puslapis pakeistas|puslapiai pakeisti}}",
+	"masseditregex-view-full-summary": "Žiūrėti visą keitimo santrauką",
+	"masseditregex-hint-intro": "Štai patarimai ir pavyzdžiai dėl bendrųjų užduočių atlikimo:",
+	"masseditregex-hint-headreplace": "Pakeisti",
+	"masseditregex-hint-remove": "Pašalinkite tam tikrą tekstą iš visų puslapių sąraše",
+	"masseditregex-hint-renamelink": "Pakeiskite AAA į BBB nuorodos tekste, bet ne nuorodos tiksle: [[AAA|AAA]] tampa [[AAA|BBB]]",
+	"masseditregex-listtype-intro": "Tai yra sąrašas:",
+	"masseditregex-listtype-pagenames": "Puslapių pavadinimai (pakeisti šiuos puslapius)",
+	"masseditregex-editfailed": "Keitimas nepavyko:",
+	"masseditregex-tooltip-execute": "Taikyti šiuos keitimus kiekvienam puslapiui",
+	"masseditregex-editall": "Keisti visus",
+	"masseditregex-blocked": "Jūsų naudotojo paskyra užblokuota",
+	"masseditregex-readonlydb": "Duomenų bazę galima tik skaityti",
+	"masseditregex-js-clientside": "Vykdyti naršyklėje",
+	"masseditregex-js-jobdone": "Baigta",
+	"masseditregex-js-working": "Apdorojama... (liko $1)",
+	"masseditregex-js-pagenotexist": "$1 neegzistuoja.",
+	"masseditregex-js-mwapi-api-error": "Klaida: MediaWiki API grąžino klaidos kodą $1: $2",
+	"masseditregex-js-mwapi-general-error": "Klaida: Nežinomas rezultatas iš MediaWiki API.",
+	"masseditregex-js-mwapi-unknown-error": "Klaida: Nežinoma klaida užklausos MediaWiki API metu."
+}
