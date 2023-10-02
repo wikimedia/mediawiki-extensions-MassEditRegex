@@ -59,8 +59,7 @@
 		"remoteExtPath": "MassEditRegex"
 	},
 	"Hooks": {
-		"SkinTemplateNavigation::Universal": "MassEditRegexSpecialPage::efSkinTemplateNavigationUniversal",
-		"BaseTemplateToolbox": "MassEditRegexSpecialPage::efBaseTemplateToolbox"
+		"SkinTemplateNavigation::Universal": "MassEditRegexSpecialPage::efSkinTemplateNavigationUniversal"
 	},
 	"config": {
 		"AjaxExportList": {

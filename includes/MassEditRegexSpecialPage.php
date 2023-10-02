@@ -552,24 +552,6 @@ class MassEditRegexSpecialPage extends SpecialPage {
 	}
 
 	/**
-	 * @param BaseTemplate $tpl
-	 * @param array &$toolbox
-	 *
-	 * @return true
-	 */
-	public static function efBaseTemplateToolbox( $tpl, &$toolbox ) {
-		global $wgTitle;
-		if ( !$wgTitle->isSpecial( 'MassEditRegex' ) ) {
-			return true;
-		}
-
-		// Hide the 'printable version' link as the shortcut key conflicts with
-		// the preview button.
-		unset( $toolbox['print'] );
-		return true;
-	}
-
-	/**
 	 * Call MassEditRegex::editPage() or MassEditRegex::previewPage()
 	 * @param $title
 	 * @param $isPreview
