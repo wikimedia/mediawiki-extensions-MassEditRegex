@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fahimrazick",
 			"Shanmugamp7"
 		]
 	},
-	"action-masseditregex": "மொத்த தொகுப்பை செய்யவும்",
+	"action-masseditregex": "ஒரு மொத்த தொகுப்பைச் செய்",
 	"masseditregex-pagelisttxt": "தொகுக்க வேண்டிய பக்கங்கள்:",
 	"masseditregex-matchtxt": "இதை தேடு:",
 	"masseditregex-replacetxt": "மாற்றவும்:",
