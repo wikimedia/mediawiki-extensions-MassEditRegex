@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hubaishan",
 			"Meno25",
 			"OsamaK",
 			"أحمد",
@@ -20,7 +21,7 @@
 	"masseditregex-before": "قبل",
 	"masseditregex-after": "بعد",
 	"masseditregex-max-preview-diffs": "المعاينة تم قصرها على أول $1 {{PLURAL:$1|مطابقة|مطابقات}}.",
-	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|تغيير|تغييرات}}",
+	"masseditregex-num-changes": "$1: {{PLURAL:$2|لا تغيير|تغيير واحد|تغييران|$2 تغييرات|$2 تغييرًا|$2 تغييرٍ}} في قائمة المراقبة",
 	"masseditregex-page-not-exists": "$1 غير موجود",
 	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|صفحة|صفحات}} تم تعديلها",
 	"masseditregex-view-full-summary": "اعرض الملخص الكامل للتعديل",
