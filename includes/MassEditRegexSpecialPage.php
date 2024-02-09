@@ -105,7 +105,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 						$prefixSearch = new StringPrefixSearch;
 						$titles = $prefixSearch->search( $pageTitle,
 							$pageCountLimit - $iArticleCount );
-						if ( empty( $titles ) ) {
+						if ( !$titles ) {
 							$errors[] = $this->msg( 'masseditregex-exprnomatch',
 								$pageTitle )->escaped();
 							$iArticleCount++;
@@ -189,13 +189,13 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			$out->addHTML( '</ul>' );
 		}
 
-		if ( ( $iArticleCount == 0 ) && empty( $errors ) ) {
+		if ( ( $iArticleCount == 0 ) && !$errors ) {
 			$errors[] = $this->msg( 'masseditregex-err-nopages' )->escaped();
 			// Force a preview if there was nothing to do
 			$isPreview = true;
 		}
 
-		if ( !empty( $errors ) ) {
+		if ( $errors ) {
 			$out->addHTML( '<div class="errorbox">' );
 			$out->addHTML( $this->msg( 'masseditregex-editfailed' )->escaped() );
 
