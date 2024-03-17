@@ -57,7 +57,7 @@ class MassEditRegex {
 		$rev = $this->getRevisionRecord( $title );
 		$content = $this->getContent( $rev );
 		$curText = $content->getNativeData();
-		list( $newText, $changes ) = $this->replaceText( $curText );
+		[ $newText, $changes ] = $this->replaceText( $curText );
 
 		if ( strcmp( $curText, $newText ) != 0 ) {
 			MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title )->doUserEditContent(
@@ -84,7 +84,7 @@ class MassEditRegex {
 		$rev = $this->getRevisionRecord( $title );
 		$content = $this->getContent( $rev );
 		$curText = $content->getNativeData();
-		list( $newText ) = $this->replaceText( $curText );
+		[ $newText ] = $this->replaceText( $curText );
 
 		$this->diffEngine->setContent( $content, ContentHandler::makeContent( $newText, $title ) );
 
@@ -221,7 +221,7 @@ class MassEditRegex {
 				], [
 				"\\1\\2\n",
 				"\\1\\2n"
-			], $str );
+				], $str );
 		}
 
 		$this->replace = $replace;
