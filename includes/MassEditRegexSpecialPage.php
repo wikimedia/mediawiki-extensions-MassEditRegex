@@ -296,11 +296,11 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				'method' => 'post',
 				'action' => $titleObj->getLocalURL( 'action=submit' )
 			] ) .
-			Html::element( 'p', [], $this->msg( 'masseditregex-pagelisttxt' )->text() ) .
+			Html::label( $this->msg( 'masseditregex-pagelisttxt' )->text(), 'wpPageList' ) .
 			Html::textarea(
 				'wpPageList',
 				implode( "\n", $this->aPageList ),
-				[ 'rows' => 5 ]
+				[ 'id' => 'wpPageList', 'rows' => 5 ]
 			) .
 			Html::element( 'span', [], $this->msg( 'masseditregex-listtype-intro' )->text() ) .
 			Html::openElement( 'ul', [
@@ -330,18 +330,20 @@ class MassEditRegexSpecialPage extends SpecialPage {
 
 			// Display the textareas for the regex and replacement to go into
 
-			Html::rawElement( 'table', [
-				'style' => 'width: 100%'
-			],
-				Html::rawElement( 'tr', [],
-					Html::rawElement( 'td', [],
-						Html::element( 'p', [], $this->msg( 'masseditregex-matchtxt' )->text() ) .
-						Html::textarea( 'wpMatch', $this->strMatch, [ 'rows' => 5 ] )
-					) .
-					Html::rawElement( 'td', [],
-						Html::element( 'p', [], $this->msg( 'masseditregex-replacetxt' )->text() ) .
-						Html::textarea( 'wpReplace', $this->strReplace, [ 'rows' => 5 ] )
-					)
+			Html::rawElement(
+				'div',
+				[ 'style' => 'display: flex; column-gap: 4px;' ],
+				Html::rawElement(
+					'div',
+					[ 'style' => 'flex: 1;' ],
+					Html::label( $this->msg( 'masseditregex-matchtxt' )->text(), 'wpMatch' ) .
+					Html::textarea( 'wpMatch', $this->strMatch, [ 'id' => 'wpMatch', 'rows' => 5 ] )
+				) .
+				Html::rawElement(
+					'div',
+					[ 'style' => 'flex: 1;' ],
+					Html::label( $this->msg( 'masseditregex-replacetxt' )->text(), 'wpReplace' ) .
+					Html::textarea( 'wpReplace', $this->strReplace, [ 'id' => 'wpReplace', 'rows' => 5 ] )
 				)
 			) .
 
@@ -367,7 +369,6 @@ class MassEditRegexSpecialPage extends SpecialPage {
 					'id' => 'wpSummary',
 					'size' => 60,
 					'maxlength' => '200',
-					'tabindex' => '1'
 				]
 			) .
 
