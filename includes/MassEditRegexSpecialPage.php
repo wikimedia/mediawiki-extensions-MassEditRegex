@@ -14,6 +14,7 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 
 /// Maximum number of pages/diffs to display when previewing the changes
@@ -165,7 +166,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 					}
 					$iArticleCount++;
 					if ( $iArticleCount >= $pageCountLimit ) {
-						$htmlDiff .= Xml::element( 'p', null,
+						$htmlDiff .= Html::element( 'p', [],
 							$this->msg( 'masseditregex-max-preview-diffs' )
 								->numParams( $pageCountLimit )
 								->text()
@@ -290,22 +291,19 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		$titleObj = SpecialPage::getTitleFor( 'MassEditRegex' );
 
 		$out->addHTML(
-			Xml::openElement( 'form', [
+			Html::openElement( 'form', [
 				'id' => 'masseditregex',
 				'method' => 'post',
 				'action' => $titleObj->getLocalURL( 'action=submit' )
 			] ) .
-			Xml::element( 'p',
-				null, $this->msg( 'masseditregex-pagelisttxt' )->text()
-			) .
-			Xml::textarea(
+			Html::element( 'p', [], $this->msg( 'masseditregex-pagelisttxt' )->text() ) .
+			Html::textarea(
 				'wpPageList',
-				implode( "\n", $this->aPageList )
+				implode( "\n", $this->aPageList ),
+				[ 'rows' => 5 ]
 			) .
-			Xml::element( 'span',
-				null, $this->msg( 'masseditregex-listtype-intro' )->text()
-			) .
-			Xml::openElement( 'ul', [
+			Html::element( 'span', [], $this->msg( 'masseditregex-listtype-intro' )->text() ) .
+			Html::openElement( 'ul', [
 				'style' => 'list-style: none' // don't want any bullets for radio btns
 			] )
 		);
@@ -314,11 +312,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		foreach ( [ 'pagenames', 'pagename-prefixes', 'categories', 'backlinks' ]
 			as $strValue ) {
 
-			// Have to use openElement because putting an Xml::xxx return value
-			// inside an Xml::element causes the HTML code to be escaped and appear
-			// on the page.
-			$out->addHTML(
-				Xml::openElement( 'li' ) .
+			$out->addHTML( Html::rawElement( 'li', [],
 				// Give grep a chance to find the usages:
 				// masseditregex-listtype-pagenames, masseditregex-listtype-pagename-prefixes,
 				// masseditregex-listtype-categories, masseditregex-listtype-backlinks
@@ -328,103 +322,85 @@ class MassEditRegexSpecialPage extends SpecialPage {
 					$strValue,
 					'masseditregex-radio-' . $strValue,
 					$strValue == $this->strPageListType
-				) .
-				Xml::closeElement( 'li' )
-			);
+				)
+			) );
 		}
 		$out->addHTML(
-			Xml::closeElement( 'ul' ) .
+			Html::closeElement( 'ul' ) .
 
 			// Display the textareas for the regex and replacement to go into
 
-			// Can't use Xml::buildTable because we need to put code into the table
-			Xml::openElement( 'table', [
+			Html::rawElement( 'table', [
 				'style' => 'width: 100%'
-			] ) .
-				Xml::openElement( 'tr' ) .
-					Xml::openElement( 'td' ) .
-						Xml::element( 'p', null, $this->msg( 'masseditregex-matchtxt' )->text() ) .
-						Xml::textarea(
-							'wpMatch',
-							$this->strMatch  // use original value
-						) .
-						Xml::closeElement( 'textarea' ) .
-					Xml::closeElement( 'td' ) .
-					Xml::openElement( 'td' ) .
-						Xml::element( 'p', null, $this->msg( 'masseditregex-replacetxt' )->text() ) .
-						Xml::textarea(
-							'wpReplace',
-							$this->strReplace  // use original value
-						) .
-						Xml::closeElement( 'textarea' ) .
-					Xml::closeElement( 'td' ) .
-					Xml::closeElement( 'tr' ) .
-			Xml::closeElement( 'table' ) .
+			],
+				Html::rawElement( 'tr', [],
+					Html::rawElement( 'td', [],
+						Html::element( 'p', [], $this->msg( 'masseditregex-matchtxt' )->text() ) .
+						Html::textarea( 'wpMatch', $this->strMatch, [ 'rows' => 5 ] )
+					) .
+					Html::rawElement( 'td', [],
+						Html::element( 'p', [], $this->msg( 'masseditregex-replacetxt' )->text() ) .
+						Html::textarea( 'wpReplace', $this->strReplace, [ 'rows' => 5 ] )
+					)
+				)
+			) .
 
-			Xml::openElement( 'div', [
+			Html::openElement( 'div', [
 				'class' => 'editOptions',
 				'style' => 'margin: 1ex;'
 			] ) .
 
 			// Display the edit summary and preview
 
-			Xml::tags( 'span',
+			Html::rawElement( 'span',
 				[
 					'class' => 'mw-summary',
 					'id' => 'wpSummaryLabel'
 				],
-				Xml::tags( 'label', [
-					'for' => 'wpSummary'
-				], $this->msg( 'summary' )->escaped() )
+				Html::label( $this->msg( 'summary' )->text(), 'wpSummary' )
 			) . ' ' .
 
-			Xml::input( 'wpSummary',
-				60,
+			Html::input( 'wpSummary',
 				$this->massEditRegex->getSummary(),
+				'text',
 				[
 					'id' => 'wpSummary',
+					'size' => 60,
 					'maxlength' => '200',
 					'tabindex' => '1'
 				]
 			) .
 
-			Xml::tags( 'div',
+			Html::rawElement( 'div',
 				[ 'class' => 'mw-summary-preview' ],
 				$this->msg( 'summary-preview' )->parse() .
 					MediaWikiServices::getInstance()->getCommentFormatter()
 						->formatBlock( $this->massEditRegex->getSummary() )
 			) .
-			Xml::closeElement( 'div' ) . // class=editOptions
+			Html::closeElement( 'div' ) . // class=editOptions
 
 			// Display the preview + execute buttons
-			Xml::element( 'input', [
+			Html::submitButton( $this->msg( 'masseditregex-executebtn' )->text(), [
 				'id' => 'wpSave',
 				'name' => 'wpSave',
-				'type' => 'submit',
-				'value' => $this->msg( 'masseditregex-executebtn' )->text(),
 				'accesskey' => $this->msg( 'accesskey-save' )->text(),
 				'title' => $this->msg( 'masseditregex-tooltip-execute' )->text() .
 					' [' . $this->msg( 'accesskey-save' )->text() . ']',
 			] ) .
 
-			Xml::element( 'input', [
+			Html::submitButton( $this->msg( 'showpreview' )->text(), [
 				'id' => 'wpPreview',
 				'name' => 'wpPreview',
-				'type' => 'submit',
-				'value' => $this->msg( 'showpreview' )->text(),
 				'accesskey' => $this->msg( 'accesskey-preview' )->text(),
 				'title' => $this->msg( 'tooltip-preview' )->text() .
 					' [' . $this->msg( 'accesskey-preview' )->text() . ']',
 			] ) .
 
-			Xml::element( 'input', [
+			Html::hidden( 'wpEditToken', $getuser->getEditToken(), [
 				'id' => 'wpEditToken',
-				'name' => 'wpEditToken',
-				'type' => 'hidden',
-				'value' => $getuser->getEditToken(),
 			] ) .
 
-			Xml::tags( 'span',
+			Html::rawElement( 'span',
 				[
 					'style' => 'margin-left: 1em;'
 				],
@@ -440,7 +416,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			)
 		);
 
-		$out->addHTML( Xml::closeElement( 'form' ) );
+		$out->addHTML( Html::closeElement( 'form' ) );
 		$out->addModules( 'MassEditRegex' );
 	}
 
@@ -452,7 +428,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		$getuser = $this->getUser();
 
 		$out->addHTML(
-			Xml::element( 'p', null, $this->msg( 'masseditregex-hint-intro' )->text() )
+			Html::element( 'p', [], $this->msg( 'masseditregex-hint-intro' )->text() )
 		);
 		$out->addHTML( Xml::buildTable(
 
