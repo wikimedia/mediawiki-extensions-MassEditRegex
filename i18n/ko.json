@@ -6,7 +6,8 @@
 			"Kwj2772",
 			"MemphisA5",
 			"Ykhwong",
-			"아라"
+			"아라",
+			"Suleiman the Magnificent Television"
 		]
 	},
 	"action-masseditregex": "대량 편집을 수행할",
@@ -44,6 +45,8 @@
 	"masseditregex-tooltip-execute": "각 문서에 이러한 바뀐 내용을 적용합니다",
 	"masseditregex-editall": "모두 편집",
 	"right-masseditregex": "정규 표현식을 사용해 문서 내용을 바꾸기",
+	"masseditregex-noaccess": "MassEditRegex에 액세스 할 수 없습니다",
+	"masseditregex-norevisions": "편집할 수 있는 수정 사항은 발견되지 않았다",
 	"masseditregex-blocked": "당신의 사용자 계정은 차단되었습니다",
 	"masseditregex-readonlydb": "데이터베이스가 읽기 전용입니다",
 	"masseditregex-js-clientside": "브라우저에서 실행",
