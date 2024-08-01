@@ -3,7 +3,8 @@
 		"authors": [
 			"Les Meloures",
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
 	"masseditregex": "Ännerung vun enger grousser Zuel vu Säite mat Hëllef vu regulären Ausdréck",
@@ -27,7 +28,7 @@
 	"masseditregex-listtype-intro": "Dëst ass eng Lëscht vun:",
 	"masseditregex-listtype-pagenames": "Numm vun de Säiten (dës Säiten änneren)",
 	"masseditregex-listtype-categories": "Kategoriennimm (all Säit an dëse Kategorien änneren)",
-	"masseditregex-listtype-backlinks": "Linken heihin (Säiten änneren déi op dës linken)",
+	"masseditregex-listtype-backlinks": "Linken heihin (Säiten änneren, déi op dës linken)",
 	"masseditregex-exprnomatch": "Den Ausdrock \"$1\" huet keng Resultater erginn.",
 	"masseditregex-editfailed": "Feeler beim Änneren:",
 	"masseditregex-tooltip-execute": "Dës Ännerungen op all Säit uwenden",
