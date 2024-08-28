@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"BadDog"
 		]
 	},
 	"action-masseditregex": "izvrši grupno uređivanje",
@@ -30,7 +31,7 @@
 	"masseditregex-listtype-pagenames": "Imena stranica (uredite te stranice)",
 	"masseditregex-listtype-pagename-prefixes": "Prefiksi nazive stranica (uredite stranice čije ime počinje ovim tekstom)",
 	"masseditregex-listtype-categories": "Imena kategorija (uredite svaku stranicu u tim kategorijama)",
-	"masseditregex-listtype-backlinks": "Obrnuti linkovi (uredite stranice koje povezuju do ovih)",
+	"masseditregex-listtype-backlinks": "Povratne veze (uredite stranice koje vode do ovih)",
 	"masseditregex-exprnomatch": "Izraz \"$1\" se ne nalazi ni na jednoj strani.",
 	"masseditregex-badregex": "Neispravan regex:",
 	"masseditregex-editfailed": "Uređivanje neuspjelo:",
