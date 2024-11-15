@@ -36,7 +36,7 @@ class MassEditRegex {
 	 * @param string $summary
 	 * @param User|null $user
 	 */
-	function __construct( $search, $replace, $summary, \User $user = null ) {
+	function __construct( $search, $replace, $summary, ?\User $user = null ) {
 		$this->setReplace( $replace );
 		$this->setSearch( $search );
 		$this->setSummary( $summary );
