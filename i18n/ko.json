@@ -50,6 +50,7 @@
 	"masseditregex-blocked": "당신의 사용자 계정은 차단되었습니다",
 	"masseditregex-readonlydb": "데이터베이스가 읽기 전용입니다",
 	"masseditregex-js-clientside": "브라우저에서 실행",
+	"masseditregex-js-execution": "클릭하여 클라이언트 측 브라우저에 문서 반복 실행. 이는 PHP 최대 실행 시간으로 제한되는 것보다 더 큰 변경을 허용함.",
 	"masseditregex-js-jobdone": "완료",
 	"masseditregex-js-working": "처리 중... ($1 남음)",
 	"masseditregex-js-pagenotexist": "$1 문서가 존재하지 않습니다.",
