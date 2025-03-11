@@ -10,7 +10,7 @@
 	"action-masseditregex": "ober ur c'hemm a-vras",
 	"masseditregex": "Kemmoù a-vras gant sikour eztaoladennoù poellel",
 	"masseditregex-desc": "Reiñ a ra aotre da implijout ar jedadoù reoliek evit [[Special:MassEditRegex|kemmañ un toullad pajennoù en un taol]]",
-	"masseditregextext": "Merkañ ur jedad poellek pe meur a hini (unan dre linenn) da glask hag ur jedad pe meur a hini da erlec'hiañ disoc'hoù pep hini gantañ.\nErlec'hiet e vo ar jedad kavet da gentañ gant ar jedad erlec'hiañ kentañ ha kement-all da-heul.\nGwelet [http://php.net/manual/en/function.preg-replace.php the PHP function preg_replace()] da c'houzout hiroc'h.",
+	"masseditregextext": "Merkañ ur jedad reoliek pe meur a hini (unan dre linenn) da glask hag ur jedad pe meur a hini da erlec'hiañ disoc'hoù pep hini gantañ.\nErlec'hiet e vo ar jedad kavet da gentañ gant ar jedad erlec'hiañ kentañ ha kement-all da-heul.\nGwelet [https://php.net/function.preg-replace arc’hwel PHP preg_replace()] da c'houzout hiroc'h.",
 	"masseditregex-pagelisttxt": "Pajennoù da gemmañ :",
 	"masseditregex-matchtxt": "Klask :",
 	"masseditregex-replacetxt": "Erlec'hiañ gant :",
