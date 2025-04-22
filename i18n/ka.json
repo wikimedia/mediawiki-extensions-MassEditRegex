@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"David1010",
-			"MIKHEIL"
+			"MIKHEIL",
+			"Გიო ოქრო"
 		]
 	},
 	"masseditregex-before": "მანამდე",
@@ -11,10 +12,10 @@
 	"masseditregex-page-not-exists": "$1 არ არსებობს",
 	"masseditregex-hint-headreplace": "ჩანაცვლება",
 	"masseditregex-exprnomatch": "„$1“ გამოხატვას არცერთი გვერდი არ შეესაბამება.",
-	"masseditregex-badregex": "არასწორი რეგულარული გამოხატვა:",
+	"masseditregex-badregex": "არასწორი რეგულარული გამოსახულება:",
 	"masseditregex-editfailed": "რედაქტირების შეცდომა:",
 	"masseditregex-tooltip-execute": "ამ ცვლილების ყველა გვერდისათვის გამოყენება",
-	"right-masseditregex": "გვერდის შინაარსის შეცვლა, რეგულარული გამოხატვის საშუალებით",
+	"right-masseditregex": "გვერდის შინაარსის შეცვლა, რეგულარული გამოსახულების საშუალებით",
 	"masseditregex-blocked": "თქვენი ანგარიში დაბლოკილია",
 	"masseditregex-js-clientside": "ბრაუზერში შესრულება",
 	"masseditregex-js-jobdone": "დასრულებულია"
