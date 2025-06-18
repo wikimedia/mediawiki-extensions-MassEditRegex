@@ -89,10 +89,18 @@ class MassEditRegex {
 
 		$this->diffEngine->setContent( $content, ContentHandler::makeContent( $newText, $title ) );
 
-		return $this->diffEngine->getDiff( '<b>'
-			. htmlspecialchars( $title->getPrefixedText() ) . ' - '
-			. wfMessage( 'masseditregex-before' )->text() . '</b>',
-			'<b>' . wfMessage( 'masseditregex-after' )->text() . '</b>' );
+		return $this->diffEngine->getDiff(
+			Html::element(
+				'b',
+				[],
+				$title->getPrefixedText() . ' - ' . wfMessage( 'masseditregex-before' )->text()
+			),
+			Html::element(
+				'b',
+				[],
+				wfMessage( 'masseditregex-after' )->text()
+			)
+		);
 	}
 
 	/**
