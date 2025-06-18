@@ -14,8 +14,10 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\Category\Category;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 
 /// Maximum number of pages/diffs to display when previewing the changes
 define( 'MER_MAX_PREVIEW_DIFFS', 20 );

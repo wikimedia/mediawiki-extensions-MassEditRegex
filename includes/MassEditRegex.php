@@ -3,6 +3,7 @@
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
+use MediaWiki\Title\Title;
 
 class MassEditRegex {
 	/**
@@ -53,7 +54,7 @@ class MassEditRegex {
 	 *
 	 * @return int number of changes performed on given title
 	 */
-	public function editPage( \Title $title ) {
+	public function editPage( Title $title ) {
 		$rev = $this->getRevisionRecord( $title );
 		$content = $this->getContent( $rev );
 		$curText = $content->getNativeData();
@@ -80,7 +81,7 @@ class MassEditRegex {
 	 *
 	 * @return string html diff
 	 */
-	public function previewPage( \Title $title ) {
+	public function previewPage( Title $title ) {
 		$rev = $this->getRevisionRecord( $title );
 		$content = $this->getContent( $rev );
 		$curText = $content->getNativeData();
@@ -131,7 +132,7 @@ class MassEditRegex {
 	 * @return RevisionRecord
 	 * @throws BadTitleError
 	 */
-	private function getRevisionRecord( \Title $title ) {
+	private function getRevisionRecord( Title $title ) {
 		$revisionRecord = MediaWikiServices::getInstance()
 			->getRevisionLookup()
 			->getRevisionByTitle( $title, 0, IDBAccessObject::READ_LATEST );
