@@ -2,12 +2,12 @@
 
 	function getDataFromPath( data, path ) {
 		path = path.split( '.' );
-		for ( var x = 0; x < path.length; x++ ) {
-			var dataKeys = [];
-			for ( var k in data ) {
+		for ( let x = 0; x < path.length; x++ ) {
+			const dataKeys = [];
+			for ( const k in data ) {
 				dataKeys.push( k );
 			}
-			if ( dataKeys.indexOf( path[ x ] ) === -1 ) {
+			if ( !dataKeys.includes( path[ x ] ) ) {
 				return false;
 			}
 			data = data[ path[ x ] ];
@@ -16,7 +16,7 @@
 	}
 
 	function makeAPICall( data, callback, c ) {
-		var waitForCallback = false;
+		let waitForCallback = false;
 
 		if ( c !== undefined ) {
 			data.params[ data.continueKey ] = c;
@@ -28,18 +28,18 @@
 			dataType: 'json',
 			type: 'POST',
 			success: function ( response ) {
-				var result = getDataFromPath( response, data.resultPath );
+				let result = getDataFromPath( response, data.resultPath );
 				if ( result ) {
 					if ( data.continuePath ) {
-						var continueData = getDataFromPath( response, data.continuePath );
+						const continueData = getDataFromPath( response, data.continuePath );
 						if ( continueData ) {
 							waitForCallback = true;
-							makeAPICall( data, function ( r ) {
+							makeAPICall( data, ( r ) => {
 								waitForCallback = false;
 								result = result.concat( r );
 							}, continueData );
 						}
-						var timerId = setInterval( function () {
+						var timerId = setInterval( () => {
 							if ( !waitForCallback ) {
 								callback( result );
 								clearInterval( timerId );
@@ -62,7 +62,7 @@
 	}
 
 	function getCategoryPages( page, callback ) {
-		var data = {
+		const data = {
 			resultPath: 'query.categorymembers',
 			continuePath: 'query-continue.categorymembers.cmcontinue',
 			continueKey: 'cmcontinue',
@@ -79,7 +79,7 @@
 	}
 
 	function getBackLinkPages( page, callback ) {
-		var data = {
+		const data = {
 			resultPath: 'query.backlinks',
 			continuePath: 'query-continue.backlinks.blcontinue',
 			continueKey: 'cmcontinue',
@@ -96,7 +96,7 @@
 	}
 
 	function getAllPrefixPages( page, callback ) {
-		var data = {
+		const data = {
 			resultPath: 'query.namespaces',
 			params: {
 				format: 'json',
@@ -105,15 +105,15 @@
 				siprop: 'namespaces'
 			}
 		};
-		makeAPICall( data, function ( namespaces ) {
-			var data;
-			var nsId;
-			var result = {
+		makeAPICall( data, ( namespaces ) => {
+			let data;
+			let nsId;
+			const result = {
 				pages: []
 			};
-			var size = 0;
-			var count = 0;
-			var key;
+			let size = 0;
+			let count = 0;
+			let key;
 
 			// Count number of elements
 			for ( key in namespaces ) {
@@ -142,7 +142,7 @@
 					};
 
 					( function ( data, result, callback ) {
-						makeAPICall( data, function ( pages ) {
+						makeAPICall( data, ( pages ) => {
 							result.pages = result.pages.concat( pages );
 							if ( callback !== null ) {
 								callback( result.pages );
@@ -156,7 +156,7 @@
 	}
 
 	function getPages( pages, callback ) {
-		var data = {
+		const data = {
 			resultPath: 'query.pages',
 			params: {
 				format: 'json',
@@ -165,10 +165,10 @@
 				rawcontinue: 1
 			}
 		};
-		makeAPICall( data, function ( data ) {
+		makeAPICall( data, ( data ) => {
 			// Convert from object to array
 			pages = [];
-			for ( var key in data ) {
+			for ( const key in data ) {
 				pages.push( data[ key ] );
 			}
 			callback( pages );
@@ -176,15 +176,15 @@
 	}
 
 	function editPages( pages, search, replace, summary, cb ) {
-		var rObj = { remaining: pages.length };
+		const rObj = { remaining: pages.length };
 		if ( pages.length === 0 ) {
 			cb( { error: 'No pages found!' } );
 			return;
 		}
 
-		for ( var x = 0; x < pages.length; x++ ) {
+		for ( let x = 0; x < pages.length; x++ ) {
 			( function ( page, search, replace, cb, rObj ) {
-				var pageId = page.pageid;
+				const pageId = page.pageid;
 
 				if ( pageId === undefined ) {
 					cb( { error: mw.msg( 'masseditregex-js-pagenotexist', page.title ) } );
@@ -198,7 +198,7 @@
 						},
 						dataType: 'json',
 						type: 'POST'
-					} ).done( function ( response ) {
+					} ).done( ( response ) => {
 						rObj.remaining--;
 						cb( page, response, rObj.remaining );
 					} );
@@ -208,14 +208,14 @@
 	}
 
 	function doEdit( pages ) {
-		var search = $( '#wpMatch' ).val();
-		var replace = $( '#wpReplace' ).val();
-		var summary = $( '#wpSummary' ).val();
-		var $content = $( '<div>' );
-		var $heading = $( '<h1>' );
+		const search = $( '#wpMatch' ).val();
+		const replace = $( '#wpReplace' ).val();
+		const summary = $( '#wpSummary' ).val();
+		const $content = $( '<div>' );
+		const $heading = $( '<h1>' );
 		$content.append( $heading );
 		$heading.text( mw.msg( 'masseditregex-js-working', '?' ) );
-		var $list = $( '<ul>' );
+		const $list = $( '<ul>' );
 		$content.append( $list );
 
 		$content.dialog( {
@@ -225,8 +225,8 @@
 		} );
 
 		editPages( pages, search, replace, summary,
-			function ( page, response, remaining ) {
-				var $li = $( '<li>' );
+			( page, response, remaining ) => {
+				let $li = $( '<li>' );
 
 				if ( page.error || response.error ) {
 					$li.text( page.title + ': ' + page.error ? page.error : response.error );
@@ -249,10 +249,10 @@
 	}
 
 	function executeMassEdit() {
-		var pages = $( '#wpPageList' ).val().split( '\n' );
-		var type = $( 'input[name="wpPageListType"]:checked' ).val();
+		const pages = $( '#wpPageList' ).val().split( '\n' );
+		const type = $( 'input[name="wpPageListType"]:checked' ).val();
 
-		var x;
+		let x;
 		switch ( type ) {
 			case 'pagenames':
 				getPages( pages, doEdit );
@@ -275,8 +275,8 @@
 		}
 	}
 
-	$( function () {
-		$( '#wpSave' ).on( 'click', function () {
+	$( () => {
+		$( '#wpSave' ).on( 'click', () => {
 			if ( $( '#wpClientSide' ).is( ':checked' ) ) {
 				executeMassEdit();
 				return false;
