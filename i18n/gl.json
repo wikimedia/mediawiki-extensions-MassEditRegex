@@ -47,7 +47,7 @@
 	"masseditregex-noaccess": "Non ten vostede acceso ao MassEditRegex",
 	"masseditregex-norevisions": "Non se atoparon revisións que editar",
 	"masseditregex-blocked": "A súa conta de usuario foi bloqueada",
-	"masseditregex-readonlydb": "A base de datos é de só lectura",
+	"masseditregex-readonlydb": "A base de datos é de lectura só",
 	"masseditregex-js-clientside": "Executar no navegador",
 	"masseditregex-js-execution": "Marque esta opción para executar a iteración de páxina no navegador cliente. Isto permite cambios de maior envergadura que normalmente estarían limitados polo tempo máximo de execución da PHP.",
 	"masseditregex-js-jobdone": "Completado",
