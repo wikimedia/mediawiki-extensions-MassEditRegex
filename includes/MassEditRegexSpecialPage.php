@@ -129,7 +129,12 @@ class MassEditRegexSpecialPage extends SpecialPage {
 								$pageTitle )->escaped();
 							break;
 						}
-						$titleArray = $cat->getMembers( $pageCountLimit - $iArticleCount );
+						// T163056 - don't query the category members if we already have more results than the limit
+						// allows
+						$catMembersToQuery = $pageCountLimit - $iArticleCount;
+						if ( $catMembersToQuery > 0 ) {
+							$titleArray = $cat->getMembers( $catMembersToQuery );
+						}
 						break;
 
 					case 'backlinks':
