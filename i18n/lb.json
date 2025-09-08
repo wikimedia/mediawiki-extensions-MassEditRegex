@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GilPe",
 			"Les Meloures",
 			"Robby",
 			"Soued031",
@@ -19,7 +20,7 @@
 	"masseditregex-num-changes": "$1 : $2 {{PLURAL:$2|Ännerung|Ännerungen}}",
 	"masseditregex-page-not-exists": "$1 gëtt et net",
 	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|Säit|Säite}} geännert",
-	"masseditregex-view-full-summary": "De ganze Resumé vun der Ännerung weisen",
+	"masseditregex-view-full-summary": "De ganze Resümmee vun der Ännerung weisen",
 	"masseditregex-hint-headmatch": "Resultat",
 	"masseditregex-hint-headreplace": "Ersetzen",
 	"masseditregex-hint-headeffect": "Resultat",
