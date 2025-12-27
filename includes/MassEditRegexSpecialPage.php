@@ -323,12 +323,13 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				// Give grep a chance to find the usages:
 				// masseditregex-listtype-pagenames, masseditregex-listtype-pagename-prefixes,
 				// masseditregex-listtype-categories, masseditregex-listtype-backlinks
-				Xml::radioLabel(
-					$this->msg( 'masseditregex-listtype-' . $strValue )->text(),
+				Html::radio(
 					'wpPageListType',
-					$strValue,
-					'masseditregex-radio-' . $strValue,
-					$strValue == $this->strPageListType
+					$strValue == $this->strPageListType,
+					[ 'value' => $strValue, 'id' => 'masseditregex-radio-' . $strValue ]
+				) . "\u{00A0}" . Html::label(
+					$this->msg( 'masseditregex-listtype-' . $strValue )->text(),
+					'masseditregex-radio-' . $strValue
 				)
 			) );
 		}
@@ -412,14 +413,14 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				[
 					'style' => 'margin-left: 1em;'
 				],
-				Xml::checkLabel(
-					$this->msg( 'masseditregex-js-clientside' )->text(),
-					'wpClientSide',
+				Html::check(
 					'wpClientSide',
 					$this->isClientSide,
-					[
-						'title' => $this->msg( 'masseditregex-js-execution' )->text(),
-					]
+					[ 'id' => 'wpClientSide', 'title' => $this->msg( 'masseditregex-js-execution' )->text() ]
+				) . "\u{00A0}" . Html::label(
+					$this->msg( 'masseditregex-js-clientside' )->text(),
+					'wpClientSide',
+					[ 'title' => $this->msg( 'masseditregex-js-execution' )->text() ]
 				)
 			)
 		);
@@ -438,8 +439,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		$out->addHTML(
 			Html::element( 'p', [], $this->msg( 'masseditregex-hint-intro' )->text() )
 		);
-		$out->addHTML( Xml::buildTable(
-
+		$out->addHTML( self::buildTable(
 			// Table rows (the hints)
 			[
 				[
@@ -483,7 +483,38 @@ class MassEditRegexSpecialPage extends SpecialPage {
 				$this->msg( 'masseditregex-hint-headeffect' )->text()
 			]
 
-		) ); // Xml::buildTable
+		) ); // self::buildTable
+	}
+
+	/**
+	 * @param string[][] $rows
+	 * @param array $attribs An array of attributes to apply to the table tag
+	 * @param array $headers An array of strings to use as table headers
+	 * @return string
+	 */
+	private static function buildTable( $rows, $attribs, $headers ) {
+		$s = Html::openElement( 'table', $attribs );
+
+		$s .= Html::openElement( 'thead', $attribs );
+
+		foreach ( $headers as $header ) {
+			$s .= Html::element( 'th', [], $header );
+		}
+		$s .= Html::closeElement( 'thead' );
+
+		foreach ( $rows as $cells ) {
+			$s .= Html::openElement( 'tr' );
+
+			foreach ( $cells as $cell ) {
+				$s .= Html::element( 'td', [], $cell );
+			}
+
+			$s .= Html::closeElement( 'tr' );
+		}
+
+		$s .= Html::closeElement( 'table' );
+
+		return $s;
 	}
 
 	/**
