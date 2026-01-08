@@ -13,7 +13,8 @@
 			"Xiaomingyan",
 			"Yfdyh000",
 			"星海",
-			"沈澄心"
+			"沈澄心",
+			"Anterdc99"
 		]
 	},
 	"action-masseditregex": "执行批量编辑",
@@ -37,7 +38,7 @@
 	"masseditregex-hint-headmatch": "匹配",
 	"masseditregex-hint-headreplace": "替换",
 	"masseditregex-hint-headeffect": "影响",
-	"masseditregex-hint-toappend": "追加一些文本到页面底端 - 例如为页面添加分类",
+	"masseditregex-hint-toappend": "追加一些文本到页面底端——例如为页面添加分类",
 	"masseditregex-hint-remove": "移除列表中所有页面的文本",
 	"masseditregex-hint-removecat": "从页面移除所有分类（注意wiki代码中方括号的转义。）重置值不应转义。",
 	"masseditregex-hint-renamelink": "在链接文本但不是链接目标中替换AAA为BBB：[[AAA|AAA]]变成[[AAA|BBB]]",
@@ -61,7 +62,7 @@
 	"masseditregex-js-jobdone": "完成",
 	"masseditregex-js-working": "处理中……（剩余$1个）",
 	"masseditregex-js-pagenotexist": "$1不存在。",
-	"masseditregex-js-mwapi-api-error": "错误：MediaWiki API 返回了错误代码$1：$2",
-	"masseditregex-js-mwapi-general-error": "错误：来自MediaWiki API 的未知结果。",
-	"masseditregex-js-mwapi-unknown-error": "错误：在向MediaWiki API 请求时发生未知错误。"
+	"masseditregex-js-mwapi-api-error": "错误：MediaWiki API返回了错误代码$1：$2",
+	"masseditregex-js-mwapi-general-error": "错误：来自MediaWiki API的未知结果。",
+	"masseditregex-js-mwapi-unknown-error": "错误：在向MediaWiki API请求时发生未知错误。"
 }
