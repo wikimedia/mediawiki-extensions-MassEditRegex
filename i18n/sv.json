@@ -6,6 +6,7 @@
 			"Jopparn",
 			"Lokal Profil",
 			"Per",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -49,6 +50,7 @@
 	"masseditregex-blocked": "Ditt användarkonto är blockerat",
 	"masseditregex-readonlydb": "Databasen är skrivskyddad",
 	"masseditregex-js-clientside": "Kör i webbläsaren",
+	"masseditregex-js-execution": "Markera det här alternativet för att utföra sid-iterationen på klientsidan i webbläsaren. Detta tillåter större ändringar som normalt begränsas av PHP:s maximala exekveringstid.",
 	"masseditregex-js-jobdone": "Färdig",
 	"masseditregex-js-working": "Behandlas... ($1 kvar)",
 	"masseditregex-js-pagenotexist": "$1 finns inte",
