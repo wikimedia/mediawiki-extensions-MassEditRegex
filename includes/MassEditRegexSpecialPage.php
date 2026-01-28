@@ -14,9 +14,10 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\Cache\BacklinkCacheFactory;
 use MediaWiki\Category\Category;
+use MediaWiki\CommentFormatter\CommentFormatter;
 use MediaWiki\Html\Html;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 
 /// Maximum number of pages/diffs to display when previewing the changes
@@ -62,7 +63,10 @@ class MassEditRegexSpecialPage extends SpecialPage {
 	 */
 	private $massEditRegex;
 
-	function __construct() {
+	function __construct(
+		private readonly BacklinkCacheFactory $backlinkCacheFactory,
+		private readonly CommentFormatter $commentFormatter,
+	) {
 		parent::__construct( 'MassEditRegex', 'masseditregex' );
 	}
 
@@ -149,8 +153,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 							}
 							break;
 						}
-						$blc = MediaWikiServices::getInstance()->getBacklinkCacheFactory()
-							->getBacklinkCache( $t );
+						$blc = $this->backlinkCacheFactory->getBacklinkCache( $t );
 						if ( $t->getNamespace() == NS_TEMPLATE ) {
 							// Backlinks for Template pages are in a different table
 							$table = 'templatelinks';
@@ -383,7 +386,7 @@ class MassEditRegexSpecialPage extends SpecialPage {
 			Html::rawElement( 'div',
 				[ 'class' => 'mw-summary-preview' ],
 				$this->msg( 'summary-preview' )->parse() .
-					MediaWikiServices::getInstance()->getCommentFormatter()
+					$this->commentFormatter
 						->formatBlock( $this->massEditRegex->getSummary() )
 			) .
 			Html::closeElement( 'div' ) . // class=editOptions

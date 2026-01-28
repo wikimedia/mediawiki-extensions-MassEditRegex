@@ -2,13 +2,18 @@
 
 namespace MediaWiki\Extension\MassEditRegex;
 
-use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\SpecialPage\SpecialPageFactory;
 use SkinTemplate;
 
 class Hooks implements
 	\MediaWiki\Hook\SkinTemplateNavigation__UniversalHook
 {
+	public function __construct(
+		private readonly SpecialPageFactory $specialPageFactory,
+	) {
+	}
+
 	/**
 	 * @param SkinTemplate $sktemplate
 	 * @param array[][] &$links
@@ -32,8 +37,7 @@ class Hooks implements
 			( $ns == NS_SPECIAL )
 			&& ( $title->isSpecial( 'Whatlinkshere' ) )
 		) {
-			$titleParts = MediaWikiServices::getInstance()
-				->getSpecialPageFactory()
+			$titleParts = $this->specialPageFactory
 				->resolveAlias( $title->getText() );
 
 			$url = SpecialPage::getTitleFor( 'MassEditRegex' )->getLocalURL(

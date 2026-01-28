@@ -17,7 +17,13 @@
 		"masseditregex"
 	],
 	"SpecialPages": {
-		"MassEditRegex": "MassEditRegexSpecialPage"
+		"MassEditRegex": {
+			"class": "MassEditRegexSpecialPage",
+			"services": [
+				"BacklinkCacheFactory",
+				"CommentFormatter"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"MassEditRegex": [
@@ -63,7 +69,10 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "MediaWiki\\Extension\\MassEditRegex\\Hooks"
+			"class": "MediaWiki\\Extension\\MassEditRegex\\Hooks",
+			"services": [
+				"SpecialPageFactory"
+			]
 		}
 	},
 	"Hooks": {
