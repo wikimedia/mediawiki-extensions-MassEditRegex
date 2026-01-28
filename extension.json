@@ -32,6 +32,9 @@
 		"MassEditRegexSpecialPage": "includes/MassEditRegexSpecialPage.php",
 		"MassEditRegexAPI": "includes/MassEditRegexAPI.php"
 	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\MassEditRegex\\": "includes/"
+	},
 	"ResourceModules": {
 		"MassEditRegex": {
 			"scripts": [
@@ -58,8 +61,13 @@
 		"localBasePath": "",
 		"remoteExtPath": "MassEditRegex"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\MassEditRegex\\Hooks"
+		}
+	},
 	"Hooks": {
-		"SkinTemplateNavigation::Universal": "MassEditRegexSpecialPage::efSkinTemplateNavigationUniversal"
+		"SkinTemplateNavigation::Universal": "main"
 	},
 	"config": {
 		"AjaxExportList": {

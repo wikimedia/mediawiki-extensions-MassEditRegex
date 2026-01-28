@@ -518,55 +518,6 @@ class MassEditRegexSpecialPage extends SpecialPage {
 	}
 
 	/**
-	 * @param SkinTemplate $sktemplate
-	 * @param array[][] &$links
-	 *
-	 * @return true
-	 */
-	public static function efSkinTemplateNavigationUniversal( $sktemplate, &$links ) {
-		$title = $sktemplate->getTitle();
-		$ns = $title->getNamespace();
-
-		if ( !$sktemplate->getUser()->isAllowed( 'masseditregex' ) ) {
-			return true;
-		}
-
-		if ( $ns == NS_CATEGORY ) {
-			$url = SpecialPage::getTitleFor( 'MassEditRegex' )->getLocalURL(
-				[
-					'wpPageList' => $title->getText(),
-					'wpPageListType' => 'categories',
-				]
-			);
-		} elseif (
-			( $ns == NS_SPECIAL )
-			&& ( $title->isSpecial( 'Whatlinkshere' ) )
-		) {
-			$titleParts = MediaWikiServices::getInstance()
-				->getSpecialPageFactory()
-				->resolveAlias( $title->getText() );
-
-			$url = SpecialPage::getTitleFor( 'MassEditRegex' )->getLocalURL(
-				[
-					'wpPageList' => $titleParts[1],
-					'wpPageListType' => 'backlinks',
-				]
-			);
-		} else {
-			// No tab
-			return true;
-		}
-
-		$links['views']['masseditregex'] = [
-			'class' => false,
-			'text' => wfMessage( 'masseditregex-editall' )->text(),
-			'href' => $url,
-			'context' => 'main',
-		];
-		return true;
-	}
-
-	/**
 	 * Call MassEditRegex::editPage() or MassEditRegex::previewPage()
 	 * @param $title
 	 * @param $isPreview
