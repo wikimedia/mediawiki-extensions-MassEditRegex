@@ -4,6 +4,7 @@
 			"EugeneZelenko",
 			"Jim-by",
 			"Renessaince",
+			"Ucukor",
 			"Wizardist"
 		]
 	},
@@ -23,7 +24,7 @@
 	"masseditregex-page-not-exists": "$1 не існуе",
 	"masseditregex-num-articles-changed": "{{PLURAL:$1|адрэдагаваная|адрэдагаваныя|адрэдагаваныя}} $1 {{PLURAL:$1|старонка|старонкі|старонак}}",
 	"masseditregex-view-full-summary": "Паказаць поўнае апісаньне зьменаў",
-	"masseditregex-hint-intro": "Тут пададзеныя некалькі падказак і прыкладаў для выкананьня агульных заданьняў:",
+	"masseditregex-hint-intro": "Тут пададзеныя колькі падказак і прыкладаў для выкананьня агульных заданьняў:",
 	"masseditregex-hint-headmatch": "Супадзеньне",
 	"masseditregex-hint-headreplace": "Замена",
 	"masseditregex-hint-headeffect": "Вынік",
