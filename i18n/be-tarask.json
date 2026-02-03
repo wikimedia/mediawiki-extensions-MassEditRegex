@@ -4,13 +4,14 @@
 			"EugeneZelenko",
 			"Jim-by",
 			"Renessaince",
-			"Wizardist"
+			"Wizardist",
+			"Ucukor"
 		]
 	},
 	"action-masseditregex": "выкананьне масавага рэдагаваньня",
 	"masseditregex": "Масавае рэдагаваньне з выкарыстаньнем рэгулярных выразаў",
-	"masseditregex-desc": "Выкарыстаньне рэгулярных выразаў для [[Special:MassEditRegex|рэдагаваньня некалькіх старонак за адно дзеяньне]]",
-	"masseditregextext": "Увядзіце адзін альбо некалькі рэгулярных выразаў (адзін на радок) для пошуку супадзеньняў, і адзін альбо некалькі выразаў для замены кожнага супадзеньня.\nПершы пасьпяховае супадзеньне з выразам будзе замененае на першы выраз для замены і гэтак далей.\nГлядзіце падрабязнасьці пра функцыю [https://php.net/function.preg-replace PHP preg_replace()].",
+	"masseditregex-desc": "Дазваляе ўжываць рэґулярныя выразы для [[Special:MassEditRegex|рэдагаваньня многіх старонак за адно дзеяньне]]",
+	"masseditregextext": "Увядзіце адзін альбо колькі рэґулярных выразаў (адзін на радок) для пошуку супадзеньняў, і адзін альбо колькі выразаў для замены кожнага супадзеньня.\nПершае пасьпяховае супадзеньне з выразам будзе замененае на першы выраз для замены і гэтак далей.\nГлядзіце падрабязнасьці пра функцыю [https://php.net/function.preg-replace PHP preg_replace()].",
 	"masseditregex-pagelisttxt": "Старонкі для рэдагаваньня:",
 	"masseditregex-matchtxt": "Пошук:",
 	"masseditregex-replacetxt": "Замяніць на:",
@@ -23,7 +24,7 @@
 	"masseditregex-page-not-exists": "$1 не існуе",
 	"masseditregex-num-articles-changed": "{{PLURAL:$1|адрэдагаваная|адрэдагаваныя|адрэдагаваныя}} $1 {{PLURAL:$1|старонка|старонкі|старонак}}",
 	"masseditregex-view-full-summary": "Паказаць поўнае апісаньне зьменаў",
-	"masseditregex-hint-intro": "Тут пададзеныя некалькі падказак і прыкладаў для выкананьня агульных заданьняў:",
+	"masseditregex-hint-intro": "Тут пададзеныя колькі падказак і прыкладаў для выкананьня агульных заданьняў:",
 	"masseditregex-hint-headmatch": "Супадзеньне",
 	"masseditregex-hint-headreplace": "Замена",
 	"masseditregex-hint-headeffect": "Вынік",
