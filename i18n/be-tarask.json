@@ -16,7 +16,7 @@
 	"masseditregex-matchtxt": "Пошук:",
 	"masseditregex-replacetxt": "Замяніць на:",
 	"masseditregex-executebtn": "Выканаць",
-	"masseditregex-err-nopages": "Вам неабходна пазначыць хаця б адну старонку для рэдагаваньня.",
+	"masseditregex-err-nopages": "Вам патрэбна пазначыць прынамсі адну старонку для рэдагаваньня.",
 	"masseditregex-before": "Перад",
 	"masseditregex-after": "Пасьля",
 	"masseditregex-max-preview-diffs": "Папярэдні прагляд абмежаваны $1 {{PLURAL:$1|першым супадзеньнем|першымі супадзеньнямі|першымі супадзеньнямі}}.",
