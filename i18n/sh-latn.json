@@ -25,7 +25,7 @@
 	"masseditregex-hint-headreplace": "Zamijena",
 	"masseditregex-hint-headeffect": "Ishod",
 	"masseditregex-hint-toappend": "Priložite neki tekst na kraju stranice - izvrsno za dodavanje stranica u kategorije",
-	"masseditregex-hint-remove": "Uklanjanje izvjesnog teksta sa svih stranica na popisu",
+	"masseditregex-hint-remove": "Uklanjanje izvjesnog teksta sa svih stranica na listi",
 	"masseditregex-hint-removecat": "Uklonite sve kategorije s jedne stranice (zabilježite izuzimanje uglastih zagrada iz wikikoda.)\nVrijednosti za zamjenjivanje ne bi trebale biti isključene.",
 	"masseditregex-hint-renamelink": "Zamijenite AAA sa BBB u tekstu veze, ali ne i odrednicu same veze: [[AAA|AAA]] Postaje [[AAA|BBB]]",
 	"masseditregex-listtype-intro": "Ovo je spisak od:",
@@ -40,7 +40,7 @@
 	"masseditregex-editall": "Uredi sve",
 	"right-masseditregex": "Zamjena sadržaja stranica koristeći regularne izraze",
 	"masseditregex-noaccess": "Nemate pristup Regul. izraze za masovno uređivanje",
-	"masseditregex-norevisions": "Nisam pronašao reviziju za uređivanje",
+	"masseditregex-norevisions": "Nije pronađena verzija za uređivanje",
 	"masseditregex-blocked": "Vaš korisnički račun je blokiran",
 	"masseditregex-readonlydb": "Baza može samo se čitati",
 	"masseditregex-js-clientside": "Izvrši u pregledniku",
@@ -48,6 +48,6 @@
 	"masseditregex-js-jobdone": "Završeno",
 	"masseditregex-js-pagenotexist": "$1 ne postoji.",
 	"masseditregex-js-mwapi-api-error": "Greška: Izvršnik MediaWikija je vratio grešku s kodom $1: $2",
-	"masseditregex-js-mwapi-general-error": "Greška: Primio sam nepoznati ishod iz izvršnika MediaWikija.",
-	"masseditregex-js-mwapi-unknown-error": "Greška: Primio sam nepoznatu grešku pri upitu do izvršnika MediaWikija."
+	"masseditregex-js-mwapi-general-error": "Greška: Nepoznat rezultat MediaWiki API-ja.",
+	"masseditregex-js-mwapi-unknown-error": "Greška: Nepoznata greška pri upitu do MediaWiki API-ja."
 }
