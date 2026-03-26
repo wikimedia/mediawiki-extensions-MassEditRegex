@@ -1,10 +1,12 @@
 <?php
 
+use MediaWiki\Content\Content;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 
 class MassEditRegex {
 	/**
@@ -28,7 +30,7 @@ class MassEditRegex {
 	private $diffEngine;
 
 	/**
-	 * @var \User
+	 * @var User
 	 */
 	private $user;
 
@@ -38,7 +40,7 @@ class MassEditRegex {
 	 * @param string $summary
 	 * @param User|null $user
 	 */
-	function __construct( $search, $replace, $summary, ?\User $user = null ) {
+	function __construct( $search, $replace, $summary, ?User $user = null ) {
 		$this->setReplace( $replace );
 		$this->setSearch( $search );
 		$this->setSummary( $summary );
@@ -186,7 +188,7 @@ class MassEditRegex {
 	}
 
 	/**
-	 * @return \User
+	 * @return User
 	 */
 	public function getUser() {
 		return $this->user;
@@ -207,7 +209,7 @@ class MassEditRegex {
 	}
 
 	/**
-	 * @param \User|null $user
+	 * @param User|null $user
 	 */
 	public function setUser( $user = null ) {
 		if ( $user === null ) {
