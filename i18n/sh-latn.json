@@ -24,11 +24,11 @@
 	"masseditregex-hint-headmatch": "Poklapanje",
 	"masseditregex-hint-headreplace": "Zamijena",
 	"masseditregex-hint-headeffect": "Ishod",
-	"masseditregex-hint-toappend": "Priložite neki tekst na kraju stranice - izvrsno za dodavanje stranica u kategorije",
+	"masseditregex-hint-toappend": "Priložite neki tekst na kraju stranice – izvrsno za dodavanje stranica u kategorije",
 	"masseditregex-hint-remove": "Uklanjanje izvjesnog teksta sa svih stranica na listi",
 	"masseditregex-hint-removecat": "Uklonite sve kategorije s jedne stranice (zabilježite izuzimanje uglastih zagrada iz wikikoda.)\nVrijednosti za zamjenjivanje ne bi trebale biti isključene.",
 	"masseditregex-hint-renamelink": "Zamijenite AAA sa BBB u tekstu veze, ali ne i odrednicu same veze: [[AAA|AAA]] Postaje [[AAA|BBB]]",
-	"masseditregex-listtype-intro": "Ovo je spisak od:",
+	"masseditregex-listtype-intro": "Ovo je lista:",
 	"masseditregex-listtype-pagenames": "Imena stranica (uredite te stranice)",
 	"masseditregex-listtype-pagename-prefixes": "Prefiksi nazive stranica (uredite stranice čije ime počinje ovim tekstom)",
 	"masseditregex-listtype-categories": "Imena kategorija (uredite svaku stranicu u tim kategorijama)",
@@ -47,7 +47,7 @@
 	"masseditregex-js-execution": "Štilirajte ovo da biste izvršili iteraciju stranice s klijentske strane preglednika. Ovo omogućuje izradu velikih promjena koje su obično ograničene vremenom izvršavanja koje određuje PHP.",
 	"masseditregex-js-jobdone": "Završeno",
 	"masseditregex-js-pagenotexist": "$1 ne postoji.",
-	"masseditregex-js-mwapi-api-error": "Greška: Izvršnik MediaWikija je vratio grešku s kodom $1: $2",
+	"masseditregex-js-mwapi-api-error": "Greška: MediaWikijev API vratio je grešku s kodom $1: $2",
 	"masseditregex-js-mwapi-general-error": "Greška: Nepoznat rezultat MediaWiki API-ja.",
 	"masseditregex-js-mwapi-unknown-error": "Greška: Nepoznata greška pri upitu do MediaWiki API-ja."
 }
