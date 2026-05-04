@@ -67,7 +67,12 @@ class MassEditRegexSpecialPage extends SpecialPage {
 		private readonly BacklinkCacheFactory $backlinkCacheFactory,
 		private readonly CommentFormatter $commentFormatter,
 	) {
-		parent::__construct( 'MassEditRegex', 'masseditregex' );
+		parent::__construct( 'MassEditRegex' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'masseditregex';
 	}
 
 	public function doesWrites() {
