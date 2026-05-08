@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Content\Content;
+use MediaWiki\Content\TextContent;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
@@ -60,7 +61,10 @@ class MassEditRegex {
 	public function editPage( Title $title ) {
 		$rev = $this->getRevisionRecord( $title );
 		$content = $this->getContent( $rev );
-		$curText = $content->getNativeData();
+		if ( !$content instanceof TextContent ) {
+			return 0;
+		}
+		$curText = $content->getText();
 		[ $newText, $changes ] = $this->replaceText( $curText );
 
 		if ( strcmp( $curText, $newText ) != 0 ) {
@@ -87,7 +91,10 @@ class MassEditRegex {
 	public function previewPage( Title $title ) {
 		$rev = $this->getRevisionRecord( $title );
 		$content = $this->getContent( $rev );
-		$curText = $content->getNativeData();
+		if ( !$content instanceof TextContent ) {
+			return '';
+		}
+		$curText = $content->getText();
 		[ $newText ] = $this->replaceText( $curText );
 
 		$this->diffEngine->setContent( $content, ContentHandler::makeContent( $newText, $title ) );
