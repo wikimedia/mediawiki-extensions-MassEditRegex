@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|isbeddel|isbeddello}}"
+}
