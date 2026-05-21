@@ -41,7 +41,7 @@
 	"masseditregex-listtype-categories": "분류 이름 (이러한 분류 안에서 각 문서를 편집)",
 	"masseditregex-listtype-backlinks": "백링크 (이러한 문서에 링크된 문서를 편집)",
 	"masseditregex-exprnomatch": "\"$1\" 정규식은 문서에 일치하지 않습니다.",
-	"masseditregex-badregex": "잘못된 정규식:",
+	"masseditregex-badregex": "잘못된 정규 표현식:",
 	"masseditregex-editfailed": "편집 실패:",
 	"masseditregex-tooltip-execute": "각 문서에 이러한 바뀐 내용을 적용합니다",
 	"masseditregex-editall": "모두 편집",
