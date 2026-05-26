@@ -7,10 +7,11 @@
 			"MemphisA5",
 			"Suleiman the Magnificent Television",
 			"Ykhwong",
-			"아라"
+			"아라",
+			"Tensama0415"
 		]
 	},
-	"action-masseditregex": "대량 편집을 수행할",
+	"action-masseditregex": "대량 편집을 수행",
 	"masseditregex": "정규 표현식으로 대량 편집",
 	"masseditregex-desc": "[[Special:MassEditRegex|한 번에 많은 문서를 편집]]하기 위해 정규 표현식을 사용할 수 있게 합니다",
 	"masseditregextext": "문서에서 문자열을 찾기 위한 정규 표현식 하나 또는 그 이상(한 줄에 하나씩) 입력하고, 각각에 대해 바꿀 표현식을 입력하세요.\n처음에 입력된 찾을 표현식은 처음 입력된 바꿀 표현으로 바꿀 것이며, 다음 표현식에 대해서도 마찬가지로 동작합니다.\n자세한 내용은 [https://php.net/function.preg-replace PHP 함수 preg_replace() 설명]을 참조하십시오.",
@@ -40,7 +41,7 @@
 	"masseditregex-listtype-categories": "분류 이름 (이러한 분류 안에서 각 문서를 편집)",
 	"masseditregex-listtype-backlinks": "백링크 (이러한 문서에 링크된 문서를 편집)",
 	"masseditregex-exprnomatch": "\"$1\" 정규식은 문서에 일치하지 않습니다.",
-	"masseditregex-badregex": "잘못된 정규식:",
+	"masseditregex-badregex": "잘못된 정규 표현식:",
 	"masseditregex-editfailed": "편집 실패:",
 	"masseditregex-tooltip-execute": "각 문서에 이러한 바뀐 내용을 적용합니다",
 	"masseditregex-editall": "모두 편집",
