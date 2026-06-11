@@ -39,7 +39,7 @@
 	"masseditregex-listtype-backlinks": "Адваротныя спасылкі (рэдагаваць старонкі, якія спасылаюцца на гэтую)",
 	"masseditregex-exprnomatch": "Выраз «$1» не адпавядае ні адной старонцы.",
 	"masseditregex-badregex": "Няслушны рэгулярны выраз:",
-	"masseditregex-editfailed": "Рэдагаваньне не атрымалася:",
+	"masseditregex-editfailed": "Рэдагаваньне не ўдалося:",
 	"masseditregex-tooltip-execute": "Прыняць гэтыя зьмены для кожнай старонкі",
 	"right-masseditregex": "замена зьместу старонак з дапамогай рэгулярных выразаў"
 }
