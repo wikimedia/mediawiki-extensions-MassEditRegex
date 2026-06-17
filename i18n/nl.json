@@ -38,7 +38,7 @@
 	"masseditregex-listtype-categories": "Categorienamen (alle pagina's binnen deze categorieën bewerken)",
 	"masseditregex-listtype-backlinks": "Terugverwijzingen (pagina's bewerken die verwijzen naar deze pagina's)",
 	"masseditregex-exprnomatch": "De expressie \"$1\" was op geen enkele pagina van toepassing.",
-	"masseditregex-badregex": "Ongeldige reguliere expressie:",
+	"masseditregex-badregex": "Incorrecte reguliere expressie:",
 	"masseditregex-editfailed": "Bewerking mislukt:",
 	"masseditregex-tooltip-execute": "Deze wijzigingen op iedere pagina toepassen",
 	"masseditregex-editall": "Allemaal bewerken",
