@@ -10,6 +10,7 @@
 		"no-jquery/no-global-selector": "off",
 		"no-shadow": "warn",
 		"no-jquery/no-done-fail": "warn",
-		"no-var": "warn"
+		"no-var": "warn",
+		"no-jquery/no-jquery-ui": "warn"
 	}
 }
