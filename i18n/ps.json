@@ -1,15 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
+	"action-masseditregex": "امبار سمون ترسراوی",
+	"masseditregex-pagelisttxt": "مخونه چې بايد سم شي:",
 	"masseditregex-matchtxt": "پلټنه د:",
+	"masseditregex-replacetxt": "ځايناستول سره د:",
+	"masseditregex-executebtn": "ترسره‌کول",
+	"masseditregex-err-nopages": "تاسو بايد د بدلؤلو لپاره لږ تر لږه يو مخ مشخص کړئ.",
 	"masseditregex-before": "دمخه",
 	"masseditregex-after": "وروسته",
 	"masseditregex-num-changes": "$1: $2 {{PLURAL:$2|بدلون|بدلونونه}}",
+	"masseditregex-page-not-exists": "$1 شتون نه لري",
+	"masseditregex-num-articles-changed": "$1 {{PLURAL:$1|مخ سم شو|مخونه سم شول}}",
+	"masseditregex-view-full-summary": "د سمون بشپړ لنډيز کتل",
+	"masseditregex-hint-headmatch": "کټمټتيا",
 	"masseditregex-hint-headreplace": "ځايناستول",
+	"masseditregex-hint-headeffect": "اغېز",
 	"masseditregex-listtype-intro": "دا يو لړليک دی د:",
+	"masseditregex-listtype-pagenames": "مخ نومونه (دا مخونه سم کړئ)",
+	"masseditregex-editfailed": "سمون نابرياله شو:",
+	"masseditregex-tooltip-execute": "دا بدلونونه هر مخ کې پلي کړئ",
+	"masseditregex-editall": "ټول سمول",
+	"masseditregex-norevisions": "سمون لپاره هېڅ بياليدنې ونه موندل شوې",
+	"masseditregex-blocked": "ستاسو کارن گڼون باندې بنديز لگېدلی",
+	"masseditregex-readonlydb": "اومتوک‌اډانه يوازې لوست‌وړ ده",
+	"masseditregex-js-clientside": "ښوونگر کې يې ترسره کړئ",
 	"masseditregex-js-jobdone": "بشپړ",
-	"masseditregex-js-pagenotexist": "$1 نشته."
+	"masseditregex-js-working": "ترسره کېږي...($1 پاتې)",
+	"masseditregex-js-pagenotexist": "$1 نشته.",
+	"masseditregex-js-mwapi-api-error": "تېروتنه: د مېډياويکي کاريال‌بهيرمخبڼې د تېروتنې کوډ $1: $2",
+	"masseditregex-js-mwapi-general-error": "تېروتنه: د مېډياويکي کاريال‌بهيرمخبڼې ناپېژانده پايله.",
+	"masseditregex-js-mwapi-unknown-error": "تېروتنه: د مېډياويکي کاريال‌بهيرمخبڼې ته د غوښتنې پرمهال ناپېژانده تېروتنه."
 }
